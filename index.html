@@ -1022,34 +1022,94 @@ body.dark-mode #iconunique-container {
             <h2 style="font-size: 15px; margin-top: -15px; padding: 10px 0px; ">Menu <i class="fas fa-exchange-alt" style="font-size: 12px;"></i>
              </h2>
                 
-            <div id="image-wrapper"><div id="image-scroll-container"><div id="image-wrapper">
-                
-              
-             <a href="https://tommydev27.github.io/keby/"><img src="https://iili.io/FdOFQQ2.md.png" alt="" /></a>
-             
-               <a href="https://tommydev27.github.io/Unicode.SymbolTool/">
-                <img src="https://iili.io/FFALZ5x.md.jpg" alt="" /></a>
-                
-             <a href="https://tommyweb01.github.io/fontunikersfbtm/">
-              <img src="https://iili.io/FdHz6Qe.md.png" alt="" /></a>
-                
-               <a href="https://tommydev27.github.io/UnicodeTM27/">
-                <img src="https://iili.io/F37sQwu.md.png" alt="" /></a>
-                
-               <a href="https://tommydev27.github.io/Unicode/">
-                <img src="https://iili.io/F2ePYGt.md.png" alt="" /></a>
-                
-                <a href="https://tommydev27.github.io/glitch-text/"><img src="https://iili.io/FdOuJLu.md.png" alt="" /></a>
-                
-                <a href="https://tommydev27.github.io/tm-textGz/">
-                  <img src="https://iili.io/3KMOQt9.md.png" alt="" /></a>
-                
-                <a href="https://tommydev27.github.io/Galeri/"><img src="https://iili.io/3zqSDVs.md.png" alt="" /></a>
-              
-                <a href="https://tommydev27.github.io/tommy-website.oi/"><img src="https://iili.io/33jZoEx.md.png" alt="" /></a>
+ <style>
+  #image-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 0;
+    padding-left: 3px;
+    border-radius: 10px;
+    display: flex;
+    scroll-behavior: smooth;
+  }
 
-                <a href="https://tommydev27.github.io/tommy.website3/"><img src="https://iili.io/3Fix6VR.md.png" alt="" /></a><a href="https://tommydev27.github.io/MusicTM/"><img src="https://iili.io/33jPiNa.md.png" alt="" /></a><a href="https://tommydev27.github.io/Tommy-Website/"><img src="https://iili.io/33jLFF2.md.png" alt="" /></a></div></div></div>
-                
+  #image-wrapper {
+    display: flex;
+    gap: 13px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    outline: none;
+  }
+
+  .img-container {
+    width: 90px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid #8f8e8e;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .img-container:hover,
+  .img-container:active,
+  .img-container.clicked-blink {
+    background: #1e90ff; /* Warna biru saat diklik */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .clicked-blink {
+    animation: pulse 0.3s ease;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.90); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+<div id="image-scroll-container">
+  <div id="image-wrapper">
+    <div class="img-container"><a href="https://tommydev27.github.io/keby/"><img src="https://iili.io/FdOFQQ2.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/Unicode.SymbolTool/"><img src="https://iili.io/FFALZ5x.md.jpg" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/font-unikrsfb/"><img src="https://iili.io/FdHz6Qe.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/UnicodeTM27/"><img src="https://iili.io/F37sQwu.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/Unicode/"><img src="https://iili.io/F2ePYGt.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/glitch-text/"><img src="https://iili.io/FdOuJLu.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/tm-textGz/"><img src="https://iili.io/3KMOQt9.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/Galeri/"><img src="https://iili.io/3zqSDVs.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/tommy-website.oi/"><img src="https://iili.io/33jZoEx.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/tommy.website3/"><img src="https://iili.io/3Fix6VR.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/MusicTM/"><img src="https://iili.io/33jPiNa.md.png" alt=""></a></div>
+    <div class="img-container"><a href="https://tommydev27.github.io/Tommy-Website/"><img src="https://iili.io/33jLFF2.md.png" alt=""></a></div>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.img-container').forEach(container => {
+      container.addEventListener('click', () => {
+        container.classList.add('clicked-blink');
+        setTimeout(() => container.classList.remove('clicked-blink'), 400);
+      });
+    });
+  });
+</script>
+
+
               <div class="unique-controls">
                   <hr style="background-color: #c3c0c0; height: 1px; border: none; margin: 0; width: 100%; display: flex; margin-top: 0px; width: 100vw; margin-left: -30px;">
               </div>
@@ -1136,7 +1196,7 @@ body.dark-mode #iconunique-container {
                 <a href="https://tommydev27.github.io/Galeri/" target="_blank"><i class="fa-solid fa-masks-theater" style="color: #e76060;" ></i></a>
                 <a href="https://tommydev27.github.io/tommy.website-demo/" target="_blank"><i class="fa-solid fa-chart-pie" style="color: #7190f2;" ></i></a>
             </div>
-    
+                </div>
             <!-- Kelompok 2 -->
             <div class="group group-2">
                 <a href="https://youtube.com/@user-badbooys?si=rCdp0-YQtriVVsOi" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
@@ -1147,7 +1207,6 @@ body.dark-mode #iconunique-container {
           </div>
            </div>
 
-          <style>#image-scroll-container {width: 100%; height: auto; margin-top: 0px; overflow-x: auto; border-radius: 10px; padding-left: 3px; display: flex; position: relative; scroll-behavior: smooth;} #image-wrapper {display: flex; gap: 13px;} #image-wrapper img {width: 90px; height: 200px; border-radius: 10px; border: 3px solid #8f8e8e; transition: box-shadow 0.3s;          </style>
           <h2 style="font-size: 20px; margin-top: 3px; padding: 0px; ">Dashboard<i style=" margin-left: 5px; font-size: 19px;" class="fas fa-chart-pie"></i></h2><div class="list-container">
           <div class="list-item">
           <b id="b2">1.</b>
@@ -1196,16 +1255,16 @@ body.dark-mode #iconunique-container {
           </h3></div><div class="image-slider-container"><div class="image-slider">
           <img src="https://iili.io/26PHCYb.png"
           alt="Gambar 1" class="slider-image"
-          data-prompt="Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks, With delicate makeup on her face, beautiful face, Perfectly proportional face shape, (Advanced facial details：1.1) A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, (Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://iili.io/2rBfSKF.png" alt="spider-man" class="slider-image" data-prompt="Create a hyper-realistic image of Spider-Man wearing a futuristic, shiny white robot suit, designed with intricate metallic details and glowing blue accents. He stands confidently in the foreground. Behind him, a large, highly detailed Transformer-like robot sits in a defensive pose, with a reflective metallic coating. The scene is set in a futuristic city at dusk, with warm and cool lighting providing realistic shading of the characters. Make sure textures, proportions and lighting are photorealistic"><img src="https://iili.io/2LW454j.md.png" alt="prompt" class="slider-image" data-prompt="Foto-realistick, Gambarkan seorang hacker anonymous memegang (playing card joker), di lingkungan komputer teknologi mengalirkan cahaya "><img src="https://iili.io/2rUEPCg.png" alt="Gambar 4" class="slider-image" data-prompt="beautiful Korean mermaid, underwater view filled with coral, seaweed, sand, colorful glass, Koi fish (Cyprinus carpio), Discus fish (Symphysodon spp.), Guppy fish (Poecilia reticulata) Betta fish (Betta splendens), lively comet fish (Carassius auratus), and gentle sea turtles">
+          data-prompt="Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks, With delicate makeup on her face, beautiful face, Perfectly proportional face shape, (Advanced facial details：1.1) A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, (Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://iili.io/2rBfSKF.md.jpg" alt="spider-man" class="slider-image" data-prompt="Create a hyper-realistic image of Spider-Man wearing a futuristic, shiny white robot suit, designed with intricate metallic details and glowing blue accents. He stands confidently in the foreground. Behind him, a large, highly detailed Transformer-like robot sits in a defensive pose, with a reflective metallic coating. The scene is set in a futuristic city at dusk, with warm and cool lighting providing realistic shading of the characters. Make sure textures, proportions and lighting are photorealistic"><img src="https://iili.io/2LW454j.md.png" alt="prompt" class="slider-image" data-prompt="Foto-realistick, Gambarkan seorang hacker anonymous memegang (playing card joker), di lingkungan komputer teknologi mengalirkan cahaya ">
           <img src="https://iili.io/26PJBVI.png" alt="Gambar 5" class="slider-image" data-prompt="A beautiful dance on ice featuring two enchanting fairies, dressed in glossy dresses, realistic and fantastical atmosphere, ethereal lighting, intricate details, whimsical background, soft glows, elegant poses, magical winter scenery">
           <img src="https://iili.io/2rQ2LF9.png" alt="Gambar 5" class="slider-image" data-prompt="a beautiful Korean woman, with long wings like a butterfly with colorful patterns, with flowing neon sand light, very beautiful, sky garden background">
 
           <img src="https://iili.io/2rLblne.png" alt="Gambar 5" class="slider-image" data-prompt="photorealistick, korean women, ((( amazoness)))、Tribe、fashionable face paint、Tribal Body Paint、(Japanese Face)、((cute))、Smooth white skin、Exposed clothes、tribal costumes、dense forest background、20 year、women、cute、super detailed,((( realistic, photo realistic, photo-realistic :1.37))), high definition, high definition, Studio Lighting, Very Smooth Painting, sharp concentration, physically based rendering, highly detailed description, professional, bright colors, bokeh, cinematic lighting, Dramatic Shadows, real、">
           <img src="https://iili.io/24WBuJS.png" alt="Gambar 5" class="slider-image" data-prompt="foto-realistick selfie efect beauty,up photo, masterpiece, best quality, (((1girl))),  (writing similar to Japanese letters ("JUTEK") on clothes) solo,realistic, ((looking at viewer)), photorealistic, (extremely detailed face), looking at viewer, ((ultra-detailed eyes and pupils)), ultra detailed, serious expression, (standing against a city street at night), hoodie, short hair, hands in pocket,"><img src="https://iili.io/2660smG.png" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus ikat ekor kuda, mata tajam wajah seksi putih, mengenakan baju kaos dalam putih, jaker tulisan ( PAS BODY ), sedang duduk di kursi, memegang gelas kopi, di samping ada meja, latar ruang tamu."><img src="https://iili.io/266Wne9.png" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus ikat ekor kuda, mata tajam wajah seksi, mengenakan gaun khas adat dayak, memegang busur panah, di samping ada kuda putih, latar pinggir hutan tepi pergunungan air terjun."><img src="https://iili.io/266k7Np.png" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus tertiup angin, mata tajam wajah seksi, mengenakan pakaian seragam sekolah korea, membawa tas kecil, berjalan di taman sekolah. (Gambar-full-Body)."><img src="https://iili.io/266b3AB.png" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus tertiup angin, mata tajam wajah seksi, mengenakan baju kaos putih, jaket mini tulisa (Pasbody) duduk di (mobil convertible-Roadster-Mobil sport mewah, SUV), (Gambar-full-Body).">
           <img src="https://iili.io/26PqZCv.png" alt="Gambar 5" class="slider-image" data-prompt="FotoRealistik, full-body, (Large breast:1.4),(shirt:1.4),(Best quality,masterpiece,ultra high res,(photorealistic:1.4),1girl,(long hair:1.6)."><img src="https://iili.io/266R6tS.png" alt="Gambar 5" class="slider-image" data-prompt="Korean A stunning, elegant fantasy-inspired gown with intricate gold and pearl embellishments, featuring a glowing central design and ethereal details. The dress has a transparent and flowing fabric with ornate patterns, creating a majestic and celestial appearance. Designed to reflect beauty, grace, and sophistication, worn by a regal and radiant figure in a grand setting.">
-          <img src="https://iili.io/2Qc1E0J.png" alt="prompt" class="slider-image" data-prompt="A young man sits on a large blue Facebook logo, wearing a black jacket with a blue hoodie, a white t-shirt and modern sneakers. The background clearly displays the Facebook profile page with visible details such as profile picture, name, icon, and layout. The artistic style is realistic about the man and his background, ensuring the Facebook profile page reads clearly and in detail."><img src="https://iili.io/2Qcgg7p.png" alt="prompt" class="slider-image" data-prompt="A majestic eagle with detailed golden and bronze feathers, wings fully spread, and a fierce expression. Below the eagle is a luxurious ornamental banner with intricate swirls and floral designs in gold and teal tones. The background is a dark gradient, emphasizing the metallic and elegant details of the artwork. The style is highly detailed and realistic, with a royal and decorative theme."><img src="https://iili.io/2QcQs19.png" alt="prompt" class="slider-image" data-prompt="A handsome Korean man with sharp facial features, styled black hair, and a confident expression, wearing a sleek black outfit. His back is adorned with a vibrant, highly detailed 3D dragon tattoo in shades of black and red, with lifelike textures and glowing accents. The tattoo appears to almost emerge from his skin, creating a dynamic effect. The background is brightly lit with a modern, urban ambiance, featuring warm, natural lighting and clear details of an evening street scene, ensuring a vibrant and balanced composition with all elements clearly visible.">
-          <img src="https://iili.io/2QcnL8J.png" alt="prompt" class="slider-image" data-prompt="FotoRealistick, A regal and vibrant fantasy-style logo featuring two fierce white tigers with glowing orange eyes, positioned symmetrically around a circular centerpiece. The lions have detailed fur patterns and an intense expression, with golden decorative elements accentuating their elegance. Above the circle, add a golden crown with radiant wings and a central jewel. Surround the design with white floral decorations, vibrant red-and-white ribbons, and luminous pink lightning effects for a dynamic and powerful look. Use a polished gold-and-silver color scheme combined with bright accents to highlight the intricate details, set against a gray background to enhance the contrast.">
-          <img src="https://iili.io/2LSXt3b.png" alt="prompt" class="slider-image" data-prompt="Photo-realistic, Portrait of a Korean woman, lying down on the cover photo of the facebook home page.">
+          <img src="https://iili.io/2Qc1E0J.png" alt="prompt" class="slider-image" data-prompt="A young man sits on a large blue Facebook logo, wearing a black jacket with a blue hoodie, a white t-shirt and modern sneakers. The background clearly displays the Facebook profile page with visible details such as profile picture, name, icon, and layout. The artistic style is realistic about the man and his background, ensuring the Facebook profile page reads clearly and in detail."><img src="https://iili.io/2Qcgg7p.png" alt="prompt" class="slider-image" data-prompt="A majestic eagle with detailed golden and bronze feathers, wings fully spread, and a fierce expression. Below the eagle is a luxurious ornamental banner with intricate swirls and floral designs in gold and teal tones. The background is a dark gradient, emphasizing the metallic and elegant details of the artwork. The style is highly detailed and realistic, with a royal and decorative theme."><img src="https://iili.io/2QcQs19.md.jpg" alt="prompt" class="slider-image" data-prompt="A handsome Korean man with sharp facial features, styled black hair, and a confident expression, wearing a sleek black outfit. His back is adorned with a vibrant, highly detailed 3D dragon tattoo in shades of black and red, with lifelike textures and glowing accents. The tattoo appears to almost emerge from his skin, creating a dynamic effect. The background is brightly lit with a modern, urban ambiance, featuring warm, natural lighting and clear details of an evening street scene, ensuring a vibrant and balanced composition with all elements clearly visible.">
+          <img src="https://iili.io/2QcnL8J.md.jpg" alt="prompt" class="slider-image" data-prompt="FotoRealistick, A regal and vibrant fantasy-style logo featuring two fierce white tigers with glowing orange eyes, positioned symmetrically around a circular centerpiece. The lions have detailed fur patterns and an intense expression, with golden decorative elements accentuating their elegance. Above the circle, add a golden crown with radiant wings and a central jewel. Surround the design with white floral decorations, vibrant red-and-white ribbons, and luminous pink lightning effects for a dynamic and powerful look. Use a polished gold-and-silver color scheme combined with bright accents to highlight the intricate details, set against a gray background to enhance the contrast.">
+          <img src="https://iili.io/2LSXt3b.md.jpg" alt="prompt" class="slider-image" data-prompt="Photo-realistic, Portrait of a Korean woman, lying down on the cover photo of the facebook home page.">
           <img src="https://iili.io/2LjendN.png" alt="prompt" class="slider-image" data-prompt="FotoRealistic, Wanita korea cantik wajah menghadap penonton, dengan tubuh mengenakan kostum switer hody bertopi, lengkap Punggungnya dihiasi cangkang siput besar yang, dengan tekstur kerang melingkar. Antena kecil tumbuh di atas topi hody, menambah elemen seperti siput. Karakter ini berjongkok di atas lanskap hutan alien yang dipenuhi lumut hijau, jamur bercahaya, dan tumbuhan eksotis. Latar belakangnya menampilkan pemandangan dengan yang terang serta formasi batuan yang menjulang, menciptakan suasana realistick hd."><img src="https://iili.io/2LX5voJ.png" alt="prompt" class="slider-image" data-prompt="Seorang robot humanoid perempuan dengan wajah muda menyerupai wanita Korea, memiliki kulit halus, rambut hitam rapi, dan ekspresi tenang yang realistis. Tubuhnya sepenuhnya terlihat, dirancang dengan material perak futuristik, lengkap dengan aksen biru neon yang menyala. Tubuh robotik mencakup torso ramping, lengan mekanik berteknologi tinggi, dan kaki robotik yang dirancang untuk mobilitas canggih. Setiap detailnya, mulai dari panel bercahaya hingga engsel mekanik, mencerminkan perpaduan antara estetika manusia dan teknologi modern. Latar belakangnya berupa ruangan minimalis dengan elemen modern, memberikan suasana futuristik namun realistis.">
           <img src="https://iili.io/2Lx26hl.png" alt="prompt" class="slider-image" data-prompt="beautiful owl with long colorful feathers, perched on a cherry tree, with a snow mountain as a background, a cool view with the light of the wind flowing beautiful neon colors"><img src="https://iili.io/2Lx3En2.png" alt="prompt" class="slider-image" data-prompt="A hyper-realistic photo of a lush green forest with sunlight filtering through the trees, highly detailed textures, natural lighting, and sharp focus.
           Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks , With delicate makeup on her face, beautiful face, Perfectly proportional face shape, （Advanced facial details：1.1）A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, ( Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://iili.io/2rUEPCg.png" alt="prompt" class="slider-image" data-prompt="beautiful Korean mermaid, underwater view filled with coral, seaweed, sand, colorful glass, Koi fish (Cyprinus carpio), Discus fish (Symphysodon spp.), Guppy fish (Poecilia reticulata) Betta fish (Betta splendens), lively comet fish (Carassius auratus), and gentle sea turtles"><img src="https://iili.io/2QnHqnj.png" alt="prompt" class="slider-image" data-prompt="beautiful woman, long dark hair, detailed facial features, delicate skin, elegant expression, sunlight, warm glow, flowery meadow, lush greenery, picturesque landscape, serene atmosphere, (best quality,4k,8k,highres,masterpiece:1.2),ultra-detailed,(realistic,photorealistic,photo-realistic:1.37),intricate details,cinematic lighting,vibrant colors,breathtaking scenery,ethereal,romantic,classical painting">
