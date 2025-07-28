@@ -7,7 +7,7 @@
     
     <meta property="og:title" content="Tommy Website">
     <meta property="og:description" content="Create stunning AI-generated images with ease using Tommy APP.">
-    <meta property="og:image" content="https://iili.io/FwcK6l4.md.jpg">
+    <meta property="og:image" content="https://i.postimg.cc/Y9vKwTH0/Screenshot-20250728-192001.jpg">
     <meta property="og:url" content="https://tommydev27.github.io/UnicodeTM/">
     <meta property="og:type" content="website">
     <meta property="fb:app_id" content="1245016886587008">
@@ -1027,23 +1027,28 @@ body.dark-mode #iconunique-container {
       </div>
     </div>
 
-  <script>
+<script>
+  if (sessionStorage.getItem("preloaderShown")) {
+    document.getElementById("preloader").style.display = "none";
+    document.body.style.overflow = "auto";
+  } else {
     document.body.style.overflow = "hidden";
-  
     window.addEventListener("load", () => {
       const preloader = document.getElementById("preloader");
-  
+
       setTimeout(() => {
         preloader.classList.add("blur-out");
-  
+
         setTimeout(() => {
           preloader.style.display = "none";
           document.body.style.overflow = "auto";
+          sessionStorage.setItem("preloaderShown", "true");
         }, 300);
       }, 300);
     });
-    
-  </script>
+  }
+</script>
+
 <div class="container">
 <h1 style=" padding: 10px; font-size: 12px; color: #333;">TOMMY WEB<span class="gray" style="color: #15a8a3; font-size: 12px; margin-left: 5px;">
     <i class="fas fa-code"></i>
@@ -1120,11 +1125,10 @@ body.dark-mode #iconunique-container {
 
     .img-container {
       width: 130px;
-      padding: 2px;
-      padding-top: 15px;
-      height: 280px;
-      border-radius: 8px;
-      border: 4px solid #26a9a3;
+
+
+      border-radius: 14px;
+      border: 5px solid #26a9a3;
       overflow: hidden;
       background: white;
       display: flex;
@@ -1395,7 +1399,7 @@ body.dark-mode #iconunique-container {
         
           <h2 style="font-size: 20px; margin-top: -10px; padding: 0px;">ID CARD PW </h2><p style="font-size: 15px;">Isi bidang selengkapnya pastikan jelas dan terbaca </p>
                   
-          <img src="https://i.postimg.cc/DzRzbr5C/FaA0zBf.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <img src="https://i.postimg.cc/DzRzbr5C/FaA0zBf.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
           <div class="tab-container">
             <button class="nav-button" onclick="toggleTab(this, 'Microsoft')">
               <span>Continue creating → <i class="fas fa-id-card"></i></span>
@@ -1405,9 +1409,9 @@ body.dark-mode #iconunique-container {
           <!-- Symbol Tool -->
           <h2 style="font-size: 20px; margin-top: 20px; padding: 0px;">Teks & symbol Unik creativity</h2>
           <p style="font-size: 15px;">Eksplorasi rangkaian berbagai karakter </p>
-          <img src="https://i.postimg.cc/bws8HGZ4/FYXH3Qe.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+          <img src="https://i.postimg.cc/bws8HGZ4/FYXH3Qe.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; border: solid 2px #26a9a3; padding: 2px;  height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
           <div class="tab-container" style="text-align: center; margin-top: 15px;">
-            <button class="nav-button" onclick="toggleTab(this, 'SymbolTool')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff; border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
+            <button class="nav-button" onclick="toggleTab(this, 'SymbolTool')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff;  border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)' ">
               Continue creating → <i class="fas fa-keyboard"></i>
             </button>
             <iframe id="SymbolTool" class="imageContainer" data-service="SymbolTool"></iframe>
@@ -1416,7 +1420,7 @@ body.dark-mode #iconunique-container {
           <!-- Font Style -->
           <h2 style="font-size: 20px; margin-top: 20px; padding: 0px;">Font Style Unik</h2>
           <p style="font-size: 15px;">Rangkaian font unik copy paste (cek tampilan di fb lite) </p>
-          <img src="https://i.postimg.cc/GtLnB907/FAi-S9-PR-md.png" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+          <img src="https://i.postimg.cc/GtLnB907/FAi-S9-PR-md.png" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border: solid 2px #26a9a3;  border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" >
           <div class="tab-container" style="text-align: center; margin-top: 15px;">
             <button class="nav-button" onclick="toggleTab(this, 'FontUnikers')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff; border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
               Rangkaian font <i class="fas fa-folder-open"></i>
@@ -1427,7 +1431,7 @@ body.dark-mode #iconunique-container {
           <!-- Glitch Text -->
           <h2 style="font-size: 20px; margin-top: 20px; padding: 0px;">Glitch Text Generator</h2>
           <p style="font-size: 15px;">Eksplorasi karakter teks symbol dengan efek glitch   </p>
-          <img src="https://i.postimg.cc/K86XP0Sg/FA612mF.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+          <img src="https://i.postimg.cc/K86XP0Sg/FA612mF.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; border: solid 2px #26a9a3;  width: 100%; height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
           <div class="tab-container" style="text-align: center; margin-top: 15px;">
             <button class="nav-button" onclick="toggleTab(this, 'Glitch')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff; border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
               Glitch Teks <i class="fas fa-stream"></i>
@@ -1438,7 +1442,7 @@ body.dark-mode #iconunique-container {
             <!-- Glitch Text -->
           <h2 style="font-size: 20px; margin-top: 20px; padding: 0px;">Unicode characters</h2>
           <p style="font-size: 15px;">Karakter teks symbol   </p>
-          <img src="https://i.postimg.cc/8PxX9sy2/F0oto57-md.jpg" alt="Global Unicode symbols text" style="margin-top: 0px; width: 100%; height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+          <img src="https://i.postimg.cc/8PxX9sy2/F0oto57-md.jpg" alt="Global Unicode symbols text" style="margin-top: 0px; width: 100%; border: solid 2px #26a9a3;  height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
           <div class="tab-container" style="text-align: center; margin-top: 15px;">
             <button class="nav-button" onclick="toggleTab(this, 'Glitch2')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff; border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
               Unicode characters <i class="fab fa-buysellads"></i>
@@ -1449,7 +1453,7 @@ body.dark-mode #iconunique-container {
           <!-- Unicode -->
           <h2 style="font-size: 20px; margin-top: 20px; padding: 0px;">Unicode creativity</h2>
           <p style="font-size: 15px;">Eksplorasi karakter Unicode (simbol, emoji, huruf khas, cek tampilan di fb lite) </p>
-          <img src="https://i.postimg.cc/brWg7FRx/FAgZW5N.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+          <img src="https://i.postimg.cc/brWg7FRx/FAgZW5N.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border-radius: 8px; pointer-events: none; border: solid 2px #26a9a3;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
           <div class="tab-container" style="text-align: center; margin-top: 15px;">
             <button class="nav-button" onclick="toggleTab(this, 'Unicode')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff; border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
               Continue creating →<i class="fas fa-keyboard"></i>
