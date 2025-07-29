@@ -1235,7 +1235,6 @@ body.dark-mode #iconunique-container {
     #image-scroll-container {
       width: 100%;
       overflow-x: auto;
-      padding: 2px 0px;
       border-radius: 10px;
       display: flex;
       scroll-behavior: smooth;
@@ -1243,7 +1242,7 @@ body.dark-mode #iconunique-container {
 
     #image-wrapper {
       display: flex;
-      gap: 11px;
+      gap: 15px;
       -webkit-tap-highlight-color: transparent;
       -webkit-touch-callout: none;
       user-select: none;
@@ -1251,15 +1250,13 @@ body.dark-mode #iconunique-container {
     }
 
     .img-container {
-      width: 130px;
-
-
-      border-radius: 14px;
-      border: 5px solid #26a9a3;
+      width: 100px;
+      height: 215px;
+      border-radius: 10px;
+      border: 3px solid #26a9a3;
       overflow: hidden;
-      background: white;
       display: flex;
-
+      padding-top: 5px ;
       align-items: center;
       justify-content: center;
       cursor: pointer;
@@ -1319,8 +1316,8 @@ body.dark-mode #iconunique-container {
     const container = document.getElementById('image-scroll-container');
     const wrapper = document.getElementById('image-wrapper');
     let scrollAmount = 0;
-    const step = 140;
-    const delay = 1000;
+    const step = 115;
+    const delay = 1500;
     let autoScrollInterval;
     let userScrolling = false;
     let resumeTimeout;
@@ -1344,7 +1341,7 @@ body.dark-mode #iconunique-container {
       resumeTimeout = setTimeout(() => {
         scrollAmount = container.scrollLeft;
         startAutoScroll();
-      }, 1000);
+      }, 1500);
     }
 
     container.addEventListener('touchstart', () => stopAutoScrollTemporarily());
