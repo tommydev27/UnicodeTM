@@ -966,13 +966,13 @@ body.dark-mode #iconunique-container {
 
   .dot-loader .dots {
     display: flex;
-    gap: 8px;
+    gap: 30px;
   }
 
   .dot-loader span {
       width: 8px;
       height: 8px;
-      background: #1b74e4;
+      background: #26a9a3;
       border-radius: 50%;
       opacity: 0;
       animation: blink 1.5s infinite;
@@ -1050,9 +1050,136 @@ body.dark-mode #iconunique-container {
 </script>
 
 <div class="container">
-<h1 style=" padding: 10px; font-size: 12px; color: #333;">TOMMY WEB<span class="gray" style="color: #15a8a3; font-size: 12px; margin-left: 5px;">
-    <i class="fas fa-code"></i>
-       </span></h1>
+  <div style="display: flex; align-items: center;">
+    
+<!-- Tombol Menu -->
+<button
+  onclick="toggleMenu()"
+  style="
+    font-size: 18px;
+    color: #007571;
+    background: none;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    margin-left: 6px;
+    border-radius: 6px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    z-index: 1001;
+    position: relative;
+  "
+  onmousedown="this.style.color='#117d7a'"
+  onmouseup="this.style.color='#044441'"
+  onmouseleave="this.style.color='#15a8a3'"
+><i class="fa fa-drivers-license"></i>
+</button>
+
+    
+    <h1 style="padding: 10px; font-size: 14px; font-family: Orbitron; color: #15a8a3; margin: 0;">
+      TOMMY WEB
+      <span class="gray" style="color: #15a8a3; font-size: 14px; margin-left: 5px;">
+        <i class="fas fa-code"></i>
+      </span>
+    </h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android" style="width:15px;  margin-left: 5px;">
+  </div>
+
+
+<!-- Menu Geser -->
+<div id="sideMenu" style="
+  position: fixed;
+  top: 40px;
+  left: -250px;
+  width: 250px;
+  height: calc(100% - 50px);
+  background-color: #f2fafd;
+  transition: left 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+">
+
+<!-- Profil -->
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+  <img src="https://i.postimg.cc/dVfBCHXP/1753766402156.jpg" alt="Tommy" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px; border: solid 2px #087c76">
+  <div>
+    <div style="font-weight: bold; color: #15a8a3; font-size: 18px;">Tommy</div>
+    <div style="font-size: 12px; color: #777;">Design: tommy developer</div>
+  </div>
+</div>
+    <div style="align-items: center; margin-bottom: 10px; border: solid 1px #e8e8e8; padding: 10px; border-radius: 5px;">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUybGhucTloNjk1enZqN3E4dzUxM2lpdTNhaXE0emR1eHdlOG9hdnZsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vXm54ivAqA7mUUt2P0/giphy.gif" alt="Tommy" style="width: 190px; border-radius: 5px; object-fit: cover; ">
+
+    <br>
+<!-- Deskripsi -->
+<p style="font-size: 14px; color: #444; line-height: 1.4;">
+  desainer web yang membangun antarmuka sederhana, cepat, dan responsif. Memiliki ketertarikan pada teknologi UI modern dan pengembangan aplikasi ringan.
+</p>
+    </div>
+<hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+
+<!-- Scroll khusus daftar -->
+<div style="max-height: 400px; overflow-y: auto; padding-right: 0px;">
+
+  <div onclick="window.location.href='https://tommydev27.github.io/FakeID/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">ID Card Maker</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Buat kartu identitas digital dengan nama, foto, dan detail custom. Cocok untuk profil, akun roleplay, dan keperluan online lainnya.
+
+</div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/Unicode.SymbolTool/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Unicode Art Keyboard</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Pembuat rangkaian text dengan gabungan berbagai karakter pariasi dan unik </div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/font-unikrsfb/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Unicode & Emoji Library</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Kumpulan teks, symbol, emoji, dan berbagai karakter</div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/Unicode/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Text Unik Builder</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Rangakaian teks unik copy paste</div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/glitch-text/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Glitch Text Generator</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Buat teks dengan efek glitch rusak yang unik dan aneh. Cocok untuk nama profil, status, bio, </div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    const isOpen = menu.style.left === "0px";
+    menu.style.left = isOpen ? "-250px" : "0px";
+
+    // Tambah event listener sekali saat dibuka
+    if (!isOpen) {
+      document.addEventListener("click", closeOnOutsideClick);
+    }
+  }
+
+  function closeOnOutsideClick(e) {
+    const menu = document.getElementById("sideMenu");
+    const button = document.querySelector("button"); // Ganti jika tombol buka bukan satu-satunya
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.left = "-250px";
+      document.removeEventListener("click", closeOnOutsideClick);
+    }
+  }
+</script>
+
+
+
+
+
 
 <div class="profile-card">
 
@@ -1717,5 +1844,7 @@ body.dark-mode #iconunique-container {
             init(1);
           };
         </script>
+        
+        
     </body>
 </html>
