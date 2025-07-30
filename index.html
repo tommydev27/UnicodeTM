@@ -1521,12 +1521,23 @@ body.dark-mode #iconunique-container {
         <div class="unique-controls">
         </div>
         
-          <h2 style="font-size: 20px; margin-top: -10px; padding: 0px;">ID CARD PW </h2><p style="font-size: 15px;">Isi bidang selengkapnya pastikan jelas dan terbaca </p>
+          <h2 style="font-size: 20px; margin-top: -10px; padding: 0px;">Penghitung Karakter </h2><p style="font-size: 15px;">paste teks symbol dan karakter lainnya di sini maka akan terlihat hitungan Karakter kata, paragraf, jumlah & kalimat </p>
+                  
+          <img src="https://i.postimg.cc/wvzcMTcG/Screenshot-20250730-002731.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
+          <div class="tab-container">
+            <button class="nav-button" onclick="toggleTab(this, 'Microsoft2')">
+              <span>Next → <i class="fas fa-grip-horizontal"></i></span>
+            </button>
+            <iframe id="Microsoft2" class="imageContainer" data-service="Microsoft2"></iframe>
+          </div>
+
+        
+          <h2 style="font-size: 20px; margin-top: 10px; padding: 0px;">ID CARD PW </h2><p style="font-size: 15px;">Isi bidang selengkapnya pastikan jelas dan terbaca </p>
                   
           <img src="https://i.postimg.cc/DzRzbr5C/FaA0zBf.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
           <div class="tab-container">
             <button class="nav-button" onclick="toggleTab(this, 'Microsoft')">
-              <span>Continue creating → <i class="fas fa-id-card"></i></span>
+              <span>Buat ID → <i class="fas fa-id-card"></i></span>
             </button>
             <iframe id="Microsoft" class="imageContainer" data-service="Microsoft"></iframe>
           </div>
@@ -1536,7 +1547,7 @@ body.dark-mode #iconunique-container {
           <img src="https://i.postimg.cc/bws8HGZ4/FYXH3Qe.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; border: solid 2px #26a9a3; padding: 2px;  height: auto; border-radius: 8px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
           <div class="tab-container" style="text-align: center; margin-top: 15px;">
             <button class="nav-button" onclick="toggleTab(this, 'SymbolTool')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; background-color: #26a9a3; color: #fff;  border: none; gap: 10px; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)' ">
-              Continue creating → <i class="fas fa-keyboard"></i>
+              Mulai membuat → <i class="fas fa-keyboard"></i>
             </button>
             <iframe id="SymbolTool" class="imageContainer" data-service="SymbolTool"></iframe>
           </div>
@@ -1730,6 +1741,7 @@ body.dark-mode #iconunique-container {
         
           function getUrlForTab(name) {
             const urls = {
+              'Microsoft2': 'https://tommydev27.github.io/Penghutung-karakter/',
               'Microsoft': 'https://tommydev27.github.io/FakeID/',
               'Unicode': 'https://tommydev27.github.io/unicodeTM277/',
               'Glitch': 'https://tommydev27.github.io/glitch-text/',
