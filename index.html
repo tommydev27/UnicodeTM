@@ -1288,19 +1288,21 @@ body.dark-mode #iconunique-container {
 <body>
   <div id="image-scroll-container">
     <div id="image-wrapper">
-      <div class="img-container"><a href="https://tommydev27.github.io/FakeID/"><img src="https://i.postimg.cc/kg54Bz17/Screenshot-20250728-170231.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Unicode.SymbolTool/"><img src="https://i.postimg.cc/9QH6k79K/Screenshot-20250728-171234.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/font-unikrsfb/"><img src="https://i.postimg.cc/K8q8hf54/20250728-172230.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Unicode/"><img src="https://i.postimg.cc/xCdGTtw7/Screenshot-20250728-172610.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/FakeID/"><img src="https://i.postimg.cc/v89fhYB7/Screenshot-20250802-113229.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/Unicode.SymbolTool/"><img src="https://i.postimg.cc/Fz1Yfkpc/Screenshot-20250802-143710.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/font-unikrsfb/"><img src="https://i.postimg.cc/6q2QFR1Y/20250802-230842.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/Unicode/"><img src="https://i.postimg.cc/Px0R2NVn/20250803-011844.jpg" alt=""></a></div>
+
+      <div class="img-container"><a href="https://tommydev27.github.io/tommy.website3/"><img src="https://i.postimg.cc/7ZB6T8m7/Screenshot-20250802-174526.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/Penghutung-karakter/"><img src="https://i.postimg.cc/6Q4jTnhJ/Screenshot-20250803-014145.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/Pengganda-teks/"><img src="https://i.postimg.cc/TYkC9C7v/Screenshot-20250803-014458.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/unicodeTM277/"><img src="https://i.postimg.cc/cCN4NsLq/Screenshot-20250802-142934.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/tm-textGz/"><img src="https://i.postimg.cc/W1jVpWVZ/Screenshot-20250802-181515.jpg" alt=""></a></div>
+      
+      
       <div class="img-container"><a href="https://tommydev27.github.io/UnicodeTM27/"><img src="https://i.postimg.cc/yx4GGDpv/Screenshot-20250728-173001.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/tommy.website3/"><img src="https://i.postimg.cc/FRpY1StB/Screenshot-20250728-174343.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/tommy-website.oi/"><img src="https://i.postimg.cc/Pqh3jGdQ/Screenshot-20250728-173247.jpg" alt=""></a></div>
-
-      <div class="img-container"><a href="https://tommydev27.github.io/unicodeTM277/"><img src="https://i.postimg.cc/L8XxNk6m/Screenshot-20250728-173109.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/tm-textGz/"><img src="https://i.postimg.cc/XvCVTC7C/Screenshot-20250728-173858.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Galeri/"><img src="https://i.postimg.cc/Y992SstJ/Screenshot-20250728-173217.jpg" alt=""></a></div>
-
       <div class="img-container"><a href="https://tommydev27.github.io/glitch-text/"><img src="https://i.postimg.cc/6685JgjZ/Screenshot-20250728-172806.jpg" alt=""></a></div>
+      <div class="img-container"><a href="https://tommydev27.github.io/tommy-website.oi/"><img src="https://i.postimg.cc/Pqh3jGdQ/Screenshot-20250728-173247.jpg" alt=""></a></div>
     </div>
   </div>
 
@@ -1310,7 +1312,7 @@ body.dark-mode #iconunique-container {
     const wrapper = document.getElementById('image-wrapper');
     let scrollAmount = 0;
     const step = 115;
-    const delay = 1500;
+    const delay = 5000;
     let autoScrollInterval;
     let userScrolling = false;
     let resumeTimeout;
@@ -1334,7 +1336,7 @@ body.dark-mode #iconunique-container {
       resumeTimeout = setTimeout(() => {
         scrollAmount = container.scrollLeft;
         startAutoScroll();
-      }, 1500);
+      }, 5000);
     }
 
     container.addEventListener('touchstart', () => stopAutoScrollTemporarily());
@@ -1343,7 +1345,7 @@ body.dark-mode #iconunique-container {
     document.querySelectorAll('.img-container').forEach(container => {
       container.addEventListener('click', () => {
         container.classList.add('clicked-blink');
-        setTimeout(() => container.classList.remove('clicked-blink'), 400);
+        setTimeout(() => container.classList.remove('clicked-blink'), 5000);
       });
     });
 
@@ -1516,12 +1518,23 @@ body.dark-mode #iconunique-container {
         
           <h2 style="font-size: 20px; margin-top: -10px; padding: 0px;">Penghitung Karakter </h2><p style="font-size: 15px;">paste teks symbol dan karakter lainnya di sini maka akan terlihat hitungan Karakter kata, paragraf, jumlah & kalimat </p>
                   
-          <img src="https://i.postimg.cc/wvzcMTcG/Screenshot-20250730-002731.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
+          <img src="https://i.postimg.cc/N0Rqj2DC/20250802-081457.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
           <div class="tab-container">
             <button class="nav-button" onclick="toggleTab(this, 'Microsoft2')">
               <span>Next → <i class="fas fa-grip-horizontal"></i></span>
             </button>
             <iframe id="Microsoft2" class="imageContainer" data-service="Microsoft2"></iframe>
+          </div>
+
+
+          <h2 style="font-size: 20px; margin-top: 10px; padding: 0px;">Pengganda Teks </h2><p style="font-size: 15px;">Tulis teks di bagian teks area atur jumlah dan klik gandakan </p>
+                  
+          <img src="https://i.postimg.cc/mryXnY84/20250802-080621.jpg" style="width: 100%; height: auto;  border-radius: 8px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
+          <div class="tab-container">
+            <button class="nav-button" onclick="toggleTab(this, 'Microsoft3')">
+              <span>Next → <i class="fas fa-grip-horizontal"></i></span>
+            </button>
+            <iframe id="Microsoft3" class="imageContainer" data-service="Microsoft3"></iframe>
           </div>
 
         
@@ -1734,6 +1747,7 @@ body.dark-mode #iconunique-container {
         
           function getUrlForTab(name) {
             const urls = {
+              'Microsoft3': 'https://tommydev27.github.io/Pengganda-teks/',
               'Microsoft2': 'https://tommydev27.github.io/Penghutung-karakter/',
               'Microsoft': 'https://tommydev27.github.io/FakeID/',
               'Unicode': 'https://tommydev27.github.io/unicodeTM277/',
