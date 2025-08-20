@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,1891 +8,1828 @@
     
     <meta property="og:title" content="Tommy Website">
     <meta property="og:description" content="Create stunning AI-generated images with ease using Tommy APP.">
-    <meta property="og:image" content="https://i.postimg.cc/wM14G6Fw/large-7-2.png">
-    <meta property="og:url" content="https://tommydev27.github.io/UnicodeTM/">
+    <meta property="og:image" content="https://iili.io/3IFLCH7.png">
+    <meta property="og:url" content="https://tommydev27.github.io/tommy.fb-web/">
     <meta property="og:type" content="website">
     <meta property="fb:app_id" content="1245016886587008">
     
-    <title>Tommy Website</title>
-
+  <title>Tommy Website</title>
     <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y2/l/0,cross/nC2XYYUISfm.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y8/l/0,cross/Z39OoPuXzgz.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-FK1EY26W82');
-    </script>
-</head>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #101314;
-    color: #e0e2e2;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-}
-
-.profile-image-container {
-    margin-bottom: 0;
-}
-
-.profile-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-top: 0;
-  border-radius: 0;
-}
-
-
-.circle-image {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    position: absolute;
-    top: 44px;
-    left: 70px;
-    padding: 3px;
-    outline: 4px solid #fff;
-    transform: translateX(-50%);
-    background-color: white;
-}
-
-body.dark-mode .circle-image {
-    border: 3px solid #41ff3c;
-    background-color: #333;
-    outline: 4px solid #262626;
-}
-
-.unique-controls {
-    position: relative;
-    color:  #41ff3c;
-    padding: 15px;
-}
-
-.song-info h2 {
-    font-size: 20px;
-    color: #eff;
-    margin: 0 0 0 15px;
-    margin-top: 18px;
-    padding: 0;
-    line-height: 0.85;
-}
-
-body.dark-mode .song-info h2 {
-    color: #41ff3c;
-}
-
-.fas.fa-check-circle {
-    font-size: 20px;
-    color: #1b74e4;
-    margin-left: 5px;
-    border-radius: 50%;
-}
-
-
-body.dark-mode {
-    background-image: url('https://iili.io/3BRBjF2.png');
-    color: #41ff3c;
-    background-attachment: fixed;
-}
-
-.profile-description {
-    font-size: 10px;
-    color: #41ff3c;
-    margin-top: 0px;
-}
-
-footer {
-    margin-top: 8px;
-    font-size: 15px;
-    color: #eee;
-    transition: color 0.3s ease;
-}
-
-.settings-card {
-    display: none;
-}
-
-h2 {
-    font-size: 15px;
-    color: #eee;
-    gap: 0;
-    margin-top: 10px;
-}
-
-#profil-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-}
-
-#profil-header button {
-    font-weight: bold;
-    border: none;
-    width: 100%;
-    padding: 8px;
-    border-radius: 7px;
-    cursor: pointer;
-}
-
-#profil-header button:hover {
-    background-color: #5ec7fb;
-}
-
-#scroll-buttons {
-    display: flex;
-    gap: 0;
-    padding: 10px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-#scroll-buttons button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-}
-
-body.dark-mode #scroll-buttons i {
-    color: #ff0303;
-}
-
-#scroll-buttons i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background-color: #444;
-    border-radius: 50px;
-    font-size: 16px;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-body.dark-mode #scroll-buttons span {
-    color: #0fff03;
-}
-
-body.dark-mode h2 {
-    color: #0fff03;
-}
-
-#profil-tabs {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #ddd;
-}
-
-#profil-tabs div {
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #333;
-}
-
-#profil-tabs div.active {
-    border-bottom: 3px solid #1b74e4;
-    color: #1b74e4;
-}
-
-#profil-content {
-    padding: 15px;
-}
-
-#profil-content > div {
-    display: none;
-}
-
-#profil-content > div.active {
-    display: block;
-}
-
-#content-foto img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
-
-p {
-    padding: 0;
-    margin: 5px 0;
-}
-
-.profile-container {
-    padding: 15px;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.profile-info h4 {
-    margin: 0;
-    font-size: 20px;
-    margin-top: -8px;
-    font-weight: bold;
-}
-
-.profile-info small {
-    color: #606770;
-}
-
-.content img {
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-.private-icon {
-    margin-left: 5px;
-    font-size: 12px;
-    color: #606770;
-}
-
-#Ai {
-    padding: 0;
-    margin: auto;
-    border-radius: 10px;
-}
-
-#Ai h1 {
-    font-size: 19px;
-    margin-top: 15px;
-    text-align: left;
-}
-
-#Ai p {
-    font-size: 12px;
-    margin-top: 10px;
-    text-align: left;
-}
-
-.promptBox {
-    width: 100%;
-    height: 95px;
-    margin-top: 10px;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #789da4;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.loader {
-    display: none;
-    border: 5px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 5px solid #03b90a;
-    width: 25px;
-    height: 25px;
-    margin: 20px auto;
-    animation: spin 1s linear infinite;
-}
-
-#image-container img {
-    width: 100%;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.date-time {
-    font-size: 12px;
-    margin-top: 5px;
-    background:linear-gradient(180deg,#b72900,#571400);
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    padding: 8px;
-    transform: skew(-0deg);
-    font-family: 'Orbitron', sans-serif;
-}
-
-body.dark-mode .date-time {
-    color: #41ff3c;
-}
-
-.stats {
-    font-size: 15.5px;
-    padding: 12px 0px;
-
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.gray {
-    color: #eee;
-    font-weight: normal;
-}
-
-      
-button {
-  border: none;
-  padding: 8px 12px;
-  color: white;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-.image-slider-container {
-  overflow-x: auto;
-  white-space: nowrap;
-  background-color: #444;
-  padding: 5px;
-  border-radius: 8px;
-}
-
-.image-slider {
-  display: flex;
-  gap: 10px;
-  margin-top: 0px;
-}
-
-.slider-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.slider-image:hover {
-  transform: scale(1.03);
-  transition: transform 0.1s ease;
-}
-
-body.dark-mode .profile-picture {
-  background-color: #121212;
-  border-color: #41ff3c;
-  box-shadow: 1px 1px 1px #111, -1px -1px 1px #444;
-}
-
-.darkmode {
-  width: 26px;
-  height: 12px;
-  background-color: gray;
-  border-radius: 30px;
-  position: relative;
-  margin-top: 4px;
-  cursor: pointer;
-  border: 1px solid #eee;
-}
-
-.darkmode .toggle-circle {
-  width: 8px;
-  height: 8px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  transition: left 0.3s ease, background-color 0.3s ease;
-}
-
-.darkmode {
-  position: absolute;
-  right: 10px;
-  top: 8px;
-}
-
-.darkmode.active {
-  background-color: #16181b;
-  border: 1px solid red;
-}
-
-.darkmode.active .toggle-circle {
-  background-color: #41ff3c;
-}
-
-@keyframes blink-colors {
-  0% { background-color: red; }
-  33% { background-color: blue; }
-  66% { background-color: white; }
-  100% { background-color: red; }
-}
-
-.darkmode.active .toggle-circle {
-  left: 15px;
-  background-color: #41ff3c;
-  animation: blink-colors 1.3s infinite;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #41ff3c;
-}
-
-body.dark-mode .header h1 {
-  color: #fff;
-}
-
-.darkmode-label {
-  font-size: 8px;
-  color: #67ff1b;
-  text-align: center;
-  margin-top: 12px;
-}
-
-body.dark-mode hr {
-  border: 0.10px solid #fff;
-}
-
-
-
-.icon-container:active::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 255, 0.6);
-  border-radius: 50%;
-  animation: ripple 0.3s ease-out;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0);
-    opacity: 0.6;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-.icon-container i {
-  font-size: 16px;
-}
-
-.button-circle {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: #1b74e4;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.button-circle i {
-  font-size: 18px;
-}
-
-.icon-container.active .button-circle {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.button-circle:nth-child(2) {
-  transform: translate(-30px, -50px);
-}
-
-.button-circle:nth-child(3) {
-  transform: translate(-55px, -20px);
-}
-
-.button-circle:nth-child(4) {
-  transform: translate(-55px, 20px);
-}
-
-.button-circle:nth-child(5) {
-  transform: translate(10px, -55px);
-}
-
-.icon-container:not(.active) .button-circle {
-  transform: translate(0, 0);
-}
-
-.nav-buttons {
-  flex-direction: row;
-  justify-content: center;
-  padding: 0px;
-  margin-top: 0px;
-}
-
-.nav-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2px 0px;
-  margin-top: 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  font-weight: bold;
-background:linear-gradient(180deg,#b72900,#571400);
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.nav-button i {
-  font-size: 14px;
-  color: #d8d6dd;
-  transition: background-color 0.3s ease;
-}
-
-.nav-button span {
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 0px;
-  color: #fff;
-  padding: 6px 5px;
-  margin-top: 0px;
-  cursor: pointer;
-  width: auto;
-  background: none;
-  border-radius: 10px;
-  border: none;
-}
-
-body.dark-mode .nav-button span {
-  color: #0a0c0a;
-}
-
-.nav-button {
-  -webkit-tap-highlight-color: transparent;
-}
-
-body.dark-mode .nav-button i {
-  color: #e00000;
-}
-
-.nav-button:hover i {
-  background-color: transparent;
-  border-radius: 50px;
-  color: #c10303;
-}
-
-.nav-button:active i {
-  background-color: transparent !important;
-  animation: blink 1.1s;
-}
-
-.nav-button i {
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.nav-button {
-  -webkit-tap-highlight-color: transparent;
-}
-
-iframe {
-  width: 103vw;
-  max-width: none;
-  height: 100vh;
-  margin-left: 0;
-  border: none;
-  margin-top: 0;
-  padding: 5px;
-  border-radius: 5px;
-  display: none;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.iframe-container {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-  overflow: hidden;
-}
-
-.iframe-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.gallery {
-  list-style-type: none;
-  padding: 0;
-}
-
-.gallery-item {
-  margin-bottom: 10px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.gallery-item h3 {
-  margin: 4px 0;
-  font-size: 15px;
-}
-
-.gallery-item p {
-  font-size: 15px;
-  color: #eee;
-}
-
-.prompt-list {
-  font-size: 0.9em;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-.prompt-list ul {
-  margin-top: 10px;
-}
-
-footer {
-
-  color: #eee;
-  padding: 0px 0;
-  margin-top: 0px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.footer-container {
-  margin: 0 auto;
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.quick-links a {
-  color: #eee;
-  text-decoration: none;
-  margin: 0 5px;
-  font-size: 12px;
-}
-
-.quick-links a:hover {
-  color: #ff5722;
-}
-
-.social-media {
-  display: flex;
-  gap: 23px;
-}
-
-.social-icon {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 8px 12px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.social-icon:hover {
-  background-color: #ff5722;
-  border-color: #ff5722;
-}
-
-.facebook {
-  background-color: #3b5998;
-  border: none;
-}
-
-.twitter {
-  background-color: #1da1f2;
-  border: none;
-}
-
-.instagram {
-  background-color: #e4405f;
-  border: none;
-}
-
-.copyright {
-  font-size: 12px;
-  opacity: 0.8;
-}
-
-body.dark-mode h2 {
-  color: #41ff3c;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #41ff3c;
-}
-
-body.dark-mode #song-title {
-  color: #41ff3c !important;
-}
-
-body.dark-mode .song-info span:nth-child(2) {
-  color: #abb1bd !important;
-}
-
-body.dark-mode .song-info span:nth-child(3) {
-  color: #fd2d2d !important;
-}
-
-body.dark-mode .song-info span:nth-child(4) {
-  color: #1b74e4 !important;
-}
-
-body.dark-mode .song-info span:nth-child(5) i {
-  color: #f2e901 !important;
-}
-
-body.dark-mode #song-title+p {
-  color: #595963 !important;
-}
-
-body.dark-mode .fab.fa-optin-monster {
-  color: #f523e5 !important;
-}
-
-body.dark-mode .fab.fa-skyatlas {
-  color: #ecf814ed !important;
-}
-
-body.dark-mode .fab.fa-wolf-pack-battalion {
-  color: #f523e5 !important;
-}
-
-body.dark-mode .fas.fa-chess {
-  color: #2a90e8 !important;
-}
-
-body.dark-mode .fas.fa-chess-knight {
-  color: #abb1bd !important;
-}
-
-body.dark-mode #song-title+a {
-  color: #dfff19 !important;
-}
-
-body.dark-mode .fas.fa-dice {
-  color: #ba0404 !important;
-}
-
-.unique-image-container {
-  margin-top: 0px;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-img.unique-generated-image {
-  width: 100%;
-  border-radius: 5px;
-  margin: 10px 0;
-  height: 100%;
-  object-fit: cover;
-}
-
-input[type="text"], select, button {
-  padding: 3px;
-  font-size: 13px;
-}
-
-.dark-mode p {
-  color: #34ff00;
-}
-
-.list-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.list-item {
-  display: flex;
-  align-items: flex-start;
-}
-
-#b2 {
-  font-size: 13px;
-  margin-right: 5px;
-  width: 10px;
-  text-align: right;
-}
-
-#p2 {
-  font-size: 13px;
-  margin: 0;
-  flex: 1;
-}
-
-.native-text {
-  font-family: 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
-}
-
-
-    body.dark-mode .follower {
-       border: 2px solid #41ff3c;
-      
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://static.xx.fbcdn.net/rsrc.php/v5/yv/l/0,cross/VraZqV-tU8r.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
   
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes blink {
-    0%, 100% {
-        background-color: blue;
-        color: white;
-    }
-    33% {
-        background-color: red;
-        color: white;
-    }
-    66% {
-        background-color: white;
-        color: black;
-    }
-}
-
-body.dark-mode #iconunique-container {
-    border: 2px solid #41ff3c;
-    outline: 4px solid #262626;
-    animation: spin 2s linear infinite, blink 1.5s linear infinite;
-    transform-origin: center;
-    transform: scale(1.2);
-}
-
-
-  #preloader {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .dot-loader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .dot-loader .icon {
-    font-size: 40px;
-    color: #1b74e4;
-  }
-
-  .dot-loader .text {
-    font-size: 10px;
-    color: #1b74e4;
-    font-weight: bold;
-  }
-
-  .dot-loader .dots {
-    display: flex;
-    gap: 30px;
-  }
-
-  .dot-loader span {
-      width: 8px;
-      height: 8px;
-      background: #26a9a3;
-      border-radius: 50%;
-      opacity: 0;
-      animation: blink 1.5s infinite;
-    }
-    
-    .dot-loader span:nth-child(1) {
-      animation-delay: 0.1s;
-    }
-    
-    .dot-loader span:nth-child(2) {
-      animation-delay: 0.3s;
-    }
-    
-    .dot-loader span:nth-child(3) {
-      animation-delay: 0.6s;
-    }
-    
-    .dot-loader span:nth-child(4) {
-      animation-delay: 0.9s;
-    }
-    
-    .dot-loader span:nth-child(5) {
-      animation-delay: 1.2s;
-    }
-    
-    @keyframes blink {
-      0% { opacity: 0; }
-      20% { opacity: 1; }
-      40% { opacity: 0; }
-      100% { opacity: 0; }
-    }
-
-
-
-
-    header .badge{font-size:11px;color:#0a0; background:#0a0a0a;border:0.5px solid #777; margin-left: -5px; padding:2px 6px;border-radius:999px}
-  </style>
-       </head>
-  <body>
-  
-<div id="preloader">
-  <div class="dot-loader">
-<div style="width: 180px; height: 50px;  border-radius: 5%; overflow: hidden;">
-  <a href="https://postimages.org/" target="_blank">
-    <img src="https://i.postimg.cc/d3JfsZp2/large-7-2-3.png" alt="large-2" style="width: 100%; height: 100%; object-fit: cover;">
-  </a>
-    </div>
-        
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-
-<script>
-  if (sessionStorage.getItem("preloaderShown")) {
-    document.getElementById("preloader").style.display = "none";
-    document.body.style.overflow = "auto";
-  } else {
-    document.body.style.overflow = "hidden";
-    window.addEventListener("load", () => {
-      const preloader = document.getElementById("preloader");
-
-      setTimeout(() => {
-        preloader.classList.add("blur-out");
-
-        setTimeout(() => {
-          preloader.style.display = "none";
-          document.body.style.overflow = "auto";
-          sessionStorage.setItem("preloaderShown", "true");
-        }, 300);
-      }, 300);
-    });
-  }
-</script>
-
-<div class="container">
-
-  <div style="display: flex; align-items: center;">
-
-    <!-- Tombol Menu -->
-    <button
-      onclick="toggleMenu()"
-      style="
-        font-size: 30px;
-        color: #06b7b1;
-        background: none;
-        font-weight: bold;
-        border: none;
-        padding: 8px;
-        margin-left: 6px;
-        -webkit-tap-highlight-color: transparent;
-        outline: none;
-        z-index: 1001;
-        position: relative;
-      "
-      onmousedown="this.style.color='#117d7a'"
-      onmouseup="this.style.color='#044441'"
-      onmouseleave="this.style.color='#15a8a3'"
-    ><i class="fa fa-drivers-license"></i>
-
-    </button>
-    
-    <h1 style="padding: 0px 14px; font-size: 12px; font-family: Orbitron; color: #15a8a3; margin-top: -5px;">
-      TOMMY WEB
-    <header>
-    <span class="badge">font • icon • unicode character</span>
-  </header>
-      </span>
-    </h1>
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android" style="width:25px;  margin-left: 2px; margin-top: 2px;">
-    
-    </div>
-
-    <!-- Menu Geser -->
-    <div id="sideMenu" style="
-      position: fixed;
-      top: 40px;
-      left: -250px;
-      width: 250px;
-      height: calc(100% - 50px);
-      background-color: #f2fafd;
-      transition: left 0.3s ease;
-      padding: 20px;
-      z-index: 1000;
-      overflow-y: auto;
-    ">
-    
-    <!-- Profil -->
-    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-      <img src="https://i.postimg.cc/dVfBCHXP/1753766402156.jpg" alt="Tommy" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px; border: solid 2px #087c76">
-      <div>
-        <div style="font-weight: bold; color: #15a8a3; font-size: 18px;">Tommy</div>
-        <div style="font-size: 12px; color: #777;">Design: tommy developer</div>
-      </div>
-    </div>
-    <div style="align-items: center; margin-bottom: 10px; border: solid 1px #e8e8e8; padding: 10px; border-radius: 5px;">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUybGhucTloNjk1enZqN3E4dzUxM2lpdTNhaXE0emR1eHdlOG9hdnZsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vXm54ivAqA7mUUt2P0/giphy.gif" alt="Tommy" style="width: 190px; border-radius: 5px; object-fit: cover; ">
-
-    <br>
-<!-- Deskripsi -->
-<p style="font-size: 14px; color: #444; line-height: 1.4;">
-  desainer web yang membangun antarmuka sederhana, cepat, dan responsif. Memiliki ketertarikan pada teknologi UI modern dan pengembangan aplikasi ringan.
-</p>
-    </div>
-<hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
-
-<!-- Scroll khusus daftar -->
-<div style="max-height: 400px; overflow-y: auto; padding-right: 0px;">
-
-  <div onclick="window.location.href='https://tommydev27.github.io/FakeID/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
-    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">ID Card Maker</div>
-    <div style="background: #4c046a; color: #fff; padding: 10px;">Buat kartu identitas digital dengan nama, foto, dan detail custom. Cocok untuk profil, akun roleplay, dan keperluan online lainnya.
-
-</div>
-  </div>
-
-  <div onclick="window.location.href='https://tommydev27.github.io/Unicode.SymbolTool/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
-    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Unicode Art Keyboard</div>
-    <div style="background: #4c046a; color: #fff; padding: 10px;">Pembuat rangkaian text dengan gabungan berbagai karakter pariasi dan unik </div>
-  </div>
-
-  <div onclick="window.location.href='https://tommydev27.github.io/font-unikrsfb/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
-    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Unicode & Emoji Library</div>
-    <div style="background: #4c046a; color: #fff; padding: 10px;">Kumpulan teks, symbol, emoji, dan berbagai karakter</div>
-  </div>
-
-  <div onclick="window.location.href='https://tommydev27.github.io/Unicode/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
-    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Text Unik Builder</div>
-    <div style="background: #4c046a; color: #fff; padding: 10px;">Rangakaian teks unik copy paste</div>
-  </div>
-
-  <div onclick="window.location.href='https://tommydev27.github.io/glitch-text/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
-    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Glitch Text Generator</div>
-    <div style="background: #4c046a; color: #fff; padding: 10px;">Buat teks dengan efek glitch rusak yang unik dan aneh. Cocok untuk nama profil, status, bio, </div>
-
-    </div>
-</div>
-</div>
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("sideMenu");
-    const isOpen = menu.style.left === "0px";
-    menu.style.left = isOpen ? "-250px" : "0px";
-
-    // Tambah event listener sekali saat dibuka
-    if (!isOpen) {
-      document.addEventListener("click", closeOnOutsideClick);
-    }
-  }
-
-  function closeOnOutsideClick(e) {
-    const menu = document.getElementById("sideMenu");
-    const button = document.querySelector("button"); // Ganti jika tombol buka bukan satu-satunya
-    if (!menu.contains(e.target) && !button.contains(e.target)) {
-      menu.style.left = "-250px";
-      document.removeEventListener("click", closeOnOutsideClick);
-    }
-  }
-</script>
-
-<div class="profile-card">
-<hr style="border: 0.1px solid #444;  width: 100%;">
-
-<img src="https://i.postimg.cc/W1ckhmXc/Screenshot-20250728-192001-1.png" alt="tommy" class="profile-image">
-
-</div>
-<div style="display: flex; align-items: center; gap: 15px; margin-left: 15px; margin-top: 10px;">
-  <button id="btn-pesan" style="color: #fff; font-size: 15px;       background:linear-gradient(180deg,#b72900,#571400);border-color:#7c2d12;border-color:#7c2d12; -webkit-tap-highlight-color: transparent; cursor: pointer; font-weight: bold; border-radius: 15px; padding: 5px 95px;" onclick="window.location.href='https://m.me/tommy27110';">
-    <i class="fab fa-facebook-messenger"></i> Messenger
-  </button>
-
-  <div class="icon-container" id="iconuniquecontainer" style="display: flex; gap: 5px; position: relative; width: 33px; height: 33px; background-color: #ecf0f1; color: #333; padding: 15px; justify-content: center; align-items: center; border-radius: 50%; cursor: pointer; -webkit-tap-highlight-color: transparent;">
-    <i class="fas fa-chart-pie" style="background-color: transparent;"></i>
-
-<div class="button-circle" onclick="window.location.href='https://web.whatsapp.com/mobile/';" style="background-color: #25D366;"><i class="fab fa-whatsapp"></i></div><div class="button-circle" onclick="window.location.href='https://www.facebook.com/tommy27110';" style="background-color: #1877F2;"><i class="fab fa-facebook"></i></div><div class="button-circle" onclick="window.location.href='https://www.instagram.com/mobile/';" style="background-color: #E4405F;"><i class="fab fa-instagram"></i></div><div class="button-circle" onclick="window.location.href='contact.html';" style="background-color: #FF0000;"><i class="fas fa-heart"></i></div></div></div>
-
-  <div class="song-info"> <h2 id="song-title">
-    
-    Unicode Characters Studio Online
-
-<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-<span class="gray" style="font-size: 20px; margin-left: 0px; vertical-align: -0.25em;">
-  <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="Penguin-2--Streamline-Emoji" width="1em" height="1em">
-   
-       <div class="stats">
-            <span id="visitor-count" class="bold">Universal</span> 
-                <span class=""></span>
-            <span id="followers-count" class="bold" style="font-size: 15px; line-height: 1.3; ">
-               Characters • Symbols Creator <br>ID Card Pw • Image Tools
-            </span>
-                
-            </div>
-       <p class="profile-description">Design Tommy official| Website APP V0.1.0
-        </p>
-
-      </div>
-          <div class="darkmode" id="darkModeToggle"><div class="toggle-circle"></div>
-              <p class="darkmode-label">mode</p>
-              </div>
-              
-     <div id="container"><div id="profil-header">
-                
-        </div>
-          <hr style="background-color: #444; height: 0.5px; border: none; margin: 0; width: 100%; display: flex; margin-top: 0px;"></hr>
-             
-          <div class="unique-controls">
-                
-            <h2 style="font-size: 15px; margin-top: -15px; padding: 10px 0px; ">Menu <i class="fas fa-exchange-alt" style="font-size: 15px;"></i> 
-             </h2>
-                
-
   <style>
-    #image-scroll-container {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100hv;
       width: 100%;
-      overflow-x: auto;
-      border-radius: 10px;
-      display: flex;
-      scroll-behavior: smooth;
+      font-family: normal;
+      overflow-x: hidden; /* cegah scroll horizontal */
+    }
+    
+    body {
+      background-color: #444;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .container {
+      width: 100%;
+      min-height: 100vh; 
+      box-sizing: border-box;
+      padding: 10px;
     }
 
-    #image-wrapper {
-      display: flex;
-      gap: 15px;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
+    #notes {
+      width: 100%;
+      height: 200px;
+      font-size: 15px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
       user-select: none;
-      outline: none;
+      -webkit-user-select: none;
+      background: #ffff;
+      overflow-y: auto; 
+      word-wrap: break-word;   
+      white-space: pre-wrap;   
     }
 
-    .img-container {
-      width: 100px;
-      height: 215px;
-      border-radius: 10px;
-      border: 2px solid #777;
-      overflow: hidden;
-      display: flex;
-      padding-top: 5px ;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+#notes span,
+#notes .native-text,
+#notes .native-char {
+  display: inline-block;
+  vertical-align: middle;   /* atau baseline sesuai kebutuhan */
+  line-height: 1em;         /* samakan tinggi baris */
+  font-size: 15px;          /* samakan ukuran */
+}
+
+
+    #fake-caret {
+      display: inline-block;
+      width: 1px;
+      height: 1em;
+      background: black;
+      animation: blink 1s steps(1) infinite;
+      vertical-align: bottom;
     }
 
-    .dark-mode .img-container {
-      background: transparent;
-      border: 2px solid #1097ff;
-      box-shadow: none;
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
     }
 
-    .img-container:hover,
-    .img-container:active,
-    .img-container.clicked-blink {
-      border: solid 2px #777;
-    }
-
-    .img-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .hidden-input {
+      position: absolute;
+      top: -9999px;
+      opacity: 0;
       pointer-events: none;
     }
 
-    .clicked-blink {
-      animation: pulse 0.3s ease;
+    .keyboard {
+      width: 100%;
+      background-color: #2b2b2b;
+      padding: 3px;
+      border-radius: 5px;
+      box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
     }
 
+    .toolbar, .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0px;
+    }
+
+    .toolbar {
+      display: flex;
+      background: #444;
+      justify-content: center;
+      border-radius: 5px;
+      flex-wrap: nowrap;;
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    
+    .toolbar button {
+      padding: 10px 0px;
+      width: 100%;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .toolbar, .row {
+      display: flex;
+      justify-content: center;
+      margin: 0px 0;
+    }
+
+    .toolbar button:hover i,
+    .scroll-buttons button:hover,
+    #number-buttons button:hover {
+      color: #a1b2ff;
+      background: none !important;
+      background-color: transparent !important;
+    }
+    
+    .toolbar button:active i,
+    .scroll-buttons button:active,
+    #number-buttons button:active {
+      background: none !important;
+      background-color: transparent !important;
+      color: #444;
+    }
+    
+    .toolbar button,
+    .scroll-buttons button,
+    #number-buttons button {
+      outline: none !important;
+      box-shadow: none !important;
+      background: none !important;
+      background-color: transparent !important;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    .keyboard button:hover,
+    .styled-keys button:hover {
+      color: white;
+    }
+    
+    .keyboard button:active {
+      background: #8898ff;
+      color: white;
+    }
+    
+    .fixed-button button:hover {
+      color: #5a70fc;
+    }
+    
+    .pulse {
+      animation: pulse 0.25s;
+    }
+    
     @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(0.90); }
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.1); }
       100% { transform: scale(1); }
     }
-  </style>
-</head>
-<body>
-  <div id="image-scroll-container">
-    <div id="image-wrapper">
-      <div class="img-container"><a href="https://tommydev27.github.io/FakeID/"><img src="https://i.postimg.cc/NjJLRWcT/Screenshot-20250817-125058.jpg" alt=""></a></div>
-       <div class="img-container"><a href="https://tommydev27.github.io/unicodeTM277/"><img src="https://i.postimg.cc/wMskdqTX/Screenshot-20250817-115837.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Unicode/"><img src="https://i.postimg.cc/MKb8kR3p/Screenshot-20250817-130726.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Penghapus-duplikat-teks/"><img src="https://i.postimg.cc/bv3gxVBt/Screenshot-20250817-120053.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Penghutung-karakter/"><img src="https://i.postimg.cc/R0FZgGRt/Screenshot-20250817-133729.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/Pengganda-teks/"><img src="https://i.postimg.cc/YS095fcK/Screenshot-20250817-200846.jpg" alt=""></a></div>
-      <div class="img-container"><a href="https://tommydev27.github.io/glitch-text/"><img src="https://i.postimg.cc/W31dPt4C/Screenshot-20250818-121552.jpg" alt=""></a></div>
-      
-      <div class="img-container"><a href="https://tommydev27.github.io/tommy.website3/"><img src="https://i.postimg.cc/DfYQgTSg/Screenshot-20250818-164446.jpg" alt=""></a></div>
-      
-      <div class="img-container"><a href="https://tommydev27.github.io/tm-textGz/"><img src="https://i.postimg.cc/t4qmmXr1/Screenshot-20250818-153910.jpg" alt=""></a></div>
 
-      <div class="img-container"><a href="https://tommydev27.github.io/font-unikrsfb/"><img src="https://i.postimg.cc/y86F2Ds4/Screenshot-20250818-193247.jpg" alt=""></a></div>
+    .number-row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .fixed-button button {
+      font-size: 21px;
+      padding: 0px 4px; 
+      color: #8898ff;
+      margin-top: 8px;
+      background: none;
+      border: none;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    .fixed-button button:focus,
+    .fixed-button button:active {
+      background: none !important; 
+      box-shadow: none !important; 
+    }
+    
+    .scroll-buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between; 
+      gap: 0;
+      flex: 1;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .scroll-buttons button {
+      flex: 1 1 0;   
+      min-width: 0; 
+      margin: 0;
+      font-weight: 600;
+      padding: 5px 0px;
+      font-size: 20px;
+      margin-top: 5px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2px;
+      margin: 2px 0;
+    }
+
+    .row button {
+      width: 40px;
+      height: 40px;
+      font-size: 21px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      background: #444;
+      color: #fff;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      margin: 2px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: none;
+      color: #eeeeee;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+
+    .spacebar {
+      flex: 3;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 5px;
+      box-sizing: border-box;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .count {
+      background-color: #333;
+      color: #d5e2ff;
+      border-radius: 8px 0 8px 0;
+      padding: 6px 15px;
+      font-size: 12px;
+      width: 10px;
+      height: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+    
+    .label {
+      font-size: 10px;
+      color:  #d5e2ff;
+    }
+    
+    .style-row {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 4px;
+      padding: 0px 0px;
+      margin-bottom: 2px;
+      border-radius: 2px;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .style-row button {
+      color: #fff;
+      flex: 0 0 auto;
+      padding: 5px 10px;
+      font-size: 16px;
+      border: none;
+      background:linear-gradient(180deg,#412d27,#4c4543);
+      border-radius: 5px 0 5px 0;
+      border-right: 0.4px solid #a1b2ff;
+      border-bottom: 0.2px solid #8ea2ff;
+      scroll-snap-align: start;
+    }
+
+    #card-popup {
+      position: absolute;
+      top: 290px;
+      background: #444;
+
+      padding: 10px;
+      width: 100%;
+      max-width: 314px;
+      border-radius: 12px 0px 12px 0px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .tab-bar {
+      display: flex;
+      background: #eee;
+      width: 100%;
+      border-radius: 10px 0px 10px 0px;
+      overflow-x: auto;
+      font-size: 10px;
+      gap: 0px;
+      margin-bottom: 5px;
+      
+    }
+    
+    .tab {
+      padding: 5px 9px;
+      flex: none;
+      cursor: pointer;
+      white-space: nowrap;
+      
+    }
+    
+    .active-tab {
+      font-weight: bold;
+      background:linear-gradient(180deg,#7c2d12,#581c0c);
+      color: #fff;
+      border-radius: 10px 0px 5px 0px;
+    }
+    
+    .scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 210px;
+    }
+    
+    .scroll-track {
+      display: flex;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    
+.symbol-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  flex: none;
+  height: 188px; 
+  overflow-y: auto; 
+  box-sizing: border-box;
+  justify-content: flex-start;
+
+  border-top: 0.5px solid #777;   /* garis atas */
+  border-bottom: 0.5px solid #777;/* garis bawah */
+}
+
+    
+    .symbol-group button {
+      font-size: 20px;
+      font-weight: 50;
+      margin-left: 0px;
+      padding: 0px 2px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    
+    .symbol-group button {
+      -webkit-tap-highlight-color: transparent; 
+      transition: transform 0.25s ease, color 0.15s ease;
+    }
+    
+    .symbol-group button:hover,
+    .symbol-group button:focus {
+      background: none !important;
+      outline: none;
+      box-shadow: none;
+      color: #eff2ff; 
+    }
+    
+    .symbol-group button:active {
+      background: none !important;
+      outline: none;
+      box-shadow: none;
+      color: #4a62fb; 
+      transform: scale(1.1); 
+    }
+    
+
+
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;             /* jarak antar tombol */
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #fff;
+9;
+  cursor: pointer;
+}
+
+.scroll-indicator span {
+  background: #333;
+  padding: 4px 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.scroll-indicator .spacebar {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+}
+
+    
+
+    .scroll-text {
+      font-size: 12px;
+      color: #fff;
+      user-select: none;
+      position: relative;
+      top: 0px; 
+    }
+    
+
+    header{padding:5px 0px;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:center; font-family:Normal; margin-bottom: 0px;}
+    header h1{font-size:16px;margin:0;font-weight:700; color:#fff; }
+    header .badge{font-size:11px;color:#02c302; background:#0a0a0a;border:1px solid #123a18;padding:2px 6px;border-radius:999px}
+</style>
+
+ <body>
+
+    <div class="container">
+     <header>
+    <h1>Catatan</h1>
+    <span class="badge">font • icon • unicode character</span>
+  </header>
+    <div class="stats">
+      <div class="stat">
+        <div class="count" id="char-count">0</div>
+        <span class="label">Karakter</span>
+      </div>
+      <div class="stat">
+        <div class="count" id="word-count">0</div>
+        <span class="label">Kata</span>
+      </div>
+      <div class="stat">
+        <div class="count" id="line-count">1</div>
+        <span class="label">Baris</span>
+      </div>
+      <div class="stat">
+        <div class="count" id="sentence-count">0</div>
+        <span class="label">Kalimat</span>
+      </div>
+      <div class="stat">
+        <div class="count" id="speak-time">0 </div>
+        <span class="label">Waktu</span>
+      </div>
+    </div>
+
+<div id="notes"><span id="fake-caret">&nbsp;</span></div>
+
+<input type="text" class="hidden-input" readonly>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Popup berhasil -->
+<div id="copy-check" style="position:fixed;top:240px;right:18px;z-index:1000;display:none;align-items:center;gap:6px;background:#C8E6C9;padding:6px 10px;border-radius:8px;font-size:14px;color:#2E7D32;font-weight:bold;">
+  <span style="line-height:1;">
+    <i class="fa fa-check-circle-o" aria-hidden="true"></i> Berhasil disalin
+  </span>
+</div>
+
+
+<!-- Popup error -->
+<div id="copy-error" style="position:fixed;top:240px;right:18px;z-index:1000;display:none;align-items:center;gap:6px;background:#FFCDD2;padding:6px 10px;border-radius:8px;font-size:14px;color:#C62828;font-weight:bold;">
+  ⚠️ <span style="line-height:1;">Tulis teks terlebih dahulu</span>
+</div>
+
+
+
+<script>
+function showPopup(id) {
+  const el = document.getElementById(id);
+  el.style.display = "flex";
+  setTimeout(() => {
+    el.style.display = "none";
+  }, 2000);
+}
+
+function getNotesText() {
+  const notes = document.getElementById("notes");
+  let html = notes.innerHTML || "";
+
+  // hapus caret
+  html = html.replace(/<span[^>]*id=["']fake-caret["'][^>]*>(.*?)<\/span>/gi, '');
+
+  // ubah ke plain text
+  const temp = document.createElement("div");
+  temp.innerHTML = html;
+  let text = temp.innerHTML
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]*>/g, '')
+    .trim();
+
+  return text;
+}
+
+function copyNotes() {
+  const hiddenInput = document.querySelector(".hidden-input");
+  const text = getNotesText();
+
+  if (text.length === 0) {
+    showPopup("copy-error");
+    return;
+  }
+
+  hiddenInput.value = text;
+  hiddenInput.style.display = "block";
+  hiddenInput.select();
+  document.execCommand("copy");
+  hiddenInput.style.display = "none";
+
+  showPopup("copy-check");
+}
+
+document.addEventListener('copy', function(e) {
+  const text = getNotesText();
+  if (text.length === 0) {
+    e.preventDefault();
+    showPopup("copy-error");
+    return;
+  }
+  e.clipboardData.setData('text/plain', text);
+  e.preventDefault();
+});
+</script>
+
+   <div class="keyboard">
+   <div class="style-row">
+    <div id="symbolSlider" style="display: flex; overflow-x: auto; white-space: nowrap; scroll-behavior: smooth; ">
+      <button onclick="characterSymbols0()">Normal</button>
+      <button onclick="characterSymbols1()">𝒮𝒸𝓇𝒾𝓅𝓉</button>
+      <button onclick="characterSymbols2()">𝓢𝓬𝓻𝓲𝓹𝓽 𝓑𝓸𝓵𝓭</button>
+      <button onclick="characterSymbols3()">𝐼𝑡𝑎𝑙𝑖𝑐</button>
+      <button onclick="characterSymbols4()">𝑩𝒐𝒍𝒅 𝑰𝒕𝒂𝒍𝒊𝒄</button>
+      <button onclick="characterSymbols5()">𝐁𝐨𝐥𝐝</button>
+      <button onclick="characterSymbols6()">𝔾𝕣𝕒𝕗𝕥𝕜𝕦𝕣</button>
+      <button onclick="characterSymbols7()">𝔉𝔯𝔞𝔨𝔱𝔲𝔯</button>
+      <button onclick="characterSymbols8()">𝕱𝖗𝖆𝖐𝖙𝖚𝖗 𝕭𝖔𝖑𝖉</button>
+      <button onclick="characterSymbols9()">𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎</button>
+      <button onclick="characterSymbols10()">ⒺⓃⒸⓁⓄⓈⒺⒹ</button>
+      <button onclick="characterSymbols11()">🅢🅠🅤🅐🅡🅔🅓</button>
+      <button onclick="characterSymbols12()">🅂🅀🅄🄰🅁🄴🄳</button>
+      <button onclick="characterSymbols13()">🅱🅻🅰🅲🅺 🆂🆀</button>
+      <button onclick="characterSymbols14()">🇷 🇪 🇬 🇮 🇴 🇳 🇦 🇱 </button>
+      <button onclick="characterSymbols15()">𝖡𝗈𝗅𝖽 𝖨𝗍𝖺𝗅𝗂𝖼</button>
+      <button onclick="characterSymbols16()">𝗕𝗼𝗹𝗱 𝗜𝘁𝗮𝗹𝗶𝗰 𝗦𝗰𝗿𝗶𝗽𝘁</button>
+      <button onclick="characterSymbols17()">𝘐𝘵𝘢𝘭𝘪𝘤</button>
+      <button onclick="characterSymbols18()">𝘽𝙤𝙡𝙙 𝙢𝙤𝙣𝙤𝙨𝙥𝙖𝙘𝙚</button>
+      <button onclick="characterSymbols19()">Ｆｕｌｌｗｉｄｔｈ</button>
+      <button onclick="characterSymbols20()">⒠⒩⒞⒧⒪⒮⒠</button>
     </div>
   </div>
 
+<div class="row1">
+  <div class="style-row1">
+    <div class="number-row">
+      <div id="number-buttons" class="scroll-buttons">
+        <button onclick="insertChar('1')">1</button>
+        <button onclick="insertChar('2')">2</button>
+        <button onclick="insertChar('3')">3</button>
+        <button onclick="insertChar('4')">4</button>
+        <button onclick="insertChar('5')">5</button>
+        <button onclick="insertChar('6')">6</button>
+        <button onclick="insertChar('7')">7</button>
+        <button onclick="insertChar('8')">8</button>
+        <button onclick="insertChar('9')">9</button>
+        <button onclick="insertChar('0')">0</button>
+      </div>
+      <div class="fixed-button">
+        <button onclick="replaceWithCircledNumbers()"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row" id="row-qwerty"></div>
+    <div class="row" id="row-asdf"></div>
+    <div class="row" id="row-zxcv">
+      <button onclick="toggleCase()"><i class="fas fa-spell-check"></i></button>
+      <button onclick="backspace()"><i class="fas fa-backspace"></i></button>
+    </div>
+      <div class="row">
+        <button onclick="toggleSymbols()"style="color: #a1b2ff;"><i class="fas fa-at"></i></button>
+        <button onclick="toggleEmoji()">😃</button>
+        <button onclick="insertChar(',')">,</button>
+        <button class="spacebar" onclick="insertChar(' ')"> </text>
+        </svg>
+      </button>
+      <button onclick="insertChar('.')">.</button>
+      <button onclick="insertChar('\n')" style="color:#06ec16;">↲</button>
+    </div>
+    
+       <div id="main-container">
+     
+  <div class="toolbar">
+  <div id="toolbar" class="toolbar">
+      <button onclick="clearNotes()"><i class="far fa-copyright"></i></button>
+      <button id="copy" onclick="copyNotes()"><i class="far fa-clone"></i></button>
+      <button onclick="undo()"><i class="fas fa-rotate-left"></i>
+      </button>
+      <button onclick="redo()"><i class="fas fa-rotate-right"></i>
+      </button>
+      <button onclick="moveCaret('left')"><i class="fas fa-arrow-circle-left"></i></button>
+      <button onclick="moveCaret('up')"><i class="fas fa-arrow-circle-up"></i></button>
+      <button onclick="moveCaret('right')"><i class="fas fa-arrow-circle-right"></i></button>
+      <button onclick="moveCaret('down')"><i class="fas fa-arrow-circle-down"></i></button>
+
+      <button onclick="showCardPopup()" ><i class="fas fa-icons"></i></button>
+      </div>
+   </div>
+</div>
+
+    
+   <div id="nativePanel"></div>
+  </div>
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('image-scroll-container');
-    const wrapper = document.getElementById('image-wrapper');
-    let scrollAmount = 0;
-    const step = 115;
-    const delay = 9000;
-    let autoScrollInterval;
-    let userScrolling = false;
-    let resumeTimeout;
+const textarea = document.getElementById('notes');
+let undoStack = [];
+let redoStack = [];
+let isUpper = false;
+let symbolMode = 0;
+let currentStyle = 0; 
 
-    function startAutoScroll() {
-      autoScrollInterval = setInterval(() => {
-        scrollAmount += step;
-        if (scrollAmount >= wrapper.scrollWidth - container.clientWidth) {
-          scrollAmount = 0;
+const qwertyKeys = ['q','w','e','r','t','y','u','i','o','p'];
+const asdfKeys = ['a','s','d','f','g','h','j','k','l'];
+const zxcvKeys = ['z','x','c','v','b','n','m'];
+
+const symbolSet1 = ['@','#','$','‰','&','-','+','(',')','*'];
+const symbolSet2 = ['~','`','|','•','√','π','÷','×','§','∆'];
+
+const extraSet1 = ['"',"'",':',';','!','?'];
+const extraSet2 = ['£','¢','€','¥','^','°','=','{','}','\\','©','®','™','℅','[',']'];
+
+const emojiSet = [
+  '😀','😂','😍','😎','😭','😡','👍','🙏','🎉','💯',
+  '🔥','🤔','🤯','😴','🤗','😅','😇','😉','😜',
+  '😢','😤','😱','😋','😬','😌','😐'
+];
+
+const styledChars1_qwerty = ['𝓆','𝓌','ℯ','𝓇','𝓉','𝓎','𝓊','𝒾','ℴ','𝓅'];
+const styledChars1_asdf   = ['𝒶','𝓈','𝒹','𝒻','ℊ','𝒽','𝒿','𝓀','𝓁'];
+const styledChars1_zxcv   = ['𝓏','𝓍','𝒸','𝓋','𝒷','𝓃','𝓂'];
+const styledChars1Upper_qwerty = ['𝒬','𝒲','ℰ','ℛ','𝒯','𝒴','𝒰','ℐ','𝒪','𝒫'];
+const styledChars1Upper_asdf   = ['𝒜','𝒮','𝒟','ℱ','𝒢','ℋ','𝒥','𝒦','ℒ'];
+const styledChars1Upper_zxcv   = ['𝒵','𝒳','𝒞','𝒱','ℬ','𝒩','ℳ'];
+const styledChars2_qwerty = ['𝓺','𝓌','𝓮','𝓻','𝓽','𝓎','𝓾','𝓲','𝓸','𝓹'];
+const styledChars2_asdf = ['𝓪','𝓼','𝓭','𝓯','𝓰','𝓱','𝓳','𝓴','𝓵'];
+const styledChars2_zxcv = ['𝓏','𝓍','𝓬','𝓿','𝓫','𝓷','𝓶'];
+const styledChars2Upper_qwerty = ['𝓠','𝓦','𝓔','𝓡','𝓣','𝓨','𝓤','𝓘','𝓞','𝓟'];
+const styledChars2Upper_asdf = ['𝓐','𝓢','𝓓','𝓕','𝓖','𝓗','𝓙','𝓚','𝓛'];
+const styledChars2Upper_zxcv = ['𝓩','𝓧','𝓒','𝓥','𝓑','𝓝','𝓜'];
+const styledChars3_qwerty = ['𝑞','𝑤','𝑒','𝑟','𝑡','𝑦','𝑢','𝑖','𝑜','𝑝'];
+const styledChars3_asdf = ['𝑎','𝑠','𝑑','𝑓','𝑔','ℎ','𝑗','𝑘','𝑙'];
+const styledChars3_zxcv = ['𝑧','𝑥','𝑐','𝑣','𝑏','𝑛','𝑚'];
+const styledChars3Upper_qwerty = ['𝑄','𝑊','𝐸','𝑅','𝑇','𝑌','𝑈','𝐼','𝑂','𝑃'];
+const styledChars3Upper_asdf = ['𝐴','𝑆','𝐷','𝐹','𝐺','𝐻','𝐽','𝐾','𝐿'];
+const styledChars3Upper_zxcv = ['𝑍','𝑋','𝐶','𝑉','𝐵','𝑁','𝑀'];
+const styledChars4_qwerty = ['𝒒','𝒘','𝒆','𝒓','𝒕','𝒚','𝒖','𝒊','𝒐','𝒑'];
+const styledChars4_asdf = ['𝒂','𝒔','𝒅','𝒇','𝒈','𝒉','𝒋','𝒌','𝒍'];
+const styledChars4_zxcv = ['𝒛','𝒙','𝒄','𝒗','𝒃','𝒏','𝒎'];
+const styledChars4Upper_qwerty = ['𝑸','𝑾','𝑬','𝑹','𝑻','𝒀','𝑼','𝑰','𝑶','𝑷'];
+const styledChars4Upper_asdf = ['𝑨','𝑺','𝑫','𝑭','𝑮','𝑯','𝑱','𝑲','𝑳'];
+const styledChars4Upper_zxcv = ['𝒁','𝑿','𝑪','𝑽','𝑩','𝑵','𝑴'];
+const styledChars5_qwerty = ['𝐪','𝐰','𝐞','𝐫','𝐭','𝐲','𝐮','𝐢','𝐨','𝐩'];
+const styledChars5_asdf = ['𝐚','𝐬','𝐝','𝐟','𝐠','𝐡','𝐣','𝐤','𝐥'];
+const styledChars5_zxcv = ['𝐳','𝐱','𝐜','𝐯','𝐛','𝐧','𝐦'];
+// Style 5 huruf besar (bold)
+const styledChars5Upper_qwerty = ['𝐐','𝐖','𝐄','𝐑','𝐓','𝐘','𝐔','𝐈','𝐎','𝐏'];
+const styledChars5Upper_asdf = ['𝐀','𝐒','𝐃','𝐅','𝐆','𝐇','𝐉','𝐊','𝐋'];
+const styledChars5Upper_zxcv = ['𝐙','𝐗','𝐂','𝐕','𝐁','𝐍','𝐌'];
+const styledChars6_qwerty = ['𝕢','𝕨','𝕖','𝕣','𝕥','𝕪','𝕦','𝕚','𝕠','𝕡'];
+const styledChars6_asdf = ['𝕒','𝕤','𝕕','𝕗','𝕘','𝕙','𝕛','𝕜','𝕝'];
+const styledChars6_zxcv = ['𝕫','𝕩','𝕔','𝕧','𝕓','𝕟','𝕞'];
+const styledChars6Upper_qwerty = ['ℚ','𝕎','𝔼','ℝ','𝕋','𝕐','𝕌','𝕀','𝕆','𝕡'];
+const styledChars6Upper_asdf = ['𝔸','𝕊','𝔻','𝔽','𝔾','ℍ','𝕁','𝕂','𝕃'];
+const styledChars6Upper_zxcv = ['ℤ','𝕏','ℂ','𝕍','𝔹','ℕ','𝕄'];
+const styledChars7_qwerty = ['𝔮','𝔴','𝔢','𝔯','𝔱','𝔶','𝔲','𝔦','𝔬','𝔭'];
+const styledChars7_asdf = ['𝔞','𝔰','𝔡','𝔣','𝔤','𝔥','𝔧','𝔨','𝔩'];
+const styledChars7_zxcv = ['𝔷','𝔵','𝔠','𝔳','𝔟','𝔫','𝔪'];
+const styledChars7Upper_qwerty = ['𝔔','𝔚','𝔈','ℜ','𝔗','𝔜','𝔘','ℑ','𝔒','𝔓'];
+const styledChars7Upper_asdf = ['𝔄','𝔖','𝔇','𝔉','𝔊','ℌ','𝔍','𝔎','𝔏'];
+const styledChars7Upper_zxcv = ['ℨ','𝔛','ℭ','𝔙','𝔅','𝔑','𝔐'];
+const styledChars8_qwerty = ['𝖖','𝖜','𝖊','𝖗','𝖙','𝖞','𝖚','𝖎','𝖔','𝖕'];
+const styledChars8_asdf = ['𝖆','𝖘','𝖉','𝖋','𝖌','𝖍','𝖏','𝖐','𝖑'];
+const styledChars8_zxcv = ['𝖟','𝖝','𝖈','𝖛','𝖇','𝖓','𝖒'];
+const styledChars8Upper_qwerty = ['𝕼','𝖂','𝕰','𝕽','𝕿','𝖄','𝖀','𝕴','𝕺','𝕻'];
+const styledChars8Upper_asdf = ['𝕬','𝕾','𝕯','𝕱','𝕲','𝕳','𝕵','𝕶','𝕷'];
+const styledChars8Upper_zxcv = ['𝖅','𝖃','𝕮','𝖁','𝕭','𝕹','𝕸'];
+const styledChars9_qwerty = ['𝚚','𝚠','𝚎','𝚛','𝚝','𝚢','𝚞','𝚒','𝚘','𝚙'];
+const styledChars9_asdf = ['𝚊','𝚜','𝚍','𝚏','𝚐','𝚑','𝚓','𝚔','𝚕'];
+const styledChars9_zxcv = ['𝚣','𝚡','𝚌','𝚟','𝚋','𝚗','𝚖'];
+const styledChars9Upper_qwerty = ['𝚀','𝚆','𝙴','𝚁','𝚃','𝚈','𝚄','𝙸','𝙾','𝙿'];
+const styledChars9Upper_asdf = ['𝙰','𝚂','𝙳','𝙵','𝙶','𝙷','𝙹','𝙺','𝙻'];
+const styledChars9Upper_zxcv = ['𝚉','𝚇','𝙲','𝚅','𝙱','𝙽','𝙼'];
+const styledChars10_qwerty = ['ⓠ','ⓦ','ⓔ','ⓡ','ⓣ','ⓨ','ⓤ','ⓘ','ⓞ','ⓟ'];
+const styledChars10_asdf = ['ⓐ','ⓢ','ⓓ','ⓕ','ⓖ','ⓗ','ⓙ','ⓚ','ⓛ'];
+const styledChars10_zxcv = ['ⓩ','ⓧ','ⓒ','ⓥ','ⓑ','ⓝ','ⓜ'];
+const styledChars10Upper_qwerty = ['Ⓠ','Ⓦ','Ⓔ','Ⓡ','Ⓣ','Ⓨ','Ⓤ','ⓘ','Ⓞ','Ⓟ'];
+const styledChars10Upper_asdf = ['Ⓐ','Ⓢ','Ⓓ','Ⓕ','Ⓖ','Ⓗ','Ⓙ','Ⓚ','Ⓛ'];
+const styledChars10Upper_zxcv = ['Ⓩ','Ⓧ','Ⓒ','Ⓥ','Ⓑ','Ⓝ','Ⓜ'];
+const styledChars11_qwerty = ['🅠','🅦','🅔','🅡','🅣','🅨','🅤','🅘','🅞','🅟'];
+const styledChars11_asdf = ['🅐','🅢','🅓','🅕','🅖','🅗','🅙','🅚','🅛'];
+const styledChars11_zxcv = ['🅩','🅧','🅒','🅥','🅑','🅝','🅜'];
+const styledChars11Upper_qwerty = ['🅀','🅆','🄴','🅁','🅃','🅈','🅄','🅈','🅞','🅟'];
+const styledChars11Upper_asdf = ['🄰','🅂','🄳','🄵','🄶','🄷','🄹','🄺','🄻'];
+const styledChars11Upper_zxcv = ['🅉','🅇','🄲','🅅','🄱','🄽','🄼'];
+const styledChars12_qwerty = ['🅀','🅆','🄴','🅁','🅃','🅈','🅄','🅈','🅞','🅟'];
+const styledChars12_asdf = ['🄰','🅂','🄳','🄵','🄶','🄷','🄹','🄺','🄻'];
+const styledChars12_zxcv = ['🅉','🅇','🄲','🅅','🄱','🄽','🄼'];
+const styledChars12Upper_qwerty = styledChars12_qwerty;
+const styledChars12Upper_asdf = styledChars12_asdf;
+const styledChars12Upper_zxcv = styledChars12_zxcv;
+
+const styledChars13_qwerty = ['🆀','🆆','🅴','🆁','🆃','🆈','🆄','🅸','🅾','🅿'];
+const styledChars13_asdf = ['🅰','🆂','🅳','🅵','🅶','🅷','🅹','🅺','🅻'];
+const styledChars13_zxcv = ['🆉','🆇','🅲','🆅','🅱','🅽','🅼'];
+const styledChars15_qwerty = ['𝗊','𝗐','𝖾','𝗋','𝗍','𝗒','𝗎','𝗂','𝗈','𝗉'];
+const styledChars15_asdf = ['𝖺','𝗌','𝖽','𝖿','𝗀','𝗁','𝗂','𝗄','𝗅'];
+const styledChars15_zxcv = ['𝗓','𝗑','𝖼','𝗏','𝖻','𝗇','𝗆'];
+const styledChars15Upper_qwerty = ['𝖰','𝖶','𝖤','𝖱','𝖳','𝖸','𝖴','𝖨','𝖮','𝖯'];
+const styledChars15Upper_asdf = ['𝖠','𝖲','𝖣','𝖥','𝖦','𝖧','𝖩','𝖪','𝖫'];
+const styledChars15Upper_zxcv = ['𝖹','𝖷','𝖢','𝖵','𝖡','𝖭','𝖬'];
+const styledChars16_qwerty = ['𝗾','𝘄','𝗲','𝗿','𝘁','𝘆','𝘂','𝗶','𝗼','𝗽'];
+const styledChars16_asdf = ['𝗮','𝘀','𝗱','𝗳','𝗴','𝗵','𝗷','𝗸','𝗹'];
+const styledChars16_zxcv = ['𝘇','𝘅','𝗰','𝘃','𝗯','𝗻','𝗺'];
+const styledChars16Upper_qwerty = ['𝗤','𝗪','𝗘','𝗥','𝗧','𝗬','𝗨','𝗜','𝗢','𝗣'];
+const styledChars16Upper_asdf = ['𝗔','𝗦','𝗗','𝗙','𝗚','𝗛','𝗝','𝗞','𝗟'];
+const styledChars16Upper_zxcv = ['𝗭','𝗫','𝗖','𝗩','𝗕','𝗡','𝗠'];
+const styledChars17_qwerty = ['𝘲','𝘸','𝘦','𝘳','𝘵','𝘺','𝘶','𝘪','𝘰','𝘱'];
+const styledChars17_asdf = ['𝘢','𝘴','𝘥','𝘧','𝘨','𝘩','𝘫','𝘬','𝘭'];
+const styledChars17_zxcv = ['𝘻','𝘹','𝘤','𝘷','𝘣','𝘯','𝘮'];
+const styledChars17Upper_qwerty = ['𝘘','𝘞','𝘌','𝘙','𝘛','𝘠','𝘜','𝘐','𝘖','𝘗'];
+const styledChars17Upper_asdf = ['𝘈','𝘚','𝘋','𝘍','𝘎','𝘏','𝘑','𝘒','𝘓'];
+const styledChars17Upper_zxcv = ['𝘡','𝘟','𝘊','𝘝','𝘉','𝘕','𝘔'];
+
+const styledChars18_qwerty = ['𝙦','𝙬','𝙚','𝙧','𝙩','𝙮','𝙪','𝙞','𝙤','𝙥'];
+const styledChars18_asdf = ['𝙖','𝙨','𝙙','𝙛','𝙜','𝙝','𝙟','𝙠','𝙡'];
+const styledChars18_zxcv = ['𝙯','𝙭','𝙘','𝙫','𝙗','𝙣','𝙢'];
+const styledChars18Upper_qwerty = ['𝙌','𝙒','𝙀','𝙍','𝙏','𝙔','𝙐','𝙄','𝙊','𝙋'];
+const styledChars18Upper_asdf = ['𝘼','𝙎','𝘿','𝙁','𝙂','𝙃','𝙅','𝙆','𝙇'];
+const styledChars18Upper_zxcv = ['𝙕','𝙓','𝘾','𝙑','𝘽','𝙉','𝙈'];
+const styledChars19_qwerty = ['ｑ', 'ｗ', 'ｅ', 'ｒ', 'ｔ', 'ｙ', 'ｕ', 'ｉ', 'ｏ', 'ｐ'];
+const styledChars19_asdf   = ['ａ', 'ｓ', 'ｄ', 'ｆ', 'ｇ', 'ｈ', 'ｊ', 'ｋ', 'ｌ'];
+const styledChars19_zxcv   = ['ｚ', 'ｘ', 'ｃ', 'ｖ', 'ｂ', 'ｎ', 'ｍ'];
+const styledChars19Upper_qwerty = ['Ｑ', 'Ｗ', 'Ｅ', 'Ｒ', 'Ｔ', 'Ｙ', 'Ｕ', 'Ｉ', 'Ｏ', 'Ｐ'];
+const styledChars19Upper_asdf   = ['Ａ', 'Ｓ', 'Ｄ', 'Ｆ', 'Ｇ', 'Ｈ', 'Ｊ', 'Ｋ', 'Ｌ'];
+const styledChars19Upper_zxcv   = ['Ｚ', 'Ｘ', 'Ｃ', 'Ｖ', 'Ｂ', 'Ｎ', 'Ｍ'];
+const styledChars20_qwerty = ['⒬','⒲','⒠','⒭','⒯','⒴','⒰','⒤','⒪','⒫'];
+const styledChars20_asdf   = ['⒜','⒮','⒟','⒡','⒢','⒣','⒥','⒦','⒧'];
+const styledChars20_zxcv   = ['⒵','⒳','⒞','⒱','⒝','⒩','⒨'];
+const styledChars20Upper_qwerty = ['🄠','🄦','🄔','🄡','🄣','🄨','🄤','🄘','🄞','🄟'];
+const styledChars20Upper_asdf   = ['🄐','🄢','🄓','🄕','🄖','🄗','🄙','🄚','🄛'];
+const styledChars20Upper_zxcv   = ['🄩','🄧','🄒','🄥','🄑','🄝','🄜'];
+const styledChars13Upper_qwerty = styledChars13_qwerty;
+const styledChars13Upper_asdf = styledChars13_asdf;
+const styledChars13Upper_zxcv = styledChars13_zxcv;
+
+const styledChars14_qwerty = ['🇶','🇼','🇪','🇷','🇹','🇾','🇺','🇮','🇴','🇵'];
+const styledChars14_asdf = ['🇦','🇸','🇩','🇫','🇬','🇭','🇯','🇰','🇱'];
+const styledChars14_zxcv = ['🇿','🇽','🇨','🇻','🇧','🇳','🇲'];
+const styledChars14Upper_qwerty = styledChars14_qwerty;
+const styledChars14Upper_asdf = styledChars14_asdf;
+const styledChars14Upper_zxcv = styledChars14_zxcv;
+
+function characterSymbols0() {
+  currentStyle = 0;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols1() {
+  currentStyle = 1;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols2() {
+  currentStyle = 2;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols3() {
+  currentStyle = 3;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols4() {
+  currentStyle = 4;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols5() {
+  currentStyle = 5;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols6() {
+  currentStyle = 6;
+  symbolMode = 0;
+  renderKeys();
+}
+function characterSymbols7() {
+  currentStyle = 7;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols8() {
+  currentStyle = 8;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols9() {
+  currentStyle = 9;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols10() {
+  currentStyle = 10;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols11() {
+  currentStyle = 11;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols12() {
+  currentStyle = 12;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols13() {
+  currentStyle = 13;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols14() {
+  currentStyle = 14;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols15() {
+  currentStyle = 15;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols16() {
+  currentStyle = 16;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols17() {
+  currentStyle = 17;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols18() {
+  currentStyle = 18;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols19() {
+  currentStyle = 19;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function characterSymbols20() {
+  currentStyle = 20;
+  symbolMode = 0;
+  renderKeys();
+}
+
+function renderKeys() {
+  if (symbolMode === 3) {
+    const emojiRow1 = emojiSet.slice(0, 10);
+    const emojiRow2 = emojiSet.slice(10, 19);
+    const emojiRow3 = emojiSet.slice(19);
+
+    const row1 = emojiRow1.map(e => `<button onclick="insertChar('${e}')">${e}</button>`).join('');
+    const row2 = emojiRow2.map(e => `<button onclick="insertChar('${e}')">${e}</button>`).join('');
+    const row3 = emojiRow3.map(e => `<button onclick="insertChar('${e}')">${e}</button>`).join('');
+
+    document.getElementById('row-qwerty').innerHTML = row1;
+    document.getElementById('row-asdf').innerHTML = row2;
+    document.getElementById('row-zxcv').innerHTML = `
+      <button onclick="toggleCase()"><i class="fas fa-spell-check"></i></button>
+      ${row3}
+      <button onclick="backspace()"><i class="fas fa-backspace"></i></button>
+    `;
+    return;
+  }
+
+  const qwertyRow = qwertyKeys.map((k, i) => `<button onclick="insertChar('${getChar(k, i)}')">${getChar(k, i)}</button>`).join('');
+  const asdfRow = asdfKeys.map((k, i) => `<button onclick="insertChar('${getChar(k, i + 10)}')">${getChar(k, i + 10)}</button>`).join('');
+  const zxcvRow = zxcvKeys.map((k, i) => `<button onclick="insertChar('${getChar(k, i + 19)}')">${getChar(k, i + 19)}</button>`).join('');
+
+  document.getElementById('row-qwerty').innerHTML = qwertyRow;
+  document.getElementById('row-asdf').innerHTML = asdfRow;
+  document.getElementById('row-zxcv').innerHTML = `
+<button class="key-btn" onclick="toggleCase()" style="padding:4px;">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 120 40"
+    height="40"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.0"
+    stroke-linejoin="round"
+  >
+    <defs>
+      <linearGradient id="gradBtn" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#7c2d12"/>
+        <stop offset="100%" stop-color="#581c0c"/>
+      </linearGradient>
+    </defs>
+
+      <rect x="1" y="1" width="30" height="29" rx="6" ry="6" fill="url(#gradBtn)" />
+  
+      <text x="6" y="22" font-weight="300" font-size="12" fill="#a1b2ff">A/a</text>
+    </svg>
+  </button>
+
+    ${zxcvRow}
+    
+  <button class="key-btn" onclick="backspace()" style="padding:4px;  border:none; font-size:17px; color:#a1b2ff;  ">
+      <i class="fas fa-backspace"></i>
+    </span>
+  </button>
+  `;
+}
+
+function getCharacterCount(text) {
+  const segmenter = new Intl.Segmenter('id', { granularity: 'grapheme' });
+  return Array.from(segmenter.segment(text)).length;
+}
+
+function updateStats() {
+  const notes = document.getElementById('notes');
+  const text = notes.innerText.trim().replace(/\u200B/g, '');
+
+  const charCount = getCharacterCount(text);
+
+  const uniqueChars = new Set(Array.from(new Intl.Segmenter('id', { granularity: 'grapheme' }).segment(text.replace(/\s/g, ''))).map(s => s.segment));
+  const uniqueCharCount = uniqueChars.size;
+
+  const lineCount = text ? text.split('\n').length : 0;
+
+  const sentenceCount = (text.match(/[\w\s]+[.!?]+/g) || []).length;
+
+  const words = text.split(/\s+/).filter(w => w.length > 0);
+  const speakSeconds = Math.ceil(words.length / 3.33);
+
+  document.getElementById('char-count').textContent = charCount;
+  document.getElementById('word-count').textContent = uniqueCharCount;
+  document.getElementById('line-count').textContent = lineCount;
+  document.getElementById('sentence-count').textContent = sentenceCount;
+  document.getElementById('speak-time').textContent = speakSeconds;
+}
+
+  document.getElementById('notes').addEventListener('input', updateStats);
+  
+  window.onload = updateStats;
+  
+  function renderKeyboard() {
+    const container = document.querySelector('.keyboard-rows');
+    container.innerHTML = '';
+
+  const makeRow = (keys) => {
+    return keys.map((k, i) => {
+      const char = getChar(k, i);
+      return `<button onclick="insertChar('${char}')">${char}</button>`;
+    }).join('');
+  };
+
+  const qwertyRow = makeRow(qwertyKeys);
+  const asdfRow = makeRow(asdfKeys);
+  const zxcvRow = makeRow(zxcvKeys);
+
+  container.innerHTML = `
+    <div class="row">${qwertyRow}</div>
+    <div class="row">${asdfRow}</div>
+    <div class="row">
+      <button onclick="toggleCase()"><i class="fas fa-spell-check"></i></button>
+      ${zxcvRow}
+    </div>
+  `;
+}
+
+function getChar(k, index) {
+  if (symbolMode === 1) {
+    return symbolSet1[index] || extraSet1[index - symbolSet1.length] || '';
+  } else if (symbolMode === 2) {
+    return symbolSet2[index] || extraSet2[index - symbolSet2.length] || '';
+  }
+
+  if (currentStyle === 0) {
+    return isUpper ? k.toUpperCase() : k.toLowerCase();
+  }
+
+  if (currentStyle === 1) {
+    const lower = styledChars1_qwerty.concat(styledChars1_asdf, styledChars1_zxcv);
+    const upper = styledChars1Upper_qwerty.concat(styledChars1Upper_asdf, styledChars1Upper_zxcv);
+    if (isUpper && upper[index]) return upper[index];
+    return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+  }
+
+  if (currentStyle === 2) {
+    const lower = styledChars2_qwerty.concat(styledChars2_asdf, styledChars2_zxcv);
+    const upper = styledChars2Upper_qwerty.concat(styledChars2Upper_asdf, styledChars2Upper_zxcv);
+    if (isUpper && upper[index]) return upper[index];
+    return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+  }
+
+  if (currentStyle === 3) {
+    const lower = styledChars3_qwerty.concat(styledChars3_asdf, styledChars3_zxcv);
+    const upper = styledChars3Upper_qwerty.concat(styledChars3Upper_asdf, styledChars3Upper_zxcv);
+    if (isUpper && upper[index]) return upper[index];
+    return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+  }
+
+  if (currentStyle === 4) {
+    const lower = styledChars4_qwerty.concat(styledChars4_asdf, styledChars4_zxcv);
+    const upper = styledChars4Upper_qwerty.concat(styledChars4Upper_asdf, styledChars4Upper_zxcv);
+    if (isUpper && upper[index]) return upper[index];
+    return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+  }
+
+    if (currentStyle === 5) {
+      const lower = styledChars5_qwerty.concat(styledChars5_asdf, styledChars5_zxcv);
+      const upper = styledChars5Upper_qwerty.concat(styledChars5Upper_asdf, styledChars5Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 6) {
+      const lower = styledChars6_qwerty.concat(styledChars6_asdf, styledChars6_zxcv);
+      const upper = styledChars6Upper_qwerty.concat(styledChars6Upper_asdf, styledChars6Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+      }
+    
+    if (currentStyle === 7) {
+      const lower = styledChars7_qwerty.concat(styledChars7_asdf, styledChars7_zxcv);
+      const upper = styledChars7Upper_qwerty.concat(styledChars7Upper_asdf, styledChars7Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 8) {
+      const lower = styledChars8_qwerty.concat(styledChars8_asdf, styledChars8_zxcv);
+      const upper = styledChars8Upper_qwerty.concat(styledChars8Upper_asdf, styledChars8Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 9) {
+      const lower = styledChars9_qwerty.concat(styledChars9_asdf, styledChars9_zxcv);
+      const upper = styledChars9Upper_qwerty.concat(styledChars9Upper_asdf, styledChars9Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 10) {
+      const lower = styledChars10_qwerty.concat(styledChars10_asdf, styledChars10_zxcv);
+      const upper = styledChars10Upper_qwerty.concat(styledChars10Upper_asdf, styledChars10Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 11) {
+      const lower = styledChars11_qwerty.concat(styledChars11_asdf, styledChars11_zxcv);
+      const upper = styledChars11Upper_qwerty.concat(styledChars11Upper_asdf, styledChars11Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 12) {
+      const lower = styledChars12_qwerty.concat(styledChars12_asdf, styledChars12_zxcv);
+      const upper = styledChars12Upper_qwerty.concat(styledChars12Upper_asdf, styledChars12Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 13) {
+      const lower = styledChars13_qwerty.concat(styledChars13_asdf, styledChars13_zxcv);
+      const upper = styledChars13Upper_qwerty.concat(styledChars13Upper_asdf, styledChars13Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 14) {
+      const lower = styledChars14_qwerty.concat(styledChars14_asdf, styledChars14_zxcv);
+      const upper = styledChars14Upper_qwerty.concat(styledChars14Upper_asdf, styledChars14Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 15) {
+      const lower = styledChars15_qwerty.concat(styledChars15_asdf, styledChars15_zxcv);
+      const upper = styledChars15Upper_qwerty.concat(styledChars15Upper_asdf, styledChars15Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 16) {
+      const lower = styledChars16_qwerty.concat(styledChars16_asdf, styledChars16_zxcv);
+      const upper = styledChars16Upper_qwerty.concat(styledChars16Upper_asdf, styledChars16Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 17) {
+      const lower = styledChars17_qwerty.concat(styledChars17_asdf, styledChars17_zxcv);
+      const upper = styledChars17Upper_qwerty.concat(styledChars17Upper_asdf, styledChars17Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 18) {
+      const lower = styledChars18_qwerty.concat(styledChars18_asdf, styledChars18_zxcv);
+      const upper = styledChars18Upper_qwerty.concat(styledChars18Upper_asdf, styledChars18Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 19) {
+      const lower = styledChars19_qwerty.concat(styledChars19_asdf, styledChars19_zxcv);
+      const upper = styledChars19Upper_qwerty.concat(styledChars19Upper_asdf, styledChars19Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    }
+    
+    if (currentStyle === 20) {
+      const lower = styledChars20_qwerty.concat(styledChars20_asdf, styledChars20_zxcv);
+      const upper = styledChars20Upper_qwerty.concat(styledChars20Upper_asdf, styledChars20Upper_zxcv);
+      if (isUpper && upper[index]) return upper[index];
+      return lower[index] || (isUpper ? k.toUpperCase() : k.toLowerCase());
+    };
+    
+      if (styledSets[currentStyle]) {
+        return styledSets[currentStyle][index] || k.toLowerCase();
+      }
+    
+      return isUpper ? k.toUpperCase() : k.toLowerCase();
+    }
+    
+    let isCircledNumbers = false;
+    let circledMode = 0;
+    
+    function replaceWithCircledNumbers() {
+      const container = document.getElementById("number-buttons");
+    
+      if (circledMode === 0) {
+        const normal = ['1','2','3','4','5','6','7','8','9','0'];
+        container.innerHTML = normal.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 1;
+      } else if (circledMode === 1) {
+        const circled = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⓪'];
+        container.innerHTML = circled.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 2;
+      } else if (circledMode === 2) {
+        const circledBlack = ['❶','❷','❸','❹','❺','❻','❼','❽','❾','⓿'];
+        container.innerHTML = circledBlack.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 3;
+      } else if (circledMode === 3) {
+        const circledWhite = ['⓵','⓶','⓷','⓸','⓹','⓺','⓻','⓼','⓽','⓾'];
+        container.innerHTML = circledWhite.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 4;
+      } else if (circledMode === 4) {
+        const bold = ['𝟏','𝟐','𝟑','𝟒','𝟓','𝟔','𝟕','𝟖','𝟗','𝟎'];
+        container.innerHTML = bold.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 5;
+      } else if (circledMode === 5) {
+        const monospaced = ['𝟘','𝟙','𝟚','𝟛','𝟜','𝟝','𝟞','𝟟','𝟠','𝟡'];
+        container.innerHTML = monospaced.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 6;
+      } else if (circledMode === 6) {
+        const serif = ['𝟎','𝟏','𝟐','𝟑','𝟒','𝟓','𝟔','𝟕','𝟖','𝟗'];
+        container.innerHTML = serif.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 7;
+      } else if (circledMode === 7) {
+        const superscript = ['⁰','¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
+        container.innerHTML = superscript.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 8;
+      } else if (circledMode === 8) {
+        const subscript = ['₀','₁','₂','₃','₄','₅','₆','₇','₈','₉'];
+        container.innerHTML = subscript.map(c => `<button onclick="insertChar('${c}')">${c}</button>`).join('');
+        circledMode = 0;
+      }
+    }
+    
+    function toggleCase() {
+      isUpper = !isUpper;
+      renderKeys();
+    }
+
+      function toggleEmoji() {
+        symbolMode = (symbolMode !== 3) ? 3 : 0;
+        renderKeys();
+      }
+    
+      function toggleSymbols() {
+        symbolMode = (symbolMode + 1) % 3;
+        renderKeys();
+      }
+    
+      function insertChar(char) {
+      saveState();
+      const caret = document.getElementById('fake-caret');
+      let node;
+    
+      if (char === '\n') {
+        node = document.createElement('br');
+      } else {
+        node = document.createTextNode(char);
+      }
+    
+      caret.parentNode.insertBefore(node, caret);
+      placeCaret();
+      updateStats();
+    }
+
+      function placeCaret() {
+        const caret = document.getElementById('fake-caret');
+        if (caret.previousSibling == null && caret.nextSibling == null) {
+          caret.innerHTML = "&nbsp;";
+        } else {
+          caret.innerHTML = "";
         }
-        container.scrollTo({
-          left: scrollAmount,
-          behavior: 'smooth'
-        });
-      }, delay);
+        caret.scrollIntoView({ block: 'nearest' });
+      }
+    
+// ===== helper baru =====
+function placeCaretAtRange(range) {
+  const caret = document.getElementById('fake-caret');
+  if (!range) return;
+
+  let container = range.startContainer;
+  let offset = range.startOffset;
+
+  // 1) kalau di dalam <span.native-text> → keluarkan ke luar (sebelum/sesudah)
+  function snapOutsideNative(el, preferAfter = true) {
+    if (!el) return;
+    if (preferAfter) el.after(caret); else el.before(caret);
+  }
+
+  // TEXT_NODE
+  if (container.nodeType === Node.TEXT_NODE) {
+    const text = container;
+
+    // kalau text di dalam span.native-text → keluar
+    if (text.parentElement && text.parentElement.classList && text.parentElement.classList.contains('native-text')) {
+      // pilih sisi tergantung offset (>= tengah → after)
+      const preferAfter = offset >= Math.ceil(text.length / 2);
+      snapOutsideNative(text.parentElement, preferAfter);
+      return;
     }
 
-    function stopAutoScrollTemporarily() {
-      clearInterval(autoScrollInterval);
-      clearTimeout(resumeTimeout);
-      resumeTimeout = setTimeout(() => {
-        scrollAmount = container.scrollLeft;
-        startAutoScroll();
-      }, 9000);
+    // split text → taruh caret tepat di celah
+    if (offset <= 0) {
+      text.parentNode.insertBefore(caret, text);
+    } else if (offset >= text.length) {
+      text.parentNode.insertBefore(caret, text.nextSibling);
+    } else {
+      const before = document.createTextNode(text.data.slice(0, offset));
+      const after  = document.createTextNode(text.data.slice(offset));
+      text.parentNode.insertBefore(before, text);
+      text.parentNode.insertBefore(caret, text);
+      text.parentNode.insertBefore(after, text);
+      text.remove();
+    }
+  }
+  // ELEMENT_NODE
+  else if (container.nodeType === Node.ELEMENT_NODE) {
+    // kalau elemennya span.native-text → keluar
+    if (container.classList && container.classList.contains('native-text')) {
+      const preferAfter = offset >= (container.childNodes.length / 2);
+      snapOutsideNative(container, preferAfter);
+      return;
     }
 
-    container.addEventListener('touchstart', () => stopAutoScrollTemporarily());
-    container.addEventListener('scroll', () => stopAutoScrollTemporarily());
+    const node = container.childNodes[offset] || null;
+    if (node) {
+      // jika child adalah span.native-text → pilih sisi kiri
+      if (node.nodeType === 1 && node.classList && node.classList.contains('native-text')) {
+        node.before(caret);
+      } else {
+        container.insertBefore(caret, node);
+      }
+    } else {
+      container.appendChild(caret);
+    }
+  }
+}
 
-    document.querySelectorAll('.img-container').forEach(container => {
-      container.addEventListener('click', () => {
-        container.classList.add('clicked-blink');
-        setTimeout(() => container.classList.remove('clicked-blink'), 9000);
+// fallback untuk browser yang beda
+function rangeFromPoint(x, y) {
+  if (document.caretRangeFromPoint) return document.caretRangeFromPoint(x, y);
+  const pos = document.caretPositionFromPoint ? document.caretPositionFromPoint(x, y) : null;
+  if (!pos) return null;
+  const r = document.createRange();
+  r.setStart(pos.offsetNode, pos.offset);
+  r.collapse(true);
+  return r;
+}
+
+// ===== ganti moveCaret-mu dengan ini =====
+function moveCaret(direction) {
+  const caret = document.getElementById('fake-caret');
+  if (!caret) return;
+
+  // keluar dari dalam span.native-text kalau ada
+  function snapIfInsideNative() {
+    const p = caret.parentElement;
+    if (p && p.classList && p.classList.contains('native-text')) {
+      p.after(caret); // default keluar ke kanan
+    }
+  }
+
+  if (direction === 'left') {
+    snapIfInsideNative();
+    let prev = caret.previousSibling;
+
+    // lewati text node kosong
+    while (prev && prev.nodeType === 3 && prev.textContent === '') prev = prev.previousSibling;
+
+    if (prev) {
+      // kalau prev text node: geser ke kiri per node (node sudah hasil split dari placeCaretAtRange)
+      caret.parentNode.insertBefore(caret, prev);
+    } else {
+      // wrap → ke ujung kanan
+      const parent = caret.parentNode;
+      if (parent && parent.lastChild) parent.appendChild(caret);
+    }
+  }
+
+  else if (direction === 'right') {
+    snapIfInsideNative();
+    let next = caret.nextSibling;
+
+    // lewati text node kosong
+    while (next && next.nodeType === 3 && next.textContent === '') next = next.nextSibling;
+
+    if (next) {
+      next.parentNode.insertBefore(caret, next.nextSibling);
+    } else {
+      // wrap → ke ujung kiri
+      const parent = caret.parentNode;
+      if (parent && parent.firstChild) parent.insertBefore(caret, parent.firstChild);
+    }
+  }
+
+else if (direction === 'up' || direction === 'down') {
+  const rect = caret.getBoundingClientRect();
+  const x = rect.left + 1;
+  const y = direction === 'up' ? rect.top - 20 : rect.top + 20;
+  const r = rangeFromPoint(x, y);
+
+  if (r) {
+    const notes = document.getElementById('notes');
+    // ⛔ jangan biarkan keluar dari notes
+    if (notes.contains(r.startContainer)) {
+      placeCaretAtRange(r);
+    }
+  }
+}
+}
+
+
+
+function showCardPopup() {
+  let popup = document.getElementById('card-popup');
+  if (!popup) {
+    popup = document.createElement('div');
+    popup.id = 'card-popup';
+
+ const data = [
+{ name: 'Symbol',symbols: '(✓✔✕✖✗✘✙✚✛✜✝✞✟✠✡✢✣✤✥✦✧★☆✩✪✫✬✭✮✯✰✱✲✳✴✵✶✷✸✹✺✻✼✽✾✿❀❁❂❃❄❅❆❇❈❉❊❋♔♕♖♗♘♙♚♛♜♝♞♟♠♡♢♣♤♥᜵᜶჻‘’‚‛‹›“”„‟〝〞〟§¶⁋©®⁎⁑Ⅎ℺⅁⅂⅃⅄⅊∀∁∂∃∅∆∇∈∊∋∍∎∏∐∑±÷×¬¦‖−∓∔∕∖∗∘∙√∛∜㈀㈁㈂㈃㈄㈅㈆㈇㈈㈉㈊㈋㈌㈍㈎㈏㈐㈑㈒㈓㈔㈕㈖㈗㈘㈙㈚㈛㈜㈝㈞㈪㈫㈬㈭㈮㈯㈰㈱㈲㈳㈴㈵㈶㈷㈸㈹㈺㈻㈼㈽㈾㈿㉀㉁㉂㉃㉄㉅㉆㉇㉈㉉㉊㉋㉌㉍㉎㉏㉐㉠㉡㉢㉣㉤㉥㉦㉧㉨㉩㉪㉫㉬㉭㉮㉯㉰㉱㉲㉳㉴㉵㉶㉷㉸㉹㉺㉻㉼㉽㉾㉿㊊㊋㊌㊍㊎㊏㊐㊑㊒㊓㊔㊕㊖㊗㊘㊙㊚㊛㊜㊝㊞㊟㊠㊡㊢㊣㊤㊥㊦㊧㊨㊩㊪㊫㊬㊭㊮㊯㊰㋀㋁㋂㋃㋄㋅㋆㋇㋈㋉㋊㋋㋌㋍㋎㋏㋐㋑㋒㋓㋔㋕㋖㋗㋘㋙㋚㋛㋜㋝㋞㋟㋠㋡㋢㋣㋤㋥㋦㋧㋨㋩㋪㋫㋬㋭㋮㋯㋰㋱㋲㋳㋴㋵㋶㋷㋸㋹㋺㋻㋼㋽㋾㌀㌁㌂㌃㌄㌅㌆㌇㌈㌉㌊㌋㌌㌍㌎㌏㌐㌑㌒㌓㌔㌕㌖㌗㌘㌙㌚㌛㌜㌝㌞㌟㌠㌡㌢㌣㌤㌥㌦㌧㌨㌩㌪㌫㌬㌭㌮㌯㌰㌱㌲㌳㌴㌵㌶㌷㌸㌹㌺㌻㌼㌽㌾㌿㍀㍁㍂㍃㍄㍅㍆㍇㍈㍉㍊㍋㍌㍍㍎㍏㍐㍑㍒㍓㍔㍕㍖㍗㍘㍙㍚㍛㍜㍝㍞㍟㍠㍡㍢㍣㍤㍥㍦㍧㍨㍩㍪㍫㍬㍭㍮㍯㍰㍱㍲㍳㍴㍵㍶㍷㍸㍹㍺㍻㍼㍽㍾㍿㎀㎁㎂㎃㎄㎅㎆㎇㎈㎉㎊㎋㎌㎍㎎㎏㎐㎑㎒㎓㎔㎕㎖㎗㎘㎙㎚㎛㎜㎝㎞㎟㎠㎡㎢㎣㎤㎥㎦㎧㎨㎩㎪㎫㎬㎭㎮㎯㎰㎱㎲㎳㎴㎵㎶㎷㎸㎹㎺㎻㎼㎽㎾㎿㏀㏁㏂㏃㏄㏅㏆㏇㏈㏉㏊㏋㏌㏍㏎㏏㏐㏑㏒㏓㏔㏕㏖㏗㏘㏙㏚㏛㏜㏝㏞㏟㏠㏡㏢㏣㏤㏥㏦㏧㏨㏩㏪㏫㏬㏭㏮㏯㏰㏱㏲㏳㏴㏵㏶㏷㏸㏹㏺㏻㏼㏽㏾㏿⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻〄〒〓〠〶〷〾〿🈀🈁🈂🈐🈑🈒🈓🈔🈕🈖🈗🈘🈙🈚🈛🈜🈝🈞🈟🈠🈡🈢🈣🈤🈥🈦🈧🈨🈩🈪🈫🈬🈭🈮🈯🈰🈱🈲🈳🈴🈵🈶🈷🈸🈹🈺🉀🉁🉂🉃🉄🉅🉆🉇🉈🉐🉑🄪🄫🄬🄭🄮🅊🅋🅌🅍🅎🅏🆊🆋🆌🆍🆎🆏🆐🆑🆒🆓🆔🆕🆖卝ネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ㍐㍿ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれをゎわゐゑをんゔゕゖ゚゛゜ゝゞゟ゠ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌ⺀⺁⺂⺃⺄⺅⺆⺇⺈⺉⺊⺋⺌⺍⺎⺏⺐⺑⺒⺓⺔⺕⺖⺗⺘⺙⺛⺜⺝⺞⺟⺠⺡⺢⺣⺤⺥⺦⺧⺨⺩⺪⺫⺬⺭⺮⺯⺰⺱⺲⺳⺴⺵⺶⺷⺸⺹⺺⺻⺼⺽⺾⺿⻀⻁⻂⻃⻄⻅⻆⻇⻈⻉⻊⻋⻌⻍⻎⻏⻐⻑⻒⻓⻔⻕⻖⻗⻘⻙⻚⻛⻜⻝⻞⻟⻠⻡⻢⻣⻤⻥⻦⻧⻨⻩⻪⻫⻬⻭⻮⻯⻰⻱⻲⻳⼀⼁⼂⼃⼄⼅⼆⼇⼈⼉⼊⼋⼌⼍⼎⼏⼐⼑⼒⼓⼔⼕⼖⼗⼘⼙⼚⼛⼜⼝⼞⼟⼠⼡⼢⼣⼤⼥⼦⼧⼨⼩⼪⼫⼬⼭⼮⼯⼰⼱⼲⼳⼴⼵⼶⼷⼸⼹⼺⼻⼼⼽⼾⼿⽀⽁⽂⽃⽄⽅⽆⽇⽈⽉⽊⽋⽌⽍⽎⽏⽐⽑⽒⽓⽔⽕⽖⽗⽘⽙⽚⽛⽜⽝⽞⽟⽠⽡⽢⽣⽤⽥⽦⽧⽨⽩⽪⽫⽬⽭⽮⽯⽰⽱⽲⽳⽴⽵⽶⽷⽸⽹⽺⽻⽼⽽⽾⽿⾀⾁⾂⾃⾄⾅⾆⾇⾈⾉⾊⾋⾌⾍⾎⾏⾐⾑⾒⾓⾔⾕⾖⾗⾘⾙⾚⾛⾜⾝⾞⾟⾠⾡⾢⾣⾤⾥⾦⾧⾨⾩⾪⾫⾬⾭⾮⾯⾰⾱⾲⾳⾴⾵⾶⾷⾸⾹⾺⾻⾼⾽⾾⾿⿀⿁⿂⿃⿄⿅⿆⿇⿈⿉⿊⿋⿌⿍⿎⿏⿐⿑⿒⿓⿔⿕゛゜㆐㆑㆖㆗㆘㆙㆚㆛㆜㆝㆞㆟㇀㇁㇂㇃㇄㇅㇆㇇㇈㇉㇊㇋㇌㇍㇎㇏㇐㇑㇒㇓㇔㇕㇖㇗㇘㇙㇚㇛㇜㇝㇞㇟㇠㇡㇢㇣ᗩᗷᑕᗪᗴᖴᘜᕼIᒍKᒪᗰᑎOᑭᑫᖇՏTᑌᐯᗯ᙭Yᘔ卂丨乃匚ᗪ乇千ᘜ卄|ﾌҜㄥ爪几ㄖ卩Ҩ尺丂ㄒㄩᐯ山乂ㄚ乙ልጌርዕቿቻኗዘጎጋጕረጠሸዐየዒዪነቿሁሀሠሸሃጊᎪᏟᎠᎬᎶᎥᏦᏞᏁᎾᏢᏒᏆᏉᎳᎽᏃɑҍϲժҽƒցհíյƘӀʍղօԹզɾՏԵւѵա×վՀค๒ς๔єŦﻮђเןкl๓ภ๏קợгรtยשฬץאzᗅᙘᑤᗫᙍᖴᘜᕼᓿᒙᖽᐸᒪᙢᘉᓎᕿᕴᖇSᖶᑗᐻᙎ᙭ᖻᙣåβçď£ƒğȟȋjķȽɱñ¤קǭȑ§țɥ√Ψ×ÿžάвςȡέғģħίјķĻмήόρqŕşţùνώxчžΛϦㄈÐƐFƓнɪﾌҚŁ௱ЛØþҨ尺らŤЦƔƜχϤẔᗩᗷᑢᕲᘿᖴᘜᕼᓰᒚᖽᐸᒪᘻᘉᓍᕵᕴᖇSᖶᑘᐺᘺ᙭ᖻᗱԹՅՇԺȝԲԳɧɿʝƙʅʍՌԾρφՐՏԵՄעաՃՎՀąცƈɖɛʄɠɧıʝƙƖɱŋɔ℘զཞʂɬų۷ῳҳყʑꁲꃳꏳꀷꑀꊯꁅꁝ꒐꒑ꈵ꒒ꂵꃔꊿꉣꋠꌅꈜꋖꌈ꒦ꅐꉤꐔꑒꍏꌃꏳꀷꏂꎇꁅꀍꀤ꒻ꀘ꒒ꎭꈤꂦᖘꆰꋪꌚ꓄ꀎ꒦ꅐꉧꌩꁴꋫꃲꉓꃸꑾꄘꁅꃄ꒐꒑ꀗ꒒ꂵꁹꄱꉣꋟꋪꇘ꓅ꌇ꒦ꅏꋋꌥ꒗ᏗᏰᎴᏋጀᎶᏂᎥᏠᏦᏝᎷᏁᎧᎮᎤᏒᏕᏖᏬᏉᏇፈᎩፚ)' },
+      
+{name:'Symbol2',symbols:'(╭╮┌┐┍┑┎┒┏┓╰╯└┘┕┙┖┚┗┛╒╕╓╖╔╗┟┧┢┪╘╛╙╜╚╝┞┦┡┩▛▜▞▚◢◣◤◥▬▭▙▟▚▞◿◺◸◹▮▯┈┄╌┉┅╍━═╴╺┊┆╎│┋┇╏┃╵╷░▒▓▕║▏▎▍▌▋▊▐▉█▇▆▅▄▃▂▁▔▀■▝▘▗▖╱╲╳╶╸╹╻╼╾╿╽◧◨◩◪◘◙◚◛◖◗▪▫▰▱◭◮▲△▼▽▶▷◀◁►▻◄◅▴▵▸▹▾▿◂◃◆◇●◐◑◒◓◔◕├┤┝┥╞╪╡╟╫╢┼╈╁┽╊╉┠┨╠╣┿╇╀┾╂╋┣┫╬╦┬┰┲┱┮┭┯┳╥╤┴┸┺┹┶┵┷┻╨╧╩)'},
+
+{name:'Simbol3',symbols:'(♻♲♼♽☢☮☯♾⚆⚇⚈⚉⍟✪✇⚙⛾⛿✆℗⌷⌸⌹⌺⌻⌼⌽⌾◘◦⦾⍉⦿☉☹❍☺☻☿〠㋡⛒유㋛℡℠™♳♴♵♶♷♸♹♺®©⛀⛁⛂⛃⦰⦱⦲⦳⦴⦵⦶⦷⦸⦹⦺⦻⦼⦽⧀⧁⧂⧃⨀⨁⨂⨶⨷⨸⨭⨮🜀🜁🜂🜃🜄🜅🜆🜇🜈🜉🜊🜋🜌🜍🜎🜏🜐🜑🜒🜓🜔🜕🜖🜗🜘🜙🜚🜛🜜🜝🜞🜟🜠🜡🜢🜣🜤🜥🜦🜧🜨🜩🜪🜫🜬🜭🜮🜯🜰🜱🜲🜳🜴🜵🜶🜷🜸🜹🜺🜻🜼🜽🜾🜿🝀🝁🝂🝃🝄🝅🝆🝇🝈🝉🝊🝋🝌🝍🝎🝏🝐🝑🝒🝓🝔🝕🝖🝗🝘🝙🝚🝛🝜🝝🝞🝟🝠🝡🝢🝣🝤🝥🝦🝧🝨🝩🝪🝫🝬🝭🝮🝯🝰🝱🝲✼✠☆★✡✴✺☼☸❋✽✻❆۞☀❃❂✿❀❁✲⋆⛤⛥⛦⛧❄❅❇❖✫✬✮✭✯✰𖤓❉✤✧✥✱✩✳✵✶✷✸✹✾❈❊♦♤♣♢♠◊♧♡♙♟♘♞♗♝♖♜♕♛♔♚⚀⚁⚂⚃⚄⚅♭♫♬♪♩✦𝄪𝄆𝄇𝄈𝄐𝄑𝄒𝆒𝆓𝄫𝄞𝄢𝄡⇆◁❚▷↻▶☰≡Ξ㊂≣⁝⋮︙⦙⁞⋯…∷▲▼△▽⌃⌄𓃑𓏧⸬⇍⇎⇏⇐⇑⇒⇓⇔⇕⇖⇗⇘⇙⇦⇧⇪⇫➔➙➘➚«»⇨⇚⇶⇵⇴⇳⇰⇯⇮⇭⇬⇩↨↧↦↥↤↣↢↡↠↟↞↝↜↛↚↙↘↗↖↕↮⇤⇥⇲⇞⇟↩↱↫↬⇝↰↲↳↴↵↯↷↺⇜↶↼↽↾↿⇀⇁⇂⇃⇄⇅⇇⇈⇉⇊➛➜➞➟➠➡➢➣➤➥➦➶➵➳➴➲➱➯➾➽➭➬➼➻➫➪➺➹➩➨➸➷➧⃕⪡⨣◀▬☠✙✛✜✝✞✟✖✘✕✁✃✄✂웃‡ﾒ♀♂✚♱♰☩☨☦†☣¤€£Ұ₴$₰₪₤¥₳₲₵元₣₱฿₡₮₭₩円₢₥₫₦zł﷼₠₧₯₨Kčरƒ₹✍☚☜☟☛☞☝✌¶§‰✒✑✐✏✎x✈⌨☏☎☊⅍℆№℅☂☃☽☾♁♨☇☈☄°℃℉ϟ☐☑☒✓✔✗☓∨√•‣⁃❞❝∛∜✅❎〥⍢〲〴ϡ⍥⅟½⅓⅕⅙⅛⅔⅖⅚⅜¾⅗⅝⅞⅘%‱💕⌀⌂⌅⌆⌇⌈⌉⌊⌋⌌⌍⌎⌏⌐⌑⌒⌓⌔⌕⌖⌗⌘⌙⌚⌛⌜⌝⌞⌟⌠⌢⌣⌤⌥⌦⌧⌫⌬⌭⌮⌳⌯⌰⌱⌲⌴⌵⌶⌿⍀⍁⍂⍃⍄⍅⍆⍇⍈⍊⍋⍌⍍⍎⍏⍐⍑⍒⍓⍔⍕⍖⍗⍘⍙⍚⍛⍜⍝⍞⍠⍡⍣⍤⍦⍧⍨⍩〶⛅☔⛄⚰☡⚠☤☥☧☪☫☬☭☱☲☳☴☵☶☷♃♄♅♇♈♉♊♋♌♍♎♏♐♑♒♓♮♯♿⚊⚋⚌⚍⚎⚏⚐⚑⚒⚓⚔⚕⚖⚗⚘⚚⚛⚜⚝⚞⚟⚡⚢⚣⚤⚥⚦⚧⚨⚩⚪⚬⚭⚮⚯⚱⚲⚳⚴⚵⚶⚷⚸⚹⚺⚻⚼⚽⚾⚿⛇⛈⛆⛉⛊⛋⛌⛍⛎⛏⛐⛑⛓⛔⛕⛖⛗⛘⛙⛚⛛⛜⛝⛞⛟⛠⛡⛢⛣⛨⛩⛪⛫⛬⛭⛮⛯⛰⛱⛲⛳⛴⛵⛶⛷⛸⛹⛺⛻⛼⛽✉✊✋✨❌❏❐❑❒❓❔❕❗❘❙❛❜❟❠❡❢❣❤➕➖➗➝➮➰➿⟀⟁⟂⟃⟄⟅⟆⟇⟈⟉⟊⟋⟌⟍⟎⟏⟐⟑⟒⟓⟔⟕⟖⟗⟘⟙⟚⟛⟜⟝⟞⟟⟠⟡⟢⟣⟤⟥⧄⧅⧆⧇⧈⧉⊞⊟⊠⊡⍯⍰〾⎅⎕⏍⧠⎖⎗⎘⎙⎚⎌⎎⏀⏁⏂⎉⎊⎋⨴⨵〄㉿⨹⨺⨻⎄⩌⩍⩐⎆⎇⎈⎓⎔⍾⍿⎀⎁⎂⎃⏎≗≘≙≚≛≜≝≞≟〷〿❨❩❪❫❬❭❮❯❰❱❲❳❴❵⟦⟧⟨⟩⟪⟫⁅⁆⧼⧽⦃⦄⦅⦆⦇⦈⦉⦊⦋⦌⦍⦎⦏⦐⦑⦒⦓⦔⦕⦖⦗⦘〈〉《》「」『』【】〔〕〖〗〘〙〚〛﴾﴿⊏⊐⫍⫎⊑⊒⋤⋥⊓⊔⊂⊃⊆⊇⊊⊋⪽⪾⪿⫀⫁⫂⋐⋑⋒⋓⫏⫐⫑⫒⫓⫔⫕⫖⫗⫘⊌⊍⊎∩∪⋂⋃⨃⨄⩀⩁⩂⩃⩄⩅⩆⩈⩇⩉⎍⨿⨅⨆⩎⩏⏉⏊⎿⏋⏌⎾∟⎴⎵⍽⨼⨽⎶⫞⫟⫠⫡⊢⊣⊤⊥⊦⫢⊪⧦⊫⊧⊨⊩⫦⫣⫤⫥⫧⫨〒⫩⫪⫫∧⋀⋁⧊⧋⧌⧍⩑⩒⩓⩔⩕⩖⋈⋉⋊⨝⋋⋌⧨⧩⧪⧬⧭⧮⧯⧰⧱⧲⧳⧑⧒⧓⧔⧕⧖⧗⧎⧏⧐⦚⧘⧙⧚⧛⥼⥽⥾⥿⦀⦁⦂⦛⦜⦝⦞⦟⦠⦡⦢⦣⦤⦥⦨⦩⦪⦫⦬⦭⦮⦯⦦⦧↔♆⊕⊖⊗⊘⊝⊙⊚⊛⊜)'},
+       
+{name:'Simbol4 ',symbols:'(➔➘➙➚➛➜➝➞➟➠➡➢➣➤➥➦➧➨➩➪➫➬➭➮➯➱➲➳➴➵➶➷➸➹➺➻➼➽➾←→↑↓⟰⟱⟲⟳↺↻⟴↖↗↘↙↜↝↞↟↠↡↢↣↤↥↦↧↨↩↪↫↬↭↯↰↱↲↳↴↵↶↷↸↹↼↽↾↿⇀⇁⇂⇃⇄⇅⇆⇇⇈⇉⇊⇋⇌⇐⇑⇒⇓⇔⇕⇖⇗⇘⇙⇚⇛⇜⇝⇞⇟⇠⇡⇢⇣⇤⇥⇦⇧⇨⇩⇪⇫⇬⇭⇮⇯⇰⇱⇲⇳⇴⇵⇶⇷⇸⇹⇺⇻⇼⇽⇾⇿⟵⟶⟷⟸⟹⟺⟻⟼⟽⟾⟿⤀⤁⤂⤃⤄⤅⤆⤇⤈⤉⤊⤋⤌⤍⤎⤏⤐⤑⤒⤓⤔⤕⤖⤗⤘⤙⤚⤛⤜⤝⤞⤟⤠⤡⤢⤣⤤⤥⤦⤧⤨⤩⤪⤫⤬⤭⤮⤯⤰⤱⤲⤳⤴⤵⤶⤷⤸⤹⤺⤻⤼⤽⤾⤿⥀⥁⥂⥃⥄⥅⥆⥇⥈⥉⥊⥋⥌⥍⥎⥏⥐⥑⥒⥓⥔⥕⥖⥗⥘⥙⥚⥛⥜⥝⥞⥟⥠⥡⥢⥣⥤⥥⥦⥧⥨⥩⥪⥫⥬⥭⥮⥯⥰⥱⥲⥳⥴⥵⥶⥷⥸⥹⥺⥻)'},
+
+{name: 'Kartu', 
+  symbols: '(🀀🀁🀂🀃🀄🀅🀆🀇🀈🀉🀊🀋🀌🀍🀎🀏🀐🀑🀒🀓🀔🀕🀖🀗🀘🀙🀚🀛🀜🀝🀞🀟🀠🀡🀢🀣🀤🀥🀦🀧🀨🀩🀪🀫🀰🀱🀲🀳🀴🀵🀶🀷🀸🀹🀺🀻🀼🀽🀾🀿🁀🁁🁂🁃🁄🁅🁆🁇🁈🁉🁊🁋🁌🁍🁎🁏🁐🁑🁒🁓🁔🁕🁖🁗🁘🁙🁚🁛🁜🁝🁞🁟🁠🁡🁢🁣🁤🁥🁦🁧🁨🁩🁪🁫🁬🁭🁮🁯🁰🁱🁲🁳🁴🁵🁶🁷🁸🁹🁺🁻🁼🁽🁾🁿🂀🂁🂂🂃🂄🂅🂆🂇🂈🂉🂊🂋🂌🂍🂎🂏🂐🂑🂒🂓🂠🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂬🂭🂮🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂼🂽🂾🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃌🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛)' 
+},
+
+      { name: 'Emoji', symbols: '(😀😃😄😁😆😅😂🤣🥲🥹☺️😊😇🙂🙃😉😌😍🥰😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🥸🤩🥳😏😒😞😔😟😕🙁☹️😣😖😫😩🥺😢😭😮‍💨😤😠😡🤬🤯😳🥵🥶😱😨😰😥😓🫣🤗🫡🤔🫢🤭🤫🤥😶😶‍🌫️😐😑😬🫨🫠🙄😯😦😧😮😲🥱😴🫩🤤😪😵😵‍💫🫥🤐🥴🤢🤮🤧😷🤒🤕🤑🤠😈👿👹👺🤡💩👻💀☠️👽👾🤖🎃😺😸😹😻😼😽🙀😿😾👶👧🧒👦👩🧑👨👩‍🦱🧑‍🦱👨‍🦱👩‍🦰🧑‍🦰👨‍🦰👱‍♀️👱👱‍♂️👩‍🦳🧑‍🦳👨‍🦳👩‍🦲🧑‍🦲👨‍🦲🧔‍♀️🧔🧔‍♂️👵🧓👴👲👳‍♀️👳👳‍♂️🧕👮‍♀️👮👮‍♂️👷‍♀️👷👷‍♂️💂‍♀️💂💂‍♂️🕵️‍♀️🕵️🕵️‍♂️👩‍⚕️🧑‍⚕️👨‍⚕️👩‍🌾🧑‍🌾👨‍🌾👩‍🍳🧑‍🍳👨‍🍳👩‍🎓🧑‍🎓👨‍🎓👩‍🎤🧑‍🎤👨‍🎤👩‍🏫🧑‍🏫👨‍🏫👩‍🏭🧑‍🏭👨‍🏭👩‍💻🧑‍💻👨‍💻👩‍💼🧑‍💼👨‍💼👩‍🔧🧑‍🔧👨‍🔧👩‍🔬🧑‍🔬👨‍🔬👩‍🎨🧑‍🎨👨‍🎨👩‍🚒🧑‍🚒👨‍🚒👩‍✈️🧑‍✈️👨‍✈️👩‍🚀🧑‍🚀👨‍🚀👩‍⚖️🧑‍⚖️👨‍⚖️👰‍♀️👰👰‍♂️🤵‍♀️🤵🤵‍♂️👸🫅🤴🥷🦸‍♀️🦸🦸‍♂️🦹‍♀️🦹🦹‍♂️🤶🧑‍🎄🎅🧙‍♀️🧙🧙‍♂️🧝‍♀️🧝🧝‍♂️🧛‍♀️🧛🧛‍♂️🧟‍♀️🧟🧟‍♂️🧞‍♀️🧞🧞‍♂️🧜‍♀️🧜🧜‍♂️🧚‍♀️🧚🧚‍♂️🧌👼🤰🫄🫃🤱👩‍🍼🧑‍🍼👨‍🍼🙇‍♀️🙇🙇‍♂️💁‍♀️💁💁‍♂️🙅‍♀️🙅🙅‍♂️🙆‍♀️🙆🙆‍♂️🙋‍♀️🙋🙋‍♂️🧏‍♀️🧏🧏‍♂️🤦‍♀️🤦🤦‍♂️🤷‍♀️🤷🤷‍♂️🙎‍♀️🙎🙎‍♂️🙍‍♀️🙍🙍‍♂️💇‍♀️💇💇‍♂️💆‍♀️💆💆‍♂️🧖‍♀️🧖🧖‍♂️💅🤳💃🕺👯‍♀️👯👯‍♂️🕴👩‍🦽👨‍🦽🚶🧑‍🦯🧎‍♀️🧎‍🏃‍♀️‍🏃‍🧍‍♀️🧍🧍‍♂️👭🧑‍🤝‍🧑👬👫👩‍❤️‍👩💑👨‍❤️‍👨👩‍❤️‍👨👩‍❤️‍💋‍👩💏👨‍❤️‍💋‍👨👩‍❤️‍💋‍👨👪👨‍👩‍👦👨‍👩‍👧👨‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👩‍👧‍👧👨‍👨‍👦👨‍👨‍👧👨‍👨‍👧‍👦👨‍👨‍👦‍👦👨‍👨‍👧‍👧👩‍👩‍👦👩‍👩‍👧👩‍👩‍👧‍👦👩‍👩‍👦‍👦👩‍👩‍👧‍👧👨‍👦👨‍👦‍👦👨‍👧👨‍👧‍👦👨‍👧‍👧👩‍👦👩‍👦‍👦👩‍👧👩‍👧‍👦👩‍👧‍👧🧑‍🧑‍🧒🧑‍🧑‍🧒‍🧒🧑‍🧒🧑‍🧒‍🧒🗣👤👥🫂🧳🌂☂️🧵🪡🪢🪭🧶👓🕶🥽🥼🦺👔👕👖🧣🧤🧥🧦👗👘🥻🩴🩱🩲🩳👙👚👛👜👝🎒👞👟🥾🥿👠👡🩰👢👑👒🎩🎓🧢⛑🪖💄💍💼🐶🐱🐭🐹🐰🦊🐻🐼🐻‍❄️🐨🐯🦁🐮🐷🐽🐸🐵🙈🙉🙊🐒🐔🐧🐦🐦‍⬛🐤🐣🐥🦆🦅🦉🦇🐺🐗🐴🦄🐝🪱🐛🦋🐌🐞🐜🪰🪲🪳🦟🦗🕷🕸🦂🐢🐍🦎🦖🦕🐙🦑🦐🦞🦀🪼🪸🐡🐠🐟🐬🐳🐋🦈🐊🐅🐆🦓🫏🦍🦧🦣🐘🦛🦏🐪🐫🦒🦘🦬🐃🐂🐄🐎🐖🐏🐑🦙🐐🦌🫎🐕🐩🦮🐕‍🦺🐈🐈‍⬛🪽🪶🐓🦃🦤🦚🦜🦢🪿🦩🕊🐇🦝🦨🦡🦫🦦🦥🐁🐀🐿🦔🐾🐉🐲🐦‍🔥🌵🎄🌲🌳🪾🌴🪹🪺🪵🌱🌿☘️🍀🎍🪴🎋🍃🍂🍁🍄🍄‍🟫🐚🪨🌾💐🌷🪷🌹🥀🌺🌸🪻🌼🌻🌞🌝🌛🌜🌚🌕🌖🌗🌘🌑🌒🌓🌔🌙🌎🌍🌏🪐💫⭐️🌟✨⚡️☄️💥🔥🌪🌈☀️🌤⛅️🌥☁️🌦🌧⛈🌩🌨❄️☃️⛄️🌬💨💧💦🫧☔️☂️🌊👋🏿🤚🏿🖐🏿✋🏿🖖🏿👌🏿🤌🏿🤏🏿✌🏿🤞🏿🫰🏿🤟🏿🤘🏿🤙🏿🫵🏿🫱🏿🫲🏿🫸🏿🫷🏿🫳🏿🫴🏿👈🏿👉🏿👆🏿🖕🏿👇🏿☝🏿👍🏿👎🏿✊🏿👊🏿🤛🏿🤜🏿👏🏿🫶🏿🙌🏿👐🏿🤲🏿🙏🏿✍🏿💅🏿🤳🏿💪🏿🦵🏿🦶🏿👂🏿🦻🏿👃🏿👶🏿👧🏿🧒🏿👦🏿👩🏿🧑🏿👨🏿👩🏿‍🦱🧑🏿‍🦱👨🏿‍🦱👩🏿‍🦰🧑🏿‍🦰👨🏿‍🦰👱🏿‍♀️👱🏿👱🏿‍♂️👩🏿‍🦳🧑🏿‍🦳👨🏿‍🦳👩🏿‍🦲🧑🏿‍🦲👨🏿‍🦲🧔🏿‍♀️🧔🏿🧔🏿‍♂️👵🏿🧓🏿👴🏿👲🏿👳🏿‍♀️👳🏿👳🏿‍♂️🧕🏿👮🏿‍♀️👮🏿👮🏿‍♂️👷🏿‍♀️👷🏿👷🏿‍♂️💂🏿‍♀️💂🏿💂🏿‍♂️🕵🏿‍♀️🕵🏿🕵🏿‍♂️👩🏿‍⚕️🧑🏿‍⚕️👨🏿‍⚕️👩🏿‍🌾🧑🏿‍🌾👨🏿‍🌾👩🏿‍🍳🧑🏿‍🍳👨🏿‍🍳👩🏿‍🎓🧑🏿‍🎓👨🏿‍🎓👩🏿‍🎤🧑🏿‍🎤👨🏿‍🎤👩🏿‍🏫🧑🏿‍🏫👨🏿‍🏫👩🏿‍🏭🧑🏿‍🏭👨🏿‍🏭👩🏿‍💻🧑🏿‍💻👨🏿‍💻👩🏿‍💼🧑🏿‍💼👨🏿‍💼👩🏿‍🔧🧑🏿‍🔧👨🏿‍🔧👩🏿‍🔬🧑🏿‍🔬👨🏿‍🔬👩🏿‍🎨🧑🏿‍🎨👨🏿‍🎨👩🏿‍🚒🧑🏿‍🚒👨🏿‍🚒👩🏿‍✈️🧑🏿‍✈️👨🏿‍✈️👩🏿‍🚀🧑🏿‍🚀👨🏿‍🚀👩🏿‍⚖️🧑🏿‍⚖️👨🏿‍⚖️👰🏿‍♀️👰🏿👰🏿‍♂️🤵🏿‍♀️🤵🏿🤵🏿‍♂️👸🏿🫅🏿🤴🏿🥷🏿🦸🏿‍♀️🦸🏿🦸🏿‍♂️🦹🏿‍♀️🦹🏿🦹🏿‍♂️🤶🏿🧑🏿‍🎄🎅🏿🧙🏿‍♀️🧙🏿🧙🏿‍♂️🧝🏿‍♀️🧝🏿🧝🏿‍♂️🧛🏿‍♀️🧛🏿🧛🏿‍♂️🧜🏿‍♀️🧜🏿🧜🏿‍♂️🧚🏿‍♀️🧚🏿🧚🏿‍♂️👼🏿🤰🏿🫄🏿🫃🏿🤱🏿👩🏿‍🍼🧑🏿‍🍼👨🏿‍🍼🙇🏿‍♀️🙇🏿🙇🏿‍♂️💁🏿‍♀️💁🏿💁🏿‍♂️🙅🏿‍♀️🙅🏿🙅🏿‍♂️🙆🏿‍♀️🙆🏿🙆🏿‍♂️🙋🏿‍♀️🙋🏿🙋🏿‍♂️🧏🏿‍♀️🧏🏿🧏🏿‍♂️🤦🏿‍♀️🤦🏿🤦🏿‍♂️🤷🏿‍♀️🤷🏿🤷🏿‍♂️🙎🏿‍♀️🙎🏿🙎🏿‍♂️🙍🏿‍♀️🙍🏿🙍🏿‍♂️💇🏿‍♀️💇🏿💇🏿‍♂️💆🏿‍♀️💆🏿💆🏿‍♂️🧖🏿‍♀️🧖🏿🧖🏿‍♂️💃🏿🕺🏿🕴🏿👩🏿‍🦽🧑🏿‍🦽🚶🏿‍♀️🚶🏿👩🏿‍🦯🧑🏿‍🦯🧎🏿‍♀️🧎🏿‍🏃🏿‍♀️‍🏃🏿‍🧍🏿‍♀️🧍🏿🧍🏿‍♂️👭🏿🧑🏿‍🤝‍🧑🏿👬🏿👫🏿🧗🏿‍♀️🧗🏿🧗🏿‍♂️🏇🏿🏂🏿🏌🏿‍♀️🏌🏿🏌🏿‍♂️🏄🏿‍♀️🏄🏿🏄🏿‍♂️🚣🏿‍♀️🚣🏿🚣🏿‍♂️🏊🏿‍♀️🏊🏿🏊🏿‍♂️⛹🏿‍♀️⛹🏿⛹🏿‍♂️🏋🏿‍♀️🏋🏿🏋🏿‍♂️🚴🏿‍♀️🚴🏿🚴🏿‍♂️🚵🏿‍♀️🚵🏿🚵🏿‍♂️🤸🏿‍♀️🤸🏿🤸🏿‍♂️🤽🏿‍♀️🤽🏿🤽🏿‍♂️🤾🏿‍♀️🤾🏿🤾🏿‍♂️🤹🏿‍♀️🤹🏿🤹🏿‍♂️🧘🏿‍♀️🧘🏿🧘🏿‍♂️🛀🏿🛌🏿👋🏾🤚🏾🖐🏾✋🏾🖖🏾👌🏾🤌🏾🤏🏾✌🏾🤞🏾🫰🏾🤟🏾🤘🏾🤙🏾🫵🏾🫱🏾🫲🏾🫸🏾🫷🏾🫳🏾🫴🏾👈🏾👉🏾👆🏾🖕🏾👇🏾☝🏾👍🏾👎🏾✊🏾👊🏾🤛🏾🤜🏾👏🏾🫶🏾🙌🏾👐🏾🤲🏾🙏🏾✍🏾💅🏾🤳🏾💪🏾🦵🏾🦶🏾👂🏾🦻🏾👃🏾👶🏾👧🏾🧒🏾👦🏾👩🏾🧑🏾👨🏾👩🏾‍🦱🧑🏾‍🦱👨🏾‍🦱👩🏾‍🦰🧑🏾‍🦰👨🏾‍🦰👱🏾‍♀️👱🏾👱🏾‍♂️👩🏾‍🦳🧑🏾‍🦳👨🏾‍🦳👩🏾‍🦲🧑🏾‍🦲👨🏾‍🦲🧔🏾‍♀️🧔🏾🧔🏾‍♂️👵🏾🧓🏾👴🏾👲🏾👳🏾‍♀️👳🏾👳🏾‍♂️🧕🏾👮🏾‍♀️👮🏾👮🏾‍♂️👷🏾‍♀️👷🏾👷🏾‍♂️💂🏾‍♀️💂🏾💂🏾‍♂️🕵🏾‍♀️🕵🏾🕵🏾‍♂️👩🏾‍⚕️🧑🏾‍⚕️👨🏾‍⚕️👩🏾‍🌾🧑🏾‍🌾👨🏾‍🌾👩🏾‍🍳🧑🏾‍🍳👨🏾‍🍳👩🏾‍🎓🧑🏾‍🎓👨🏾‍🎓👩🏾‍🎤🧑🏾‍🎤👨🏾‍🎤👩🏾‍🏫🧑🏾‍🏫👨🏾‍🏫👩🏾‍🏭🧑🏾‍🏭👨🏾‍🏭👩🏾‍💻🧑🏾‍💻👨🏾‍💻👩🏾‍💼🧑🏾‍💼👨🏾‍💼👩🏾‍🔧🧑🏾‍🔧👨🏾‍🔧👩🏾‍🔬🧑🏾‍🔬👨🏾‍🔬👩🏾‍🎨🧑🏾‍🎨👨🏾‍🎨👩🏾‍🚒🧑🏾‍🚒👨🏾‍🚒👩🏾‍✈️🧑🏾‍✈️👨🏾‍✈️👩🏾‍🚀🧑🏾‍🚀👨🏾‍🚀👩🏾‍⚖️🧑🏾‍⚖️👨🏾‍⚖️👰🏾‍♀️👰🏾👰🏾‍♂️🤵🏾‍♀️🤵🏾🤵🏾‍♂️👸🏾🫅🏾🤴🏾🥷🏾🦸🏾‍♀️🦸🏾🦸🏾‍♂️🦹🏾‍♀️🦹🏾🦹🏾‍♂️🤶🏾🧑🏾‍🎄🎅🏾🧙🏾‍♀️🧙🏾🧙🏾‍♂️🧝🏾‍♀️🧝🏾🧝🏾‍♂️🧛🏾‍♀️🧛🏾🧛🏾‍♂️🧜🏾‍♀️🧜🏾🧜🏾‍♂️🧚🏾‍♀️🧚🏾🧚🏾‍♂️👼🏾🤰🏾🫄🏾🫃🏾🤱🏾👩🏾‍🍼🧑🏾‍🍼👨🏾‍🍼🙇🏾‍♀️🙇🏾🙇🏾‍♂️💁🏾‍♀️💁🏾💁🏾‍♂️🙅🏾‍♀️🙅🏾🙅🏾‍♂️🙆🏾‍♀️🙆🏾🙆🏾‍♂️🙋🏾‍♀️🙋🏾🙋🏾‍♂️🧏🏾‍♀️🧏🏾🧏🏾‍♂️🤦🏾‍♀️🤦🏾🤦🏾‍♂️🤷🏾‍♀️🤷🏾🤷🏾‍♂️🙎🏾‍♀️🙎🏾🙎🏾‍♂️🙍🏾‍♀️🙍🏾🙍🏾‍♂️💇🏾‍♀️💇🏾💇🏾‍♂️💆🏾‍♀️💆🏾💆🏾‍♂️🧖🏾‍♀️🧖🏾🧖🏾‍♂️💃🏾🕺🏾🕴🏿👩🏾‍🦽👩🏾‍🦽‍🧑🏾‍🦽‍👨🏾‍🦽‍👩🏾‍🦼‍🧑🏾‍🦼‍🚶🏾‍♀️🚶🏾🧑🏾‍🦯🧎🏾‍♀️‍🧎🏾‍🏃🏾‍♀️🏃🏾‍🏃🏾‍♂️‍🧍🏾‍♀️🧍🏾🧍🏾‍♂️👭🏾🧑🏾‍🤝‍🧑🏾👬🏾👫🏾🧗🏾‍♀️🧗🏾🧗🏾‍♂️🏇🏾🏂🏾🏌🏾‍♀️🏌🏾🏌🏾‍♂️🏄🏾‍♀️🏄🏾🏄🏾‍♂️🚣🏾‍♀️🚣🏾🚣🏾‍♂️🏊🏾‍♀️🏊🏾🏊🏾‍♂️⛹🏾‍♀️⛹🏾⛹🏾‍♂️🏋🏾‍♀️🏋🏾🏋🏾‍♂️🚴🏾‍♀️🚴🏾🚴🏾‍♂️🚵🏾‍♀️🚵🏾🚵🏾‍♂️🤸🏾‍♀️🤸🏾🤸🏾‍♂️🤽🏾‍♀️🤽🏾🤽🏾‍♂️🤾🏾‍♀️🤾🏾🤾🏾‍♂️🤹🏾‍♀️🤹🏾🤹🏾‍♂️🧘🏾‍♀️🧘🏾🧘🏾‍♂️🛀🏾🛌🏾👋🏼🤚🏼🖐🏼✋🏼🖖🏼👌🏼🤌🏼🤏🏼✌🏼🤞🏼🫰🏼🤟🏼🤘🏼🤙🏼🫵🏼🫱🏼🫲🏼🫸🏼🫷🏼🫳🏼🫴🏼👈🏼👉🏼👆🏼🖕🏼👇🏼☝🏼👍🏼👎🏼✊🏼👊🏼🤛🏼🤜🏼👏🏼🫶🏼🙌🏼👐🏼🤲🏼🙏🏼✍🏼💅🏼🤳🏼💪🏼🦵🏼🦶🏼👂🏼🦻🏼👃🏼👶🏼👧🏼🧒🏼👦🏼👩🏼🧑🏼👨🏼👩🏼‍🦱🧑🏼‍🦱👨🏼‍🦱👩🏼‍🦰🧑🏼‍🦰👨🏼‍🦰👱🏼‍♀️👱🏼👱🏼‍♂️👩🏼‍🦳🧑🏼‍🦳👨🏼‍🦳👩🏼‍🦲🧑🏼‍🦲👨🏼‍🦲🧔🏼‍♀️🧔🏼🧔🏼‍♂️👵🏼🧓🏼👴🏼👲🏼👳🏼‍♀️👳🏼👳🏼‍♂️🧕🏼👮🏼‍♀️👮🏼👮🏼‍♂️👷🏼‍♀️👷🏼👷🏼‍♂️💂🏼‍♀️💂🏼💂🏼‍♂️🕵🏼‍♀️🕵🏼🕵🏼‍♂️👩🏼‍⚕️🧑🏼‍⚕️👨🏼‍⚕️👩🏼‍🌾🧑🏼‍🌾👨🏼‍🌾👩🏼‍🍳🧑🏼‍🍳👨🏼‍🍳👩🏼‍🎓🧑🏼‍🎓👨🏼‍🎓👩🏼‍🎤🧑🏼‍🎤👨🏼‍🎤👩🏼‍🏫🧑🏼‍🏫👨🏼‍🏫👩🏼‍🏭🧑🏼‍🏭👨🏼‍🏭👩🏼‍💻🧑🏼‍💻👨🏼‍💻👩🏼‍💼🧑🏼‍💼👨🏼‍💼👩🏼‍🔧🧑🏼‍🔧👨🏼‍🔧👩🏼‍🔬🧑🏼‍🔬👨🏼‍🔬👩🏼‍🎨🧑🏼‍🎨👨🏼‍🎨👩🏼‍🚒🧑🏼‍🚒👨🏼‍🚒👩🏼‍✈️🧑🏼‍✈️👨🏼‍✈️👩🏼‍🚀🧑🏼‍🚀👨🏼‍🚀👩🏼‍⚖️🧑🏼‍⚖️👨🏼‍⚖️👰🏼‍♀️👰🏼👰🏼‍♂️🤵🏼‍♀️🤵🏼🤵🏼‍♂️👸🏼🫅🏼🤴🏼🥷🏼🦸🏼‍♀️🦸🏼🦸🏼‍♂️🦹🏼‍♀️🦹🏼🦹🏼‍♂️🤶🏼🧑🏼‍🎄🎅🏼🧙🏼‍♀️🧙🏼🧙🏼‍♂️🧝🏼‍♀️🧝🏼🧝🏼‍♂️🧛🏼‍♀️🧛🏼🧛🏼‍♂️🧜🏼‍♀️🧜🏼🧜🏼‍♂️🧚🏼‍♀️🧚🏼🧚🏼‍♂️👼🏼🤰🏼🫄🏼🫃🏼🤱🏼👩🏼‍🍼🧑🏼‍🍼👨🏼‍🍼🙇🏼‍♀️🙇🏼🙇🏼‍♂️💁🏼‍♀️💁🏼💁🏼‍♂️🙅🏼‍♀️🙅🏼🙅🏼‍♂️🙆🏼‍♀️🙆🏼🙆🏼‍♂️🙋🏼‍♀️🙋🏼🙋🏼‍♂️🧏🏼‍♀️🧏🏼🧏🏼‍♂️🤦🏼‍♀️🤦🏼🤦🏼‍♂️🤷🏼‍♀️🤷🏼🤷🏼‍♂️🙎🏼‍♀️🙎🏼🙎🏼‍♂️🙍🏼‍♀️🙍🏼🙍🏼‍♂️💇🏼‍♀️💇🏼💇🏼‍♂️💆🏼‍♀️💆🏼💆🏼‍♂️🧖🏼‍♀️🧖🏼🧖🏼‍♂️💃🏼🕺🏼🕴🏼👩🏼‍🦽🧑🏼‍🦽‍👩🏼‍🦼🚶🏼‍♀️🚶🏼‍👩🏼‍🦯‍🧑🏼‍🦯🧎🏼‍♀️🧎🏼‍♀️‍🧎🏼‍🏃🏼‍♀️🏃🏼‍🧍🏼‍♀️🧍🏼🧍🏼‍♂️👭🏼🧑🏼‍🤝‍🧑🏼👬🏼👫🏼🧗🏼‍♀️🧗🏼🧗🏼‍♂️🏇🏼🏂🏼🏌🏼‍♀️🏌🏼🏌🏼‍♂️🏄🏼‍♀️🏄🏼🏄🏼‍♂️🚣🏼‍♀️🚣🏼🚣🏼‍♂️🏊🏼‍♀️🏊🏼🏊🏼‍♂️⛹🏼‍♀️⛹🏼⛹🏼‍♂️🏋🏼‍♀️🏋🏼🏋🏼‍♂️🚴🏼‍♀️🚴🏼🚴🏼‍♂️🚵🏼‍♀️🚵🏼🚵🏼‍♂️🤸🏼‍♀️🤸🏼🤸🏼‍♂️🤽🏼‍♀️🤽🏼🤽🏼‍♂️🤾🏼‍♀️🤾🏼🤾🏼‍♂️🤹🏼‍♀️🤹🏼🤹🏼‍♂️🧘🏼‍♀️🧘🏼🧘🏼‍♂️🛀🏼🛌🏼👋🏻🤚🏻🖐🏻✋🏻🖖🏻👌🏻🤌🏻🤏🏻✌🏻🤞🏻🫰🏻🤟🏻🤘🏻🤙🏻🫵🏻🫱🏻🫲🏻🫸🏻🫷🏻🫳🏻🫴🏻👈🏻👉🏻👆🏻🖕🏻👇🏻☝🏻👍🏻👎🏻✊🏻👊🏻🤛🏻🤜🏻👏🏻🫶🏻🙌🏻👐🏻🤲🏻🙏🏻✍🏻💅🏻🤳🏻💪🏻🦵🏻🦶🏻👂🏻🦻🏻👃🏻👶🏻👧🏻🧒🏻👦🏻👩🏻🧑🏻👨🏻👩🏻‍🦱🧑🏻‍🦱👨🏻‍🦱👩🏻‍🦰🧑🏻‍🦰👨🏻‍🦰👱🏻‍♀️👱🏻👱🏻‍♂️👩🏻‍🦳🧑🏻‍🦳👨🏻‍🦳👩🏻‍🦲🧑🏻‍🦲👨🏻‍🦲🧔🏻‍♀️🧔🏻🧔🏻‍♂️👵🏻🧓🏻👴🏻👲🏻👳🏻‍♀️👳🏻👳🏻‍♂️🧕🏻👮🏻‍♀️👮🏻👮🏻‍♂️👷🏻‍♀️👷🏻👷🏻‍♂️💂🏻‍♀️💂🏻💂🏻‍♂️🕵🏻‍♀️🕵🏻🕵🏻‍♂️👩🏻‍⚕️🧑🏻‍⚕️👨🏻‍⚕️👩🏻‍🌾🧑🏻‍🌾👨🏻‍🌾👩🏻‍🍳🧑🏻‍🍳👨🏻‍🍳👩🏻‍🎓🧑🏻‍🎓👨🏻‍🎓👩🏻‍🎤🧑🏻‍🎤👨🏻‍🎤👩🏻‍🏫🧑🏻‍🏫👨🏻‍🏫👩🏻‍🏭🧑🏻‍🏭👨🏻‍🏭👩🏻‍💻🧑🏻‍💻👨🏻‍💻👩🏻‍💼🧑🏻‍💼👨🏻‍💼👩🏻‍🔧🧑🏻‍🔧👨🏻‍🔧👩🏻‍🔬🧑🏻‍🔬👨🏻‍🔬👩🏻‍🎨🧑🏻‍🎨👨🏻‍🎨👩🏻‍🚒🧑🏻‍🚒👨🏻‍🚒👩🏻‍✈️🧑🏻‍✈️👨🏻‍✈️👩🏻‍🚀🧑🏻‍🚀👨🏻‍🚀👩🏻‍⚖️🧑🏻‍⚖️👨🏻‍⚖️👰🏻‍♀️👰🏻👰🏻‍♂️🤵🏻‍♀️🤵🏻🤵🏻‍♂️👸🏻🫅🏻🤴🏻🥷🏻🦸🏻‍♀️🦸🏻🦸🏻‍♂️🦹🏻‍♀️🦹🏻🦹🏻‍♂️🤶🏻🧑🏻‍🎄🎅🏻🧙🏻‍♀️🧙🏻🧙🏻‍♂️🧝🏻‍♀️🧝🏻🧝🏻‍♂️🧛🏻‍♀️🧛🏻🧛🏻‍♂️🧜🏻‍♀️🧜🏻🧜🏻‍♂️🧚🏻‍♀️🧚🏻🧚🏻‍♂️👼🏻🤰🏻🫄🏻🫃🏻🤱🏻👩🏻‍🍼🧑🏻‍🍼👨🏻‍🍼🙇🏻‍♀️🙇🏻🙇🏻‍♂️💁🏻‍♀️💁🏻💁🏻‍♂️🙅🏻‍♀️🙅🏻🙅🏻‍♂️🙆🏻‍♀️🙆🏻🙆🏻‍♂️🙋🏻‍♀️🙋🏻🙋🏻‍♂️🧏🏻‍♀️🧏🏻🧏🏻‍♂️🤦🏻‍♀️🤦🏻🤦🏻‍♂️🤷🏻‍♀️🤷🏻🤷🏻‍♂️🙎🏻‍♀️🙎🏻🙎🏻‍♂️🙍🏻‍♀️🙍🏻🙍🏻‍♂️💇🏻‍♀️💇🏻💇🏻‍♂️💆🏻‍♀️💆🏻💆🏻‍♂️🧖🏻‍♀️🧖🏻🧖🏻‍♂️💃🏻🕺🏻🕴🏻👩🏻‍🦽👩🏻‍🦽‍🧑🏻‍🦽‍👨🏻‍🦽👩🏻‍🦼‍🚶🏻‍♀️🚶🏻👩🏻‍🦯👨🏻‍🦯‍🧎🏻‍♀️‍🧎🏻‍🏃🏻‍♀️🏃🏻‍🧍🏻‍♀️🧍🏻🧍🏻‍♂️👭🏻🧑🏻‍🤝‍🧑🏻👬🏻👫🏻🧗🏻‍♀️🧗🏻🧗🏻‍♂️🏇🏻🏂🏻🏌🏻‍♀️🏌🏻🏌🏻‍♂️🏄🏻‍♀️🏄🏻🏄🏻‍♂️🚣🏻‍♀️🚣🏻🚣🏻‍♂️🏊🏻‍♀️🏊🏻🏊🏻‍♂️⛹🏻‍♀️⛹🏻⛹🏻‍♂️🏋🏻‍♀️🏋🏻🏋🏻‍♂️🚴🏻‍♀️🚴🏻🚴🏻‍♂️🚵🏻‍♀️🚵🏻🚵🏻‍♂️🤸🏻‍♀️🤸🏻🤸🏻‍♂️🤽🏻‍♀️🤽🏻🤽🏻‍♂️🤾🏻‍♀️🤾🏻🤾🏻‍♂️🤹🏻‍♀️🤹🏻🤹🏻‍♂️🧘🏻‍♀️🧘🏻🧘🏻‍♂️🛀🏻🛌🏻❤️🩷🧡💛💚💙🩵💜🖤🩶🤍🤎❤️‍🔥❤️‍🩹💔❣️💕💞💓💗💖💘💝💟☮️✝️☪️🪯🕉☸️✡️🔯🕎☯️☦️🛐⛎♈️♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️🆔⚛️🉑☢️☣️📴📳🈶🈚️🈸🈺🈷️✴️🆚💮🉐㊙️㊗️🈴🈵🈹🈲🅰️🅱️🆎🆑🅾️🆘❌⭕️🛑⛔️📛🚫💯🫟💢♨️🚷🚯🚳🚱🔞📵🚭❗️❕❓❔‼️⁉️🔅🔆〽️⚠️🚸🔱⚜️🔰♻️✅🈯️💹❇️✳️❎🌐💠Ⓜ️🌀💤🏧🚾♿️🅿️🛗🈳🈂️🛂🛃🛄🛅🚹🚺🚼⚧🚻🚮🎦🛜📶🈁🔣ℹ️🔤🔡🔠🆖🆗🆙🆒🆕🆓0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔢#️⃣*️⃣⏏️▶️⏸⏯⏹⏺⏭⏮⏩⏪⏫⏬◀️🔼🔽➡️⬅️⬆️⬇️↗️↘️↙️↖️↕️↔️↪️↩️⤴️⤵️🔀🔁🔂🔄🔃🎵🎶➕➖➗✖️🟰♾💲💱™️©️®️〰️➰➿🔚🔙🔛🔝🔜✔️☑️🔘🔴🟠🟡🟢🔵🟣⚫️⚪️🟤🔺🔻🔸🔹🔶🔷🔳🔲▪️▫️◾️◽️◼️◻️🟥🟧🟨🟩🟦🟪⬛️⬜️🟫🔈🔇🔉🔊🔔🔕📣📢👁‍🗨💬💭🗯♠️♣️♥️♦️🃏🎴🀄️🕐🕑🕒🕓🕔🕕🕖🕗🕘🕙🕚🕛🕜🕝🕞🕟🕠🕡🕢🕣🕤🕥🕦🕧⌚️📱📲💻⌨️🖥🖨🖱🖲🕹🗜💽💾💿📀📼📷📸📹🎥📽🎞📞☎️📟📠📺📻🎙🎚🎛🧭⏱⏲⏰🕰⌛️⏳📡🔋🪫🔌💡🔦🕯🪔🧯🛢🛍️💸💵💴💶💷🪙💰💳💎⚖️🪮🪜🧰🪛🔧🔨⚒🛠⛏🪚🔩⚙️🪤🧱⛓⛓️‍💥🧲🔫💣🧨🪓🔪🗡⚔️🛡🚬⚰️🪦⚱️🏺🔮📿🧿🪬💈⚗️🔭🔬🕳🩹🩺🩻🩼💊💉🩸🧬🦠🧫🧪🌡🧹🪠🧺🧻🚽🚰🚿🛁🛀🧼🪥🪒🧽🪣🧴🛎🔑🗝🚪🪑🛋🛏🛌🧸🪆🖼🪞🪟🛍🛒🎁🎈🎏🎀🪄🪅🎊🎉🪩🎎🏮🎐🧧✉️📩📨📧💌📥📤📦🏷🪧📪📫📬📭📮📯📜📃📄📑🧾📊📈📉🗒🗓📆📅🗑🪪📇🗃🗳🗄📋📁📂🗂🗞📰📓📔📒📕📗📘📙📚📖🔖🧷🔗📎🖇📐📏🧮📌📍✂️🖊🖋✒️🖌🖍📝✏️🔍🔎🔏🔐🔒🔓⚽️🏀🏈⚾️🥎🎾🏐🏉🥏🎱🪀🏓🏸🏒🏑🥍🏏🪃🥅⛳️🪁🏹🎣🤿🥊🥋🎽🛹🛼🛷⛸🥌🎿⛷🏂🪂🏋️‍♀️🏋️🏋️‍♂️🤼‍♀️🤼🤼‍♂️🤸‍♀️🤸🤸‍♂️⛹️‍♀️⛹️⛹️‍♂️🤺🤾‍♀️🤾🤾‍♂️🏌️‍♀️🏌️🏌️‍♂️🏇🧘‍♀️🧘🧘‍♂️🏄‍♀️🏄🏄‍♂️🏊‍♀️🏊🏊‍♂️🤽‍♀️🤽🤽‍♂️🚣‍♀️🚣🚣‍♂️🧗‍♀️🧗🧗‍♂️🚵‍♀️🚵🚵‍♂️🚴‍♀️🚴🚴‍♂️🏆🥇🥈🥉🏅🎖🏵🎗🎫🎟🎪🤹🤹‍♂️🤹‍♀️🎭🩰🎨🎬🎤🎧🎼🎹🥁🪘🪇🎷🎺🪗🎸🪕🎻🪈🎲♟🎯🎳🎮🎰🧩🚗🚕🚙🚌🚎🏎🚓🚑🚒🚐🛻🚚🚛🚜🦯🦽🦼🛴🚲🛵🏍🛺🚨🚔🚍🚘🚖🛞🚡🚠🚟🚃🚋🚞🚝🚄🚅🚈🚂🚆🚇🚊🚉✈️🛫🛬🛩💺🛰🚀🛸🚁🛶⛵️🚤🛥🛳⛴🚢⚓️🛟🪝⛽️🚧🚦🚥🚏🗺🗿🗽🗼🏰🏯🏟🎡🎢🛝🎠⛲️⛱🏖🏝🏜🌋⛰🏔🗻🏕⛺️🛖🏠🏡🏘🏚🏗🏭🏢🏬🏣🏤🏥🏦🏨🏪🏫🏩💒🏛⛪️🕌🕍🛕🕋⛩🛤🛣🗾🎑🏞🌅🌄🌠🎇🎆🌇🌆🏙🌃🌌🌉🌁🍏🍎🍐🍊🍋🍋‍🟩🍌🍉🍇🍓🫐🍈🍒🍑🥭🍍🥥🥝🍅🍆🥑🥦🫛🥬🫜🥒🌶🫑🌽🥕🫒🧄🧅🫚🥔🍠🫘🥐🥯🍞🥖🥨🧀🥚🍳🧈🥞🧇🥓🥩🍗🍖🦴🌭🍔🍟🍕🫓🥪🥙🧆🌮🌯🫔🥗🥘🫕🥫🍝🍜🍲🍛🍣🍱🥟🦪🍤🍙🍚🍘🍥🥠🥮🍢🍡🍧🍨🍦🥧🧁🍰🎂🍮🍭🍬🍫🍿🍩🍪🌰🥜🍯🥛🍼🫖☕️🍵🧃🥤🧋🫙🍶🍺🍻🥂🍷🫗🥃🍸🍹🧉🍾🧊🥄🍴🍽🥣🥡🥢🧂🫠🫢🫣🫡🫥🫤🥹🫱🫱🏻🫱🏼🫱🏽🫱🏾🫱🏿🫲🫲🏻🫲🏼🫲🏽🫲🏾🫲🏿🫳🫳🏻🫳🏼🫳🏽🫳🏾🫳🏿🫴🫴🏻🫴🏼🫴🏽🫴🏾🫴🏿🫰🫰🏻🫰🏼🫰🏽🫰🏾🫰🏿🫵🫵🏻🫵🏼🫵🏽🫵🏾🫵🏿🫶🫶🏻🫶🏼🫶🏽🫶🏾🫶🏿🤝🏻🤝🏼🤝🏽🤝🏾🤝🏿🫱🏻‍🫲🏼🫱🏻‍🫲🏽🫱🏻‍🫲🏾🫱🏻‍🫲🏿🫱🏼‍🫲🏻🫱🏼‍🫲🏽🫱🏼‍🫲🏾🫱🏼‍🫲🏿🫱🏽‍🫲🏻🫱🏽‍🫲🏼🫱🏽‍🫲🏾🫱🏽‍🫲🏿🫱🏾‍🫲🏻🫱🏾‍🫲🏼🫱🏾‍🫲🏽🫱🏾‍🫲🏿🫱🏿‍🫲🏻🫱🏿‍🫲🏼🫱🏿‍🫲🏽🫱🏿‍🫲🏾🫦🫅🫅🏻🫅🏼🫅🏽🫅🏾🫅🏿🫃🫃🏻🫃🏼🫃🏽🫃🏾🫃🏿🫄🫄🏻🫄🏼🫄🏽🫄🏾🫄🏿🧌🪸🪷🪹🪺🫘🫗🫙🛝🛞🛟🪬🪩🪫🩼🩻🫧🪪🟰😮‍💨😵‍💫😶‍🌫️❤️‍🔥❤️‍🩹🧔‍♀️🧔🏻‍♀️🧔🏼‍♀️🧔🏽‍♀️🧔🏾‍♀️🧔🏿‍♀️🧔‍♂️🧔🏻‍♂️🧔🏼‍♂️🧔🏽‍♂️🧔🏾‍♂️🧔🏿‍♂️💑🏻💑🏼💑🏽💑🏾💑🏿💏🏻💏🏼💏🏽💏🏾💏🏿👨🏻‍❤️‍👨🏻👨🏻‍❤️‍👨🏼👨🏻‍❤️‍👨🏽👨🏻‍❤️‍👨🏾👨🏻‍❤️‍👨🏿👨🏼‍❤️‍👨🏻👨🏼‍❤️‍👨🏼👨🏼‍❤️‍👨🏽👨🏼‍❤️‍👨🏾👨🏼‍❤️‍👨🏿👨🏽‍❤️‍👨🏻👨🏽‍❤️‍👨🏼👨🏽‍❤️‍👨🏽👨🏽‍❤️‍👨🏾👨🏽‍❤️‍👨🏿👨🏾‍❤️‍👨🏻👨🏾‍❤️‍👨🏼👨🏾‍❤️‍👨🏽👨🏾‍❤️‍👨🏾👨🏾‍❤️‍👨🏿👨🏿‍❤️‍👨🏻👨🏿‍❤️‍👨🏼👨🏿‍❤️‍👨🏽👨🏿‍❤️‍👨🏾👨🏿‍❤️‍👨🏿👩🏻‍❤️‍👨🏻👩🏻‍❤️‍👨🏼👩🏻‍❤️‍👨🏽👩🏻‍❤️‍👨🏾👩🏻‍❤️‍👨🏿👩🏻‍❤️‍👩🏻👩🏻‍❤️‍👩🏼👩🏻‍❤️‍👩🏽👩🏻‍❤️‍👩🏾👩🏻‍❤️‍👩🏿👩🏼‍❤️‍👨🏻👩🏼‍❤️‍👨🏼👩🏼‍❤️‍👨🏽👩🏼‍❤️‍👨🏾👩🏼‍❤️‍👨🏿👩🏼‍❤️‍👩🏻👩🏼‍❤️‍👩🏼👩🏼‍❤️‍👩🏽👩🏼‍❤️‍👩🏾👩🏼‍❤️‍👩🏿👩🏽‍❤️‍👨🏻👩🏽‍❤️‍👨🏼👩🏽‍❤️‍👨🏽👩🏽‍❤️‍👨🏾👩🏽‍❤️‍👨🏿👩🏽‍❤️‍👩🏻👩🏽‍❤️‍👩🏼👩🏽‍❤️‍👩🏽👩🏽‍❤️‍👩🏾👩🏽‍❤️‍👩🏿👩🏾‍❤️‍👨🏻👩🏾‍❤️‍👨🏼👩🏾‍❤️‍👨🏽👩🏾‍❤️‍👨🏾👩🏾‍❤️‍👨🏿👩🏾‍❤️‍👩🏻👩🏾‍❤️‍👩🏼👩🏾‍❤️‍👩🏽👩🏾‍❤️‍👩🏾👩🏾‍❤️‍👩🏿👩🏿‍❤️‍👨🏻👩🏿‍❤️‍👨🏼👩🏿‍❤️‍👨🏽👩🏿‍❤️‍👨🏾👩🏿‍❤️‍👨🏿👩🏿‍❤️‍👩🏻👩🏿‍❤️‍👩🏼👩🏿‍❤️‍👩🏽👩🏿‍❤️‍👩🏾👩🏿‍❤️‍👩🏿🧑🏻‍❤️‍🧑🏼🧑🏻‍❤️‍🧑🏽🧑🏻‍❤️‍🧑🏾🧑🏻‍❤️‍🧑🏿🧑🏼‍❤️‍🧑🏻🧑🏼‍❤️‍🧑🏽🧑🏼‍❤️‍🧑🏾🧑🏼‍❤️‍🧑🏿🧑🏽‍❤️‍🧑🏻🧑🏽‍❤️‍🧑🏼🧑🏽‍❤️‍🧑🏾🧑🏽‍❤️‍🧑🏿🧑🏾‍❤️‍🧑🏻🧑🏾‍❤️‍🧑🏼🧑🏾‍❤️‍🧑🏽🧑🏾‍❤️‍🧑🏿🧑🏿‍❤️‍🧑🏻🧑🏿‍❤️‍🧑🏼🧑🏿‍❤️‍🧑🏽🧑🏿‍❤️‍🧑🏾👨🏻‍❤️‍💋‍👨🏻👨🏻‍❤️‍💋‍👨🏼👨🏻‍❤️‍💋‍👨🏽👨🏻‍❤️‍💋‍👨🏾👨🏻‍❤️‍💋‍👨🏿👨🏼‍❤️‍💋‍👨🏻👨🏼‍❤️‍💋‍👨🏼👨🏼‍❤️‍💋‍👨🏽👨🏼‍❤️‍💋‍👨🏾👨🏼‍❤️‍💋‍👨🏿👨🏽‍❤️‍💋‍👨🏻👨🏽‍❤️‍💋‍👨🏼👨🏽‍❤️‍💋‍👨🏽👨🏽‍❤️‍💋‍👨🏾👨🏽‍❤️‍💋‍👨🏿👨🏾‍❤️‍💋‍👨🏻👨🏾‍❤️‍💋‍👨🏼👨🏾‍❤️‍💋‍👨🏽👨🏾‍❤️‍💋‍👨🏾👨🏾‍❤️‍💋‍👨🏿👨🏿‍❤️‍💋‍👨🏻👨🏿‍❤️‍💋‍👨🏼👨🏿‍❤️‍💋‍👨🏽👨🏿‍❤️‍💋‍👨🏾👨🏿‍❤️‍💋‍👨🏿👩🏻‍❤️‍💋‍👨🏻👩🏻‍❤️‍💋‍👨🏼👩🏻‍❤️‍💋‍👨🏽👩🏻‍❤️‍💋‍👨🏾👩🏻‍❤️‍💋‍👨🏿👩🏻‍❤️‍💋‍👩🏻👩🏻‍❤️‍💋‍👩🏼👩🏻‍❤️‍💋‍👩🏽👩🏻‍❤️‍💋‍👩🏾👩🏻‍❤️‍💋‍👩🏿👩🏼‍❤️‍💋‍👨🏻👩🏼‍❤️‍💋‍👨🏼👩🏼‍❤️‍💋‍👨🏽👩🏼‍❤️‍💋‍👨🏾👩🏼‍❤️‍💋‍👨🏿👩🏼‍❤️‍💋‍👩🏻👩🏼‍❤️‍💋‍👩🏼👩🏼‍❤️‍💋‍👩🏽👩🏼‍❤️‍💋‍👩🏾👩🏼‍❤️‍💋‍👩🏿👩🏽‍❤️‍💋‍👨🏻👩🏽‍❤️‍💋‍👨🏼👩🏽‍❤️‍💋‍👨🏽👩🏽‍❤️‍💋‍👨🏾👩🏽‍❤️‍💋‍👨🏿👩🏽‍❤️‍💋‍👩🏻👩🏽‍❤️‍💋‍👩🏼👩🏽‍❤️‍💋‍👩🏽👩🏽‍❤️‍💋‍👩🏾👩🏽‍❤️‍💋‍👩🏿👩🏾‍❤️‍💋‍👨🏻👩🏾‍❤️‍💋‍👨🏼👩🏾‍❤️‍💋‍👨🏽👩🏾‍❤️‍💋‍👨🏾👩🏾‍❤️‍💋‍👨🏿👩🏾‍❤️‍💋‍👩🏻👩🏾‍❤️‍💋‍👩🏼👩🏾‍❤️‍💋‍👩🏽👩🏾‍❤️‍💋‍👩🏾👩🏾‍❤️‍💋‍👩🏿👩🏿‍❤️‍💋‍👨🏻👩🏿‍❤️‍💋‍👨🏼👩🏿‍❤️‍💋‍👨🏽👩🏿‍❤️‍💋‍👨🏾👩🏿‍❤️‍💋‍👨🏿👩🏿‍❤️‍💋‍👩🏻👩🏿‍❤️‍💋‍👩🏼👩🏿‍❤️‍💋‍👩🏽👩🏿‍❤️‍💋‍👩🏾👩🏿‍❤️‍💋‍👩🏿🧑🏻‍❤️‍💋‍🧑🏼🧑🏻‍❤️‍💋‍🧑🏽🧑🏻‍❤️‍💋‍🧑🏾🧑🏻‍❤️‍💋‍🧑🏿🧑🏼‍❤️‍💋‍🧑🏻🧑🏼‍❤️‍💋‍🧑🏽🧑🏼‍❤️‍💋‍🧑🏾🧑🏼‍❤️‍💋‍🧑🏿🧑🏽‍❤️‍💋‍🧑🏻🧑🏽‍❤️‍💋‍🧑🏼🧑🏽‍❤️‍💋‍🧑🏾🧑🏽‍❤️‍💋‍🧑🏿🧑🏾‍❤️‍💋‍🧑🏻🧑🏾‍❤️‍💋‍🧑🏼🧑🏾‍❤️‍💋‍🧑🏽🧑🏾‍❤️‍💋‍🧑🏿🧑🏿‍❤️‍💋‍🧑🏻🧑🏿‍❤️‍💋‍🧑🏼🧑🏿‍❤️‍💋‍🧑🏽🧑🏿‍❤️‍💋‍🧑🏾🏳️🏴🏁🚩🏳️‍🌈🏳️‍⚧️🏴‍☠️🇦🇫🇦🇽🇦🇱🇩🇿🇦🇸🇦🇩🇦🇴🇦🇮🇦🇶🇦🇬🇦🇷🇦🇲🇦🇼🇦🇺🇦🇹🇦🇿🇧🇸🇧🇭🇧🇩🇧🇧🇧🇾🇧🇪🇧🇿🇧🇯🇧🇲🇧🇹🇧🇴🇧🇦🇧🇼🇧🇷🇮🇴🇻🇬🇧🇳🇧🇬🇧🇫🇧🇮🇰🇭🇨🇲🇨🇦🇮🇨🇨🇻🇧🇶🇰🇾🇨🇫🇹🇩🇨🇱🇨🇳🇨🇽🇨🇨🇨🇴🇨🇵🇰🇲🇨🇬🇨🇩🇨🇰🇨🇶🇨🇷🇨🇮🇭🇷🇨🇺🇨🇼🇨🇾🇨🇿🇩🇰🇩🇯🇩🇲🇩🇴🇪🇨🇪🇬🇸🇻🇬🇶🇪🇷🇪🇪🇪🇹🇪🇺🇫🇰🇫🇴🇫🇯🇫🇮🇫🇷🇬🇫🇵🇫🇹🇫🇬🇦🇬🇲🇬🇪🇩🇪🇬🇭🇬🇮🇬🇷🇬🇱🇬🇩🇬🇵🇬🇺🇬🇹🇬🇬🇬🇳🇬🇼🇬🇾🇭🇹🇭🇳🇭🇰🇭🇺🇮🇸🇮🇳🇮🇩🇮🇷🇮🇶🇮🇪🇮🇲🇮🇱🇮🇹🇯🇲🇯🇵🎌🇯🇪🇯🇴🇰🇿🇰🇪🇰🇮🇽🇰🇰🇼🇰🇬🇱🇦🇱🇻🇱🇧🇱🇸🇱🇷🇱🇾🇱🇮🇱🇹🇱🇺🇲🇴🇲🇰🇲🇬🇲🇼🇲🇾🇲🇻🇲🇱🇲🇹🇲🇭🇲🇶🇲🇷🇲🇺🇾🇹🇲🇽🇫🇲🇲🇩🇲🇨🇲🇳🇲🇪🇲🇸🇲🇦🇲🇿🇲🇲🇳🇦🇳🇷🇳🇵🇳🇱🇳🇨🇳🇿🇳🇮🇳🇪🇳🇬🇳🇺🇳🇫🇰🇵🇲🇵🇳🇴🇴🇲🇵🇰🇵🇼🇵🇸🇵🇦🇵🇬🇵🇾🇵🇪🇵🇭🇵🇳🇵🇱🇵🇹🇵🇷🇶🇦🇷🇪🇷🇴🇷🇺🇷🇼🇼🇸🇸🇲🇸🇦🇸🇳🇷🇸🇸🇨🇸🇱🇸🇬🇸🇽🇸🇰🇸🇮🇬🇸🇸🇧🇸🇴🇿🇦🇰🇷🇸🇸🇪🇸🇱🇰🇧🇱🇸🇭🇰🇳🇱🇨🇵🇲🇻🇨🇸🇩🇸🇷🇸🇿🇸🇪🇨🇭🇸🇾🇹🇼🇹🇯🇹🇿🇹🇭🇹🇱🇹🇬🇹🇰🇹🇴🇹🇹🇹🇳🇹🇷🇹🇲🇹🇨🇹🇻🇻🇮🇺🇬🇺🇦🇦🇪🇬🇧🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿🇺🇳🇺🇸🇺🇾🇺🇿🇻🇺🇻🇦🇻🇪🇻🇳🇼🇫🇪🇭🇾🇪🇿🇲🇿🇼)' },
+      
+      { name: 'Simbol Lain', symbols: '(𔐀𔐁𔐂𔐃𔐄𔐅𔐆𔐇𔐈𔐉𔐊𔐋𔐌𔐍𔐎𔐏𔐐𔐑𔐒𔐓𔐔𔐕𔐖𔐗𔐘𔐙𔐚𔐛𔐜𔐝𔐞𔐟𔐠𔐡𔐢𔐣𔐤𔐥𔐦𔐧𔐨𔐩𔐪𔐫𔐬𔐭𔐮𔐯𔐰𔐱𔐲𔐳𔐴𔐵𔐶𔐷𔐸𔐹𔐺𔐻𔐼𔐽𔐾𔐿𔑀𔑁𔑂𔑃𔑄𔑅𔑆𔑇𔑈𔑉𔑊𔑋𔑌𔑍𔑎𔑏𔑐𔑑𔑒𔑓𔑔𔑕𔑖𔑗𔑘𔑙𔑚𔑛𔑜𔑝𔑞𔑟𔑠𔑡𔑢𔑣𔑤𔑥𔑦𔑧𔑨𔑩𔑪𔑫𔑬𔑭𔑮𔑯𔑰𔑱𔑲𔑳𔑴𔑵𔑶𔑷𔑸𔑹𔑺𔑻𔑼𔑽𔑾𔑿𔒀𔒁𔒂𔒃𔒄𔒅𔒆𔒇𔒈𔒉𔒊𔒋𔒌𔒍𔒎𔒏𔒐𔒑𔒒𔒓𔒔𔒕𔒖𔒗𔒘𔒙𔒚𔒛𔒜𔒝𔒞𔒟𔒠𔒡𔒢𔒣𔒤𔒥𔒦𔒧𔒨𔒩𔒪𔒫𔒬𔒭𔒮𔒯𔒰𔒱𔒲𔒳𔒴𔒵𔒶𔒷𔒸𔒹𔒺𔒻𔒼𔒽𔒾𔒿𔓀𔓁𔓂𔓃𔓄𔓅𔓆𔓇𔓈𔓉𔓊𔓋𔓌𔓍𔓎𔓏𔓐𔓑𔓒𔓓𔓔𔓕𔓖𔓗𔓘𔓙𔓚𔓛𔓜𔓝𔓞𔓟𔓠𔓡𔓢𔓣𔓤𔓥𔓦𔓧𔓨𔓩𔓪𔓫𔓬𔓭𔓮𔓯𔓰𔓱𔓲𔓳𔓴𔓵𔓶𔓷𔓸𔓹𔓺𔓻𔓼𔓽𔓾𔓿𔔀𔔁𔔂𔔃𔔄𔔅𔔆𔔇𔔈𔔉𔔊𔔋𔔌𔔍𔔎𔔏𔔐𔔑𔔒𔔓𔔔𔔕𔔖𔔗𔔘𔔙𔔚𔔛𔔜𔔝𔔞𔔟𔔠𔔡𔔢𔔣𔔤𔔥𔔦𔔧𔔨𔔩𔔪𔔫𔔬𔔭𔔮𔔯𔔰𔔱𔔲𔔳𔔴𔔵𔔶𔔷𔔸𔔹𔔺𔔻𔔼𔔽𔔾𔔿𔕀𔕁𔕂𔕃𔕄𔕅𔕆𔕇𔕈𔕉𔕊𔕋𔕌𔕍𔕎𔕏𔕐𔕑𔕒𔕓𔕔𔕕𔕖𔕗𔕘𔕙𔕚𔕛𔕜𔕝𔕞𔕟𔕠𔕡𔕢𔕣𔕤𔕥𔕦𔕧𔕨𔕩𔕪𔕫𔕬𔕭𔕮𔕯𔕰𔕱𔕲𔕳𔕴𔕵𔕶𔕷𔕸𔕹𔕺𔕻𔕼𔕽𔕾𔕿𔖀𔖁𔖂𔖃𔖄𔖅𔖆𔖇𔖈𔖉𔖊𔖋𔖌𔖍𔖎𔖏𔖐𔖑𔖒𔖓𔖔𔖕𔖖𔖗𔖘𔖙𔖚𔖛𔖜𔖝𔖞𔖟𔖠𔖡𔖢𔖣𔖤𔖥𔖦𔖧𔖨𔖩𔖪𔖫𔖬𔖭𔖮𔖯𔖰𔖱𔖲𔖳𔖴𔖵𔖶𔖷𔖸𔖹𔖺𔖻𔖼𔖽𔖾𔖿𔗀𔗁𔗂𔗃𔗄𔗅𔗆𔗇𔗈𔗉𔗊𔗋𔗌𔗍𔗎𔗏𔗐𔗑𔗒𔗓𔗔𔗕𔗖𔗗𔗘𔗙𔗚𔗛𔗜𔗝𔗞𔗟𔗠𔗡𔗢𔗣𔗤𔗥𔗦𔗧𔗨𔗩𔗪𔗫𔗬𔗭𔗮𔗯𔗰𔗱𔗲𔗳𔗴𔗵𔗶𔗷𔗸𔗹𔗺𔗻𔗼𔗽𔗾𔗿𔘀𔘁𔘂𔘃𔘄𔘅𔘆𔘇𔘈𔘉𔘊𔘋𔘌𔘍𔘎𔘏𔘐𔘑𔘒𔘓𔘔𔘕𔘖𔘗𔘘𔘙𔘚𔘛𔘜𔘝𔘞𔘟𔘠𔘡𔘢𔘣𔘤𔘥𔘦𔘧𔘨𔘩𔘪𔘫𔘬𔘭𔘮𔘯𔘰𔘱𔘲𔘳𔘴𔘵𔘶𔘷𔘸𔘹𔘺𔘻𔘼𔘽𔘾𔘿𔙀𔙁𔙂𔙃𔙄𔙅𔙆)' },
+      
+       { name: 'Musik', symbols: '(䷀䷁䷂䷃䷄䷅䷆䷇䷈䷉䷊䷋䷌䷍䷎䷏䷐䷑䷒䷓䷔䷕䷖䷗䷘䷙䷚䷛䷜䷝䷞䷟䷠䷡䷢䷣䷤䷥䷦䷧䷨䷩䷪䷫䷬䷭䷮䷯䷰䷱䷲䷳䷴䷵䷶䷷䷸䷹䷺䷻䷼䷽䷾䷿𝌀𝌁𝌂𝌃𝌄𝌅𝌆𝌇𝌈𝌉𝌊𝌋𝌌𝌍𝌎𝌏𝌐𝌑𝌒𝌓𝌔𝌕𝌖𝌗𝌘𝌙𝌚𝌛𝌜𝌝𝌞𝌟𝌠𝌡𝌢𝌣𝌤𝌥𝌦𝌧𝌨𝌩𝌪𝌫𝌬𝌭𝌮𝌯𝌰𝌱𝌲𝌳𝌴𝌵𝌶𝌷𝌸𝌹𝌺𝌻𝌼𝌽𝌾𝌿𝍀𝍁𝍂𝍃𝍄𝍅𝍆𝍇𝍈𝍉𝍊𝍋𝍌𝍍𝍎𝍏𝍐𝍑𝍒𝍓𝍔𝍖⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿⡀⡁⡂⡃⡄⡅⡆⡇⡈⡉⡊⡋⡌⡍⡎⡏⡐⡑⡒⡓⡔⡕⡖⡗⡘⡙⡚⡛⡜⡝⡞⡟⡠⡡⡢⡣⡤⡥⡦⡧⡨⡩⡪⡫⡬⡭⡮⡯⡰⡱⡲⡳⡴⡵⡶⡷⡸⡹⡺⡻⡼⡽⡾⡿⢀⢁⢂⢃⢄⢅⢆⢇⢈⢉⢊⢋⢌⢍⢎⢏⢐⢑⢒⢓⢔⢕⢖⢗⢘⢙⢚⢛⢜⢝⢞⢟⢠⢡⢢⢣⢤⢥⢦⢧⢨⢩⢪⢫⢬⢭⢮⢯⢰⢱⢲⢳⢴⢵⢶⢷⢸⢹⢺⢻⢼⢽⢾⢿⣀⣁⣂⣃⣄⣅⣆⣇⣈⣉⣊⣋⣌⣍⣎⣏⣐⣑⣒⣓⣔⣕⣖⣗⣘⣙⣚⣛⣜⣝⣞⣟⣠⣡⣢⣣⣤⣥⣦⣧⣨⣩⣪⣫⣬⣭⣮⣯⣰⣱⣲⣳⣴⣵⣶⣷⣸⣹⣺⣻⣼⣽⣾⣿⫾⫿𝀀𝀁𝀂𝀃𝀄𝀅𝀆𝀇𝀈𝀉𝀊𝀋𝀌𝀍𝀎𝀏𝀐𝀑𝀒𝀓𝀔𝀕𝀖𝀗𝀘𝀙𝀚𝀛𝀜𝀝𝀞𝀟𝀠𝀡𝀢𝀣𝀤𝀥𝀦𝀧𝀨𝀩𝀪𝀫𝀬𝀭𝀮𝀯𝀰𝀱𝀲𝀳𝀴𝀵𝀶𝀷𝀸𝀹𝀺𝀻𝀼𝀽𝀾𝀿𝁀𝁁𝁂𝁃𝁄𝁅𝁆𝁇𝁈𝁉𝁊𝁋𝁌𝁍𝁎𝁏𝁐𝁑𝁒𝁓𝁔𝁕𝁖𝁗𝁘𝁙𝁚𝁛𝁜𝁝𝁞𝁟𝁠𝁡𝁢𝁣𝁤𝁥𝁦𝁧𝁨𝁩𝁪𝁫𝁬𝁭𝁮𝁯𝁰𝁱𝁲𝁳𝁴𝁵𝁶𝁷𝁸𝁹𝁺𝁻𝁼𝁽𝁾𝁿𝂀𝂁𝂂𝂃𝂄𝂅𝂆𝂇𝂈𝂉𝂊𝂋𝂌𝂍𝂎𝂏𝂐𝂑𝂒𝂓𝂔𝂕𝂖𝂗𝂘𝂙𝂚𝂛𝂜𝂝𝂞𝂟𝂠𝂡𝂢𝂣𝂤𝂥𝂦𝂧𝂨𝂩𝂪𝂫𝂬𝂭𝂮𝂯𝂰𝂱𝂲𝂳𝂴𝂵𝂶𝂷𝂸𝂹𝂺𝂻𝂼𝂽𝂾𝂿𝃀𝃁𝃂𝃃𝃄𝃅𝃆𝃇𝃈𝃉𝃊𝃋𝃌𝃍𝃎𝃏𝃐𝃑𝃒𝃓𝃔𝃕𝃖𝃗𝃘𝃙𝃚𝃛𝃜𝃝𝃞𝃟𝃠𝃡𝃢𝃣𝃤𝃥𝃦𝃧𝃨𝃩𝃪𝃫𝃬𝃭𝃮𝃯𝃰𝃱𝃲𝃳𝃴𝃵𝄀𝄁𝄂𝄃𝄄𝄅𝄆𝄇𝄈𝄉𝄊𝄋𝄌𝄍𝄎𝄏𝄐𝄑𝄒𝄓𝄔𝄕𝄖𝄗𝄘𝄙𝄚𝄛𝄜𝄝𝄞𝄟𝄠𝄡𝄢𝄣𝄤𝄥𝄦♭♮♯𝄪𝄫𝄬𝄭𝄮𝄯𝄰𝄱𝄲𝄳𝄴𝄵𝄶𝄷𝄸𝄹𝄺𝄻𝄼𝄽𝄾𝄿𝅀𝅁𝅂𝅃𝅄𝅅𝅆𝅇𝅈𝅉𝅊𝅋𝅌𝅍𝅎𝅏𝅐𝅑𝅒𝅓𝅔𝅕𝅖𝅗𝅘𝅙𝅚𝅛𝅜𝅝𝅪𝅫𝅬𝆃𝆄𝆌𝆍𝆎𝆏𝆐𝆑𝆒𝆓𝆔𝆕𝆖𝆗𝆘𝆙𝆚𝆛𝆜𝆝𝆞𝆟𝆠𝆡𝆢𝆣𝆤𝆥𝆦𝆧𝆨𝆩𝆮𝆯𝆰𝆱𝆲𝆳𝆴𝆵𝆶𝆷𝆸𝆹𝆺𝇁𝇂𝇃𝇄𝇅𝇆𝇇𝇈𝇉𝇊𝇋𝇌𝇍𝇎𝇏𝇐𝇑𝇒𝇓𝇔𝇕𝇖𝇗𝇘𝇙𝇚𝇛𝇜𝇝)' }, ];
+
+
+    // tab tambahan khusus native
+const nativeChars = ['󰂆','󰥬','󱢏','󰟺','󰟯','󰟱','󰟰','󰟪','󰟫','󰟵','󰟤','󰥼','󰦉','󰠏','󰟴','󰟳','󰟭','󰟮','󰟩','󰟨','󰟧','󰟲','󰟸','󰟦','󰟥','󰟣','󰟢','󰟡','󰟠','󰞦','󰥦','󰥖','󰥗','󰥚','󰥞','󰥧','󰥠','󰥡','󰥥','󰥤','󰥨','󰥩','󰥪','󰥫','󰥭','󰥮','󰥯','󰥰','󰥱','󰥺','󰥳','󰥴','󰥵','󰥶','󰥷','󰥸','󰦈','󰥔','󰥻','󰦄','󰥽','󰥾','󰥿','󰦀','󰦁','󰦂','󰦃','󰦅','󰦆','󰦇','󰦍','󰦌','󰦋','󰦊','󰦖','󰦏','󰦐','󰦑','󰝂','󰦕','󰦔','󰦓','󰦒','󰝃','󰝄','󰝅','󰝆','󰝇','󰝈','󰝉','󰝊','󰝋','󰝌','󰝍','󰝎','󰝏','󰝐','󰝑','󰝒','󰝓','󰝔','󰝕','󰝖','󰝗','󰝘','󰝙','󰝚','󰝛','󰝜','󰝝','󰝞','󰝟','󰝠','󰝡','󰝢','󰝣','󰝤','󰝥','󰝦','󰝧','󰝨','󰝩','󰝪','󰝫','󰝬','󰝭','󰝸','󰝹','󰝺','󰝻','󰝼','󰝽','󰝾','󰝿','󰞀','󰞁','󰞂','󰞃','󰞄','󰞅','󰞆','󰞇','󰞈','󰞔','󰞕','󰞖','󰞗','󰞘','󰞙','󰞚','󰞛','󰞜','󰞝','󰞞','󰞟','󰞡','󰞠','󰞣','󰞤','󰞥','󰞧','󰞨','󰞩','󰞪','󰞫','󰞬','󰞭','󰞮','󰞯','󰞰','󰞱','󰞲','󰞳','󰞴','󰞵','󰞶','󰞷','󰞸','󰞹','󰞺','󰞻','󰞼','󰞽','󰞾','󰞿','󰟀','󰟂','󰟁','󰟃','󰟄','󰟅','󰟆','󰟇','󰟈','󰟉','󰟊','󰟋','󰟌','󰟍','󰟎','󰟏','󰟐','󰟑','󰟒','󰟓','󰟔','󰟕','󰟖','󰟗','󰟘','󰟙','󰟚','󰟛','󰟜','󰟝','󰟞','󰟟','󰟠','󰟹','󰟻','󰟼','󰟽','󰟾','󰟿','󰠀','󰠁','󰠂','󰠃','󰠄','󰠅','󰠆','󰠈','󰠇','󰠉','󰠊','󰠋','󰠌','󰠍','󰠎','󰠐','󰠑','󰠒','󰠓','󰠔','󰠕','󰠖','󰠗','󰠘','󰠙','󰠚','󰠛','󰠜','󰠝','󰠞','󰠟','󰠠','󰠡','󰠢','󰠣','󰠤','󰠥','󰠦','󰠧','󰠨','󰠩','󰠪','󰠫','󰠭','󰠬','󰠮','󰠯','󰠰','󰠱','󰠲','󰠳','󰠴','󰠶','󰠵','󰠷','󰠸','󰠹','󰠺','󰠻','󰠼','󰠽','󰠾','󰠿','󰡀','󰡁','󰡄','󰟬','󰟷','󰥲','󰈃','󰊑','󰈄','󰁁','󰊑','󰂕','󰂃']
+;
+
+    const tabBar = document.createElement('div');
+    tabBar.className = 'tab-bar';
+
+    const contentWrapper = document.createElement('div');
+    contentWrapper.className = 'scroll-wrapper';
+
+    const contentTrack = document.createElement('div');
+    contentTrack.className = 'scroll-track';
+
+    // loop normal simbol
+    data.forEach((d, index) => {
+      const tab = document.createElement('div');
+      tab.className = 'tab';
+      tab.textContent = d.name;
+      tab.onclick = () => setActiveTab(index);
+      if (index === 0) tab.classList.add('active-tab');
+      tabBar.appendChild(tab);
+
+      const group = document.createElement('div');
+      group.className = 'symbol-group';
+
+      const segmenter = new Intl.Segmenter('en', { granularity: 'grapheme' });
+      const symbolsArray = Array.from(
+        segmenter.segment(d.symbols.replace(/[()]/g, '').trim()),
+        s => s.segment
+      );
+
+      symbolsArray.forEach(s => {
+        const btn = document.createElement('button');
+        btn.textContent = s;
+        btn.onclick = () => insertChar(s);
+        group.appendChild(btn);
       });
+
+      contentTrack.appendChild(group);
     });
 
-    startAutoScroll(); // mulai otomatis saat pertama
+    // tab untuk Native
+    const nativeIndex = data.length;
+    const nativeTab = document.createElement('div');
+    nativeTab.className = 'tab';
+    nativeTab.textContent = 'Native';
+    nativeTab.onclick = () => setActiveTab(nativeIndex);
+    tabBar.appendChild(nativeTab);
+
+    const nativeGroup = document.createElement('div');
+    nativeGroup.className = 'symbol-group';
+
+    nativeChars.forEach(char => {
+      const btn = document.createElement('button');
+      btn.onclick = () => insertNativeChar(char);
+      const span = document.createElement('span');
+      span.classList.add('native-text','native-char');
+      span.textContent = char;
+      btn.appendChild(span);
+      nativeGroup.appendChild(btn);
+    });
+
+    contentTrack.appendChild(nativeGroup);
+
+    // geser & swipe logic tetap sama
+    let currentIndex = 0;
+    let startX = 0;
+    let startY = 0;
+    let prevTranslate = 0;
+    let isDragging = false;
+    let isHorizontal = false;
+
+    function setActiveTab(index) {
+      currentIndex = index;
+      const moveX = -index * contentWrapper.offsetWidth;
+      prevTranslate = moveX;
+      contentTrack.style.transition = 'transform 0.3s ease';
+      contentTrack.style.transform = `translateX(${moveX}px)`;
+      document.querySelectorAll('.tab').forEach((t, i) => {
+        t.classList.toggle('active-tab', i === index);
+      });
+    }
+
+contentWrapper.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+  isDragging = true;
+  isHorizontal = false;
+  contentTrack.style.transition = 'none';
+});
+
+contentWrapper.addEventListener('touchmove', e => {
+  if (!isDragging) return;
+  const currentX = e.touches[0].clientX;
+  const currentY = e.touches[0].clientY;
+  const deltaX = currentX - startX;
+  const deltaY = currentY - startY;
+
+  // tambahan: kalau gerakan lebih dominan vertikal → jangan geser track
+  if (!isHorizontal) {
+    if (Math.abs(deltaY) > Math.abs(deltaX)) {
+      isDragging = false; // biarin native scroll jalan
+      return;
+    }
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      isHorizontal = true;
+    }
+  }
+
+  if (!isHorizontal) return;
+  contentTrack.style.transform = `translateX(${prevTranslate + deltaX}px)`;
+});
+
+    contentWrapper.addEventListener('touchend', e => {
+      if (!isDragging) return;
+      isDragging = false;
+      const endX = e.changedTouches[0].clientX;
+      const diff = endX - startX;
+      const threshold = contentWrapper.offsetWidth * 0.25;
+      if (diff < -threshold && currentIndex < contentTrack.children.length - 1) currentIndex++;
+      else if (diff > threshold && currentIndex > 0) currentIndex--;
+      setActiveTab(currentIndex);
+    });
+
+    contentWrapper.appendChild(contentTrack);
+    popup.appendChild(tabBar);
+    popup.appendChild(contentWrapper);
+
+    // tombol close & indikator tetap
+
+
+const scrollIcon = document.createElement('div');
+scrollIcon.className = 'scroll-indicator';
+scrollIcon.innerHTML = `
+  <span class="scroll-text" onclick="hideCardPopup()">Tutup✕</span>
+  <span class="spacebar" onclick="insertChar(' ')">⌴</span>
+  <span class="backspace" onclick="backspace()">⌫</span>
+  <span class="enter" onclick="insertChar('\\n')" style="color:#06ec16;">↲</span>
+`;
+popup.appendChild(scrollIcon);
+
+const container = document.getElementById('main-container') || document.body;
+container.appendChild(popup);
+
+} else {
+  popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+}
+}
+function hideCardPopup() {
+  const popup = document.getElementById('card-popup');
+  if (popup) popup.style.display = 'none';
+}
+
+function insertNativeChar(char) {
+  const notes = document.getElementById('notes');
+  const caret = document.getElementById('fake-caret');
+  if (!notes || !caret) return;
+
+  const span = document.createElement('span');
+  span.classList.add('native-text', 'native-char');
+  span.textContent = char;
+
+  notes.insertBefore(span, caret);
+  notes.focus();
+}
+
+
+
+
+
+  function insertEnter() {
+    saveState();
+    const caret = document.getElementById('fake-caret');
+    const br = document.createElement('br');
+    caret.parentNode.insertBefore(br, caret);
+    placeCaret();
+  }
+
+  function insertSpace() {
+    insertChar(' ');
+  }
+
+function clearNotes() {
+  const notes = document.getElementById('notes');
+  const caret = document.getElementById('fake-caret');
+  notes.innerHTML = '';
+  notes.appendChild(caret);
+  updateStats();
+}
+
+function backspace() {
+  saveState();
+  const caret = document.getElementById('fake-caret');
+  const prev = caret.previousSibling;
+
+  if (!prev) return; // tidak ada karakter di belakang caret
+
+  if (prev.nodeType === 3) {
+    // Node teks biasa → potong berdasarkan grapheme cluster (emoji aman)
+    const graphemes = [...prev.textContent];
+    if (graphemes.length > 1) {
+      prev.textContent = graphemes.slice(0, -1).join('');
+    } else {
+      prev.remove();
+    }
+  } 
+  else if (prev.nodeType === 1) {
+    // Node elemen (misal <span> styled) → hapus langsung
+    prev.remove();
+  }
+
+  placeCaret();
+  updateStats();
+}
+
+function placeCaret() {
+  const notes = document.getElementById("notes");
+  const caret = document.getElementById("fake-caret");
+
+  // kalau caret nggak ada di dalam notes, masukkan kembali
+  if (!notes.contains(caret)) {
+    notes.appendChild(caret);
+  }
+}
+
+
+
+function saveState() {
+  const notes = document.getElementById('notes');
+  undoStack.push(notes.innerHTML);
+  if (undoStack.length > 100) undoStack.shift();
+  redoStack = [];
+}
+
+function undo() {
+  const notes = document.getElementById('notes');
+  if (undoStack.length > 0) {
+    redoStack.push(notes.innerHTML);
+    notes.innerHTML = undoStack.pop();
+  }
+}
+
+function redo() {
+  const notes = document.getElementById('notes');
+  if (redoStack.length > 0) {
+    undoStack.push(notes.innerHTML);
+    notes.innerHTML = redoStack.pop();
+  }
+}
+
+
+
+
+
+
+
+// Tambahan perbaikan
+notes.addEventListener('click', () => {
+  const caret = document.getElementById('fake-caret');
+  if (!notes.contains(caret)) {
+    notes.appendChild(caret);
+  }
+  caret.style.display = 'inline-block';
+  placeCaret();
+});
+
+notes.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    insertChar('<br>'); // ← ini yang benar
+  } else if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    moveCaret('left');
+  } else if (e.key === 'ArrowRight') {
+    e.preventDefault();
+    moveCaret('right');
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    moveCaret('up');
+  } else if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    moveCaret('down');
+  }
+});
+
+function showCopyCheck() {
+  const check = document.getElementById("copy-check");
+  check.style.display = "block";
+  check.style.opacity = "1";
+  check.style.transition = "opacity 0.3s ease";
+
+  setTimeout(() => {
+    check.style.opacity = "0";
+    setTimeout(() => {
+      check.style.display = "none";
+    }, 300);
+  }, 1000);
+}
+
+renderKeys();
+
+</script>
+<script>
+  window.addEventListener('load', function () {
+    const slider = document.getElementById('symbolSlider');
+
+    // Matikan dulu animasi scroll CSS supaya set posisi langsung tanpa animasi
+    slider.style.scrollBehavior = 'auto';
+
+    // Set posisi scroll langsung ke tengah
+    slider.scrollLeft = (slider.scrollWidth - slider.clientWidth) / 2;
+
+    // Setelah 100ms hidupkan animasi scroll dan scroll ke kiri
+    setTimeout(() => {
+      slider.style.scrollBehavior = 'smooth';
+      slider.scrollTo({ left: 0 });
+    }, 100);
   });
+  
+  
+function setupPulseEffect() {
+  document.querySelectorAll(
+    '.fixed-button button, .toolbar button, .scroll-buttons button, .keyboard button, #number-buttons button, .styled-keys button'
+  ).forEach(btn => {
+    btn.removeEventListener('pointerdown', pulseHandler);
+    btn.removeEventListener('animationend', animationEndHandler);
+
+    btn.addEventListener('pointerdown', pulseHandler);
+    btn.addEventListener('animationend', animationEndHandler);
+  });
+}
+
+function pulseHandler(e) {
+  const btn = e.currentTarget;
+  btn.classList.remove('pulse');
+  void btn.offsetWidth;
+  btn.classList.add('pulse');
+}
+
+function animationEndHandler(e) {
+  e.currentTarget.classList.remove('pulse');
+}
+
+// Panggil fungsi ini setiap kali tombol baru dimasukkan
+setupPulseEffect();
+document.body.addEventListener('pointerdown', e => {
+  if (e.target.matches('.fixed-button button, .toolbar button, .scroll-buttons button, .keyboard button, #number-buttons button, .styled-keys button')) {
+    const btn = e.target;
+    btn.classList.remove('pulse');
+    void btn.offsetWidth;
+    btn.classList.add('pulse');
+  }
+});
+
+document.body.addEventListener('animationend', e => {
+  if (e.target.matches('.fixed-button button, .toolbar button, .scroll-buttons button, .keyboard button, #number-buttons button, .styled-keys button')) {
+    e.target.classList.remove('pulse');
+  }
+});
+
+
 </script>
 
 
 
- </div>
-  </div>
-     <div id="container"><div id="profil-header">
-                
-        </div>
-          <hr style="background-color: #444; height: 0.5px; border: none; margin: 0; width: 100%; display: flex; margin-top: -10px;"></hr>
-
-    <div class="unique-controls">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
-    <style>
-        .wrappertm {
-            display: flex;
-            justify-content: center;
-            padding: 0px;
-        }
-    
-        .tommydev {
-            display: flex;
-            gap: 10px;
-            padding: 0px;
-        }
-    
-        .group {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-top: -8px;
-            padding: 10px;
-        }
-    
-        .group-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            font-size: 10px;
-        }
-    
-        .group a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 70px;
-            height: 70px;
-            background-color: #444;
-            border-radius: 15px;
-            text-decoration: none;
-            font-size: 24px;
-            border: 0.50px solid #c7c3c3;
-            color: #eee;
-        }
-    
-        .group a:hover,
-        .group a:active {
-            background: linear-gradient(45deg, red, blue);
-            color: white;
-            box-shadow: none;
-        }
-    
-        .group a:hover {
-            -webkit-tap-highlight-color: transparent;
-        }
-    
-        .group-2 {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 5px;
-            background: none;
-            border: none;
-        }
-    
-        .group-2 .group-item a {
-            width: 150px;
-            height: 24px;
-            font-size: 18px;
-        }
-    
-        .group-2 .group-item {
-            align-items: center;
-            text-align: center;
-        
-        }
-        
-        .group-item span {
-            margin-top: 5px;
-        }
-    
-    </style>
-    
-    <h2 style="font-size: 15px; margin-top: -15px; padding: 10px 0px;">Fitur <i class="fas fa-plus-square" style="font-size: 14px;"></i></h2>
-    
-    <div class="wrappertm">
-        <div class="tommydev">
-        <!-- Kelompok 1 -->
-        <div class="group">
-            <div class="group-item">
-                <a href="https://tommydev27.github.io/FakeID/" target="_blank"><i class="fa-solid fa-circle-user" style="color: #73a8ee;"></i></a>
-                <span>Fake ID</span>
-            </div>
-            <div class="group-item">
-                <a href="https://tommydev27.github.io/tommy.website3/" target="_blank"><i class="fas fa-atom" style="color: #6ac86f;"></i></a>
-                <span>IMG ASC</span>
-            </div>
-            <div class="group-item">
-                <a href="https://tommydev27.github.io/Galeri/" target="_blank"><i class="fa-solid fa-masks-theater" style="color: #e76060;"></i></a>
-                <span>Galeri</span>
-            </div>
-            <div class="group-item">
-                <a href="https://tommydev27.github.io/tommy.website-demo/" target="_blank"><i class="fa-solid fa-chart-pie" style="color: #7190f2;"></i></a>
-                <span>Demo</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Kelompok 2 -->
-    <div class="group group-2">
-        <div class="group-item">
-            <a href="https://youtube.com/@user-badbooys?si=rCdp0-YQtriVVsOi" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-            <span>YouTube</span>
-        </div>
-        <div class="group-item">
-            <a href="https://tommydev27.github.io/keby/" target="_blank"><i class="far fa-keyboard"></i></a>
-            <span>Keyboard</span>
-        </div>
-        <div class="group-item">
-            <a href="https://tommydev27.github.io/tm-textGz/" target="_blank"><i class="fas fa-infinity"></i></a>
-            <span>Text GZ</span>
-        </div>
-        <div class="group-item">
-            <a href="https://tommydev27.github.io/glitch-text" target="_blank"><i class="fab fa-opencart"></i></a>
-            <span>Glitch Text</span>
-        </div>
-    </div>
-      </div>
-        </div>
-
-     <div id="container">
-           <div class="unique-controls">
-
-          <h2 style="font-size: 20px; margin-top: -20px; padding: 0px; ">Dashboard<i style=" margin-left: 5px; font-size: 19px;" class="fas fa-chart-pie"></i></h2><div class="list-container">
-          <div class="list-item">
-          <b id="b2">*</b>
-          <p id="p2">ID CARD PW</p>
-          </div>
-          <div class="list-item">
-          <b id="b2">*</b>
-          <p id="p2">Buat Gambar</p>
-          </div>
-          <div class="list-item">
-          <b id="b2">*</b>
-          <p id="p2">Unicode • icon • teks • symbol</p>
-          </div>
-          <div class="list-item">
-          <b id="b2">*</b>
-          <p id="p2">Keyboard Eksplorasi • Glitch text / ASCII</p>
-          </div>
-        <div id="timeContainer"><p id="dateTime" class="date-time"></p>
-        <div class="unique-controls">
-        </div>
-        
-          <h2 style="font-size: 20px; margin-top: -10px; padding: 0px;">Penghapus Karakter duplikat </h2><p style="font-size: 15px;">Paste ikuti proses di sini </p>
-                  
-          <img src="https://i.postimg.cc/hvPngMJb/Screenshot-20250816-220128.jpg" style="width: 100%; height: auto;  border-radius: 12px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #26a9a3; padding: 0px; ">
-          <div class="tab-container">
-            <button class="nav-button" onclick="toggleTab(this, 'Microsoft22')">
-              <span>Next → <i class="fas fa-grip-horizontal"></i></span>
-            </button>
-            <iframe id="Microsoft22" class="imageContainer" data-service="Microsoft22"></iframe>
-          </div>
-
-        
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Penghitung Karakter </h2><p style="font-size: 15px;">paste teks symbol dan karakter lainnya di sini maka akan terlihat hitungan Karakter kata, paragraf, jumlah & kalimat </p>
-                  
-          <img src="https://i.postimg.cc/PJD0ppCk/20250803-150445.jpg" style="width: 100%; height: auto;  border-radius: 12px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #777; padding: 0px; ">
-          <div class="tab-container">
-            <button class="nav-button" onclick="toggleTab(this, 'Microsoft2')">
-              <span>Next → <i class="fas fa-grip-horizontal"></i></span>
-            </button>
-            <iframe id="Microsoft2" class="imageContainer" data-service="Microsoft2"></iframe>
-          </div>
-
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Alat Penghapus Spasi </h2><p style="font-size: 15px;">Paste teks klik hapus spasi</p>
-                  
-          <img src="https://i.postimg.cc/zfVB9h8m/20250813-032648.jpg" style="width: 100%; height: auto;  border-radius: 12px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #777; padding: 0px; ">
-          <div class="tab-container">
-            <button class="nav-button" onclick="toggleTab(this, 'Microsoft4')">
-              <span>Next → <i class="fas fa-grip-horizontal"></i></span>
-            </button>
-            <iframe id="Microsoft4" class="imageContainer" data-service="Microsoft4"></iframe>
-          </div>
-
-        
-
-
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Pengganda Teks </h2><p style="font-size: 15px;">Tulis teks di bagian teks area atur jumlah dan klik gandakan </p>
-                  
-          <img src="https://i.postimg.cc/HscPL7fZ/20250803-180132.jpg" style="width: 100%; height: auto;  border-radius: 12px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #777; padding: 0px; ">
-          <div class="tab-container">
-            <button class="nav-button" onclick="toggleTab(this, 'Microsoft3')">
-              <span>Next → <i class="fas fa-grip-horizontal"></i></span>
-            </button>
-            <iframe id="Microsoft3" class="imageContainer" data-service="Microsoft3"></iframe>
-          </div>
-
-        
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">ID CARD PW </h2><p style="font-size: 15px;">Isi bidang selengkapnya pastikan jelas dan terbaca </p>
-                  
-          <img src="https://i.postimg.cc/Jz3xy3Kq/20250803-145509.jpg" style="width: 100%; height: auto;  border-radius: 12px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: solid 2px #777; padding: 0px; ">
-          <div class="tab-container">
-            <button class="nav-button" onclick="toggleTab(this, 'Microsoft')">
-              <span>Buat ID → <i class="fas fa-id-card"></i></span>
-            </button>
-            <iframe id="Microsoft" class="imageContainer" data-service="Microsoft"></iframe>
-          </div>
-          <!-- Symbol Tool -->
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Teks & symbol Unik creativity</h2>
-          <p style="font-size: 15px;">Eksplorasi rangkaian berbagai karakter </p>
-          <img src="https://i.postimg.cc/bws8HGZ4/FYXH3Qe.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; border: solid 2px #777;; padding: 2px;  height: auto; border-radius: 12px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-          <div class="tab-container" style="text-align: center; margin-top: 15px;">
-            <button class="nav-button" onclick="toggleTab(this, 'SymbolTool')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; color: #fff;  border: none; gap: 10px;  cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)' ">
-              Mulai membuat → <i class="fas fa-keyboard"></i>
-            </button>
-            <iframe id="SymbolTool" class="imageContainer" data-service="SymbolTool"></iframe>
-          </div>
-        
-          <!-- Font Style -->
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Font Style Unik</h2>
-          <p style="font-size: 15px;">Rangkaian font unik copy paste (cek tampilan di fb lite) </p>
-          <img src="https://i.postimg.cc/GtLnB907/FAi-S9-PR-md.png" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border: solid 2px #777;  border-radius: 12px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" >
-          <div class="tab-container" style="text-align: center; margin-top: 15px;">
-            <button class="nav-button" onclick="toggleTab(this, 'FontUnikers')" style="padding: 8px 20px; font-size: 16px; font-weight: bold; color: #fff; border: none; gap: 10px;  cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-              Rangkaian font <i class="fas fa-folder-open"></i>
-            </button>
-            <iframe id="FontUnikers" class="imageContainer" data-service="FontUnikers"></iframe>
-          </div>
-        
-          <!-- Glitch Text -->
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Glitch Text Generator</h2>
-          <p style="font-size: 15px;">Eksplorasi karakter teks symbol dengan efek glitch   </p>
-          <img src="https://i.postimg.cc/K86XP0Sg/FA612mF.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; border: solid 2px #777;  width: 100%; height: auto; border-radius: 12px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-          <div class="tab-container" style="text-align: center; margin-top: 15px;">
-            <button class="nav-button" onclick="toggleTab(this, 'Glitch')" style="padding: 8px 20px; font-size: 16px; font-weight: bold;  color: #fff; border: none; gap: 10px;  cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-              Glitch Teks <i class="fas fa-stream"></i>
-            </button>
-            <iframe id="Glitch" class="imageContainer" data-service="Glitch"></iframe>
-          </div>
-          
-            <!-- Glitch Text -->
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Unicode characters</h2>
-          <p style="font-size: 15px;">Karakter teks symbol   </p>
-          <img src="https://i.postimg.cc/8PxX9sy2/F0oto57-md.jpg" alt="Global Unicode symbols text" style="margin-top: 0px; width: 100%; border: solid 2px #777;  height: auto; border-radius: 12px; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-          <div class="tab-container" style="text-align: center; margin-top: 15px;">
-            <button class="nav-button" onclick="toggleTab(this, 'Glitch2')" style="padding: 8px 20px; font-size: 16px; font-weight: bold;  color: #fff; border: none; gap: 10px;  cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-              Unicode characters <i class="fab fa-buysellads"></i>
-            </button>
-            <iframe id="Glitch2" class="imageContainer" data-service="Glitch"></iframe>
-          </div>
-          
-          <!-- Unicode -->
-          <h2 style="font-size: 20px; margin-top: 30px; padding: 0px;">Unicode creativity</h2>
-          <p style="font-size: 15px;">Eksplorasi karakter Unicode (simbol, emoji, huruf khas, cek tampilan di fb lite) </p>
-          <img src="https://i.postimg.cc/brWg7FRx/FAgZW5N.jpg" alt="Global Unicode Explorer" style="margin-top: 0px; width: 100%; height: auto; border-radius: 10px; border: solid 2px #777;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-          <div class="tab-container" style="text-align: center; margin-top: 15px;">
-            <button class="nav-button" onclick="toggleTab(this, 'Unicode')" style="padding: 8px 20px; font-size: 16px; font-weight: bold;  color: #fff; border: none; gap: 10px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease;" onmouseover="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'">
-              Continue creating →<i class="fas fa-keyboard"></i>
-            </button>
-            <iframe id="Unicode" class="imageContainer" data-service="Unicode"></iframe>
-          </div>
-        
-          <!-- Penutup gambar terakhir -->
-          <img src="https://i.postimg.cc/CxHt8SN9/F3e-Of-Q2-md.jpg" style="width: 100%; margin-top: 25px; border: solid 2px #777; height: auto;  border-radius: 12px; pointer-events: none;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        </div>
-        </button>
-          <script>window.addEventListener("beforeunload", () => { sessionStorage.setItem("scrollY", window.scrollY); }); window.addEventListener("load", () => { let savedScrollY = sessionStorage.getItem("scrollY"); if (savedScrollY !== null) { window.scrollTo(0, parseInt(savedScrollY)); } }); let scrollContainer = document.getElementById("image-scroll-container"); window.addEventListener("beforeunload", () => { sessionStorage.setItem("scrollX", scrollContainer.scrollLeft); }); window.addEventListener("load", () => { let savedScrollX = sessionStorage.getItem("scrollX"); if (savedScrollX !== null) { scrollContainer.scrollLeft = parseInt(savedScrollX); } }); let timeout; scrollContainer.addEventListener("touchstart", () => { clearTimeout(timeout); }); scrollContainer.addEventListener("touchend", () => { timeout = setTimeout(() => { scrollContainer.scrollLeft += 1; }, 10000); }); </script><iframe id="Microsoft" class="imageContainer" data-service="Microsoft"></iframe></div></div>
-          
-          <script>
-          window.addEventListener("load", function () {
-              const container = document.createElement("div");
-              container.id = "rootFbContainer"; // ID untuk mengatur tata letak
-          
-              const iframe = document.createElement("iframe");
-              iframe.id = "rootFbIframe"; 
-              iframe.src = "https://tommydev27.github.io/root-fb/";
-              iframe.style.width = "100%";
-              iframe.style.height = "245px";
-              iframe.style.border = "none";
-              iframe.style.display = "block";
-          
-              container.appendChild(iframe);
-              document.getElementById("iframeWrapper").appendChild(container);
-          });
-          </script>
-
-          <div class="unique-controls" style="margin-top: -14px;">
-        <img src="https://i.postimg.cc/BQ2wW4dt/3IeW1x2.png" style="width: 100%; height: auto; 
-           border-radius: 12px; border: solid 2px #777; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
-          }
-          
-          button:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */ ">
-        <button id="generate"
-          onclick="location.href='https://tommydev27.github.io/tommy.website-demo/';"
-          style="color: #fff; border: none; border-radius: 8px; font-size: 15px; padding: 8px; cursor: pointer; font-weight: bold; -webkit-tap-highlight-color: transparent; outline: none; background: #26a9a3; margin-top: 12px;">
-          Info Website
-          <i style="margin-left: 5px; font-size: 15px; color: #35ebfff9;" class="fas fa-exclamation-circle"></i>
-        </button>
-        </div>
-        <div class="unique-image-container">
-          <h2 style=" font-size: 18px; margin-top: 0px; margin-left: 8px;"> Buat gambar tulis prompt / Description</h2>
-          <p style="font-size: 13px; margin-left: 8px;">
-          Buat gambar free terbatas jika terjadi error stop lanjut lagi setelah pembaruan beberapa saat
-          </p><div style="padding: 8px;">
-          <textarea id="uniquePromptInput" class="unique-prompt-input"
-          style="width: 100%; margin-top: 0px; height: 80px; padding: 5px;
-          border: 1px solid #4fb4ffe0; border-radius: 5px; font-size: 14px;
-          resize: none;"
-          placeholder="Tulis deskripsi kreatif Anda di sini..."></textarea>
-          </div><div class="unique-image-container">  <h3 style=" font-size: 15px;       color: #028e33f9; font-size: 16px; margin-top: -12px;">
-          Image displayed <i style="margin-left: 0px; font-size: 14px; color: #028e33f9; " class="fab fa-earlybirds"></i>
-          </h3><img id="uniqueGeneratedImage" class="unique-generated-image" alt="">
-          <div id="loader" class="loader"></div>
-          <div class="scroll-container">
-          <div id="loader" class="loader"></div>
-          <div id="downloadTextContainer" style="display: none; text-align: center; font-size: 14px; font-weight: bold; color: #333; margin-top: 10px;"></div>
-          <div><select id="uniqueHeightInput" class="unique-height-input" style="font-size: 15px; padding: 5px; border-radius: 8px; font-weight: bold; color: #ec5306;">
-          <option value="400">H150</option>
-          <option value="500">500Px</option>
-          <option value="600">600Px</option>
-          <option value="700">700Px</option>
-          <option value="800">800M</option>
-          </select><button id="uniqueGenerateBtn" class="unique-generate-btn"
-          style="color: #333; border: none; border-radius: 8px; font-size: 14px; padding: 8px; cursor: pointer; margin-top: 0px; font-weight: bold; margin-left: 10px;">Generate Images<i style="margin-left: 5px; font-size: 15px; color: #fc7f2bf9;" class="fab fa-gripfire"></i></button></div><div id="preset-images" style="margin-top: 10px;"><h3 style="color: #028e33f9; font-size: 15px; margin-bottom: 10px;">
-          Gambar Preset klik untuk buat ⇆ Scrollbar
-          </h3></div><div class="image-slider-container"><div class="image-slider">
-          <img src="https://i.postimg.cc/jqHH6Xmn/26-PHCYb-md.jpg"
-          alt="Gambar 1" class="slider-image"
-          data-prompt="Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks, With delicate makeup on her face, beautiful face, Perfectly proportional face shape, (Advanced facial details：1.1) A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, (Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://i.postimg.cc/Sxschpsc/2r-Bf-SKF-md.jpg" alt="spider-man" class="slider-image" data-prompt="Create a hyper-realistic image of Spider-Man wearing a futuristic, shiny white robot suit, designed with intricate metallic details and glowing blue accents. He stands confidently in the foreground. Behind him, a large, highly detailed Transformer-like robot sits in a defensive pose, with a reflective metallic coating. The scene is set in a futuristic city at dusk, with warm and cool lighting providing realistic shading of the characters. Make sure textures, proportions and lighting are photorealistic"><img src="https://i.postimg.cc/sxsZHkqQ/2-LW454j-md.jpg" alt="prompt" class="slider-image" data-prompt="Foto-realistick, Gambarkan seorang hacker anonymous memegang (playing card joker), di lingkungan komputer teknologi mengalirkan cahaya ">
-          <img src="https://i.postimg.cc/7h9JFBrB/26-PJBVI-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="A beautiful dance on ice featuring two enchanting fairies, dressed in glossy dresses, realistic and fantastical atmosphere, ethereal lighting, intricate details, whimsical background, soft glows, elegant poses, magical winter scenery">
-          <img src="https://i.postimg.cc/HsWywCbF/2r-Q2-LF9-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="a beautiful Korean woman, with long wings like a butterfly with colorful patterns, with flowing neon sand light, very beautiful, sky garden background">
-
-          <img src="https://i.postimg.cc/4yWnLmpq/2r-Lblne-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="photorealistick, korean women, ((( amazoness)))、Tribe、fashionable face paint、Tribal Body Paint、(Japanese Face)、((cute))、Smooth white skin、Exposed clothes、tribal costumes、dense forest background、20 year、women、cute、super detailed,((( realistic, photo realistic, photo-realistic :1.37))), high definition, high definition, Studio Lighting, Very Smooth Painting, sharp concentration, physically based rendering, highly detailed description, professional, bright colors, bokeh, cinematic lighting, Dramatic Shadows, real、">
-          <img src="https://i.postimg.cc/tgFJ0rhh/24-WBu-JS-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="foto-realistick selfie efect beauty,up photo, masterpiece, best quality, (((1girl))),  (writing similar to Japanese letters ("JUTEK") on clothes) solo,realistic, ((looking at viewer)), photorealistic, (extremely detailed face), looking at viewer, ((ultra-detailed eyes and pupils)), ultra detailed, serious expression, (standing against a city street at night), hoodie, short hair, hands in pocket,"><img src="https://i.postimg.cc/TYS3K80V/266-Wne9-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus ikat ekor kuda, mata tajam wajah seksi, mengenakan gaun khas adat dayak, memegang busur panah, di samping ada kuda putih, latar pinggir hutan tepi pergunungan air terjun."><img src="https://i.postimg.cc/s2Jz9bY0/266b3AB.jpg" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus tertiup angin, mata tajam wajah seksi, mengenakan baju kaos putih, jaket mini tulisa (Pasbody) duduk di (mobil convertible-Roadster-Mobil sport mewah, SUV), (Gambar-full-Body).">
-          <img src="https://i.postimg.cc/wv76q0Nf/26-Pq-ZCv-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="FotoRealistik, full-body, (Large breast:1.4),(shirt:1.4),(Best quality,masterpiece,ultra high res,(photorealistic:1.4),1girl,(long hair:1.6)."><img src="https://i.postimg.cc/KYs2HBWn/266-R6t-S-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="Korean A stunning, elegant fantasy-inspired gown with intricate gold and pearl embellishments, featuring a glowing central design and ethereal details. The dress has a transparent and flowing fabric with ornate patterns, creating a majestic and celestial appearance. Designed to reflect beauty, grace, and sophistication, worn by a regal and radiant figure in a grand setting.">
-          <img src="https://i.postimg.cc/nh3bXqp6/2-Qc1-E0-J-md.jpg" alt="prompt" class="slider-image" data-prompt="A young man sits on a large blue Facebook logo, wearing a black jacket with a blue hoodie, a white t-shirt and modern sneakers. The background clearly displays the Facebook profile page with visible details such as profile picture, name, icon, and layout. The artistic style is realistic about the man and his background, ensuring the Facebook profile page reads clearly and in detail."><img src="https://i.postimg.cc/8cQx2Hmr/2-Qcgg7p-md.jpg" alt="prompt" class="slider-image" data-prompt="A majestic eagle with detailed golden and bronze feathers, wings fully spread, and a fierce expression. Below the eagle is a luxurious ornamental banner with intricate swirls and floral designs in gold and teal tones. The background is a dark gradient, emphasizing the metallic and elegant details of the artwork. The style is highly detailed and realistic, with a royal and decorative theme."><img src="https://i.postimg.cc/VkL2P5n4/2QcQs19.jpg" alt="prompt" class="slider-image" data-prompt="A handsome Korean man with sharp facial features, styled black hair, and a confident expression, wearing a sleek black outfit. His back is adorned with a vibrant, highly detailed 3D dragon tattoo in shades of black and red, with lifelike textures and glowing accents. The tattoo appears to almost emerge from his skin, creating a dynamic effect. The background is brightly lit with a modern, urban ambiance, featuring warm, natural lighting and clear details of an evening street scene, ensuring a vibrant and balanced composition with all elements clearly visible.">
-          <img src="https://i.postimg.cc/RhBbs0v7/2-Qcn-L8-J-md.jpg" alt="prompt" class="slider-image" data-prompt="FotoRealistick, A regal and vibrant fantasy-style logo featuring two fierce white tigers with glowing orange eyes, positioned symmetrically around a circular centerpiece. The lions have detailed fur patterns and an intense expression, with golden decorative elements accentuating their elegance. Above the circle, add a golden crown with radiant wings and a central jewel. Surround the design with white floral decorations, vibrant red-and-white ribbons, and luminous pink lightning effects for a dynamic and powerful look. Use a polished gold-and-silver color scheme combined with bright accents to highlight the intricate details, set against a gray background to enhance the contrast.">
-          <img src="https://i.postimg.cc/VkVZygYL/2-LSXt3b-md.jpg" alt="prompt" class="slider-image" data-prompt="Photo-realistic, Portrait of a Korean woman, lying down on the cover photo of the facebook home page.">
-          <img src="https://i.postimg.cc/G20Mtp8W/2-Ljend-N-md-1.jpg" alt="prompt" class="slider-image" data-prompt="FotoRealistic, Wanita korea cantik wajah menghadap penonton, dengan tubuh mengenakan kostum switer hody bertopi, lengkap Punggungnya dihiasi cangkang siput besar yang, dengan tekstur kerang melingkar. Antena kecil tumbuh di atas topi hody, menambah elemen seperti siput. Karakter ini berjongkok di atas lanskap hutan alien yang dipenuhi lumut hijau, jamur bercahaya, dan tumbuhan eksotis. Latar belakangnya menampilkan pemandangan dengan yang terang serta formasi batuan yang menjulang, menciptakan suasana realistick hd."><img src="https://i.postimg.cc/dQjWQwqf/2-LX5vo-J-md.jpg" alt="prompt" class="slider-image" data-prompt="Seorang robot humanoid perempuan dengan wajah muda menyerupai wanita Korea, memiliki kulit halus, rambut hitam rapi, dan ekspresi tenang yang realistis. Tubuhnya sepenuhnya terlihat, dirancang dengan material perak futuristik, lengkap dengan aksen biru neon yang menyala. Tubuh robotik mencakup torso ramping, lengan mekanik berteknologi tinggi, dan kaki robotik yang dirancang untuk mobilitas canggih. Setiap detailnya, mulai dari panel bercahaya hingga engsel mekanik, mencerminkan perpaduan antara estetika manusia dan teknologi modern. Latar belakangnya berupa ruangan minimalis dengan elemen modern, memberikan suasana futuristik namun realistis.">
-          <img src="https://i.postimg.cc/JzGKQXbw/2-Lx26hl-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful owl with long colorful feathers, perched on a cherry tree, with a snow mountain as a background, a cool view with the light of the wind flowing beautiful neon colors"><img src="https://i.postimg.cc/Vvh0sJ5M/2-Lx3-En2-md.jpg" alt="prompt" class="slider-image" data-prompt="A hyper-realistic photo of a lush green forest with sunlight filtering through the trees, highly detailed textures, natural lighting, and sharp focus.
-          Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks , With delicate makeup on her face, beautiful face, Perfectly proportional face shape, （Advanced facial details：1.1）A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, ( Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://i.postimg.cc/R0T36sNv/2r-UEPCg-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful Korean mermaid, underwater view filled with coral, seaweed, sand, colorful glass, Koi fish (Cyprinus carpio), Discus fish (Symphysodon spp.), Guppy fish (Poecilia reticulata) Betta fish (Betta splendens), lively comet fish (Carassius auratus), and gentle sea turtles"><img src="https://i.postimg.cc/pLby0bj2/2-Qn-Hqnj-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful woman, long dark hair, detailed facial features, delicate skin, elegant expression, sunlight, warm glow, flowery meadow, lush greenery, picturesque landscape, serene atmosphere, (best quality,4k,8k,highres,masterpiece:1.2),ultra-detailed,(realistic,photorealistic,photo-realistic:1.37),intricate details,cinematic lighting,vibrant colors,breathtaking scenery,ethereal,romantic,classical painting">
-          <img src="https://i.postimg.cc/6q450Y52/2-QCbd-KP-1.jpg" alt="prompt" class="slider-image" data-prompt="Gorgeus Girl, Beautiful, korean , 20 Years Old, White Skin, Large Colossal Breasts, Pose, (red-Gold Kebaya), Green Indonesian Kebaya, Brown Retina, Muscles, Bokeh, Indonesian Culture Background, Masterpiece, Portrait, Straight Dark Hair, Perfect Lighting, HDR, ((Green-Gold Coloured))"><img src="https://i.postimg.cc/kMLxdHSH/2-Qn9dh-J-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful girl ,Thailand Female , walking at (((Wat Arun))) in Bangkok, dynamic poses, chut thai dress, long hair,black eyes,abdominal muscles, plumpy body, rounded breast, (big breast:1.3), Morning sunshine, Eyes on the audience, (sexy poses), ((face details)), Double eyelids, reeds, realistic, masterpiece, highest quality, lens flare, shade, old temple, temple, [[chromatic aberration]], by Jeremy Lipking, by Antonio J. Manzanedo, digital painting, HDR, high contrast"><img src="https://i.postimg.cc/tgrxvvy2/2-Qlw4wb-md.jpg" alt="prompt" class="slider-image" data-prompt="A 3D-rendered Japanese anime-style female samurai removing her mask, pulling it down to reveal her beautiful face. The mask is a traditional samurai mask, primarily white with red and gold accents. She has long, flowing black hair and wears detailed samurai armor with intricate engravings. Her full body is visible as she confidently removes the mask with one hand while holding a katana in the other. The background features a misty traditional Japanese village with soft lighting. The scene has a cinematic feel with dramatic lighting and realistic textures"></div></div>
-        <h2 style="font-size: 15px; margin-top: 20px; padding: 0px; ">PETUNJUK :</h2><p style="font-size: 14px; background: #333; color: white; padding: 10px; border-radius: 5px;">Klik bagian tombol (H-150) Atur panjang gambar. <br>Scrool gambar ke samping kiri klik bagian gambar yang ingin di buat lalu tunggu proses otomatis membuat gambar tekan bagian gambar untuk download</p></section></div></div>
-          <div class="unique-controls">
-        <script>const promptInput = document.getElementById("uniquePromptInput"); const sliderImages = document.querySelectorAll(".slider-image"); const generatedImage = document.getElementById("uniqueGeneratedImage"); const loader = document.getElementById("loader"); const saveBtn = document.getElementById("uniqueSaveBtn"); const heightInput = document.getElementById("uniqueHeightInput"); const generateBtn = document.getElementById("uniqueGenerateBtn"); function generateImage(description = null) { const prompt = description || promptInput.value.trim(); const height = parseInt(heightInput.value) || 1024; const width = 1024; if (!prompt) { alert("Please enter a description for the image."); return; } loader.style.display = 'block'; setTimeout(() => { loader.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 50); const seed = Math.floor(Math.random() * 1000000); const generateImageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?nologo=1&seed=${seed}&width=${width}&height=${height}&quality=100`; generatedImage.src = generateImageUrl; generatedImage.onload = () => { loader.style.display = 'none'; saveBtn.disabled = false; generatedImage.setAttribute("onclick", "saveImage()"); generatedImage.style.cursor = "pointer"; let downloadText = document.getElementById("downloadText"); if (!downloadText) { downloadText = document.createElement("p"); downloadText.id = "downloadText"; generatedImage.parentNode.insertBefore(downloadText, generatedImage.nextSibling); } downloadText.textContent = " Tekan gambar 2 detik klik Download Gambar"; downloadText.style.textAlign = "center"; downloadText.style.fontSize = "14px"; downloadText.style.fontWeight = "bold"; downloadText.style.color = "#333"; downloadText.style.marginTop = "-5px"; downloadText.style.marginBottom= "10px"; downloadText.style.display = "block"; setTimeout(() => { generatedImage.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 200); }; } function saveImage() { const link = document.createElement('a'); link.href = generatedImage.src; link.download = 'generated_image.png'; link.click(); } sliderImages.forEach(image => { image.addEventListener("click", function () { const prompt = this.getAttribute("data-prompt"); promptInput.value = prompt; generateImage(prompt); window.scrollTo({ top: 0, behavior: 'smooth' }); }); }); generateBtn.addEventListener("click", () => generateImage()); saveBtn.addEventListener("click", saveImage); </script></section></div>
-         </div>
-    <div id="container"><div id="profil-header">
-                
-        </div>
-          <hr style="background-color: #444; height: 2px; border: none; margin: 0; width: 100%; display: flex; margin-top: -40px;"></hr>
-      <style>
-        #scroll-buttons span {
-          color: #eee;
-          margin-left: 0px;
-          font-size: 8px;
-        }
-        #scroll-buttons button {
-          margin: 0px;
-          padding: 10px;
-      
-          background: none;
-          border: none;
-          cursor: pointer;
-        }
-      </style>
-      
-        <div class="unique-controls"><h2 style="font-size: 17px; margin-top: 20px; padding: 0px;">INFO</h2><p style="font-size: 14px;">website ini masih dalam tahap pengembangan dan mungkin belum berfungsi secara normal. Beberapa fitur mungkin tidak konsisten atau mengalami gangguan. Kami sedang bekerja untuk meningkatkan pengalaman Anda. Terima kasih atas pengertiannya!</p>
-          <img src="https://iili.io/3zsxfSt.png" style="width: 100%; border: none; margin-top: 0px; border: solid 2px #777; border-radius: 8px; pointer-events: none; margin-bottom: px; border: 1px solid #eee;"></img>
-          <div id="scroll-buttons"><button onclick="redirect('https://tommydev27.github.io/Tommy-Website/')"><i class="fab fa-gg-circle"></i><span style= "color: #fff; margin-top: 10px;">AI Creativity</span></button><button onclick="redirect('https://tommydev27.github.io/tm-text/')"><i class="fas fa-keyboard"></i><span style= "color: #fff; margin-top: 10px;">Text Art</span></button><button onclick="redirect('https://tommydev27.github.io/tommy.website3/')"><i class="fas fa-id-card-alt"></i><span style= "color: #fff; margin-top: 10px;">ASCII ART</span></button><button onclick="redirect('https://tommydev27.github.io/devai/')"><i class="fa fa-info-circle"></i><span style= "color: #fff; margin-top: 10px;">Double Key</span></button></div><div><footer><div class="footer-container"><div class="quick-links"><a>Home<a>Features<a>Privacy Policy<a>Terms & Conditions</a></div><div class="social-media"><a href="https://www.facebook.com" target="_blank" class="social-icon facebook">Facebook</a><a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a><a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a></div><p style="font-size: 11px; color: #fff; margin-bottom: 3px; margin-top: 5px; width: 100%;
-          padding: 5px 0;            /* Atas-bawah saja */
-          background: #444;       /* Contoh background */
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Bayangan */
-        border-radius: 5px;">Tommy Web Store Developer v0.1.0 2020 © </p></footer></div><script>function showTab(tab) { const tabs = document.querySelectorAll("#profil-tabs div"); const contents = document.querySelectorAll("#profil-content> div"); tabs.forEach(t => t.classList.remove("active")); contents.forEach(c => c.classList.remove("active")); document.querySelector(`#tab-${tab}`).classList.add("active"); document.querySelector(`#content-${tab}`).classList.add("active"); }</script><script>document.addEventListener("DOMContentLoaded", function () { function showTab(tab) { const tabs = document.querySelectorAll("#profil-tabs div"); const contents = document.querySelectorAll("#profil-content > div"); tabs.forEach(t => t.classList.remove("active")); contents.forEach(c => c.classList.remove("active")); document.querySelector(`#tab-${tab}`).classList.add("active"); document.querySelector(`#content-${tab}`).classList.add("active"); } function redirect(url) { window.location.href = url; } function nextPage() { alert("Akan dialihkan ke halaman selanjutnya!"); } function updateDateTime() { const dateTimeElement = document.getElementById("dateTime"); if (!dateTimeElement) return; const options = { weekday: "long", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }; dateTimeElement.textContent = new Date().toLocaleDateString("id-ID", options); } setInterval(updateDateTime, 1000); updateDateTime(); let hasLiked = false; const btnIkuti = document.getElementById("btn-ikuti"); const followersCount = document.getElementById("followers-count"); if (btnIkuti && followersCount) { btnIkuti.addEventListener("click", () => { let currentCount = parseInt(followersCount.textContent.replace('.', '')); if (!hasLiked) { followersCount.textContent = formatNumber(currentCount + 1); btnIkuti.innerHTML = '<i class="fas fa-thumbs-up"></i> Batal'; hasLiked = true; } else { followersCount.textContent = formatNumber(currentCount - 1); btnIkuti.innerHTML = '<i class="fas fa-thumbs-up"></i> Suka'; hasLiked = false; } }); } function formatNumber(num) { return num.toLocaleString("id-ID"); } document.querySelectorAll("#scroll-buttons button").forEach(button => { button.addEventListener("click", function () { const url = this.getAttribute("onclick").match(/'(.*?)'/)[1]; redirect(url); }); }); }); const toggle = document.getElementById("darkModeToggle"); toggle.addEventListener("click", function () { this.classList.toggle("active"); document.body.classList.toggle("dark-mode"); }); </script><script>document.getElementById("iconuniquecontainer").addEventListener("click", function () { this.classList.toggle("active"); });</script><script>
-          let isIframeOpen = false;
-        
-          function toggleTab(button, name) {
-            const parentDiv = button.closest(".tab-container");
-            const iframe = parentDiv.querySelector("iframe");
-            if (!iframe) return;
-            const currentUrl = getUrlForTab(name);
-        
-            if (iframe.style.display === 'block' && iframe.src === currentUrl) {
-              iframe.style.display = 'none';
-              isIframeOpen = false;
-              history.pushState(null, null, location.href);
-              return;
-            }
-        
-            document.querySelectorAll(".tab-container iframe").forEach(el => {
-              el.style.display = "none";
-            });
-        
-            if (iframe.src !== currentUrl) {
-              iframe.src = currentUrl;
-            }
-        
-            iframe.style.display = 'block';
-            isIframeOpen = true;
-            history.pushState(null, null, location.href);
-            setTimeout(() => {
-              iframe.scrollIntoView({ behavior: "smooth", block: "center" });
-            }, 100);
-          }
-        
-          function getUrlForTab(name) {
-            const urls = {
-              'Microsoft22': 'https://tommydev27.github.io/Penghapus-duplikat-teks/',
-              'Microsoft4': 'https://tommydev27.github.io/Alat-Penghapus-Spasi/',
-              'Microsoft3': 'https://tommydev27.github.io/Pengganda-teks/',
-              'Microsoft2': 'https://tommydev27.github.io/Penghutung-karakter/',
-              'Microsoft': 'https://tommydev27.github.io/FakeID/',
-              'Unicode': 'https://tommydev27.github.io/unicodeTM277/',
-              'Glitch': 'https://tommydev27.github.io/glitch-text/',
-              'Glitch2': 'https://tommydev27.github.io/Unicode/',
-              'SymbolTool': 'https://tommydev27.github.io/Unicode.SymbolTool/',
-              'FontUnikers': 'https://tommydev27.github.io/font-unikrsfb/',
-              // Optional lainnya
-              'DeepAi': 'https://tommydev27.github.io/tommy-website.oi/',
-              'Replit AI': 'https://tommydev27.github.io/tommy.website3/',
-              'DeepSeek': 'https://tommydev27.github.io/tommy.website-demo/',
-              'Music': 'https://tommydev27.github.io/MusicTM/',
-              'Music2': 'https://tommydev27.github.io/glitch-text/'
-            };
-            return urls[name] || '';
-          }
-        
-          window.addEventListener("popstate", function () {
-            if (isIframeOpen) {
-              document.querySelectorAll(".tab-container iframe").forEach(el => {
-                el.style.display = "none";
-              });
-              isIframeOpen = false;
-              history.pushState(null, null, location.href);
-            } else {
-              history.back();
-            }
-          });
-        
-          history.pushState(null, null, location.href);
-        
-          // 3D Spin Effect JS (tidak diubah)
-          var radius = 90;
-          var autoRotate = true;
-          var rotateSpeed = -30;
-          var imgWidth = 50;
-          var imgHeight = 0;
-          var bgMusicURL = "https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&loop=1";
-          var bgMusicControls = false;
-          setTimeout(init, 100);
-          var ospin = document.getElementById("spin-container");
-          var aImg = ospin.getElementsByTagName("img");
-          var aVid = ospin.getElementsByTagName("video");
-          var aEle = [...aImg, ...aVid];
-          ospin.style.width = imgWidth + 15 + "px";
-          ospin.style.height = imgHeight + 0 + "px";
-        
-          function init(delayTime) {
-            for (var i = 0; i < aEle.length; i++) {
-              aEle[i].style.transform = "rotateY(" + i * (360 / aEle.length) + "deg) translateZ(" + radius + "px)";
-              aEle[i].style.transition = "transform 1s";
-              aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 5 + "s";
-            }
-          }
-        
-          function applyTranform(obj) {
-            if (tY > 30) tY = 30;
-            if (tY < -30) tY = -30;
-            obj.style.transform = "rotateX(" + -10 + "deg) rotateY(" + tX + "deg)";
-          }
-        
-          function playSpin(yes) {
-            ospin.style.animationPlayState = yes ? "running" : "paused";
-          }
-        
-          var sX, sY, nX, nY, desX = 0, desY = 0, tX = 0, tY = 0;
-        
-          if (autoRotate) {
-            var animationName = rotateSpeed > 0 ? "spin" : "spinRevert";
-            ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
-          }
-        
-          document.onpointerdown = function(e) {
-            clearInterval(odrag.timer);
-            e = e || window.event;
-            var sX = e.clientX, sY = e.clientY;
-            this.onpointermove = function(e) {
-              e = e || window.event;
-              var nX = e.clientX, nY = e.clientY;
-              desX = nX - sX;
-              desY = nY - sY;
-              tX += desX * 0.1;
-              tY += desY * 0.1;
-              applyTranform(odrag);
-              sX = nX;
-              sY = nY;
-            };
-            this.onpointerup = function(e) {
-              odrag.timer = setInterval(function() {
-                desX *= 0.95;
-                desY *= 0.95;
-                tX += desX * 0.1;
-                tY += desY * 0.1;
-                applyTranform(odrag);
-                playSpin(false);
-                if (Math.abs(desX) < 0.1 && Math.abs(desY) < 0.1) {
-                  clearInterval(odrag.timer);
-                  playSpin(true);
-                }
-              }, 1);
-              this.onpointermove = this.onpointerup = null;
-            };
-            return false;
-          };
-        
-          document.onmousewheel = function(e) {
-            e = e || window.event;
-            var d = e.wheelDelta / 0 || -e.detail;
-            radius += d;
-            init(1);
-          };
-        </script>
-        
-        
-    </body>
+</body>
 </html>
