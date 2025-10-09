@@ -1245,12 +1245,13 @@ body.dark-mode #iconunique-container {
   .container1 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
   }
 
   .big-text1 {
     font-size: 50px;
     font-weight: bold;
+    margin-top: -200px;
   color: #fff;
 text-shadow:
   1px 1px 0 #434343, 
@@ -1262,14 +1263,15 @@ text-shadow:
   }
 
   .divider1 {
-    width: 3px;
-    background: black;
-    height: 50px;
+    width: 1px;
+    background: #fa6060;
+    height: 250px;
   }
 
   .small-text1 {
     font-size: 13px;
     line-height: 1.5;
+    color: #0b66c3;
   }
 </style>
     <a class="bold"> 
@@ -1277,10 +1279,40 @@ text-shadow:
   <div class="big-text1"><i class="fab fa-earlybirds"></i></div>
   <div class="divider1"></div>
   <div class="small-text1">
-    Alat Karakter Teks & Seni Teks<br>
+   <b style="font-size: 16px; font-weight: bold; color: #333;"> Alat Karakter Teks - Seni Teks -<br>
     Buat gambar Ai & Ascii<br>
+    </b>
+<div class="small-text1" onclick="go('idcard')">iD card pw</div>
+<div class="small-text1" onclick="go('seni')">Seni Teks</div>
+<div class="small-text1" onclick="go('hitung')">Penghitung Karakter</div>
+<div class="small-text1" onclick="go('ganda')">Pengganda Teks</div>
+<div class="small-text1" onclick="go('font')">Font nama Unik fb</div>
+<div class="small-text1" onclick="go('glitch')">Glitch Text Generator</div>
+<div class="small-text1" onclick="go('creativity')">Unicode Creativity</div>
+<div class="small-text1" onclick="go('chars')">Unicode Characters</div>
+<div class="small-text1" onclick="go('hapusspasi')">Penghapus Spasi</div>
+<div class="small-text1" onclick="go('catatan')">Blok koreksi Dua catatan</div>
+<div class="small-text1" onclick="go('hapusduplikat')">Penghapus Karakter duplikat</div>
 
-          <div style="font-weight:600;color:#0b66c3;">iD card pw</div>
+<script>
+function go(page) {
+  const url = {
+    idcard: 'https://tommydev27.github.io/FakeID/',
+    seni: 'https://tommydev27.github.io/generatorascii/',
+    hitung: 'https://tommydev27.github.io/Penghutung-karakter/',
+    ganda: 'https://tommydev27.github.io/Pengganda-teks/',
+    font: 'https://tommydev27.github.io/font-unikrsfb/',
+    glitch: 'https://tommydev27.github.io/glitch-text/',
+    creativity: 'https://tommydev27.github.io/Unicode.SymbolTool/',
+    chars: 'https://tommydev27.github.io/Unicode/',
+    hapusspasi: 'https://tommydev27.github.io/Alat-Penghapus-Spasi/',
+    catatan: 'https://tommydev27.github.io/Blok-dua-catatan-koreksi-catatan-/',
+    hapusduplikat: 'https://tommydev27.github.io/Penghapus-duplikat-teks/'
+  }[page];
+  if (url) location.href = url;
+}
+</script>
+
   </div>
 </div>
     </div>
