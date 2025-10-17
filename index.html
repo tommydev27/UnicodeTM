@@ -42,7 +42,7 @@
 }
 
 body {
-    background: #eff7ff;
+    background: #daebfa21;
     color: #333;
     background-size: cover;
     background-position: center;
@@ -324,7 +324,7 @@ p {
 #image-container img {
     width: 100%;
     margin-top: 10px;
-    border: 1px solid #ddd;
+    border: 0.5px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -350,8 +350,9 @@ body.dark-mode .date-time {
 }
 
 body.dark-mode .bold {
-  color: #ddd; 
+  color: #0dfa0a; 
 }
+
 
 
 .gray {
@@ -672,7 +673,6 @@ body.dark-mode .nav-button i {
 }
 
 footer {
-
   color: #eee;
   padding: 0px 0;
   margin-top: 0px;
@@ -1059,6 +1059,7 @@ body.dark-mode #iconunique-container {
     .dark-mode .img-container {
       background: transparent;
       border: 1px solid #1097ff;
+      border-radius: 15px;
       box-shadow: none;
     }
 
@@ -1104,12 +1105,17 @@ body.dark-mode #iconunique-container {
   width: 100%;
   padding: 5px 0px;
   background: #fff;
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   overflow-x: auto;
   border-radius: 15px;
   display: flex;
   scroll-behavior: smooth;
 }
+
+        .dark-mode  #image-scroll-container {
+            border: none;
+            background: none;
+        }
 
 #image-wrapper {
   display: flex;
@@ -1135,16 +1141,22 @@ body.dark-mode #iconunique-container {
   justify-content: center;
   width: 180px;
   padding: 20px;
-  height: 120px;
-  border: solid 1px #fdc6d8;
+  border: solid 1px #ccc;
+  border-radius: 15px;
+  height: 180px;
   color: #333;
   font-size: 14px;
-  border-radius: 15px;
   text-decoration: none;
   text-align: left;
   box-sizing: border-box;
   overflow: hidden;
 }
+
+        .dark-mode  .book-badge {
+            border: none;
+            background: #333;
+            color: #0dfa0a;
+        }
 
   .icon-badge {
      display: flex;
@@ -1153,7 +1165,7 @@ body.dark-mode #iconunique-container {
      gap: 5px;
      font-size: 40px;
     }
-    
+
     .orange { color: #ffbc41; }
     .green { color: #25D366; }
     .blue { color: #1DA1F2; }
@@ -1171,9 +1183,15 @@ body.dark-mode #iconunique-container {
       word-break: break-word;
       white-space: normal;
     }
+    
+      .tommyweb {
+        display: flex; align-items: center; background: #fff; padding : 10px 0px;}
+        .dark-mode .tommyweb {
+            background: #333;
+            color: #04f105;
+          }
 
-
-</style>
+      </style>
   </head>
 <body>
   
@@ -1196,19 +1214,18 @@ body.dark-mode #iconunique-container {
 
 <div class="container">
 
-  <div style="display: flex; align-items: center;">
-
-    <!-- Tombol Menu -->
+  <div class="tommyweb">
     <button
       onclick="toggleMenu()"
       style="
-        font-size: 30px;
-        color: #555;
+        font-size: 20px;
+        color: #999;
         background: none;
         font-weight: bold;
         border: none;
-        padding: 8px;
-        margin-left: 6px;
+        border: solid 0.5px #6fabf6;
+        padding: 6px 6px;
+        margin-left: 10px;
         -webkit-tap-highlight-color: transparent;
         outline: none;
         z-index: 1001;
@@ -1221,16 +1238,16 @@ body.dark-mode #iconunique-container {
 
     </button>
     
-    <b style="padding: 10px 14px; font-size: 14px; ">
-      TOMMY WEB  <i class="fas fa-check-circle" style="  color: #1da1f2; 
-  font-size: 14px;"></i>
-  <hr>
+<div class="tommy" style="padding:0px 15px; font-family: normal;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<user style="display:inline-block; font-size:13px;  font-weight:900; letter-spacing:1.3px; margin:0; line-height:1.2; position:relative;">
+  <user style="display:inline-block; transform: scaleX(1.1) scaleY(0.8); transform-origin:center;">Tommy website</user>
+  <user style="position:absolute; bottom:0; left:-5px; width:calc(100% + 0px); border-bottom:0.5px solid #444;"></usee>
+</user>
 
-    <span class="badge" > design tommy v0.1.0</span>
-      </span>
-
-    </b>
-
+&nbsp; <svg xmlns="http://www.w3.org/2000/svg" fill="#4790fb" width="15" height="15" viewBox="0 0 30 30" style="transform: translateY(5px);"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.201 1.122a1 1 0 0 1 1.332.357l1.307 2.138 2.506.063a1 1 0 0 1 .974.975l.063 2.505 2.139 1.307a1 1 0 0 1 .356 1.332L21.68 12l1.198 2.201a1 1 0 0 1-.357 1.332l-2.138 1.307-.063 2.506a1 1 0 0 1-.974.974l-2.506.063-1.307 2.139a1 1 0 0 1-1.332.356L12 21.68l-2.201 1.198a1 1 0 0 1-1.332-.357L7.16 20.383l-2.506-.063a1 1 0 0 1-.974-.974l-.063-2.506-2.138-1.307a1 1 0 0 1-.357-1.332L2.32 12 1.122 9.799a1 1 0 0 1 .357-1.332L3.617 7.16l.063-2.505a1 1 0 0 1 .974-.975l2.506-.063L8.467 1.48A1 1 0 0 1 9.8 1.122L12 2.32l2.201-1.198zm2.44 9.146a1 1 0 1 0-1.281-1.536l-.067.055a43.003 43.003 0 0 0-4.852 4.74l-1.734-1.734a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.475-.067l.056-.067a41 41 0 0 1 5.25-5.25l.066-.055z"></path></svg></user><p style="margin:4px 0 0 0; line-height:1.2;"><user style="font-size:13px; font-weight:400; letter-spacing:5px; display:inline-block; transform: scaleX(1.1) scaleY(0.8); transform-origin:center;">from &nbsp;&nbsp;<user style="display:inline-block; font-size:12px; font-weight:400; transform: scaleX(1.9) scaleY(1.5); color:#4790fb; text-shadow:0.5px 0 0 currentColor, -0.5px 0 0 currentColor;"> <i class='fab fa-gg'></i>TM</user>
+</div>
+       
 
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android" style="width:25px;  margin-left: 2px; margin-top: 2px;">
     
@@ -1245,7 +1262,7 @@ body.dark-mode #iconunique-container {
   .container1 {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
 
   .big-text1 {
@@ -1254,45 +1271,81 @@ body.dark-mode #iconunique-container {
     margin-top: -200px;
   color: #fff;
 text-shadow:
-  1px 1px 0 #434343, 
-  2px 0px 0 #fff,  
+  1px 1px 0 #875151, 
+  2px 0px 0 #000,  
   3px 3px 0 #dbcaca; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   }
 
+.dark-mode .big-text1 {
+  color: #ea082e;
+  text-shadow:
+    1px 1px 0 #000,
+    2px 0px 0 #ea082e,
+    3px 3px 0 #550000;
+}
+  
   .divider1 {
-    width: 1px;
+    width: 0.5px;
     background: #fa6060;
-    height: 250px;
+    height: 300px;
   }
 
   .small-text1 {
-    font-size: 13px;
-    line-height: 1.5;
-    color: #0b66c3;
+    font-size: 16px;
+    font-weight:600;
+    line-height: 1.8;
+    font-family:normal;
+    color: #333;
   }
+  
+    .dark-mode .small-text1 {
+    color: #4ff84f;
+  }
+  
 </style>
     <a class="bold"> 
 <div class="container1">
   <div class="big-text1"><i class="fab fa-earlybirds"></i></div>
   <div class="divider1"></div>
   <div class="small-text1">
-   <b style="font-size: 16px; font-weight: bold; color: #333;"> Alat Karakter Teks - Seni Teks -<br>
+   <b style="font-size: 16px; font-weight: bold; "> Alat Karakter Teks - Seni Teks &<br>
     Buat gambar Ai & Ascii<br>
     </b>
-<div class="small-text1" onclick="go('idcard')">iD card pw</div>
-<div class="small-text1" onclick="go('seni')">Seni Teks</div>
-<div class="small-text1" onclick="go('hitung')">Penghitung Karakter</div>
-<div class="small-text1" onclick="go('ganda')">Pengganda Teks</div>
-<div class="small-text1" onclick="go('font')">Font nama Unik fb</div>
-<div class="small-text1" onclick="go('glitch')">Glitch Text Generator</div>
-<div class="small-text1" onclick="go('creativity')">Unicode Creativity</div>
-<div class="small-text1" onclick="go('chars')">Unicode Characters</div>
-<div class="small-text1" onclick="go('hapusspasi')">Penghapus Spasi</div>
-<div class="small-text1" onclick="go('catatan')">Blok koreksi Dua catatan</div>
-<div class="small-text1" onclick="go('hapusduplikat')">Penghapus Karakter duplikat</div>
+    </br>
+<div class="small-text1" onclick="go('idcard')">
+  <i class="far fa-id-card green"></i> iD card pw
+</div>
+
+<div class="small-text1" onclick="go('hitung')">
+  <i class="fab fa-page4" style="color:#c360ff;"></i> Penghitung Karakter
+</div>
+
+<div class="small-text1" onclick="go('font')">
+  <i class="fab fa-facebook blue"></i> Font nama Unik fb
+</div>
+
+<div class="small-text1" onclick="go('creativity')">
+  <i class="fa fa-keyboard blue"></i> Keyboar Creatify
+</div>
+
+<div class="small-text1" onclick="go('seni')">
+  <i class="fab fa-slack" style="color:#6c28fb;"></i> Seni Teks
+</div>
+
+<div class="small-text1" onclick="go('glitch')">
+  <i class="fab fa-google-wallet" style="color:red;"></i> Glitch Text Generator
+</div>
+
+<div class="small-text1" onclick="go('chars')">
+  <i class="fas fa-spell-check" style="color:#ea9100;"></i> Unicode Characters
+</div>
+
+<div class="small-text1" onclick="go('catatan')">
+  <i class="fab fa-readme" style="color:#3262ef;"></i> Blok koreksi Dua catatan
+</div>
+
 
 <script>
 function go(page) {
@@ -1323,9 +1376,11 @@ function go(page) {
     <div id="sideMenu" style="
       position: fixed;
       left: -250px;
+      margin-top: -430px;
+      color:#04f62b;
       width: 250px;
-      height: calc(100% - 50px);
-      background-color: #fff;
+      height:100vh;
+      background-color: #333;
       transition: left 0.3s ease;
       padding: 20px;
       z-index: 1000;
@@ -1333,25 +1388,25 @@ function go(page) {
     ">
     
     <!-- Profil -->
-    <div style="display: flex; align-items: center; margin-bottom: 0px;">
+    <div style="display: flex; align-items: center; margin-bottom: 0px; ">
       <img src="https://i.postimg.cc/dVfBCHXP/1753766402156.jpg" alt="Tommy" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px; border: solid 2px #007acc">
       <div>
-        <div style="font-weight: bold; color: #333; font-size: 18px;">Tommy</div>
+        <div style="font-weight: bold; color: #4dff3c; font-size: 18px;">Tommy</div>
         <!-- Tombol X untuk menutup -->
         <div onclick="closeMenu()" style="
           position: absolute;
           top: 10px;
           right: 10px;
-          font-size: 20px;
+          font-size: 30px;
           cursor: pointer;
-          color: #333;
+          color: #4dff3c;
           z-index: 1001;
         ">
           &times; 
         </div>
 
         
-        <div style="font-size: 12px; color: #777;">Design: tommy v.0.1.0 </div>
+        <div style="font-size: 12px; color: #4dff3c;">Design: tommy v.0.1.0 </div>
       </div>
     </div>
     <div style="align-items: center; margin-bottom: 10px; border: solid 1px #e8e8e8; padding: 10px; border-radius: 5px;">
@@ -1359,17 +1414,17 @@ function go(page) {
 
     <br>
 <!-- Deskripsi -->
-<p style="font-size: 14px; color: #444; line-height: 1.4;">
+<p style="font-size: 14px; color: #4dff3c; line-height: 1.4; font-weight:300px;">
   desainer web yang membangun antarmuka sederhana, cepat, dan responsif. Memiliki ketertarikan pada teknologi UI modern dan pengembangan aplikasi ringan.
 </p>
     </div>
 <hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
 
 <!-- Scroll khusus daftar -->
-<div style="max-height: 400px; overflow-y: auto; padding-right: 0px;">
+<div style="max-height: 400px; overflow-y: auto; padding-right: 0px; font-size: 14px;">
 
   <div onclick="window.location.href='https://tommydev27.github.io/FakeID/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
-    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">ID Card Maker</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">ID Card Maker</div>
     <div style="background: #4c046a; color: #fff; padding: 10px;">Buat kartu identitas digital dengan nama, foto, dan detail custom. Cocok untuk profil, akun roleplay, dan keperluan online lainnya.
 
 </div>
@@ -1426,6 +1481,8 @@ function go(page) {
   }
 
 </script>
+
+
 <div id="container">
   <div class="unique-controls">
     <div id="image-scroll-container">
@@ -1460,23 +1517,9 @@ function go(page) {
         </div>
 
         <div class="img-container">
-          <a href="https://tommydev27.github.io/Penghapus-duplikat-teks/" class="book-badge">
-            <b class="icon-badge"><i class="fab fa-wpforms green"></i></b>
-            <span class="text-wrap">Hapus Teks Duplikat</span><small>Remove duplicate text</small>
-          </a>
-        </div>
-
-        <div class="img-container">
           <a href="https://tommydev27.github.io/Penghutung-karakter/" class="book-badge">
             <b class="icon-badge"><i class="fa fa-calculator blue"></i></b>
             <span class="text-wrap">Penghitung Karakter</span><small>jumlah teks / symbols</small>
-          </a>
-        </div>
-
-        <div class="img-container">
-          <a href="https://tommydev27.github.io/Pengganda-teks/" class="book-badge">
-            <b class="icon-badge"> <i class="fa fa-clone blue"></i></b>
-            <span class="text-wrap">Pengganda teks</span><small>perbanyak teks / symb0l</small>
           </a>
         </div>
 
@@ -1506,24 +1549,15 @@ function go(page) {
   </div>
 
 
-<div style="display: flex; align-items: center; gap: 8px; margin-left: 15px; margin-top: 10px; margin-bottom: 7vh;">
+<div style="display: flex; align-items: center; gap: 8px; margin-left: 15px; margin-top: 0px;">
   <button id="btn-pesan" style="color: #1877f2; font-size: 15px; background: #fff; 
       box-shadow: inset 0 0 0 1px #fdaeae ;
- font-weight: bold;    border-radius: 50px; padding: 5px 10vh;" onclick="window.location.href='https://m.me/tommy27110';">
+ font-weight: bold;    border-radius: 50px; padding: 5px 17vh;" onclick="window.location.href='https://m.me/tommy27110';">
     <i class="fab fa-facebook-messenger"></i> Pesan
   </button>
 
-  <div class="icon-container" id="iconuniquecontainer" style="  text-shadow: 1px 1px 1px #5c5c5c7c; display: flex; gap: 8px; position: relative; width: 30px; height: 30px; 
-  background: linear-gradient(to bottom, #00d700, #016201); color: #fff;  justify-content: center; align-items: center; border-radius: 50%; cursor: pointer; -webkit-tap-highlight-color: transparent; margin-left: 60px;">
-    <i class="fas fa-chart-pie" ></i>
-
-<div class="button-circle" onclick="window.location.href='https://web.whatsapp.com/mobile/';" style="background-color: #25D366;"><i class="fab fa-whatsapp"></i></div><div class="button-circle" onclick="window.location.href='https://www.facebook.com/tommy27110';" style="background-color: #1877F2;"><i class="fab fa-facebook"></i></div><div class="button-circle" onclick="window.location.href='https://www.instagram.com/mobile/';" style="background-color: #E4405F;"><i class="fab fa-instagram"></i></div><div class="button-circle" onclick="window.location.href='contact.html';" style="background-color: #FF0000;"><i class="fas fa-heart"></i>
-</div>
-
-</div>
-
 <div class="icon-container" id="iconuniquecontainer"
-     style="text-shadow: 1px 1px 1px #5c5c5c7c; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; background:linear-gradient(180deg,#b72900,#571400); color: #fff; border-radius: 50%; cursor: pointer;"
+     style="text-shadow: 1px 1px 1px #5c5c5c7c; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px;  color: #333; cursor: pointer;"
      onclick="shareContent()">
     <i class="fas fa-share-alt"></i>
 </div>
@@ -1543,17 +1577,24 @@ function go(page) {
     }
   }
 </script>
-
 </div>
-
       </div>
           <div class="darkmode" id="darkModeToggle"><div class="toggle-circle"></div>
               <p class="darkmode-label">mode</p>
               </div>
               
-           <div id="container">
-          <div class="unique-controls">
+  <div id="container">
+   <div class="unique-controls">
+<h2>Penghitung Karakter</h2>
+<p>Paste teks simbol dan karakter lainnya di sini maka akan terlihat hitungan Karakter, kata, paragraf, jumlah & kalimat.</p>
 
+<!-- Bagian 2 -->
+<img src="https://i.postimg.cc/NFrh8dFh/snapedit-1760634448349.jpg" alt="Tool 2" class="image" data-target="Microsoft2">
+
+<div class="tab-container">
+  <iframe id="Microsoft2" class="imageContainer" data-service="Microsoft2"></iframe>
+</div>
+<br>
 
       <p style="font-size: 20px; font-weight: bold; ">Seni Teks </p>
         <p style="font-size: 15px;">Tulis teks kreasikan sendiri </p>
@@ -1573,47 +1614,6 @@ function go(page) {
 
 <div class="tab-container">
   <iframe id="Microsoft2222" class="imageContainer" data-service="Microsoft2222"></iframe>
-</div>
-
-      <p style="font-size: 20px; font-weight: bold; ">Penghapus Karakter duplikat </p>
-        <p style="font-size: 15px;">Paste ikuti proses di sini </p>
-                  
-
-<!-- Bagian 1 -->
-<img src="https://i.postimg.cc/8cLSt932/Screenshot-20250826-174035.jpg" alt="Tool 1" class="image" data-target="Microsoft22">
-
-<div class="tab-container">
-  <iframe id="Microsoft22" class="imageContainer" data-service="Microsoft22"></iframe>
-</div>
-
-<h2>Penghitung Karakter</h2>
-<p>Paste teks simbol dan karakter lainnya di sini maka akan terlihat hitungan Karakter, kata, paragraf, jumlah & kalimat.</p>
-
-<!-- Bagian 2 -->
-<img src="https://i.postimg.cc/02mQBHD2/20250826-173947.jpg" alt="Tool 2" class="image" data-target="Microsoft2">
-
-<div class="tab-container">
-  <iframe id="Microsoft2" class="imageContainer" data-service="Microsoft2"></iframe>
-</div>
-
-<h2>Alat Penghapus Spasi</h2>
-<p>Paste teks dan klik hapus spasi.</p>
-
-<!-- Bagian 3 -->
-<img src="https://i.postimg.cc/2yk298kR/20250826-201504.jpg" alt="Tool 3" class="image" data-target="Microsoft4">
-
-<div class="tab-container">
-  <iframe id="Microsoft4" class="imageContainer" data-service="Microsoft4"></iframe>
-</div>
-
-<h2>Pengganda Teks</h2>
-<p>Tulis teks di bagian teks area, atur jumlah dan klik gandakan.</p>
-
-<!-- Bagian 4 -->
-<img src="https://i.postimg.cc/zXRb1fZN/20250826-174239.jpg" alt="Tool 4" class="image" data-target="Microsoft3">
-
-<div class="tab-container">
-  <iframe id="Microsoft3" class="imageContainer" data-service="Microsoft3"></iframe>
 </div>
 
 <h2>ID CARD PW</h2>
