@@ -1,1009 +1,320 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="pwKvYalfLxSFwpDlCsan4yS_mEsUdJvUDrI2wKiIHXk" />
-  <meta property="og:title" content="Tommy Website">
-  <meta property="og:description" content="Create stunning AI-generated images with ease using Tommy APP.">
-  <meta property="og:image" content="https://i.postimg.cc/4NdHPH4Z/20251024-233444.jpg">
-  <meta property="og:url" content="https://tommydev27.github.io/apps-uxtm/">
-  <meta property="og:type" content="website">
-  <meta property="fb:app_id" content="1245016886587008">
-  <title>Tommy web-Apps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="pwKvYalfLxSFwpDlCsan4yS_mEsUdJvUDrI2wKiIHXk" />
+    
+    <meta property="og:title" content="Tommy Website">
+    <meta property="og:description" content="Create stunning AI-generated images with ease using Tommy APP.">
+    <meta property="og:image" content="https://i.postimg.cc/wM14G6Fw/large-7-2.png">
+    <meta property="og:url" content="https://tommydev27.github.io/UnicodeTM/">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1245016886587008">
+    
+    <title>Tommy Website App</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y2/l/0,cross/nC2XYYUISfm.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y8/l/0,cross/Z39OoPuXzgz.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yT/l/0,cross/RYoQlJMNiM3.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yv/l/0,cross/VraZqV-tU8r.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-512.png">
-  <meta name="theme-color" content="#f9f9f9">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
-  <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y2/l/0,cross/nC2XYYUISfm.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y8/l/0,cross/Z39OoPuXzgz.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FK1EY26W82');
-  </script>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-  }
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-FK1EY26W82');
+    </script>
+</head>
 
-  <style>
-    html {
-      height: 100%;
-      background-color: #f9f9f9;
-      box-sizing: border-box;
-    }
-    body {
-  -webkit-text-size-adjust: 100%;
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Questrial, sans-serif;
 }
 
-    body {
-      margin: 0;
-      font-family: Questrial;
-      background-color: #f9f9f9;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-/* HEADER */
-.header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background: #fff;
-  border-bottom: 5px solid #ddd;
-  display: flex;
-  align-items: center;
-  padding: 5px 20px;
-}
-
-body.dark .header-fixed {
-    border-bottom: 1px solid red;
-    background: #222;
-}
-/* BLOK KONTEN */
-section.block {
-  padding: ;
+body {
+    background: #daebfa21;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-  width: 100%;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-header h1 {
-  font-size: 17px;
-  margin: 0;
-}
-
-.badge {
-  font-size: 13px;
-  color: #fff;
-  background: #4a91ea;
-  padding: 2px 8px;
-  border-radius: 999px;
-}
-
-
-/* TEXTAREA */
-textarea {
-  width: 100%;
-  height: 250px;
-  font-family: Monospace;
-  padding: 10px;
-  background: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  resize: none;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin: 10px 0 15px;
-}
-
-/* TOOLS */
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
-}
-
-.tools button {
-  flex: 1;
-  min-width: 100px;
-  padding: 6px;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 12px;
-  transition: transform 0.1s ease;
-}
-.tools button:hover {
-  transform: scale(1.05);
-  background: #1ab503;
-}
-
-
-.block { display: none; }
-.block.active { display: block; }
-
-.nav-wrap {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  padding: 8px 0;
-  border-top: 1px solid #ddd;
-}
-
-body.dark .nav-wrap,
-body.dark .nav-btn {
-  background: #333;
-  color: #2bfc1b;
-}
-body.dark .nav-btn:hover {
-  color: #9dd1ff;
-  transform: scale(1.05);
-}
-body.dark .nav-btn:active {
-  transform: scale(0.95);
-}
-  
-.nav-btn {
-  flex: 1; /* setiap tombol ambil porsi lebar sama */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #65676b;
-  background: none;
-  border: none;
-  text-align: center;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.nav-btn i {
-  font-size: 18px;
-  margin-bottom: 3px;
-}
-
-.nav-btn.active {
-  color: #007bff;
-}
-
-.nav-btn.active { color: #1877f2; }
-.nav-btn i { display: block; font-size: 20px; }
-.nav-btn small { display: block; font-size: 10px; margin-top: 2px; }
-
-
-/* MODE GELAP */
-body.dark {
-  background: #000;
-  color: #00ff00;
-}
-
-body.dark textarea {
-  background: #333;
-  color: #00ff00;
-  border-color: #0f0;
-}
-
-body.dark .container,
-body.dark .stat-box,
-body.dark .item {
-  background: #111;
-  border-color: #0f0;
-  color: #00ff00;
-}
-
-body.dark .tools button {
-  background: linear-gradient(180deg, #333, #002600);
-  color: #00ff00;
-}
-
-body.dark .tools button:hover {
-  background: linear-gradient(180deg, #333, #003000);
-}
-
-body.dark #darkModeBtn {
-  background: #0f0;
-  color: #000;
-}
-
-
-.stats-top {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  text-align: center;
-  font-size: 12px;
-  margin-bottom: 15px;
-}
-
-.stat-box {
-  width: 70px;
-  height: 70px;
-  border: 1px solid #ccc;
-  background: #fff;
-  font-size: 12px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.stat-number { margin-top: -4px; }
-
-textarea {
-  width: 100%;
-  height: 170px;
-  margin: 10px 0;
-  font-family: Monospace;
-  padding: 10px;
-  background: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  resize: none;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-    margin-bottom: 15px;
-}
-
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
-}
-
-.tools button {
-  flex: 1;
-  min-width: 100px;
-  padding: 6px;
-background:#0083d9; 
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 12px;
-  transition: transform 0.1s ease;
-}
-
-.tools button:hover {
-  transform: scale(1.05);
-  color: #444;
-  background:  #cecfd1;
-}
-
-.copy-alert {
-  position: absolute;
-  bottom: 50px;
-  right: 90px;
-  background: #1ab503;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 13px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(10px) scale(0.9);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.copy-alert.show {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.stats-bottom .box {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.stats-bottom .row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.stats-bottom .item {
-  flex: 1;
-  border: 1px solid #ccc;
-  text-align: center;
-  border-radius: 10px;
-  padding: 8px;
-}
-
-.stats-bottom .item p:first-child {
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.stats-bottom .item p:last-child {
-  font-size: 1.2em;
-}
-
-</style>
-</head>
-
-<body>
-<script>
-  // Fullscreen otomatis saat klik pertama
-  function goFullScreen() {
-    const el = document.documentElement;
-    if (el.requestFullscreen) el.requestFullscreen();
-    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
-    else if (el.msRequestFullscreen) el.msRequestFullscreen();
-  }
-  document.body.addEventListener('click', goFullScreen, {once:true});
-
-  // Service Worker registrasi (opsional tapi buat offline & installable)
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/apps-uxtm/sw.js')
-      .then(() => console.log('Service Worker registered'))
-      .catch(err => console.log('SW registration failed', err));
-  }
-</script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<style>
-  /* Fullscreen Splash */
-  #splash {
-    position: fixed;
-    top:0; left:0;
-    width:100%; height:100vh;
-    background:#ffffff;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-    font-family:sans-serif;
-    color:#333;
-  }
-
-  /* Logo besar muncul perlahan */
-  #splash .logo {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    opacity:0;
-    transform: scale(0.5);
-    animation: logoIn 1.2s ease forwards;
-  }
-
-  #splash .logo .main-text {
-    font-size:16px;
-    font-weight:500;
-    position:relative;
-    color:#949ea7;
-  }
-
-  #splash .logo .main-text .underline {
-    position:absolute;
-    bottom:0;
-    left:0px;
-    width:calc(100% + 1px);
-    border-bottom:0.5px solid #444;
-    margin-bottom:-2px;
-  }
-
-  #splash .logo .sub-text {
-    font-size:10px;
-    font-weight:400;
-    display:inline-block;
-    color:#333;
-    margin-top:8px;
-  }
-
-  #splash .logo .sub-text .tm {
-    display:inline-block;
-    font-size:15px;
-    font-weight:800;
-    color:#4790fb;
-    text-shadow:0.2px 0 0 currentColor, -0.5px 0 0 currentColor;
-  }
-
-  @keyframes logoIn {
-    to { opacity:1; transform: scale(1); }
-  }
-
-  /* Loading bar */
-  .loading-bar {
-    width: 19vh;
-    height: 5px;
-    background: #ccc;
-    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
     overflow: hidden;
-    margin-top:20px;
-  }
-
-  .loading-bar-inner {
-    width:0;
-    height:100%;
-    background:#8396e2;
-    animation: load 3s forwards;
-  }
-
-  @keyframes load {
-    to { width:100%; }
-  }
-
-  /* Fade out splash */
-  .fade-out {
-    opacity:0;
-    transition: opacity 0.8s ease;
-  }
-
-  #main {
-    display:none;
-  }
-</style>
-
-<div id="splash">
-  <div class="logo">
-    <div class="main-text" style="font-family:Questrial;">
-      TOMMY WEB-APPS
-      <div class="underline"></div>
-    </div>
-<div class="sub-text">
-  from
-  <span class="tm" style="margin-left:4px;"><i class="fab fa-gg"></i> TM Unicreate</span>
-</div>
-
-  </div>
-
-  <div class="loading-bar">
-    <div class="loading-bar-inner"></div>
-  </div>
-</div>
-
-<div id="main">
-</div>
-
-<script>
-  setTimeout(() => {
-    const splash = document.getElementById('splash');
-    splash.classList.add('fade-out');
-    setTimeout(() => {
-      splash.style.display = 'none';
-      document.getElementById('main').style.display = 'block';
-    }, 800);
-  }, 3000);
-</script>
-
-
-  <!-- HEADER -->
-  <div class="header-fixed">
-<div class="tommy" style="padding: 0px 0px; font-family: normal;">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<user style="display:inline-block; font-size:12px;  font-weight:900; letter-spacing:1.3px; margin:0; line-height:1.2; position:relative;">
-  <user style="display:inline-block; transform: scaleX(1.1) scaleY(0.8); transform-origin:center;">Tommy web-apps </user>
-  <user style="position:absolute; bottom:0; left:-5px; width:calc(100% + 0px); border-bottom:0.5px solid #444;"></usee>
-</user>
-
-&nbsp; <svg xmlns="http://www.w3.org/2000/svg" fill="#4790fb" width="15" height="15" viewBox="0 0 30 30" style="transform: translateY(5px);"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.201 1.122a1 1 0 0 1 1.332.357l1.307 2.138 2.506.063a1 1 0 0 1 .974.975l.063 2.505 2.139 1.307a1 1 0 0 1 .356 1.332L21.68 12l1.198 2.201a1 1 0 0 1-.357 1.332l-2.138 1.307-.063 2.506a1 1 0 0 1-.974.974l-2.506.063-1.307 2.139a1 1 0 0 1-1.332.356L12 21.68l-2.201 1.198a1 1 0 0 1-1.332-.357L7.16 20.383l-2.506-.063a1 1 0 0 1-.974-.974l-.063-2.506-2.138-1.307a1 1 0 0 1-.357-1.332L2.32 12 1.122 9.799a1 1 0 0 1 .357-1.332L3.617 7.16l.063-2.505a1 1 0 0 1 .974-.975l2.506-.063L8.467 1.48A1 1 0 0 1 9.8 1.122L12 2.32l2.201-1.198zm2.44 9.146a1 1 0 1 0-1.281-1.536l-.067.055a43.003 43.003 0 0 0-4.852 4.74l-1.734-1.734a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.475-.067l.056-.067a41 41 0 0 1 5.25-5.25l.066-.055z"></path></svg></user><p style="margin:4px 0 0 0; line-height:1.2;"><user style="font-size:12px; font-weight:400; letter-spacing:1px; display:inline-block; transform: scaleX(1.1) scaleY(0.8); transform-origin:center;">from &nbsp;&nbsp;<user style="display:inline-block; font-size:15px; font-weight:400; transform: scaleX(1.0) scaleY(1.3); color:#4790fb; text-shadow:1px 0 0 currentColor, -0.5px 0 0 currentColor;      font-family: sans-serif;"> <i class="fab fa-gg" style="text-shadow: none;color:#4790fb; transform:scale(1.0); font-weight: 800;"></i>
- TM Unicreate</user>
-</div>
-<span style="position:absolute; right:90px; font-size:22px; font-weight:100; color:#86b6fe; text-shadow:0.1px 0 0 currentColor, -0.0px 0 0 currentColor; margin-top: 0px;"><an style="font-size:1.1vh !important; font-weight:100; color:#4790fb; ">
-  design: tommy v0.27</an>&nbsp;<i class="fas fa-qrcode"></i></span>
-   <button id="darkModeBtn" style="position:absolute;  padding:5px;border:none;border-radius:50px;cursor:pointer;background:#222;color:#0f0; font-size: 11px; right:52px; ">🌙 </button>
-</div>
-
-
-  <!-- BLOK KONTEN -->
-  <section id="block-karakter" class="block active" tabindex="0">
-    <div class="container" style="  padding: 10px;">
-
-   <header>
-  <h1>Penghitung Karakter</h1>
-<span class="badge" id="unicodeBadge" style="cursor:pointer;">Unicode Character</span>
-</header>
-    <main>
-      <div class="stats-top">
-        <div class="stat-box"><p>Kata</p><p class="stat-number"><strong id="word">0</strong></p></div>
-        <div class="stat-box"><p>Karakter</p><p class="stat-number"><strong id="char">0</strong></p></div>
-        <div class="stat-box"><p>Paragraf</p><p class="stat-number"><strong id="para">0</strong></p></div>
-        <div class="stat-box"><p>Kalimat</p><p class="stat-number"><strong id="sent">0</strong></p></div>
-      </div>
-
-      <div style="position: relative;">
-        <textarea id="input" placeholder="Ketik atau tempel teks Anda di sini..." style="padding-bottom:40px;"></textarea>
-          <div class="copy-alert" id="copyAlert">✅ Berhasil disalin!</div>
-<button onclick="pulse(this); clearText()" 
-  style="position:absolute; bottom:25px; right:8px; padding:6px 15px;
-         background:#8d8d8d99; color:white; border-radius:10px; border:none;
-         cursor:pointer; transition: transform 0.2s, background 0.2s;">
-  Clear
-</button>
-
-<script>
-function pulse(btn) {
-  btn.style.transform = "scale(1.2)";
-  const original = btn.style.background;
-  btn.style.background = "#f00";
-  setTimeout(() => {
-    btn.style.transform = "scale(1)";
-    btn.style.background = original;
-  }, 100);
-}
-</script>
-      </div>
-      <div class="tools">
-        <button onclick="hapusDuplikat()">Hapus Duplikat</button>
-        <button onclick="hapusSpasi()">Hapus Spasi</button>
-        <button onclick="beriSpasi()">Tambah Spasi</button>
-        <button onclick="gandakanTeks()">Gandakan Teks &nbsp; +</button>
-        <button onclick="copyTeks()" style="background: #329c4b;">Copy</button>
-      </div>
-      <div class="stats-bottom">
-        <div class="box">
-          <div class="row">
-            <div class="item"><p>Karakter Tanpa Spasi</p><p id="charNoSpace">0</p></div>
-            <div class="item"><p>Kata Unik</p><p id="unique">0</p></div>
-          </div>
-          <div class="row">
-            <div class="item"><p>Perkiraan Waktu Baca</p><p id="read">0 mnt</p></div>
-            <div class="item"><p>Perkiraan Waktu Bicara</p><p id="speak">0 mnt</p></div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
-  <script>
-    const input = document.getElementById("input");
-    const char = document.getElementById("char");
-    const word = document.getElementById("word");
-    const para = document.getElementById("para");
-    const sent = document.getElementById("sent");
-    const charNoSpace = document.getElementById("charNoSpace");
-    const unique = document.getElementById("unique");
-    const read = document.getElementById("read");
-    const speak = document.getElementById("speak");
-    const copyAlert = document.getElementById("copyAlert");
-
-    function countGraphemes(text) {
-      return Array.from(text).length;
-    }
-
-    function updateStats() {
-      const text = input.value;
-      char.textContent = countGraphemes(text);
-      charNoSpace.textContent = countGraphemes(text.replace(/\s/g, ''));
-
-      const words = text.trim().match(/\b\w+\b/g) || [];
-      word.textContent = words.length;
-
-      const paras = text.split(/\n+/).filter(p => p.trim() !== '');
-      para.textContent = paras.length;
-
-      const sentences = text.split(/[.!?]+/).filter(s => s.trim() !== '');
-      sent.textContent = sentences.length;
-
-      const uniqueWords = [...new Set(words.map(w => w.toLowerCase()))];
-      unique.textContent = uniqueWords.length;
-
-      read.textContent = Math.ceil(words.length / 200) + " mnt";
-      speak.textContent = Math.ceil(words.length / 130) + " mnt";
-    }
-
-    input.addEventListener("input", updateStats);
-    input.addEventListener("paste", () => setTimeout(updateStats, 0));
-
-    function clearText() {
-      input.value = "";
-      updateStats();
-    }
-
-    // 🔹 1. Hapus Duplikat
-    function hapusDuplikat() {
-      const teks = input.value;
-      let hasil = "";
-      for (const char of teks) {
-        if (!hasil.includes(char)) hasil += char;
-      }
-      input.value = hasil;
-      updateStats();
-    }
-
-    // 🔹 2. Hapus Spasi
-    function hapusSpasi() {
-      input.value = input.value.replace(/\s+/g, "");
-      updateStats();
-    }
-
-    // 🔹 3. Gandakan Teks
-    function gandakanTeks() {
-      const teks = input.value;
-      if (!teks.trim()) return;
-      const jumlah = prompt("Gandakan berapa kali?", "2");
-      const n = parseInt(jumlah);
-      if (!isNaN(n) && n > 0) {
-        input.value = teks.repeat(n);
-        updateStats();
-      }
-    }
-
-    // 🔹 4. Beri Spasi antar karakter
-    function beriSpasi() {
-      const teks = input.value;
-      input.value = Array.from(teks).join(" ");
-      updateStats();
-    }
-
-    // 🔹 5. Copy teks + animasi notifikasi
-    function copyTeks() {
-      const teks = input.value;
-      if (!teks.trim()) return;
-      navigator.clipboard.writeText(teks).then(() => {
-        copyAlert.classList.add("show");
-        setTimeout(() => {
-          copyAlert.classList.remove("show");
-        }, 1500);
-      });
-    }
-    
-    document.getElementById("darkModeBtn").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
-
-document.getElementById("unicodeBadge").addEventListener("click", () => {
-  window.open("https://tommydev27.github.io/unicode-explorerTM/", "_blank");
-});
-  </script>
-  </section>
-  
-<section id="block-galeri" class="block">
-    <div class="container" style="padding: 10px;">
-  <style>
-    :root {
-      --gap: 8px;
-      
-    }
-
-    /* container */
-    .kc-container {
-      padding: 0px;
-    }
-
-    /* baris input */
-    .kc-row {
-      display: flex;
-      gap: var(--gap);
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .kc-input {
-      flex: 1;
-      padding: 8px;
-      border: 1px solid #bbb;
-      border-radius: 6px;
-    }
-
-    .kc-btn {
-      padding: 8px 12px;
-      border-radius: 6px;
-      border: 0;
-      background: #719df4;
-      color: #fff;
-      cursor: pointer;
-    }
-
-.kc-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
-  gap: 8px;
-  margin-top: 12px;
-
-  max-height: 500px;   /* batasi tinggi */
-  overflow-y: auto;    /* scroll jika isi melebihi */
 }
 
+.profile-image-container {
+    margin-bottom: 0;
+}
 
-    .kc-card {
-      border: 0.5px solid #96a1f5;
-      border-radius: 8px;
-      padding: 5px;
-      text-align: center;
-      user-select: none;
-    }
-    
-    .kc-char {
-      font-size: 34px;
-      line-height: 1.1;
-    }
-
-    .kc-code {
-      font-size: 5px;
-      color: #444;
-      margin-top: 6px;
-      padding: 0px 10px;
-      text-align: left;
-    }
-
-    .kc-note {
-      font-size: 12px;
-      color: #666;
-      margin-top: 8px;
-    }
-
-    .kc-small {
-      font-size: 12px;
-    }
-
-    .kc-copy {
-      margin-top: 6px;
-      margin-bottom: 6px;
-      padding: 6px 8px;
-      border-radius: 6px;
-      border: 0;
-      background: #e8eefc;
-      cursor: pointer;
-    }
-
-  </style>
-<div class="kc-app">
-  <div class="kc-container">
-
-
-  <div id="KC_APP" class="kc-container"style=" margin-top: -5px;">
-    <m style=" font-weight:bold;">Code Character</m>
-    <div class="kc-row" style="margin-top: 5px;">
-      <input id="kc-input" class="kc-input" placeholder="Masukkan kode, contoh: 0xD80C 0xDE22 atau 0xBD, pisah pakai koma" />
-      <button id="kc-run" class="kc-btn">Run</button>
-    </div>
-
-    <div class="kc-row">
-      <label class="kc-small">Limit per blok (0 = semua 1024):&nbsp;</label>
-      <input id="kc-limit" type="number" min="0" step="1" value="0" style="width:80px;padding:6px;border:1px solid #bbb;border-radius:6px" />
-      <div style="flex:1"></div>
-      <button id="kc-clear" class="kc-btn" style="background:#d8d8d8; color:#333;">Clear</button>
-    </div>
-
-    <div id="kc-outputInfo" class="kc-note">
-      Masukkan kode high-surrogate, lalu tekan Run. Contoh: <code>0xD80C 0xDE22, 0xBD</code>
-    </div>
-
-    <div id="kc-grid" class="kc-grid" aria-live="polite"></div>
-  </div>
-
-<script>
-(function(){
-  const $ = id => document.getElementById(id);
-  const input = $('kc-input');
-  const runBtn = $('kc-run');
-  const grid = $('kc-grid');
-  const info = $('kc-outputInfo');
-  const limitInput = $('kc-limit');
-  const clearBtn = $('kc-clear');
-
-  function parseHighCodes(text){
-    return text
-      .split(/[\s,]+/)
-      .map(s => s.trim())
-      .filter(Boolean)
-      .map(s => {
-        // format: U+1F600, u+XXXX, UTF+XXXX
-        if(/^U\+|^u\+|^UTF\+/i.test(s)) s = s.replace(/^U\+|^u\+|^UTF\+/i, '');
-        if(/^0x/i.test(s)) s = s.slice(2);
-        if(/^[0-9A-Fa-f]+$/.test(s)) return parseInt(s,16);
-        if(/^[0-9]+$/.test(s)) return parseInt(s,10);
-        if(s.length === 1) return s.codePointAt(0);
-        return null;
-      })
-      .filter(n => n !== null && !Number.isNaN(n));
-  }
-
-  function padHex(n){ 
-    return 'U+' + n.toString(16).toUpperCase().padStart(4,'0'); 
-  }
-
-  function showCharacters(codeList){
-    grid.innerHTML = '';
-    if(!codeList.length){ 
-      info.textContent = 'Tidak ada kode valid.'; 
-      return; 
-    }
-    const limit = Math.max(0, Number(limitInput.value) || 0);
-    info.textContent = `Menampilkan ${codeList.length} kode.`;
-
-    codeList.forEach(code => {
-      if(code >= 0xD800 && code <= 0xDBFF){
-        const lowStart = 0xDC00;
-        const lowEnd = 0xDFFF;
-        const total = lowEnd - lowStart + 1;
-        const count = limit === 0 ? total : Math.min(limit, total);
-        for(let i=0;i<count;i++){
-          const low = lowStart + i;
-          const ch = String.fromCharCode(code, low);
-          buatCard(ch, code, low);
-        }
-      } else {
-        const ch = String.fromCodePoint(code);
-        buatCard(ch, code);
-      }
-    });
-    if(grid.firstChild) grid.firstChild.scrollIntoView({behavior:'smooth'});
-  }
-
-  function buatCard(ch, high, low){
-    const card = document.createElement('div');
-    card.className = 'kc-card';
-
-    const chEl = document.createElement('div');
-    chEl.className = 'kc-char native-text';
-    chEl.textContent = ch;
-
-    const codeInfo = document.createElement('div');
-    codeInfo.className = 'kc-code';
-    codeInfo.textContent = low ? `${padHex(high)} ${padHex(low)}` : padHex(high);
-
-    const copyBtn = document.createElement('button');
-    copyBtn.className='kc-copy';
-    copyBtn.textContent='Salin';
-    copyBtn.addEventListener('click', ()=>{
-      navigator.clipboard.writeText(ch).then(()=>{
-        copyBtn.textContent='Tersalin';
-        setTimeout(()=>copyBtn.textContent='Salin',800);
-      }).catch(()=>alert('Gagal menyalin'));
-    });
-
-    card.appendChild(chEl);
-    card.appendChild(codeInfo);
-    card.appendChild(copyBtn);
-    grid.appendChild(card);
-  }
-
-  runBtn.addEventListener('click', ()=>showCharacters(parseHighCodes(input.value)));
-  input.addEventListener('keyup', e=>{ if(e.key==='Enter') runBtn.click(); });
-  clearBtn.addEventListener('click', ()=>{ input.value=''; grid.innerHTML=''; info.textContent='Dikosongkan.'; });
-
-  input.value='U+1F600, UTF+1F9D0, 0x1F984';
-})();
-</script>
-
-</div>
-
-</section>
-<!-- NAVIGASI BAWAH -->
-<section id="block-keyboard" class="block" tabindex="0">
-  <div class="container">
-  <style>
-
-
-    .gridtom27 {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: var(--gap-tom27);
-      background: var(--border-tom27);
-      border: 1px solid var(--border-tom27);
-      width: 100%;
-    }
-
-    .celltom27 {
-      aspect-ratio: 1 / 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      border-radius: 2px;
-      border: 0.5px solid #88bcff;
-    }
-
-  </style>
-  <!-- === END CSS (tom27) === -->
-</head>
-<body>
-
-  <!-- === HTML (tom27) === -->
-  <div class="gridtom27" id="gridtom27"></div>
-  <!-- === END HTML (tom27) === -->
-
-  <!-- === JS (tom27) === -->
-  <script>
-    function renderGridTom27(str, cols = 6) {
-      const container = document.getElementById('gridtom27');
-      container.innerHTML = '';
-
-      const chars = Array.from(str);
-      chars.forEach(ch => {
-        const cell = document.createElement('div');
-        cell.className = 'celltom27';
-        cell.textContent = ch;
-        container.appendChild(cell);
-      });
-
-      const remainder = chars.length % cols;
-      if (remainder !== 0) {
-        const fill = cols - remainder;
-        for (let i = 0; i < fill; i++) {
-          const empty = document.createElement('div');
-          empty.className = 'celltom27';
-          container.appendChild(empty);
-        }
-      }
-    }
-
-    // Jalankan grid dengan string awal
-    renderGridTom27("╭╮┌┐┍┑┎┒┏┓╰╯└┘┕┙┖┚┗┛╒╕╓╖╔╗┟┧┢┪╘╛╙╜╚╝┞┦┡┩▛▜▞▚◢◣◤◥▬▭▙▟◿◺◸◹▮▯┈┄╌┉┅╍⎯￣─━═╴╺┊┆╎│┋┇╏┃╵╷░▒▓▕║▏▎▍▌▋▊▐▉█▇▆▅▄▃▂▁▔▀■▝▘▗▖╱╲╳╶╸╹╻╼╾╿╽◧◨◩◪◘◙◚◛◖◗▪▫▰▱◭◮▲△▼▽▶▷◀◁►▻◄◅▴▵▸▹▾▿◂◃◆◇●◐◑◒◓◔◕├┤┝┥╞╪╡╟╫╢┼╈╁┽╊╉┠┨╠╣┿╇╀┾╂╋┣┫╬╦┬┰┲┱┮┭┯┳╥╤┴┸┺┹┶┵┷┻╨╧╩♻♲♼♽☢☮☯♾⚆⚇⚈⚉⍟✪✇⚙⛾⛿✆℗⌷⌸⌹⌺⌻⌼⌽⌾◦⦾⍉⦿☉☹❍☺☻☿〠㋡⛒유㋛℡℠™♳♴♵♶♷♸♹♺®©⛀⛁⛂⛃⦰⦱⦲⦳⦴⦵⦶⦷⦸⦹⦺⦻⦼⦽⧀⧁⧂⧃⨀⨁⨂⨶⨷⨸⨭⨮🜀🜁🜂🜃🜄🜅🜆🜇🜈🜉🜊🜋🜌🜍🜎🜏🜐🜑🜒🜓🜔🜕🜖🜗🜘🜙🜚🜛🜜🜝🜞🜟🜠🜡🜢🜣🜤🜥🜦🜧🜨🜩🜪🜫🜬🜭🜮🜯🜰🜱🜲🜳🜴🜵🜶🜷🜸🜹🜺🜻🜼🜽🜾🜿🝀🝁🝂🝃🝄🝅🝆🝇🝈🝉🝊🝋🝌🝍🝎🝏🝐🝑🝒🝓🝔🝕🝖🝗🝘🝙🝚🝛🝜🝝🝞🝟🝠🝡🝢🝣🝤🝥🝦🝧🝨🝩🝪🝫🝬🝭🝮🝯🝰🝱🝲✼✠☆★✡✴✺☼☸❋✽✻❆۞☀❃❂✿❀❁✲⋆⛤⛥⛦⛧❄❅❇❖✫✬✮✭✯✰𖤓❉✤✧✥✱✩✳✵✶✷✸✹✾❈❊♦♤♣♢♠◊♧♡♙♟♘♞♗♝♖♜♕♛♔♚⚀⚁⚂⚃⚄⚅♭♫♬♪♩✦𝄪𝄆𝄇𝄈𝄐𝄑𝄒𝆒𝆓𝄫𝄞𝄢𝄡⇆❚↻☰≡Ξ㊂≣⁝⋮︙⦙⁞⋯…∷⌃⌄𓃑𓏧⸬⇍⇎⇏⇐⇑⇒⇓⇔⇕⇖⇗⇘⇙⇦⇧⇪⇫➔➙➘➚«»⇨⇚⇶⇵⇴⇳⇰⇯⇮⇭⇬⇩↨↧↦↥↤↣↢↡↠↟↞↝↜↛↚↙↘↗↖↕↮⇤⇥⇲⇞⇟↩↱↫↬⇝↰↲↳↴↵↯⇜↼↽↾↿⇀⇁⇂⇃⇄⇅⇇⇈⇉⇊➛➜➞➟➠➡➢➣➤➥➦➶➵➳➴➲➱➯➾➽➭➬➼➻➫➪➺➹➩➨➸➷➧⃕⪡⨣☠✙✛✜✝✞✟✖✘✕✁✃✄✂웃‡ﾒ♀♂✚♱♰☩☨☦†☣¤€£Ұ₴$₰₪₤¥₳₲₵元₣₱฿₡₮₭₩円₢₥₫₦zł﷼₠₧₯₨Kčरƒ₹✍☚☜☟☛☞☝✌¶§‰✒✑✐✏✎x✈⌨☏☎☊⅍℆№℅☂☃☽☾♁♨☇☈☄°℃℉ϟ☐☑☒✓✔✗☓∨√•‣⁃❞❝∛∜✅❎〥⍢〲〴ϡ⍥⅟½⅓⅕⅙⅛⅔⅖⅚⅜¾⅗⅝⅞⅘%‱💕⌀⌂⌅⌆⌇⌈⌉⌊⌋⌌⌍⌎⌏⌐⌑⌒⌓⌔⌕⌖⌗⌘⌙⌚⌛⌜⌝⌞⌟⌠⌢⌣⌤⌥⌦⌧⌫⌬⌭⌮⌳⌯⌰⌱⌲⌴⌵⌶⌿⍀⍁⍂⍃⍄⍅⍆⍇⍈⍊⍋⍌⍍⍎⍏⍐⍑⍒⍓⍔⍕⍖⍗⍘⍙⍚⍛⍜⍝⍞⍠⍡⍣⍤⍦⍧⍨⍩〶⛅☔⛄⚰☡⚠☤☥☧☪☫☬☭♃♄♅♇♈♉♊♋♌♍♎♏♐♑♒♓♮♯♿☷⚐⚑⚒⚓⚔⚕⚖⚗⚘⚚⚛⚜⚝⚞⚟⚡⚢⚣⚤⚥⚦⚧⚨⚩⚪⚬⚭⚮⚯⚱⚲⚳⚴⚵⚶⚷⚸⚹⚺⚻⚼⚽⚾⚿⛇⛈⛆⛉⛊⛋⛌⛍⛎⛏⛐⛑⛓⛔⛕⛖⛗⛘⛙⛚⛛⛜⛝⛞⛟⛠⛡⛢⛣⛨⛩⛪⛫⛬⛭⛮⛯⛰⛱⛲⛳⛴⛵⛶⛷⛸⛹⛺⛻⛼⛽✉✊✋✨❌❏❐❑❒❓❔❕❗❘❙❛❜❟❠❡❢❣❤➕➖➗➝➮➰➿⟀⟁⟂⟃⟄⟅⟆⟇⟈⟉⟊⟋⟌⟍⟎⟏⟐⟑⟒⟓⟔⟕⟖⟗⟘⟙⟚⟛⟜⟝⟞⟟⟠⟡⟢⟣⟤⟥⧄⧅⧆⧇⧈⧉⊞⊟⊠⊡⍯⍰〾⎅⎕⏍⧠⎖⎗⎘⎙⎚⎌⎎⏀⏁⏂⎉⎊⎋⨴⨵〄㉿⨹⨺⨻⎄⩌⩍⩐⎆⎇⎈⎓⎔⍾⍿⎀⎁⎂⎃⏎≗≘≙≚≛≜≝≞≟〷〿❨❩❪❫❬❭❮❯❰❱❲❳❴❵⟦⟧⟨⟩⟪⟫⁅⁆⧼⧽⦃⦄⦅⦆⦇⦈⦉⦊⦋⦌⦍⦎⦏⦐⦑⦒⦓⦔⦕⦖⦗⦘〈〉《》「」『』【】〔〕〖〗〘〙〚〛﴾﴿⊏⊐⫍⫎⊑⊒⋤⋥⊓⊔⊂⊃⊆⊇⊊⊋⪽⪾⪿⫀⫁⫂⋐⋑⋒⋓⫏⫐⫑⫒⫓⫔⫕⫖⫗⫘⊌⊍⊎∩∪⋂⋃⨃⨄⩀⩁⩂⩃⩄⩅⩆⩈⩇⩉⎍⨿⨅⨆⩎⩏⏉⏊⎿⏋⏌⎾∟⎴⎵⍽⨼⨽⎶⫞⫟⫠⫡⊢⊣⊤⊥⊦⫢⊪⧦⊫⊧⊨⊩⫦⫣⫤⫥⫧⫨〒⫩⫪⫫∧⋀⋁⧊⧋⧌⧍⩑⩒⩓⩔⩕⩖⋈⋉⋊⨝⋋⋌⧨⧩⧪⧬⧭⧮⧯⧰⧱⧲⧳⧑⧒⧓⧔⧕⧖⧗⧎⧏⧐⦚⧘⧙⧚⧛⥼⥽⥾⥿⦀⦁⦂⦛⦜⦝⦞⦟⦠⦡⦢⦣⦤⦥⦨⦩⦪⦫⦬⦭⦮⦯⦦⦧↔♆⊕⊖⊗⊘⊝⊙⊚⊛⊜←→↑↓⟰⟱↶↷↺⟲⟳⟴↪↭↸↹⇋⇌⇛⇠⇡⇢⇣⇱⇷⇸⇹⇺⇻⇼⇽⇾⇿⟵⟶⟷⟸⟹⟺⟻⟼⟽⟾⟿⤀⤁⤂⤃⤄⤅⤆⤇⤈⤉⤊⤋⤌⤍⤎⤏⤐⤑⤒⤓⤔⤕⤖⤗⤘⤙⤚⤛⤜⤝⤞⤟⤠⤡⤢⤣⤤⤥⤦⤧⤨⤩⤪⤫⤬⤭⤮⤯⤰⤱⤲⤳⤴⤵⤶⤷⤸⤹⤺⤻⤼⤽⤾⤿⥀⥁⥂⥃⥄⥅⥆⥇⥈⥉⥊⥋⥌⥍⥎⥏⥐⥑⥒⥓⥔⥕⥖⥗⥘⥙⥚⥛⥜⥝⥞⥟⥠⥡⥢⥣⥤⥥⥦⥧⥨⥩⥪⥫⥬⥭⥮⥯⥰⥱⥲⥳⥴⥵⥶⥷⥸⥹⥺⥻⫾⫿𝀀𝀁𝀂𝀃𝀄𝀅𝀆𝀇𝀈𝀉𝀊𝀋𝀌𝀍𝀎𝀏𝀐𝀑𝀒𝀓𝀔𝀕𝀖𝀗𝀘𝀙𝀚𝀛𝀜𝀝𝀞𝀟𝀠𝀡𝀢𝀣𝀤𝀥𝀦𝀧𝀨𝀩𝀪𝀫𝀬𝀭𝀮𝀯𝀰𝀱𝀲𝀳𝀴𝀵𝀶𝀷𝀸𝀹𝀺𝀻𝀼𝀽𝀾𝀿𝁀𝁁𝁂𝁃𝁄𝁅𝁆𝁇𝁈𝁉𝁊𝁋𝁌𝁍𝁎𝁏𝁐𝁑𝁒𝁓𝁔𝁕𝁖𝁗𝁘𝁙𝁚𝁛𝁜𝁝𝁞𝁟𝁠𝁡𝁢𝁣𝁤𝁥𝁦𝁧𝁨𝁩𝁪𝁫𝁬𝁭𝁮𝁯𝁰𝁱𝁲𝁳𝁴𝁵𝁶𝁷𝁸𝁹𝁺𝁻𝁼𝁽𝁾𝁿𝂀𝂁𝂂𝂃𝂄𝂅𝂆𝂇𝂈𝂉𝂊𝂋𝂌𝂍𝂎𝂏𝂐𝂑𝂒𝂓𝂔𝂕𝂖𝂗𝂘𝂙𝂚𝂛𝂜𝂝𝂞𝂟𝂠𝂡𝂢𝂣𝂤𝂥𝂦𝂧𝂨𝂩𝂪𝂫𝂬𝂭𝂮𝂯𝂰𝂱𝂲𝂳𝂴𝂵𝂶𝂷𝂸𝂹𝂺𝂻𝂼𝂽𝂾𝂿𝃀𝃁𝃂𝃃𝃄𝃅𝃆𝃇𝃈𝃉𝃊𝃋𝃌𝃍𝃎𝃏𝃐𝃑𝃒𝃓𝃔𝃕𝃖𝃗𝃘𝃙𝃚𝃛𝃜𝃝𝃞𝃟𝃠𝃡𝃢𝃣𝃤𝃥𝃦𝃧𝃨𝃩𝃪𝃫𝃬𝃭𝃮𝃯𝃰𝃱𝃲𝃳𝃴𝃵𝄀𝄁𝄂𝄃𝄄𝄅𝄉𝄊𝄋𝄌𝄍𝄎𝄏𝄓𝄔𝄕𝄖𝄗𝄘𝄙𝄚𝄛𝄜𝄝𝄟𝄠𝄣𝄤𝄥𝄦𝄬𝄭𝄮𝄯𝄰𝄱𝄲𝄳𝄴𝄵𝄶𝄷𝄸𝄹𝄺𝄻𝄼𝄽𝄾𝄿𝅀𝅁𝅂𝅃𝅄𝅅𝅆𝅇𝅈𝅉𝅊𝅋𝅌𝅍𝅎𝅏𝅐𝅑𝅒𝅓𝅔𝅕𝅖𝅗𝅘𝅙𝅚𝅛𝅜𝅝𝅪𝅫𝅬𝆃𝆄𝆌𝆍𝆎𝆏𝆐𝆑𝆔𝆕𝆖𝆗𝆘𝆙𝆚𝆛𝆜𝆝𝆞𝆟𝆠𝆡𝆢𝆣𝆤𝆥𝆦𝆧𝆨𝆩𝆮𝆯𝆰𝆱𝆲𝆳𝆴𝆵𝆶𝆷𝆸𝆹𝆺𝇁𝇂𝇃𝇄𝇅𝇆𝇇𝇈𝇉𝇊𝇋𝇌𝇍𝇎𝇏𝇐𝇑𝇒𝇓𝇔𝇕𝇖𝇗𝇘𝇙𝇚𝇛𝇜𝇝✢✣♥᜵᜶჻‘’‚‛‹›“”„‟〝〞〟⁋⁎⁑⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻〓🈀🈁🈂🈐🈑🈒🈓🈔🈕🈖🈗🈘🈙🈚🈛🈜🈝🈞🈟🈠🈡🈢🈣🈤🈥🈦🈧🈨🈩🈪🈫🈬🈭🈮🈯🈰🈱🈲🈳🈴🈵🈶🈷🈸🈹🈺🉀🉁🉂🉃🉄🉅🉆🉇🉈🉐🉑🄪🄫🄬🄭🄮🅊🅋🅌🅍🅎🅏🆊🆋🆌🆍🆎🆏🆐🆑🆒🆓🆔🆕🆖🆗🆘🆙╃╄╅╆◈□◫▢▣▤▥▦▧▨▩⊲⊳⊴⊵⫷⫸⋖⋗⋪⋫⋬⋭⊿◬⑅◻◼◽◾○◌◍◎◜◝◞◟◠◡◯◰◱◲◳◴◵◶⊬⊭⊮⊯⊺〦〧〨˦˧˨⑁⑂⑃﹉⑇﹊﹎︲⑆⑈⑉⑊⑄⑀︴﹏﹌﹋︱︳〡〢〣◷🃍🃎𝄩𝅗𝅥𝅘𝅥𝅘𝅥𝅮𝅘𝅥𝅯𝅘𝅥𝅰𝅘𝅥𝅱𝅘𝅧𝅨𝅩𝅥𝅲𝅥𝅦𝅮𝅯𝅰𝅱𝅲𝅻𝅼𝅽𝅾𝅿𝆀𝆁𝆂𝆊𝆋𝅭𝆅𝆆𝆇𝆈𝆉𝆪𝆫𝆬𝆭𝆹𝅥𝆺𝅥𝆹𝅥𝅮𝆺𝅥𝅮𝆹𝅥𝅯𝆺𝅥𝅯⧜⧝⧞⧟⧡⧢⧣⧤⧥⧧⧫⧴⧵⧶⧷⧸⧹⧺⧻⧾⧿⨇⨈⨉⨊⨋⨌⨍⨎⨏⨐⨑⨒⨓⨔⨕⨖⨗⨘⨙⨚⨛⨜⨞⨟⨠⨡⨢⨤⨥⨦⨧⨨⨩⨪⨫⨬⨯⨰⨱⨲⨳⨾⩊⩋⩗⩘⩙⩚⩛⩜⩝⩞⩟⩠⩡⩢⩣⩤⩥⩦⩧⩨⩩⩪⩫⩬⩭⩮⩯⩰⩱⩲⩳⩴⩵⩶⩷⩸⩹⩺⩻⩼⩽⩾⩿⪀⪁⪂⪃⪄⪅⪆⪇⪈⪉⪊⪋⪌⪍⪎⪏⪐⪑⪒⪓⪔⪕⪖⪗⪘⪙⪚⪛⪜⪝⪞⪟⪠⪢⪣⪤⪥⪦⪧⪨⪩⪪⪫⪬⪭⪮⪯⪰⪱⪲⪳⪴⪵⪶⪷⪸⪹⪺⪻⪼⫃⫄⫅⫆⫇⫈⫉⫊⫋⫌⫙⫚⫛⫝̸⫝⫬⫭⫮⫯⫰⫱⫲⫳⫴⫵⫶⫹⫺⫻⫼⫽⬀⬁⬂⬃⬄⬅⬆⬇⬈⬉⬊⬋⬌⬍⬎⬏⬐⬑⬒⬓⬔⬕⬖⬗⬘⬙⬚⬛⬜⬝⬞⬟⬠⬡⬢⬣⬤⬥⬦⬧⬨⬩⬪⬫⬬⬭⬮⬯⬰⬱⬲⬳⬴⬵⬶⬷⬸⬹⬺⬻⬼⬽⬾⬿⭀⭁⭂⭃⭄⭅⭆⭇⭈⭉⭊⭋⭌⭐⭑⭒⭓⭔⭕⭖⭗⭘⭙⸀⸁⸂⸃⸄⸅⸆⸇⸈⸉⸊⸋⸌⸍⸎⸏⸐⸑⸒⸓⸔⸕⸖⸗⸘⸙⸚⸛⸜⸝⸞⸟⸠⸡⸢⸣⸤⸥⸦⸧⸨⸩⸪⸫⸭⸮ⸯ⸰⸱⸲⸳⸴⸵⸶⸷⸸⸹⸺⸻🀀🀁🀂🀃🀄🀅🀆🀇🀈🀉🀊🀋🀌🀍🀎🀏🀐🀑🀒🀓🀔🀕🀖🀗🀘🀙🀚🀛🀜🀝🀞🀟🀠🀡🀢🀣🀤🀥🀦🀧🀨🀩🀪🀫🀰🀱🀲🀳🀴🀵🀶🀷🀸🀹🀺🀻🀼🀽🀾🀿🁀🁁🁂🁃🁄🁅🁆🁇🁈🁉🁊🁋🁌🁍🁎🁏🁐🁑🁒🁓🁔🁕🁖🁗🁘🁙🁚🁛🁜🁝🁞🁟🁠🁡🁢🁣🁤🁥🁦🁧🁨🁩🁪🁫🁬🁭🁮🁯🁰🁱🁲🁳🁴🁵🁶🁷🁸🁹🁺🁻🁼🁽🁾🁿🂀🂁🂂🂃🂄🂅🂆🂇🂈🂉🂊🂋🂌🂍🂎🂏🂐🂑🂒🂓🂠🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂬🂭🂮🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂼🂽🂾🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃌🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛䷀䷁䷂䷃䷄䷅䷆䷇䷈䷉䷊䷋䷌䷍䷎䷏䷐䷑䷒䷓䷔䷕䷖䷗䷘䷙䷚䷛䷜䷝䷞䷟䷠䷡䷢䷣䷤䷥䷦䷧䷨䷩䷪䷫䷬䷭䷮䷯䷰䷱䷲䷳䷴䷵䷶䷷䷸䷹䷺䷻䷼䷽䷾䷿⚊⚋⚌⚍⚎⚏𝌀𝌁𝌂𝌃𝌄𝌅☱☲☳☴☵☶𝌆𝌇𝌈𝌉𝌊𝌋𝌌𝌍𝌎𝌏𝌐𝌑𝌒𝌓𝌔𝌕𝌖𝌗𝌘𝌙𝌚𝌛𝌜𝌝𝌞𝌟𝌠𝌡𝌢𝌣𝌤𝌥𝌦𝌧𝌨𝌩𝌪𝌫𝌬𝌭𝌮𝌯𝌰𝌱𝌲𝌳𝌴𝌵𝌶𝌷𝌸𝌹𝌺𝌻𝌼𝌽𝌾𝌿𝍀𝍁𝍂𝍃𝍄𝍅𝍆𝍇𝍈𝍉𝍊𝍋𝍌𝍍𝍎𝍏𝍐𝍑𝍒𝍓𝍔𝍖⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿⡀⡁⡂⡃⡄⡅⡆⡇⡈⡉⡊⡋⡌⡍⡎⡏⡐⡑⡒⡓⡔⡕⡖⡗⡘⡙⡚⡛⡜⡝⡞⡟⡠⡡⡢⡣⡤⡥⡦⡧⡨⡩⡪⡫⡬⡭⡮⡯⡰⡱⡲⡳⡴⡵⡶⡷⡸⡹⡺⡻⡼⡽⡾⡿⢀⢁⢂⢃⢄⢅⢆⢇⢈⢉⢊⢋⢌⢍⢎⢏⢐⢑⢒⢓⢔⢕⢖⢗⢘⢙⢚⢛⢜⢝⢞⢟⢠⢡⢢⢣⢤⢥⢦⢧⢨⢩⢪⢫⢬⢭⢮⢯⢰⢱⢲⢳⢴⢵⢶⢷⢸⢹⢺⢻⢼⢽⢾⢿⣀⣁⣂⣃⣄⣅⣆⣇⣈⣉⣊⣋⣌⣍⣎⣏⣐⣑⣒⣓⣔⣕⣖⣗⣘⣙⣚⣛⣜⣝⣞⣟⣠⣡⣢⣣⣤⣥⣦⣧⣨⣩⣪⣫⣬⣭⣮⣯⣰⣱⣲⣳⣴⣵⣶⣷⣸⣹⣺⣻⣼⣽⣾⣿𔐀𔐁𔐂𔐃𔐄𔐅𔐆𔐇𔐈𔐉𔐊𔐋𔐌𔐍𔐎𔐏𔐐𔐑𔐒𔐓𔐔𔐕𔐖𔐗𔐘𔐙𔐚𔐛𔐜𔐝𔐞𔐟𔐠𔐡𔐢𔐣𔐤𔐥𔐦𔐧𔐨𔐩𔐪𔐫𔐬𔐭𔐮𔐯𔐰𔐱𔐲𔐳𔐴𔐵𔐶𔐷𔐸𔐹𔐺𔐻𔐼𔐽𔐾𔐿𔑀𔑁𔑂𔑃𔑄𔑅𔑆𔑇𔑈𔑉𔑊𔑋𔑌𔑍𔑎𔑏𔑐𔑑𔑒𔑓𔑔𔑕𔑖𔑗𔑘𔑙𔑚𔑛𔑜𔑝𔑞𔑟𔑠𔑡𔑢𔑣𔑤𔑥𔑦𔑧𔑨𔑩𔑪𔑫𔑬𔑭𔑮𔑯𔑰𔑱𔑲𔑳𔑴𔑵𔑶𔑷𔑸𔑹𔑺𔑻𔑼𔑽𔑾𔑿𔒀𔒁𔒂𔒃𔒄𔒅𔒆𔒇𔒈𔒉𔒊𔒋𔒌𔒍𔒎𔒏𔒐𔒑𔒒𔒓𔒔𔒕𔒖𔒗𔒘𔒙𔒚𔒛𔒜𔒝𔒞𔒟𔒠𔒡𔒢𔒣𔒤𔒥𔒦𔒧𔒨𔒩𔒪𔒫𔒬𔒭𔒮𔒯𔒰𔒱𔒲𔒳𔒴𔒵𔒶𔒷𔒸𔒹𔒺𔒻𔒼𔒽𔒾𔒿𔓀𔓁𔓂𔓃𔓄𔓅𔓆𔓇𔓈𔓉𔓊𔓋𔓌𔓍𔓎𔓏𔓐𔓑𔓒𔓓𔓔𔓕𔓖𔓗𔓘𔓙𔓚𔓛𔓜𔓝𔓞𔓟𔓠𔓡𔓢𔓣𔓤𔓥𔓦𔓧𔓨𔓩𔓪𔓫𔓬𔓭𔓮𔓯𔓰𔓱𔓲𔓳𔓴𔓵𔓶𔓷𔓸𔓹𔓺𔓻𔓼𔓽𔓾𔓿𔔀𔔁𔔂𔔃𔔄𔔅𔔆𔔇𔔈𔔉𔔊𔔋𔔌𔔍𔔎𔔏𔔐𔔑𔔒𔔓𔔔𔔕𔔖𔔗𔔘𔔙𔔚𔔛𔔜𔔝𔔞𔔟𔔠𔔡𔔢𔔣𔔤𔔥𔔦𔔧𔔨𔔩𔔪𔔫𔔬𔔭𔔮𔔯𔔰𔔱𔔲𔔳𔔴𔔵𔔶𔔷𔔸𔔹𔔺𔔻𔔼𔔽𔔾𔔿𔕀𔕁𔕂𔕃𔕄𔕅𔕆𔕇𔕈𔕉𔕊𔕋𔕌𔕍𔕎𔕏𔕐𔕑𔕒𔕓𔕔𔕕𔕖𔕗𔕘𔕙𔕚𔕛𔕜𔕝𔕞𔕟𔕠𔕡𔕢𔕣𔕤𔕥𔕦𔕧𔕨𔕩𔕪𔕫𔕬𔕭𔕮𔕯𔕰𔕱𔕲𔕳𔕴𔕵𔕶𔕷𔕸𔕹𔕺𔕻𔕼𔕽𔕾𔕿𔖀𔖁𔖂𔖃𔖄𔖅𔖆𔖇𔖈𔖉𔖊𔖋𔖌𔖍𔖎𔖏𔖐𔖑𔖒𔖓𔖔𔖕𔖖𔖗𔖘𔖙𔖚𔖛𔖜𔖝𔖞𔖟𔖠𔖡𔖢𔖣𔖤𔖥𔖦𔖧𔖨𔖩𔖪𔖫𔖬𔖭𔖮𔖯𔖰𔖱𔖲𔖳𔖴𔖵𔖶𔖷𔖸𔖹𔖺𔖻𔖼𔖽𔖾𔖿𔗀𔗁𔗂𔗃𔗄𔗅𔗆𔗇𔗈𔗉𔗊𔗋𔗌𔗍𔗎𔗏𔗐𔗑𔗒𔗓𔗔𔗕𔗖𔗗𔗘𔗙𔗚𔗛𔗜𔗝𔗞𔗟𔗠𔗡𔗢𔗣𔗤𔗥𔗦𔗧𔗨𔗩𔗪𔗫𔗬𔗭𔗮𔗯𔗰𔗱𔗲𔗳𔗴𔗵𔗶𔗷𔗸𔗹𔗺𔗻𔗼𔗽𔗾𔗿𔘀𔘁𔘂𔘃𔘄𔘅𔘆𔘇𔘈𔘉𔘊𔘋𔘌𔘍𔘎𔘏𔘐𔘑𔘒𔘓𔘔𔘕𔘖𔘗𔘘𔘙𔘚𔘛𔘜𔘝𔘞𔘟𔘠𔘡𔘢𔘣𔘤𔘥𔘦𔘧𔘨𔘩𔘪𔘫𔘬𔘭𔘮𔘯𔘰𔘱𔘲𔘳𔘴𔘵𔘶𔘷𔘸𔘹𔘺𔘻𔘼𔘽𔘾𔘿𔙀𔙁𔙂𔙃𔙄𔙅𔙆𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇𝕬𝖁𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖂𝖃𝖄𝖅𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫ƛƁƇƊЄƑӇʆԼƝƠƤƢƦƧƬƲҲƳȤ𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚝𝚞𝚟𝚠𝚡𝚢𝚣ͣͤͥͦͧͨͩͪͫͬͭͮͯᴀʙᴄᴅᴇɢʜᴊᴋʟᴍɴᴏᴘǫʀᴛᴜᴠᴡʏᴢᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖᵠʳˢᵗᵘᵛʷˣʸᶻаәӕҕґдԁԃҙеҗзԅѕӡԇиҋіқӄҡҟҝлӆљԉӎӊңӈҥњԋоөпҧҁрҏсԍуүұѹфѽѻцҵҷӌҹҿџшщъыьѧѫѩѭѱѳᶏᶐȺᴬªᶛᵆᵄᵅₐᴭᴁᴂÅẚαɐɒáàăắằẵẳâấầẫẩǎǻäāảȁȃạặậḁǽǣᶀᵬᴮᴯᴃßƀƄɓɞɮḃḅḇᶗȻȼᵓᶝᴐᴒᴖᵔᴗᵕɕʗČÇćĉċḉᶑᶁᵭᴰᶞᴆǳǲǱǆǅǄɗðḋḑḍḓḏᶒᶓᶔᶕᴲᵊᵋᵌₑₔᴈƏƎεΣƸƺɘəξэཇﾐعɚéèĕêếềễểěëẽėȩḝęēḗḕẻȅȇẹệḙḛᶘᶂᶋᵮﬂḟᶃᴳᶢǤǥɡʛջǵĝǧġḡʱᴴᵸᶣƕǶɦᏲｻҤĦℏĥḧḣḩḥḫẖᶖᶧᴉᵎϊأར¡ɩĳĲᵻƗɨìĭîǐïḯĩįīỉȉịḭᴶᶨᶡǰزჟĵȷᶄᴷκʞϗḱǩḳḵᶅᴌᶩᶪᶫǈȴŀĿǉǇ廴ƪɫɭℓĺľļḷḹḽḻᶆᵯᴹᶬᶭɷḿṁṃᶇᵰᶰᴺᴻᵑᶮᶯᴎȵǌǋǊηƞɲɳϞϰസՈทռńǹňṅņṇṋṉᴼᶱᶲᶿₒᴑᴔᴓΘᴽᴕºöōσøóòŏôốồỗổȫőõṍṏȭȯȱȍȏơớờỡởọộǿᶈᵽᵱᴾÞƥƿբքṕṗʠǪϥҩᶉᵲᵳʶᴿᴚɼɽ℞яŘřṙŗȓṛṝṟᶊᵴȿᶳẛﬆﬅ₷∫ƨʃϛֆىᎦŞیśṥŝšṧṡṣṩșᵵᵺᵼȾᵀᶵȶحŧƫƭƮǂʇʈτϮϯｨէζեťẗṫṭṱṯᶙᵾᵤᵁᶶᶷᶸᶹᴝᵙᴞᵫʮʯʉʊʋŭϋևúûǔǖűũṹūṻủȕȗưứừữửựụṳṷṵ๖ۣۜᶌᵥᶺϑѴ℣ѶṽṿᵂᵚᴟψωϖѠѡཡᏊᏔϢẃẁŵẘẅẇẉᶍᵡɤₓℵẍẋˠϒŸƴγʎუýỳŷẙẏȳᵶỵᶚᶎᶼᶽᶾɀᴣᴤŉƵƶȥʐʓźẑǝɟƃɯɹʌ😀😃😄😁😆😅🤣😂🙂🙃🫠😉😊😇🥰😍🤩😘😗️😚😙🥲😋😛😜🤪😝🤑🤗🤭🫢🫣🤫🤔🫡🤐🤨😐😑😶🫥‍🌫😏😒🙄😬😮💨🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵💫🤯🤠🥳🥸😎🤓🧐😕🫤😟🙁😯😲😳🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😡😠🤬😈👿💀💩🤡👹👺👻👽👾🤖😺😸😹😻😼😽🙀😾😿🙈🙉🙊💋💌💘💝💖💗💓💞💟💔🔥🩹🧡💛💚💙💜🤎🖤🤍💯💢💥💦🕳💣💬👁🗨🗯💭💤🐵🐒🦍🦧🐶🐕🦮🦺🐩🐺🦊🦝🐱🐈🦁🐯🐅🐆🐴🐎🦄🦓🦌🦬🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🦙🦒🐘🦣🦏🦛🐭🐁🐀🐹🐰🐇🐿🦫🦔🦇🐻🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🐧🕊🦅🦆🦢🦉🦤🪶🦩🦚🦜🐸🐊🐢🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🪸🐌🦋🐛🐜🐝🪲🐞🦗🪳🕷🕸🦂🦟🪰🪱🦠💐🌸💮🪷🏵🌹🥀🌺🌻🌼🌷🌱🪴🌲🌳🌴🌵🌾🌿☘🍀🍁🍂🍃🪹🪺👋🤚🖐🖖🫱🫲🫳🫴👌🤌🤏🤞🫰🤟🤘🤙👈👉👆🖕👇🫵👍👎👊🤛🤜👏🙌🫶👐🤲🤝🙏💅🤳💪🦾🦿🦵🦶👂🦻👃🧠🫀🫁🦷🦴👀👅👄🫦👶🧒👦👧🧑👱👨🧔🦰🦱🦳🦲👩🧓👴👵🙍🙎🙅🙆💁🙋🧏🙇🤦🤷🎓🏫🍳🔧🏭💼🔬💻🎤🎨🚀🚒👮🕵💂🥷👷🫅🤴👸👳👲🧕🤵👰🤰🫃🫄🤱🍼👼🎅🤶🎄🦸🦹🧙🧚🧛🧜🧝🧞🧟🧌💆💇🚶🧍🧎🦯🦼🦽🏃💃🕺🕴👯🧖🧗🤺🏇🏂🏌🏄🚣🏊🏋🚴🚵🤸🤼🤽🤾🤹🧘🛀🛌👭👫👬💏💑👪🗣👤👥🫂👣🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥🥑🍆🥔🥕🌽🌶🫑🥒🥬🥦🧄🧅🍄🥜🫘🌰🍞🥐🥖🫓🥨🥯🥞🧇🧀🍖🍗🥩🥓🍔🍟🍕🌭🥪🌮🌯🫔🥙🧆🥚🥘🍲🫕🥣🥗🍿🧈🧂🥫🍱🍘🍙🍚🍛🍜🍝🍠🍢🍣🍤🍥🥮🍡🥟🥠🥡🦀🦞🦐🦑🦪🍦🍧🍨🍩🍪🎂🍰🧁🥧🍫🍬🍭🍮🍯🥛☕🫖🍵🍶🍾🍷🍸🍹🍺🍻🥂🥃🫗🥤🧋🧃🧉🧊🥢🍽🍴🥄🔪🫙🏺🌍🌎🌏🌐🗺🗾🧭🏔🌋🗻🏕🏖🏜🏝🏞🏟🏛🏗🧱🪨🪵🛖🏘🏚🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏬🏯🏰💒🗼🗽🕌🛕🕍🕋🌁🌃🏙🌄🌅🌆🌇🌉🎠🛝🎡🎢💈🎪🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎🏍🛵🛺🚲🛴🛹🛼🚏🛣🛤🛢🛞🚨🚥🚦🛑🚧🛟🛶🚤🛳🛥🚢🛩🛫🛬🪂💺🚁🚟🚠🚡🛰🛸🛎🧳⏳⏰⏱⏲🕰🕛🕧🕐🕑🕜🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡🌝🌞🪐🌟🌠🌌☁🌤🌥🌦🌧🌨🌩🌪🌬🌀🌈🌂💧🌊🎃🎆🎇🧨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗🎟🎫🎖🏆🏅🥇🥈🥉🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅🎣🤿🎽🎿🛷🥌🎯🪀🪁🎱🔮🪄🧿🪬🎮🕹🎰🎲🧩🧸🪅🪩🪆🃏🎴🎭🖼🧵🪡🧶🪢👓🕶🥽🥼👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🛍🎒🩴👞👟🥾🥿👠👡🩰👢👑👒🎩🧢🪖📿💄💍💎🔇🔈🔉🔊📢📣📯🔔🔕🎼🎵🎶🎙🎚🎛🎧📻🎷🪗🎸🎹🎺🎻🪕🥁🪘📱📲📞📟📠🔋🪫🔌🖥🖨🖱🖲💽💾💿📀🧮🎥🎞📽🎬📺📷📸📹📼🔍🔎🕯💡🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞📑🔖🏷💰🪙💴💵💶💷💸💳🧾💹📧📨📩📤📥📦📫📪📬📭📮🗳🖋🖊🖌🖍📝📁📂🗂📅📆🗒🗓📇📉📈📊📋📌📍📎🖇📏📐🗃🗄🗑🔒🔓🔏🔐🔑🗝🔨🪓🛠🗡🔫🪃🏹🛡🪚🪛🔩🗜🔗🪝🧰🧲🪜🧪🧫🧬🔭📡💉🩸💊🩼🩺🩻🚪🛗🪞🪟🛏🛋🪑🚽🪠🚿🛁🪤🪒🧴🧷🧹🧺🧻🪣🧼🫧🪥🧽🧯🛒🚬🪦🗿🪧🪪🏧🚮🚰🚹🚺🚻🚼🚾🛂🛃🛄🛅🚸🚫🚳🚭🚯🚱🚷📵🔞🔃🔄🔙🔚🔛🔜🔝🛐🕉🕎🔯🔀🔁🔂⏩⏭⏯⏪⏮🔼⏫🔽⏬⏸⏹⏺⏏🎦🔅🔆📶📳📴🟰‼⁉〰💱💲🔱📛🔰〽⃣🔟🔠🔡🔢🔣🔤ℹ🆚🔴🟠🟡🟢🔵🟣🟤⚫🟥🟧🟨🟩🟦🟪🟫🔶🔷🔸🔹🔺🔻💠🔘🔳🔲🏁🚩🎌🏴🏳🇦🇨🇩🇪🇫🇬🇮🇱🇲🇴🇶🇷🇸🇹🇺🇼🇽🇿🇧🇭🇯🇳🇻🇾🇰🇵ﷲﷻ﷽ﷺفقكلمنهويٮٯٰٱٲٳٴٵٶٷٸٹٺٻټٽپٿڀځڂڃڄڅچڇڈډڊڋڌڍڎڏڐڑڒړڔڕږڗژڙښڛڜڝڞڟڠڡڢڣڤڥڦڧڨکڪګڬڭڮگڰڱڲڳڴڵڶڷڸڹںڻڼڽھڿۀہۂۃۄۅۆۇۈۉۊۋۍێۏېۑےۓەۮۯۿݐݑݒݓݔݕݖݗݘݙݚݛݜݝݞݟݠݡݢݣݤݥݦݧݨݩݪݫݬݭݮݯݰݱݲݳݴݵݶݷݸݹݺݻݼݽݾۺۻۼؠءآؤإئابةتثجخدذرسشصضطظغػؼؽؾؿ٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۸۹؀؅٫٬؍؆؇٪؉؊ۥۦ۔،؛؞؟؜۽۾؎٭ـ؁؂؃؄؈؏۩۝ᵷꞁⱯƆſꞰꞀԀÒꞱɅæᴧɝːüŊẞẜẝȜƉỺỼǷᵹĸỻỽẟƍɣɸƱᵿʡʢƾʔɂɁʖↄɰɺɻƼƽƅꝔꞠꞢꞤꞦꞨꝕꝗꝙꞡꞣꞥꞧꞩᴥƻǀǁǃʕʘʬʭΑΒΓΔΕΖΗΙΚΜΝΟΠΡΤΥΦΧΩδθιλμου𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚺𝚻𝚼𝚽𝚾𝚿𝛀𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛔𝛕𝛖𝛗𝛘𝛙𝛚𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛴𝛵𝛶𝛷𝛸𝛹𝛺𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜎𝜏𝜐𝜑𝜒𝜓𝜔𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜮𝜯𝜰𝜱𝜲𝜳𝜴𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝈𝝉𝝊𝝋𝝌𝝍𝝎𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝨𝝩𝝪𝝫𝝬𝝭𝝮𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞂𝞃𝞄𝞅𝞆𝞇𝞈𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞢𝞣𝞤𝞥𝞦𝞧𝞨𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞼𝞽𝞾𝞿𝟀𝟁𝟂АБбВГДЕЁёЖжЗИЙйКМНОПРСТтУФХхЧШЩЪЫЬЭЮюЯሂሄህሆሇለሉሊላሌሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሡሢሣሤሥሦሧሩሪራሬሮሯሰሱሲሳሴስሶሷሹሺሻሼሽሾሿቀቁቂቃቄቅቆቇቈቊቋቌቍቐቑቒቓቔቕቖቘቚቛቜቝበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቼችቾኀኁኂኃኄኅኆኇኈኊኋኌኍኑኒናኔንኖኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኯኰኲኳኴኵኸኹኺኻኼኽኾዀዂዃዄዅወዉዊዋዌውዎዏዑዓዔዖዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧዩያዬይዮዯደዱዲዳዴድዶዷዸዹዺዻዼዽዾዿጁጂጃጄጅጆጇገጉግጏጐጒጓጔጘጙጚጛጜጝጞጟጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗፘፙᎀᎁᎂᎃᎄᎅᎆᎇᎈᎉᎊᎋᎌᎍᎎᎏⶀⶁⶂⶃⶄⶅⶆⶇⶈⶉⶊⶋⶌⶍⶎⶏⶐⶑⶒⶓⶔⶕⶖⶠⶡⶢⶣⶤⶥⶦⶨⶩⶪⶫⶬⶭⶮⶰⶱⶲⶳⶴⶵⶶⶸⶹⶺⶻⶼⶽⶾⷀⷁⷂⷃⷄⷅⷆⷈⷉⷊⷋⷌⷍⷎⷐⷑⷒⷓⷔⷕⷖⷘⷙⷚⷛⷜⷝⷞꬁꬂꬃꬄꬅꬆꬉꬊꬋꬌꬍꬎꬑꬒꬓꬔꬕꬖꬠꬡꬢꬣꬤꬥꬦꬨꬩꬪꬫꬬꬭꬮ᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙፠፡።፣፤፥፦፧፨፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼ऄअआइईउऊऋऌऍऎएऐऑऒओऔकखगघङचछजझञटठडढणतथदधनऩपफबभमयऱलळऴवशषसहक़ख़ग़ज़ड़ढ़फ़य़ॠॡॲॳॴॵॶॷॸॹॺॻॼॽॾॿ।॥॰ॱꣲꣳꣴꣵꣶꣷ꣼ऽ꣸꣹꣺ꣻॐꣽ०१२३४५६७८९ঀঅআইঈউঊঋঌএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহঽৎড়ঢ়য়ৠৡ০১২৩৪৫৬৭৮৯ৰৱ৻ৼ৽৾৲৳৴৵৶৷৸৹ঁংঃ়ািীুূৃৄেৈোৌ্ৗৢৣ৺அஆஇஈஉஊஎஏஐஒஓஔகஙசஜஞடணதநனபமயரறலளழவஶஷஸஹ௦௧௨௩௪௫௬௭௮௯௰௲௳௴௵௶௷௸௹௺ௐ𑀵𑀶𑀷ஃஂாிீுூெேைொோௌ்ௗཀཁགགྷངཅཆཉཊཋཌཌྷཎཏཐདདྷནཔཕབབྷམཙཚཛཛྷཝཟའལཤཥསཧཨཀྵཪཫཬ༠༡༢༣༤༥༦༧༨༩༳༪༫༬༭༮༯༰༱༲༁༂༃༄༅༆༇༈༉༊་༌།༎༏༐༑༒༓༔ༀ༕༖༗༘༙༚༛༜༝༞༟࿎࿏༾༿ཾ྾྿࿀࿁࿂࿃࿄࿅࿇࿈࿉࿊࿋࿌࿐࿑࿒࿓࿔࿙࿚༴༵༶༷༸༹༺༻༼༽ཱཱཱིིུུྲྀཷླྀཹཱེཻོཽྀྀཿྂྃ྆྇ྈྉྊྋྌ྄྅ྍྎྏྐྑྒྒྷྔྕྖྗྙྚྛྜྜྷྞྟྠྡྡྷྣྤྥྦྦྷྨྩྪྫྫྷྭྮྯྰྱྲླྴྵྶྷྸྐྵྺྻྼ࿆𓆣𓆤𓆥𓆦𓆧𓆨𓆩𓆪𓆲𓄿𓅀𓅁𓅂𓅃𓅄𓅅𓅆𓅇𓅈𓅉𓅊𓅋𓅌𓅍𓅎𓅏𓅐𓅑𓅒𓅓𓅔𓅕𓅖𓅗𓅘𓅙𓅚𓅛𓅜𓅝𓅞𓅟𓅠𓅡𓅢𓅣𓅤𓅥𓅦𓅧𓅨𓅩𓅪𓅫𓅬𓅭𓅮𓅯𓅰𓅱𓅲𓅳𓅴𓅵𓅶𓅷𓅸𓅹𓅺𓅻𓅼𓅽𓅾𓅿𓆀𓆁𓆂𓆃𓆄𓆅𓆆𓆇𓆈𓆉𓆊𓆋𓆌𓆍𓆎𓆏𓆐𓃒𓃓𓃔𓃕𓃖𓃗𓃘𓃙𓃚𓃛𓃜𓃝𓃞𓃟𓃠𓃡𓃢𓃣𓃤𓃥𓃦𓃧𓃨𓃩𓃪𓃫𓃬𓃭𓃮𓃯𓃰𓃱𓃲𓃳𓃴𓃵𓃶𓃷𓃸𓃹𓃺𓃻𓃼𓃽𓃾𓃿𓄀𓄁𓄂𓄃𓄄𓄅𓄆𓄇𓀀𓀁𓀂𓀃𓀄𓀅𓀆𓀇𓀈𓀉𓀊𓀋𓀌𓀍𓀎𓀏𓀐𓀑𓀒𓀓𓀔𓀕𓀖𓀗𓀘𓀙𓀚𓀛𓀜𓀝𓀞𓀟𓀠𓀡𓀢𓀣𓀤𓀥𓀦𓀧𓀨𓀩𓀪𓀫𓀬𓀭𓀮𓀯𓀰𓀱𓀲𓀳𓀴𓀵𓀶𓀷𓀸𓀹𓀺𓀻𓀼𓀽𓀾𓀿𓁀𓁁𓁂𓁃𓁄𓁅𓁆𓁇𓁈𓁉𓁊𓁋𓁌𓁍𓁎𓁏𓐍𓐎𓐏𓐐𓐑𓐒𓐓𓐔𓐕𓐖𓐗𓐘𓐙𓐚𓐛𓐜𓐝𓐞𓐟𓐠𓐡𓐢𓐣𓐤𓐥𓐦𓐧𓐨𓐩𓐪𓐫𓐬𓐭𓐮𓁐𓁑𓁒𓁓𓁔𓁕𓂑𓂒𓂸𓂹𓂺𓁖𓁗𓁘𓁙𓁚𓁛𓁜𓁝𓁞𓁟𓁠𓁡𓁢𓁣𓁤𓁥𓁦𓁧𓁨𓁩𓁪𓁫𓁬𓁭𓁮𓁯𓁰𓁱𓁲𓁳𓁴𓁵𓁶𓁷𓁸𓁹𓁺𓁻𓁼𓁽𓁾𓁿𓂀𓂁𓂂𓂃𓂄𓂅𓂆𓂇𓂈𓂉𓂊𓂋𓂌𓂍𓂎𓂏𓂐𓂓𓂔𓂕𓂖𓂗𓂘𓂙𓂚𓂛𓂜𓂝𓂞𓂟𓂠𓂡𓂢𓂣𓂤𓂥𓂦𓂧𓂨𓂩𓂪𓂫𓂬𓂭𓂮𓂯𓂰𓂱𓂲𓂳𓂴𓂵𓂶𓂷𓂻𓂼𓂽𓂾𓂿𓃀𓃁𓃂𓃃𓃄𓃅𓃆𓃇𓃈𓃉𓃊𓃋𓃌𓃍𓃎𓃏𓃐𓄈𓄉𓄊𓄋𓄌𓄍𓄎𓄏𓄐𓄑𓄒𓄓𓄔𓄕𓄖𓄗𓄘𓄙𓄚𓄛𓄜𓄝𓄞𓄟𓄠𓄡𓄢𓄣𓄤𓄥𓄦𓄧𓄨𓄩𓄪𓄫𓄬𓄭𓄮𓄯𓄰𓄱𓄲𓄳𓄴𓄵𓄶𓄷𓄸𓄹𓄺𓄻𓄼𓄽𓄾𓆫𓆬𓆭𓆮𓆯𓆰𓆱𓆑𓆒𓆓𓆔𓆕𓆖𓆗𓆘𓆙𓆚𓆛𓆜𓆝𓆞𓆟𓆠𓆡𓆢𓆳𓆴𓆵𓆶𓆷𓆸𓆹𓆺𓆻𓆼𓆽𓆾𓆿𓇀𓇁𓇂𓇃𓇄𓇅𓇆𓇇𓇈𓇉𓇊𓇋𓇌𓇍𓇎𓇏𓇐𓇑𓇒𓇓𓇔𓇕𓇖𓇗𓇘𓇙𓇚𓇛𓇜𓇝𓇞𓇟𓇠𓇡𓇢𓇣𓇤𓇥𓇦𓇧𓇨𓇩𓇪𓇫𓇬𓇭𓇮𓇯𓇰𓇱𓇲𓇳𓇴𓇵𓇶𓇷𓇸𓇹𓇺𓇻𓇼𓇽𓇾𓇿𓈀𓈁𓈂𓈃𓈄𓈅𓈆𓈇𓈈𓈉𓈊𓈋𓈌𓈍𓈎𓈏𓈐𓈑𓈒𓈓𓈔𓈕𓈖𓈗𓈘𓈙𓈚𓈛𓈜𓈝𓈞𓈟𓈠𓈡𓈢𓈣𓈤𓈥𓈦𓈧𓈨𓈩𓈪𓈫𓈬𓈭𓈮𓈯𓈰𓈱𓈲𓈳𓈴𓈵𓈶𓈷𓈸𓈹𓈺𓈻𓈼𓈽𓈾𓈿𓉀𓉁𓉂𓉃𓉄𓉅𓉆𓉇𓉈𓉉𓉊𓉋𓉌𓉍𓉎𓉏𓉐𓉑𓉒𓉓𓉔𓉕𓉖𓉗𓉘𓉙𓉚𓉛𓉜𓉝𓉞𓉟𓉠𓉡𓉢𓉣𓉤𓉥𓉦𓉧𓉨𓉩𓉪𓉫𓉬𓉭𓉮𓉯𓉰𓉱𓉲𓉳𓉴𓉵𓉶𓉷𓉸𓉹𓉺𓉻𓉼𓉽𓉾𓉿𓊀𓊁𓊂𓊃𓊄𓊅𓊆𓊇𓊈𓊉𓊊𓊋𓊌𓊍𓊎𓊏𓊐𓊑𓊒𓊓𓊔𓊕𓊖𓊗𓊘𓊙𓊚𓊛𓊜𓊝𓊞𓊟𓊠𓊡𓊢𓊣𓊤𓊥𓊦𓊧𓊨𓊩𓊪𓊫𓊬𓊭𓊮𓊯𓊰𓊱𓊲𓊳𓊴𓊵𓊶𓊷𓊸𓊹𓊺𓊻𓊼𓊽𓊾𓊿𓋀𓋁𓋂𓋃𓋄𓋅𓋆𓋇𓋈𓋉𓋊𓋋𓋌𓋍𓋎𓋏𓋐𓋑𓋒𓋓𓋔𓋕𓋖𓋗𓋘𓋙𓋚𓋛𓋜𓋝𓋞𓋟𓋠𓋡𓋢𓋣𓋤𓋥𓋦𓋧𓋨𓋩𓋪𓋫𓋬𓋭𓋮𓋯𓋰𓋱𓋲𓋳𓋴𓋵𓋶𓋷𓋸𓋹𓋺𓋻𓋼𓋽𓋾𓋿𓌀𓌁𓌂𓌃𓌄𓌅𓌆𓌇𓌈𓌉𓌊𓌋𓌌𓌍𓌎𓌏𓌐𓌑𓌒𓌓𓌔𓌕𓌖𓌗𓌘𓌙𓌚𓌛𓌜𓌝𓌞𓌟𓌠𓌡𓌢𓌣𓌤𓌥𓌦𓌧𓌨𓌩𓌪𓌫𓌬𓌭𓌮𓌯𓌰𓌱𓌲𓌳𓌴𓌵𓌶𓌷𓌸𓌹𓌺𓌻𓌼𓌽𓌾𓌿𓍀𓍁𓍂𓍃𓍄𓍅𓍆𓍇𓍈𓍉𓍊𓍋𓍌𓍍𓍎𓍏𓍐𓍑𓍒𓍓𓍔𓍕𓍖𓍗𓍘𓍙𓍚𓍛𓍜𓍝𓍞𓍟𓍠𓍡𓍢𓍣𓍤𓍥𓍦𓍧𓍨𓍩𓍪𓍫𓍬𓍭𓍮𓍯𓍰𓍱𓍲𓍳𓍴𓍵𓍶𓍷𓍸𓍹𓍺𓍻𓍼𓍽𓍾𓍿𓎀𓎁𓎂𓎃𓎄𓎅𓎆𓎇𓎈𓎉𓎊𓎋𓎌𓎍𓎎𓎏𓎐𓎑𓎒𓎓𓎔𓎕𓎖𓎗𓎘𓎙𓎚𓎛𓎜𓎝𓎞𓎟𓎠𓎡𓎢𓎣𓎤𓎥𓎦𓎧𓎨𓎩𓎪𓎫𓎬𓎭𓎮𓎯𓎰𓎱𓎲𓎳𓎴𓎵𓎶𓎷𓎸𓎹𓎺𓎻𓎼𓎽𓎾𓎿𓏀𓏁𓏂𓏃𓏄𓏅𓏆𓏇𓏈𓏉𓏊𓏋𓏌𓏍𓏎𓏏𓏐𓏑𓏒𓏓𓏔𓏕𓏖𓏗𓏘𓏙𓏚𓏛𓏜𓏝𓏞𓏟𓏠𓏡𓏢𓏣𓏤𓏥𓏦𓏨𓏩𓏪𓏫𓏬𓏭𓏮𓏯𓏰𓏱𓏲𓏳𓏴𓏵𓏶𓏷𓏸𓏹𓏺𓏻𓏼𓏽𓏾𓏿𓐀𓐁𓐂𓐃𓐄𓐅𓐆𓐇𓐈𓐉𓐊𓐋𓐌𒃾𒃿𒄀𒄁𒄂𒄃𒄄𒄅𒄆𒄇𒄈𒄉𒄊𒄋𒄌𒄍𒄎𒄏𒄐𒄑𒄒𒄓𒄔𒄕𒄖𒄗𒄘𒄙𒄚𒄛𒄜𒄝𒄞𒄟𒄠𒄡𒄢𒄣𒄤𒄥𒄦𒄧𒄨𒄩𒄪𒄫𒄬𐑐𐑑𐑒𐑓𐑔𐑕𐑖𐑗𐑘𐑙𐑚𐑛𐑜𐑝𐑞𐑟𐑠𐑡𐑢𐑣𐑤𐑥𐑦𐑧𐑨𐑩𐑪𐑫𐑬𐑭𐑮𐑯𐑰𐑱𐑲𐑳𐑴𐑵𐑶𐑷𐑸𐑹𐑺𐑻𐑼𐑽𐑾𐑿𐀀𐀁𐀂𐀃𐀄𐀅𐀆𐀇𐀈𐀉𐀊𐀋𐀍𐀎𐀏𐀐𐀑𐀒𐀓𐀔𐀕𐀖𐀗𐀘𐀙𐀚𐀛𐀜𐀝𐀞𐀟𐀠𐀡𐀢𐀣𐀤𐀥𐀦𐀨𐀩𐀪𐀫𐀬𐀭𐀮𐀯𐀰𐀱𐀲𐀳𐀴𐀵𐀶𐀷𐀸𐀹𐀺𐀼𐀽𐀿𐁀𐁁𐁂𐁃𐁄𐁅𐁆𐁇𐁈𐁉𐁊𐁋𐁌𐁍𐁐𐁑𐁒𐁓𐁔𐁕𐁖𐁗𐁘𐁙𐁚𐁛𐁜𐁝𐂀𐂁𐂂𐂃𐂄𐂅𐂆𐂇𐂈𐂉𐂊𐂋𐂌𐂍𐂎𐂏𐂐𐂑𐂒𐂓𐂔𐂕𐂖𐂗𐂘𐂙𐂚𐂛𐂜𐂝𐂞𐂟𐂠𐂡𐂢𐂣𐂤𐂥𐂦𐂧𐂨𐂩𐂪𐂫𐂬𐂭𐂮𐂯𐂰𐂱𐂲𐂳𐂴𐂵𐂶𐂷𐂸𐂹𐂺𐂻𐂼𐂽𐂾𐂿𐃀𐃁𐃂𐃃𐃄𐃅𐃆𐃇𐃈𐃉𐃊𐃋𐃌𐃍𐃎𐃏𐃐𐃑𐃓𐃔𐃕𐃖𐃗𐃘𐃙𐃚𐃛𐃜𐃝𐃞𐃟𐃠𐃡𐃢𐃣𐃤𐃥𐃦𐃧𐃨𐃩𐃪𐃫𐃬𐃭𐃮𐃯𐃰𐃱𐃲𐃳𐃴𐃵𐃶𐃷𐃸𐃹𐃺𐃒𐘀𐘁𐘂𐘃𐘄𐘅𐘆𐘇𐘈𐘉𐘊𐘋𐘌𐘍𐘎𐘏𐘐𐘑𐘒𐘓𐘔𐘕𐘖𐘗𐘘𐘙𐘚𐘛𐘜𐘝𐘞𐘟𐘠𐘡𐘢𐘣𐘤𐘥𐘦𐘧𐘨𐘩𐘪𐘫𐘬𐘭𐘮𐘯𐘰𐘱𐘲𐘳𐘴𐘵𐘶𐘷𐘸𐘹𐘺𐘻𐘼𐘽𐘾𐘿𐙀𐙁𐙂𐙃𐙄𐙅𐙆𐙇𐙈𐙉𐙊𐙋𐙌𐙍𐙎𐤀𐤁𐤂𐤃𐤄𐤅𐤆𐤇𐤈𐤉𐤊𐤋𐤌𐤍𐤎𐤏𐤐𐤑𐤒𐤓𐤔𐤕𐤖𐤚𐤛𐤗𐤘𐤙𐤟ᚠᚡᚢᚣᚤᚥᚦᚧᚨᚩᚪᚫᚬᚭᚮᚯᚰᚱᚲᚳᚴᚵᚶᚷᚸᚹᚺᚻᚼᚽᚾᚿᛀᛁᛂᛃᛄᛅᛆᛇᛈᛉᛊᛋᛌᛍᛎᛏᛐᛑᛒᛓᛔᛕᛖᛗᛘᛙᛚᛛᛜᛝᛞᛟᛠᛡᛢᛣᛤᛥᛦᛧᛨᛩᛪ𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈𐐉𐐊𐐋𐐌𐐍𐐎𐐏𐐐𐐑𐐒𐐓𐐔𐐕𐐖𐐗𐐘𐐙𐐚𐐛𐐜𐐝𐐞𐐟𐐠𐐡𐐢𐐣𐐤𐐥𐐦𐐧𐐨𐐩𐐪𐐫𐐬𐐭𐐮𐐯𐐰");
-  </script>
-  <!-- === END JS (tom27) === -->
-
-</body>
-</html>
-
-  </div>
-  
-</section>
-<section id="block-glitch" class="block" tabindex="0">
-  <div class="container">
-    <style>
-#block-glitch iframe {
+.profile-image {
   width: 100%;
-  height: 100vh;
-  border: none;
+  height: auto;
+  object-fit: cover;
+  margin-top: 0;
+  border-radius: 0;
 }
-</style>
-    <iframe src="https://tommydev27.github.io/Unicode.SymbolTool/" width="100%" height="400" frameborder="0" loading="lazy"></iframe>
-  </div>
-</section>
-<!-- SECTION -->
 
 
-<section id="block-emoji" class="block">
-    <div class="container" style="padding: 0px;">
+.circle-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 44px;
+    left: 70px;
+    padding: 3px;
+    outline: 4px solid #fff;
+    transform: translateX(-50%);
+    background-color: white;
+}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+body.dark-mode .circle-image {
+    border: 3px solid #41ff3c;
+    background-color: #333;
+    outline: 4px solid #262626;
+}
 
-  <style>
+.unique-controls {
+    position: relative;
+    color:  #41ff3c;
+    padding: 15px;
+}
+
+.song-info h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 0 15px;
+    margin-top: 18px;
+    padding: 0;
+    line-height: 0.85;
+}
+
+body.dark-mode .song-info h2 {
+    color: #41ff3c;
+}
+
+.fas.fa-check-circle {
+    font-size: 20px;
+    color: #1b74e4;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+
+body.dark-mode {
+    background-image: url('https://iili.io/3BRBjF2.png');
+    color: #41ff3c;
+    background-attachment: fixed;
+}
+
+
+.settings-card {
+    display: none;
+}
+
+h2 {
+    font-size: 15px;
+    color: #333;
+    gap: 0;
+    margin-top: 10px;
+}
+
+#profil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+#profil-header button {
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#profil-header button:hover {
+    background-color: #5ec7fb;
+}
+
+#scroll-buttons {
+    display: flex;
+    gap: 0;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#scroll-buttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body.dark-mode #scroll-buttons i {
+    color: #ff0303;
+}
+
+#scroll-buttons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #444;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode #scroll-buttons span {
+    color: #0fff03;
+}
+
+body.dark-mode h2 {
+    color: #0fff03;
+}
+
+#profil-tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+}
+
+#profil-tabs div {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+#profil-tabs div.active {
+    border-bottom: 3px solid #1b74e4;
+    color: #1b74e4;
+}
+
+#profil-content {
+    padding: 15px;
+}
+
+#profil-content > div {
+    display: none;
+}
+
+#profil-content > div.active {
+    display: block;
+}
+
+#content-foto img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+p {
+    padding: 0;
+    color: #333;
+    margin: 5px 0;
+}
+
+.profile-container {
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: 20px;
+    margin-top: -8px;
+    font-weight: bold;
+}
+
+.profile-info small {
+    color: #606770;
+}
+
+.content img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.private-icon {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #606770;
+}
+
+#Ai {
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#Ai h1 {
+    font-size: 19px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#Ai p {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.promptBox {
+    width: 100%;
+    height: 95px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #789da4;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
 .loader {
     display: none;
     border: 5px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 5px solid #03b90a;
+    border-top: 5px solid #04e20d;
     width: 25px;
     height: 25px;
     margin: 20px auto;
@@ -1013,16 +324,60 @@ document.getElementById("unicodeBadge").addEventListener("click", () => {
 #image-container img {
     width: 100%;
     margin-top: 10px;
-    border: 1px solid #ddd;
+    border: 0.5px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
 }
 
+.date-time {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    transform: skew(-0deg);
+font-family: 'Courier New', Orbitron;
+}
+
+body.dark-mode .date-time {
+    color: #41ff3c;
+}
+
+
+.bold {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #444;
+  font-weight: bold;
+}
+
+body.dark-mode .bold {
+  color: #0dfa0a; 
+}
+
+
+
+.gray {
+    color: #334;
+    font-weight: normal;
+}
+
+      
+button {
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
 
 .image-slider-container {
   overflow-x: auto;
   white-space: nowrap;
-  background-color: #ecf0f1;
+  background-color: #a6e9fe;
   padding: 5px;
   border-radius: 8px;
 }
@@ -1047,6 +402,241 @@ document.getElementById("unicodeBadge").addEventListener("click", () => {
   transition: transform 0.1s ease;
 }
 
+body.dark-mode .profile-picture {
+  background-color: #121212;
+  border-color: #41ff3c;
+  box-shadow: 1px 1px 1px #111, -1px -1px 1px #444;
+}
+
+.darkmode {
+  width: 26px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 30px;
+  position: relative;
+  margin-top: 4px;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.darkmode .toggle-circle {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.darkmode {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.darkmode.active {
+  background-color: #16181b;
+  border: 1px solid red;
+}
+
+.darkmode.active .toggle-circle {
+  background-color: #41ff3c;
+}
+
+@keyframes blink-colors {
+  0% { background-color: red; }
+  33% { background-color: blue; }
+  66% { background-color: white; }
+  100% { background-color: red; }
+}
+
+.darkmode.active .toggle-circle {
+  left: 15px;
+  background-color: #41ff3c;
+  animation: blink-colors 1.3s infinite;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #41ff3c;
+}
+
+body.dark-mode .header h1 {
+  color: #fff;
+}
+
+.darkmode-label {
+  font-size: 8px;
+  color: #333;
+  text-align: center;
+  margin-top: 12px;
+}
+
+body.dark-mode hr {
+  border: 0.10px solid #fff;
+}
+
+
+
+.icon-container:active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.6);
+  border-radius: 50%;
+  animation: ripple 0.3s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.icon-container i {
+  font-size: 16px;
+}
+
+.button-circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #1b74e4 ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button-circle i {
+  font-size: 18px;
+}
+
+.icon-container.active .button-circle {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.button-circle:nth-child(2) {
+  transform: translate(-30px, 50px);
+}
+
+.button-circle:nth-child(3) {
+  transform: translate(-55px, -20px);
+}
+
+.button-circle:nth-child(4) {
+  transform: translate(-55px, 20px);
+}
+
+.button-circle:nth-child(5) {
+  transform: translate(10px, 55px);
+}
+
+.icon-container:not(.active) .button-circle {
+  transform: translate(0, 0);
+}
+
+.nav-buttons {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 0px;
+  margin-top: 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+background:linear-gradient(180deg,#b72900,#571400);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav-button i {
+  font-size: 14px;
+  color: #d8d6dd;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button span {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  color: #fff;
+  padding: 6px 5px;
+  margin-top: 0px;
+  cursor: pointer;
+  width: auto;
+  background: none;
+  border-radius: 10px;
+  border: none;
+}
+
+body.dark-mode .nav-button span {
+  color: #0a0c0a;
+}
+
+.nav-button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body.dark-mode .nav-button i {
+  color: #e00000;
+}
+
+.nav-button:hover i {
+  background-color: transparent;
+  border-radius: 50px;
+  color: #c10303;
+}
+
+.nav-button:active i {
+  background-color: transparent !important;
+  animation: blink 1.1s;
+}
+
+.nav-button i {
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .gallery {
   list-style-type: none;
   padding: 0;
@@ -1069,7 +659,7 @@ document.getElementById("unicodeBadge").addEventListener("click", () => {
 
 .gallery-item p {
   font-size: 15px;
-  color: #555;
+  color: #eee;
 }
 
 .prompt-list {
@@ -1082,9 +672,25 @@ document.getElementById("unicodeBadge").addEventListener("click", () => {
   margin-top: 10px;
 }
 
+footer {
+  color: #eee;
+  padding: 0px 0;
+  margin-top: 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
 .quick-links a {
-  color: #00c853;
+  color: #777;
   text-decoration: none;
   margin: 0 5px;
   font-size: 12px;
@@ -1114,12 +720,86 @@ document.getElementById("unicodeBadge").addEventListener("click", () => {
   border-color: #ff5722;
 }
 
+.facebook {
+  background-color: #3b5998;
+  border: none;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  border: none;
+}
+
+.instagram {
+  background-color: #e4405f;
+  border: none;
+}
 
 .copyright {
   font-size: 12px;
   opacity: 0.8;
 }
 
+body.dark-mode h2 {
+  color: #41ff3c;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #41ff3c;
+}
+
+body.dark-mode #song-title {
+  color: #41ff3c !important;
+}
+
+body.dark-mode .song-info span:nth-child(2) {
+  color: #abb1bd !important;
+}
+
+body.dark-mode .song-info span:nth-child(3) {
+  color: #fd2d2d !important;
+}
+
+body.dark-mode .song-info span:nth-child(4) {
+  color: #1b74e4 !important;
+}
+
+body.dark-mode .song-info span:nth-child(5) i {
+  color: #f2e901 !important;
+}
+
+body.dark-mode #song-title+p {
+  color: #595963 !important;
+}
+
+body.dark-mode .fab.fa-optin-monster {
+  color: #f523e5 !important;
+}
+
+body.dark-mode .fab.fa-skyatlas {
+  color: #ecf814ed !important;
+}
+
+body.dark-mode .fab.fa-wolf-pack-battalion {
+  color: #f523e5 !important;
+}
+
+body.dark-mode .fas.fa-chess {
+  color: #2a90e8 !important;
+}
+
+body.dark-mode .fas.fa-chess-knight {
+  color: #abb1bd !important;
+}
+
+body.dark-mode #song-title+a {
+  color: #dfff19 !important;
+}
+
+body.dark-mode .fas.fa-dice {
+  color: #ba0404 !important;
+}
 
 .unique-image-container {
   margin-top: 0px;
@@ -1143,6 +823,9 @@ input[type="text"], select, button {
   font-size: 13px;
 }
 
+.dark-mode p {
+  color: #34ff00;
+}
 
 .list-container {
   display: flex;
@@ -1158,6 +841,7 @@ input[type="text"], select, button {
   font-size: 13px;
   margin-right: 5px;
   width: 10px;
+  color: #444;
   text-align: right;
 }
 
@@ -1171,107 +855,872 @@ input[type="text"], select, button {
   font-family: 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
 }
 
-#loading-screen1 {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999 !important;  /* pastikan loading screen tetap di atas */
-    animation: fadeOut 0.95s forwards 0.95s;
-}
 
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        visibility: hidden;
+    body.dark-mode .follower {
+       border: 2px solid #41ff3c;
+      
     }
-}
-
-.loader1 {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 6px solid rgb(240,240,240);
-    border-top: 6px solid #cfcfcf;
-    animation: spin 0.6s linear infinite;
-    display: block !important;
-}
-
+  
 @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
     100% {
         transform: rotate(360deg);
     }
 }
-footer {
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-  padding: 20px 0;
-  border-top: 1px solid #ddd;
+
+@keyframes blink {
+    0%, 100% {
+        background-color: blue;
+        color: white;
+    }
+    33% {
+        background-color: red;
+        color: white;
+    }
+    66% {
+        background-color: white;
+        color: black;
+    }
 }
 
-.footer-links a {
-  color: #0078d4;
-  text-decoration: none;
-  margin: 0 5px;
+body.dark-mode #iconunique-container {
+    border: 2px solid #41ff3c;
+    outline: 4px solid #262626;
+    animation: spin 2s linear infinite, blink 1.5s linear infinite;
+    transform-origin: center;
+    transform: scale(1.2);
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
-}
 
-.verified-name {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 0px;
-  color: #000;
+  #preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dot-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dot-loader .icon {
+    font-size: 40px;
+    color: #1b74e4;
+  }
+
+  .dot-loader .text {
+    font-size: 10px;
+    color: #1b74e4;
+    font-weight: bold;
+  }
+
+  .dot-loader .dots {
+    display: flex;
+    gap: 30px;
+  }
+
+  .dot-loader span {
+      width: 8px;
+      height: 8px;
+      background: #26a9a3;
+      border-radius: 50%;
+      opacity: 0;
+      animation: blink 1.5s infinite;
+    }
+    
+    .dot-loader span:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    
+    .dot-loader span:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    
+    .dot-loader span:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    
+    .dot-loader span:nth-child(4) {
+      animation-delay: 0.9s;
+    }
+    
+    .dot-loader span:nth-child(5) {
+      animation-delay: 1.2s;
+    }
+    
+    @keyframes blink {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+     .dark-mode .badge {
+        color: #41ff3c;
+    }
+
+    .badge {
+        color: #444;
+        font-size: 11px;  
+        font-family: 'Courier New', monospace;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      h1 {
+        color: #41ff3c !important;
+      }
+  
+      h1 header .badge {
+        color: #41ff3c !important;
+      }
+    }
+    
+      .image {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        pointer-events: auto; /* supaya bisa klik */
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        padding: 0;
+        cursor: pointer;
+        display: block;
+        margin-top: 15px;
+      }
+    
+      h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 0;
+      }
+    
+      p {
+        font-size: 15px;
+      }
+    
+      .tab-container {
+        text-align: center;
+        margin-top: 10px;
+      }
+    
+    iframe.imageContainer {
+      margin: 0px
+      height: auto; /* biar resizeIframe bisa jalan */
+      min-height: 600px;
+      border: none;
+      display: none;
+      border-radius: 12px;
+      box-shadow: 0px 2px 2px 3px rgba(0,0,0,0.1);
+      transition: height 0.3s ease;
+    }
+    
+    
+    iframe {
+      all: unset;
+      width: 100vw;
+      max-width: none;
+      height: auto !important;
+      margin-left: 0;
+      border: none;
+      margin-top: 0;
+      padding: 30px;
+      border-radius: 12px;
+      display: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .iframe-container {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+    
+    </style>
+  <style>
+
+    .dark-mode .img-container {
+      background: transparent;
+      border: 1px solid #1097ff;
+      border-radius: 15px;
+      box-shadow: none;
+    }
+
+    .img-container:hover,
+    .img-container:active,
+    .img-container.clicked-blink {
+
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .clicked-blink {
+      animation: pulse 0.3s ease;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(0.90); }
+      100% { transform: scale(1); }
+    }
+    
+    #uniqueSaveBtn {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px auto;
+      display: block;
+    }
+
+  </style>
+<style>
+
+#image-scroll-container {
+  width: 100%;
+  padding: 5px 0px;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  border-radius: 15px;
   display: flex;
-  align-items: center;
-  gap: 6px;
+  scroll-behavior: smooth;
 }
 
-.verified-name i {
-  color: #1da1f2; /* biru khas centang verifikasi */
-  font-size: 16px;
+        .dark-mode  #image-scroll-container {
+            border: none;
+            background: none;
+        }
+
+#image-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-left: -4px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  outline: none;
 }
+
+.img-container {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+}
+
+.book-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 180px;
+  padding: 20px;
+  border: solid 1px #ccc;
+  border-radius: 15px;
+  height: 180px;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+        .dark-mode  .book-badge {
+            border: none;
+            background: #333;
+            color: #0dfa0a;
+        }
+
+  .icon-badge {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 5px;
+     font-size: 40px;
+    }
+
+    .orange { color: #ffbc41; }
+    .green { color: #25D366; }
+    .blue { color: #1DA1F2; }
+    .pink { color: #E1306C; }
+    .light-blue { color: #4285F4; }
+    .grey { color: #444; }
+    .spotify { color: #1DB954; }
+    
+    .text-wrap {
+      display: inline-block;
+      border-radius: 15px;
+      margin-top: 0px;
+      line-height: 2.9em;
+      font-weight: bold;
+      word-break: break-word;
+      white-space: normal;
+    }
+    
+      .tommyweb {
+        display: flex; align-items: center; background: #fff; padding : 10px 0px;}
+        .dark-mode .tommyweb {
+            background: #333;
+            color: #04f105;
+          }
 
       </style>
-
-</head>
+  </head>
 <body>
-
-<div class="unique-image-container">
-<div class="verified-name">
-  <span class="name">Create Image
-  <i class="fab fa-earlybirds"></i>
-  &nbsp;
-<foot style="font-size: 12px; color:#444;  font-family: 'Courier New', monospace;
-">
-Design • Tommy V0.1.0 ⋯
-</foot>
+  
+<div id="preloader">
+  <div class="dot-loader">
+    <div style="width: 180px; height: 50px; border-radius: 5%; overflow: hidden;">
+      <a href="https://postimages.org/" target="_blank">
+        <img src="https://i.postimg.cc/d3JfsZp2/large-7-2-3.png" alt="large-2" style="width: 100%; height: 100%; object-fit: cover;">
+      </a>
     </div>
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="tommyweb">
+    <button
+      onclick="toggleMenu()"
+      style="
+        font-size: 20px;
+        color: #999;
+        background: none;
+        font-weight: bold;
+        border: none;
+        border: solid 0.5px #6fabf6;
+        padding: 6px 6px;
+        margin-left: 10px;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        z-index: 1001;
+        position: relative;
+      "
+      onmousedown="this.style.color='#117d7a'"
+      onmouseup="this.style.color='#044441'"
+      onmouseleave="this.style.color='#15a8a3'"
+    ><i class="	fa fa-bars"></i>
+
+    </button>
+    
+<div class="tommy" style="padding:0px 15px; font-family: normal;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<user style="display:inline-block; font-size:13px;  font-weight:900; letter-spacing:1.3px; margin:0; line-height:1.2; position:relative;">
+  <user style="display:inline-block; transform: scaleX(1.1) scaleY(0.8); transform-origin:center;">Tommy website</user>
+  <user style="position:absolute; bottom:0; left:-5px; width:calc(100% + 0px); border-bottom:0.5px solid #444;"></usee>
+</user>
+
+&nbsp; <svg xmlns="http://www.w3.org/2000/svg" fill="#4790fb" width="15" height="15" viewBox="0 0 30 30" style="transform: translateY(5px);"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.201 1.122a1 1 0 0 1 1.332.357l1.307 2.138 2.506.063a1 1 0 0 1 .974.975l.063 2.505 2.139 1.307a1 1 0 0 1 .356 1.332L21.68 12l1.198 2.201a1 1 0 0 1-.357 1.332l-2.138 1.307-.063 2.506a1 1 0 0 1-.974.974l-2.506.063-1.307 2.139a1 1 0 0 1-1.332.356L12 21.68l-2.201 1.198a1 1 0 0 1-1.332-.357L7.16 20.383l-2.506-.063a1 1 0 0 1-.974-.974l-.063-2.506-2.138-1.307a1 1 0 0 1-.357-1.332L2.32 12 1.122 9.799a1 1 0 0 1 .357-1.332L3.617 7.16l.063-2.505a1 1 0 0 1 .974-.975l2.506-.063L8.467 1.48A1 1 0 0 1 9.8 1.122L12 2.32l2.201-1.198zm2.44 9.146a1 1 0 1 0-1.281-1.536l-.067.055a43.003 43.003 0 0 0-4.852 4.74l-1.734-1.734a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.475-.067l.056-.067a41 41 0 0 1 5.25-5.25l.066-.055z"></path></svg></user><p style="margin:4px 0 0 0; line-height:1.2;"><user style="font-size:13px; font-weight:400; letter-spacing:5px; display:inline-block; transform: scaleX(1.1) scaleY(0.8); transform-origin:center;">from &nbsp;&nbsp;<user style="display:inline-block; font-size:12px; font-weight:400; transform: scaleX(1.9) scaleY(1.5); color:#4790fb; text-shadow:0.5px 0 0 currentColor, -0.5px 0 0 currentColor;"> <i class='fab fa-gg'></i>TM</user>
+</div>
+       
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android" style="width:25px;  margin-left: 2px; margin-top: 2px;">
+    
+    </div>
+       <div class="unique-controls">
+    <a class="bold"> 
+        Multi Tools Text & Create Image
+         </a>
+
+    
+<style>
+  .container1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .big-text1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: -200px;
+  color: #fff;
+text-shadow:
+  1px 1px 0 #875151, 
+  2px 0px 0 #000,  
+  3px 3px 0 #dbcaca; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+.dark-mode .big-text1 {
+  color: #ea082e;
+  text-shadow:
+    1px 1px 0 #000,
+    2px 0px 0 #ea082e,
+    3px 3px 0 #550000;
+}
+  
+  .divider1 {
+    width: 0.5px;
+    background: #fa6060;
+    height: 300px;
+  }
+
+  .small-text1 {
+    font-size: 16px;
+    font-weight:600;
+    line-height: 1.8;
+    font-family:normal;
+    color: #333;
+  }
+  
+    .dark-mode .small-text1 {
+    color: #4ff84f;
+  }
+  
+</style>
+    <a class="bold"> 
+<div class="container1">
+  <div class="big-text1"><i class="fab fa-earlybirds"></i></div>
+  <div class="divider1"></div>
+  <div class="small-text1">
+   <b style="font-size: 16px; font-weight: bold; "> Alat Karakter Teks - Seni Teks &<br>
+    Buat gambar Ai & Ascii<br>
+    </b>
+    </br>
+<div class="small-text1" onclick="go('idcard')">
+  <i class="far fa-id-card green"></i> iD card pw
+</div>
+
+<div class="small-text1" onclick="go('hitung')">
+  <i class="fab fa-page4" style="color:#c360ff;"></i> Penghitung Karakter
+</div>
+
+<div class="small-text1" onclick="go('font')">
+  <i class="fab fa-facebook blue"></i> Font nama Unik fb
+</div>
+
+<div class="small-text1" onclick="go('creativity')">
+  <i class="fa fa-keyboard blue"></i> Keyboar Creatify
+</div>
+
+<div class="small-text1" onclick="go('seni')">
+  <i class="fab fa-slack" style="color:#6c28fb;"></i> Seni Teks
+</div>
+
+<div class="small-text1" onclick="go('glitch')">
+  <i class="fab fa-google-wallet" style="color:red;"></i> Glitch Text Generator
+</div>
+
+<div class="small-text1" onclick="go('chars')">
+  <i class="fas fa-spell-check" style="color:#ea9100;"></i> Unicode Characters
+</div>
+
+<div class="small-text1" onclick="go('catatan')">
+  <i class="fab fa-readme" style="color:#3262ef;"></i> Blok koreksi Dua catatan
+</div>
+
+
+<script>
+function go(page) {
+  const url = {
+    idcard: 'https://tommydev27.github.io/FakeID/',
+    seni: 'https://tommydev27.github.io/generatorascii/',
+    hitung: 'https://tommydev27.github.io/Penghutung-karakter/',
+    ganda: 'https://tommydev27.github.io/Pengganda-teks/',
+    font: 'https://tommydev27.github.io/font-unikrsfb/',
+    glitch: 'https://tommydev27.github.io/glitch-text/',
+    creativity: 'https://tommydev27.github.io/Unicode.SymbolTool/',
+    chars: 'https://tommydev27.github.io/Unicode/',
+    hapusspasi: 'https://tommydev27.github.io/Alat-Penghapus-Spasi/',
+    catatan: 'https://tommydev27.github.io/Blok-dua-catatan-koreksi-catatan-/',
+    hapusduplikat: 'https://tommydev27.github.io/Penghapus-duplikat-teks/'
+  }[page];
+  if (url) location.href = url;
+}
+</script>
+
+  </div>
+</div>
+    </div>
+    
+    
+    
+    <!-- Menu Geser -->
+    <div id="sideMenu" style="
+      position: fixed;
+      left: -250px;
+      margin-top: -430px;
+      color:#04f62b;
+      width: 250px;
+      height:100vh;
+      background-color: #333;
+      transition: left 0.3s ease;
+      padding: 20px;
+      z-index: 1000;
+      overflow-y: auto;
+    ">
+    
+    <!-- Profil -->
+    <div style="display: flex; align-items: center; margin-bottom: 0px; ">
+      <img src="https://i.postimg.cc/dVfBCHXP/1753766402156.jpg" alt="Tommy" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px; border: solid 2px #007acc">
+      <div>
+        <div style="font-weight: bold; color: #4dff3c; font-size: 18px;">Tommy</div>
+        <!-- Tombol X untuk menutup -->
+        <div onclick="closeMenu()" style="
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 30px;
+          cursor: pointer;
+          color: #4dff3c;
+          z-index: 1001;
+        ">
+          &times; 
         </div>
-          <p style="font-size: 13px; margin-left: 8px; font-family: Questrial; margin-top:-8px;">
-         Gratis Buat gambar. jika terjadi error stop lanjut lagi setelah pembaruan beberapa saat
-          </p><div style="padding: 10px;">
-          <textarea id="uniquePromptInput" class="unique-prompt-input"
-          style="width: 100%; 
-          height: 20vh;
-          border: 1px solid #4fb4ffe0; border-radius: 5px; font-size: 14px;
-          "
-          placeholder="Tulis deskripsi kreatif Anda di sini..."></textarea>
-          </div><div class="unique-image-container">  <h3 style=" font-size: 15px; color: #777; font-size: 16px; margin-top: -8px; font-family: Questrial;">
-          Image displayed <i style="margin-left: 0px; font-size: 14px; color: #028e33f9;" class="fab fa-slack"></i>
+
+        
+        <div style="font-size: 12px; color: #4dff3c;">Design: tommy v.0.1.0 </div>
+      </div>
+    </div>
+    <div style="align-items: center; margin-bottom: 10px; border: solid 1px #e8e8e8; padding: 10px; border-radius: 5px;">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUybGhucTloNjk1enZqN3E4dzUxM2lpdTNhaXE0emR1eHdlOG9hdnZsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vXm54ivAqA7mUUt2P0/giphy.gif" alt="Tommy" style="width: 190px; border-radius: 5px; object-fit: cover; ">
+
+    <br>
+<!-- Deskripsi -->
+<p style="font-size: 14px; color: #4dff3c; line-height: 1.4; font-weight:300px;">
+  desainer web yang membangun antarmuka sederhana, cepat, dan responsif. Memiliki ketertarikan pada teknologi UI modern dan pengembangan aplikasi ringan.
+</p>
+    </div>
+<hr style="margin: 15px 0; border: none; border-top: 1px solid #ddd;">
+
+<!-- Scroll khusus daftar -->
+<div style="max-height: 400px; overflow-y: auto; padding-right: 0px; font-size: 14px;">
+
+  <div onclick="window.location.href='https://tommydev27.github.io/FakeID/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px;">ID Card Maker</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Buat kartu identitas digital dengan nama, foto, dan detail custom. Cocok untuk profil, akun roleplay, dan keperluan online lainnya.
+
+</div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/Unicode.SymbolTool/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Unicode Art Keyboard</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Pembuat rangkaian text dengan gabungan berbagai karakter pariasi dan unik </div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/font-unikrsfb/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Unicode & Emoji Library</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Kumpulan teks, symbol, emoji, dan berbagai karakter</div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/Unicode/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Text Unik Builder</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Rangakaian teks unik copy paste</div>
+  </div>
+
+  <div onclick="window.location.href='https://tommydev27.github.io/glitch-text/'" style="border: 1px solid #ccc; border-radius: 5px; overflow: hidden; margin-bottom: 10px; cursor: pointer;">
+    <div style="background: #4c046a; color: #fff; padding: 10px; font-weight: bold;">Glitch Text Generator</div>
+    <div style="background: #4c046a; color: #fff; padding: 10px;">Buat teks dengan efek glitch rusak yang unik dan aneh. Cocok untuk nama profil, status, bio, </div>
+
+    </div>
+</div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    const isOpen = menu.style.left === "0px";
+    menu.style.left = isOpen ? "-250px" : "0px";
+
+    // Tambah event listener sekali saat dibuka
+    if (!isOpen) {
+      document.addEventListener("click", closeOnOutsideClick);
+    }
+  }
+
+  function closeOnOutsideClick(e) {
+    const menu = document.getElementById("sideMenu");
+    const button = document.querySelector("button"); // Ganti jika tombol buka bukan satu-satunya
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.left = "-250px";
+      document.removeEventListener("click", closeOnOutsideClick);
+    }
+  }
+  
+  function closeMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.style.left = "-250px";
+    document.removeEventListener("click", closeOnOutsideClick);
+  }
+
+</script>
+
+
+<div id="container">
+  <div class="unique-controls">
+    <div id="image-scroll-container">
+      <div id="image-wrapper">
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/font-unikrsfb/" class="book-badge">
+            <b class="icon-badge"><i class="fab fa-facebook blue"></i></b>
+            <span class="text-wrap">Font Nama fb Unik</span><small>Seni teks rangkaian font </small>
+          </a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/FakeID/" class="book-badge">
+            <b class="icon-badge"><i class="fas fa-address-card pink"></i></b>
+            <span class="text-wrap">Id card pw</span><small>Pembuat iD indentity</small>
+          </a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/Unicode.SymbolTool/" class="book-badge">
+            <b class="icon-badge"><i class="fas fa-keyboard light-blue"></i></b>
+            <span class="text-wrap">Keyboard</span><small>Share Your Moment</small>
+          </a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/Unicode/" class="book-badge">
+            <b class="icon-badge"><i class="fab fa-page4 pink"></i></b>
+            <span class="text-wrap">Unicode Characters</span>
+          <small>Kumpulan teks symbol</small></a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/Penghutung-karakter/" class="book-badge">
+            <b class="icon-badge"><i class="fa fa-calculator blue"></i></b>
+            <span class="text-wrap">Penghitung Karakter</span><small>jumlah teks / symbols</small>
+          </a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/glitch-text/" class="book-badge">
+            <b class="icon-badge"><i class="fas fa-barcode spotify"></i></b>
+            <span class="text-wrap">Glitch teks</span><small>efek garis teks</small>
+          </a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/tommy.website3/" class="book-badge">
+            <b class="icon-badge"><i class="fas fa-braille orange"></i></b>
+            <span class="text-wrap">Image generator </span><small>gambar teks ascii</small>
+          </a>
+        </div>
+
+        <div class="img-container">
+          <a href="https://tommydev27.github.io/tm-textGz/" class="book-badge">
+            <b class="icon-badge"><i class="fab fa-amazon spotify"></i></b>
+            <span class="text-wrap">Font teks nama fb</span><small>Rangkaian teks </small>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div style="display: flex; align-items: center; gap: 8px; margin-left: 15px; margin-top: 0px;">
+  <button id="btn-pesan" style="color: #1877f2; font-size: 15px; background: #fff; 
+      box-shadow: inset 0 0 0 1px #fdaeae ;
+ font-weight: bold;    border-radius: 50px; padding: 5px 17vh;" onclick="window.location.href='https://m.me/tommy27110';">
+    <i class="fab fa-facebook-messenger"></i> Pesan
+  </button>
+
+<div class="icon-container" id="iconuniquecontainer"
+     style="text-shadow: 1px 1px 1px #5c5c5c7c; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px;  color: #333; cursor: pointer;"
+     onclick="shareContent()">
+    <i class="fas fa-share-alt"></i>
+</div>
+
+<script>
+  function shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Cek Halaman Ini!',
+        text: 'Lihat website keren ini.',
+        url: window.location.href, // atau URL lain
+      })
+      .then(() => console.log('Berhasil dibagikan'))
+      .catch((error) => console.log('Gagal membagikan', error));
+    } else {
+      alert('Fitur berbagi tidak didukung di perangkat ini.');
+    }
+  }
+</script>
+</div>
+      </div>
+          <div class="darkmode" id="darkModeToggle"><div class="toggle-circle"></div>
+              <p class="darkmode-label">mode</p>
+              </div>
+              
+  <div id="container">
+   <div class="unique-controls">
+<h2>Penghitung Karakter</h2>
+<p>Paste teks simbol dan karakter lainnya di sini maka akan terlihat hitungan Karakter, kata, paragraf, jumlah & kalimat.</p>
+
+<!-- Bagian 2 -->
+<img src="https://i.postimg.cc/NFrh8dFh/snapedit-1760634448349.jpg" alt="Tool 2" class="image" data-target="Microsoft2">
+
+<div class="tab-container">
+  <iframe id="Microsoft2" class="imageContainer" data-service="Microsoft2"></iframe>
+</div>
+<br>
+
+      <p style="font-size: 20px; font-weight: bold; ">Seni Teks </p>
+        <p style="font-size: 15px;">Tulis teks kreasikan sendiri </p>
+                  
+<!-- Bagian 1 -->
+<img src="https://i.postimg.cc/dVmB8J39/snapedit-1759853495738.jpg" alt="Tool 1" class="image" data-target="Microsoft222">
+
+<div class="tab-container">
+  <iframe id="Microsoft222" class="imageContainer" data-service="Microsoft222"></iframe>
+</div>
+
+      <p style="font-size: 20px; font-weight: bold; ">Blok koreksi Dua catatan </p>
+        <p style="font-size: 15px;">Paste dan koreksi teks di sini ketik di kolom pencarian  bagian yang ingin di ubah  </p>
+                  
+<!-- Bagian 1 -->
+<img src="https://i.postimg.cc/C1FtDptw/snapedit-1759910948043.jpg" alt="Tool 1" class="image" data-target="Microsoft2222">
+
+<div class="tab-container">
+  <iframe id="Microsoft2222" class="imageContainer" data-service="Microsoft2222"></iframe>
+</div>
+
+<h2>ID CARD PW</h2>
+<p>Isi bidang selengkapnya, pastikan jelas dan terbaca.</p>
+
+<!-- Bagian 5 -->
+<img src="https://i.postimg.cc/507hp1nK/20250826-180547.jpg" alt="Tool 5" class="image" data-target="Microsoft">
+
+<div class="tab-container">
+  <iframe id="Microsoft" class="imageContainer" data-service="Microsoft"></iframe>
+</div>
+
+
+<!-- Font Style -->
+<h2>Font nama Unik fb ( seni teks )</h2>
+<p>Rangkaian font unik copy paste (cek tampilan di fb lite).</p>
+
+<img src="https://i.postimg.cc/x11vHzX2/20250826-192905.jpg" alt="Global Unicode Explorer" class="image" data-target="FontUnikers">
+
+<div class="tab-container">
+  <iframe id="FontUnikers" class="imageContainer" data-service="FontUnikers"></iframe>
+</div>
+
+<!-- Glitch Text -->
+<h2>Glitch Text Generator</h2>
+<p>Eksplorasi karakter teks simbol dengan efek glitch.</p>
+
+<img src="https://i.postimg.cc/QNcr7B7V/20250826-191000.jpg" alt="Global Unicode Explorer" class="image" data-target="Glitch">
+
+<div class="tab-container">
+  <iframe id="Glitch" class="imageContainer" data-service="Glitch"></iframe>
+</div>
+
+<!-- Unicode characters -->
+<h2>Unicode Characters</h2>
+<p>Karakter teks simbol.</p>
+
+<img src="https://i.postimg.cc/V6RWyBTd/20250826-191623.jpg" alt="Global Unicode symbols text" class="image" data-target="Glitch2">
+
+<div class="tab-container">
+  <iframe id="Glitch2" class="imageContainer" data-service="Glitch"></iframe>
+</div>
+
+<!-- Unicode -->
+<h2>Unicode Creativity</h2>
+<p>Eksplorasi karakter Unicode (simbol, emoji, huruf khas, cek tampilan di fb lite).</p>
+
+<img src="https://i.postimg.cc/J41443FR/20250826-192437.jpg" alt="Global Unicode Explorer" class="image" data-target="Unicode">
+
+<div class="tab-container">
+  <iframe id="Unicode" class="imageContainer" data-service="Unicode"></iframe>
+</div>
+     </div>
+        </button>
+          
+
+          
+          <div class="unique-controls" style="margin-top: -14px;">
+        <img src="https://i.postimg.cc/BQ2wW4dt/3IeW1x2.png" style="width: 100%; height: auto; 
+           border-radius: 12px; border: solid 2px #777; pointer-events: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+          }
+          
+          button:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */ ">
+        <button id="generate"
+          onclick="location.href='https://tommydev27.github.io/tommy.website-demo/';"
+          style="color: #fff; border: none; border-radius: 8px; font-size: 15px; padding: 8px; cursor: pointer; font-weight: bold; -webkit-tap-highlight-color: transparent; outline: none; background: #26a9a3; margin-top: 12px;">
+          Info Website
+          <i style="margin-left: 5px; font-size: 15px; color: #35ebfff9;" class="fas fa-exclamation-circle"></i>
+        </button>
+        </div>
+        <div class="unique-image-container">
+          <h2 style=" font-size: 18px; margin-top: 0px; margin-left: 8px;"> Buat gambar </h2>
+          <p style="font-size: 13px; margin-left: 8px;">
+          Buat gambar free terbatas jika terjadi error stop lanjut lagi setelah pembaruan beberapa saat
+          </p><div style="padding: 8px;">
+<div style="position: relative; width: 100%;">
+  <textarea id="uniquePromptInput" class="unique-prompt-input"
+    style="width: 100%; margin-top: 0px; height: 200px; padding: 5px;
+    border: 1px solid #b8e0fde0; border-radius: 5px; font-size: 14px;
+    resize: none;"
+    placeholder="Tulis atau tempel prompt disini..."></textarea>
+
+  <!-- Tombol Clear (X) -->
+  <button id="clearPromptBtn" title="Bersihkan" style="
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+  ">
+    <i class="fas fa-times"></i>
+  </button>
+</div>
+
+          </div><div class="unique-image-container">  <h3 style=" font-size: 12px; color: #777; font-size: 12px; ">
+         Design App: Tommy V0.1.0 ™ 
           </h3><img id="uniqueGeneratedImage" class="unique-generated-image" alt="">
-<div id="loader" class="loader"></div>
-<div class="scroll-container"></div>
+          <div id="loader" class="loader"></div>
+          <div class="scroll-container"></div>
+
           <div id="downloadTextContainer" style="display: none; text-align: center; font-size: 14px; font-weight: bold; color: #333; margin-top: 10px;"></div>
           <div><select id="uniqueHeightInput" class="unique-height-input" 
-        style="font-size: 15px; padding: 5px; border-radius: 8px; font-weight: bold; color: #777;">
+        style="font-size: 15px; padding: 5px; border-radius: 8px;  color: #333; ">
   <option value="200">200Px sampul</option>
   <option value="300">300Px sampul</option>
   <option value="400">400Px</option>
@@ -1279,89 +1728,224 @@ Design • Tommy V0.1.0 ⋯
   <option value="600">600Px</option>
   <option value="700">700Px</option>
   <option value="800">800Px</option>
-</select><button id="uniqueGenerateBtn" class="unique-generate-btn"
-          style="color: #fff; border: none; border-radius: 8px; font-size: 14px; padding: 8px; cursor: pointer; margin-top: 0px; font-weight: bold; margin-left: 10px; background:#82a6ec;">Generate <i style="margin-left: 5px; font-size: 15px; color: #ffd;" class="fas fa-sync"></i></button></div><div id="preset-images" style="margin-top: 10px;"><h3 style="color: #777; font-size: 15px; margin-bottom: 10px; font-family:Questrial;">
+</select>
+<button id="uniqueGenerateBtn" class="unique-generate-btn"
+          style="color: #fff;  border-radius: 8px; font-size: 14px; padding: 8px; cursor: pointer; margin-top: 0px; margin-left: 10px;  background: green; font-weight: bold;">Generate Images<i style="margin-left: 5px; font-size: 15px; color: #fff;" class="fab fa-gripfire"></i></button>
+          <button id="uniqueSaveBtn" disabled style="display:none;">Unduh Gambar<i style="margin-left: 5px; font-size: 15px; color: #fff;" class="fas fa-download"></i></button>
+</div>
+          
+          <div id="preset-images" style="margin-top: 10px;"><p style="color: #333; font-size: 16px; margin-bottom: 10px;">
           Gambar Preset klik untuk buat ⇆ Scrollbar
-          </h3></div><div class="image-slider-container"><div class="image-slider">
-          <img src="https://i.postimg.cc/9XJM71Mz/download-2-25.jpg"
+          </p></div><div class="image-slider-container"><div class="image-slider">
+          <img src="https://i.postimg.cc/jqHH6Xmn/26-PHCYb-md.jpg"
           alt="Gambar 1" class="slider-image"
-          data-prompt="A menacing male anime character with messy white hair and glowing red eyes, his mouth a stitched, grinning skull pattern. He is shirtless, covered in intricate black tattoos, with a large white skull emblem on his stomach. He wears a black open jacket and black pants held up by a belt with silver chains. He is holding a katana sword over his shoulder. The background is a dark, futuristic cityscape with surreal, glowing skull-like structures."><img src="https://i.postimg.cc/LsDKfjT8/download-2-26.jpg" alt="Gambar 4" class="slider-image" data-prompt="A stylish male anime character wearing a black hoodie with the hood up and a black face mask, obscuring most of his face. He has intricate tattoos on both arms and a red beaded necklace with a pendant. He is wearing a black t-shirt with a red tribal design and a black jacket over it, along with black pants with a white drawstring and side pockets. Two fierce white tigers with blue eyes are perched on his shoulders. The background is a neon-lit futuristic city street at night, with glowing Japanese signs.">
-          <img src="https://i.postimg.cc/Gp1KyQn5/download-2-27.jpg" alt="Gambar 5" class="slider-image" data-prompt="A male anime character, resembling Kakashi Hatake, with spiky white hair and a black face mask, holding a white and red Kitsune mask. He wears a white jacket with red accents and intricate red rope details, along with a black headband and black gloves. His outfit includes white pants, and there are additional red and black elements around his waist and arms. The background features chaotic, broken structures with white, gray, and splashes of vibrant red, creating a dynamic, artistic setting.">
-          <img src="https://i.postimg.cc/Qt8MBnCN/download-2-28.jpg" alt="Gambar 5" class="slider-image" data-prompt="A dynamic, vertical, full-body shot of Goku from Dragon Ball in his Ultra Instinct form. His hair glows with an intense white-blue aura. His upper body is muscular, and he wears a tattered blue gi and red wristbands. His body is surrounded by a powerful, multi-colored aura of blue, purple, and red, with glowing particles and streaks of light. His face is serene and focused, with his eyes appearing silver. The background is a dark void with bright blue energy streaks.">
+          data-prompt="Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks, With delicate makeup on her face, beautiful face, Perfectly proportional face shape, (Advanced facial details：1.1) A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, (Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://i.postimg.cc/Sxschpsc/2r-Bf-SKF-md.jpg" alt="spider-man" class="slider-image" data-prompt="Create a hyper-realistic image of Spider-Man wearing a futuristic, shiny white robot suit, designed with intricate metallic details and glowing blue accents. He stands confidently in the foreground. Behind him, a large, highly detailed Transformer-like robot sits in a defensive pose, with a reflective metallic coating. The scene is set in a futuristic city at dusk, with warm and cool lighting providing realistic shading of the characters. Make sure textures, proportions and lighting are photorealistic"><img src="https://i.postimg.cc/sxsZHkqQ/2-LW454j-md.jpg" alt="prompt" class="slider-image" data-prompt="Foto-realistick, Gambarkan seorang hacker anonymous memegang (playing card joker), di lingkungan komputer teknologi mengalirkan cahaya ">
+          <img src="https://i.postimg.cc/7h9JFBrB/26-PJBVI-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="A beautiful dance on ice featuring two enchanting fairies, dressed in glossy dresses, realistic and fantastical atmosphere, ethereal lighting, intricate details, whimsical background, soft glows, elegant poses, magical winter scenery">
+          <img src="https://i.postimg.cc/HsWywCbF/2r-Q2-LF9-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="a beautiful Korean woman, with long wings like a butterfly with colorful patterns, with flowing neon sand light, very beautiful, sky garden background">
+
+          <img src="https://i.postimg.cc/4yWnLmpq/2r-Lblne-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="photorealistick, korean women, ((( amazoness)))、Tribe、fashionable face paint、Tribal Body Paint、(Japanese Face)、((cute))、Smooth white skin、Exposed clothes、tribal costumes、dense forest background、20 year、women、cute、super detailed,((( realistic, photo realistic, photo-realistic :1.37))), high definition, high definition, Studio Lighting, Very Smooth Painting, sharp concentration, physically based rendering, highly detailed description, professional, bright colors, bokeh, cinematic lighting, Dramatic Shadows, real、">
+          <img src="https://i.postimg.cc/tgFJ0rhh/24-WBu-JS-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="foto-realistick selfie efect beauty,up photo, masterpiece, best quality, (((1girl))),  (writing similar to Japanese letters ("JUTEK") on clothes) solo,realistic, ((looking at viewer)), photorealistic, (extremely detailed face), looking at viewer, ((ultra-detailed eyes and pupils)), ultra detailed, serious expression, (standing against a city street at night), hoodie, short hair, hands in pocket,"><img src="https://i.postimg.cc/TYS3K80V/266-Wne9-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus ikat ekor kuda, mata tajam wajah seksi, mengenakan gaun khas adat dayak, memegang busur panah, di samping ada kuda putih, latar pinggir hutan tepi pergunungan air terjun."><img src="https://i.postimg.cc/s2Jz9bY0/266b3AB.jpg" alt="Gambar 5" class="slider-image" data-prompt="fotoRealistik, Seorang wanita cantik korea 20 tahun, rambut pajang lurus tertiup angin, mata tajam wajah seksi, mengenakan baju kaos putih, jaket mini tulisa (Pasbody) duduk di (mobil convertible-Roadster-Mobil sport mewah, SUV), (Gambar-full-Body).">
+          <img src="https://i.postimg.cc/wv76q0Nf/26-Pq-ZCv-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="FotoRealistik, full-body, (Large breast:1.4),(shirt:1.4),(Best quality,masterpiece,ultra high res,(photorealistic:1.4),1girl,(long hair:1.6)."><img src="https://i.postimg.cc/KYs2HBWn/266-R6t-S-md.jpg" alt="Gambar 5" class="slider-image" data-prompt="Korean A stunning, elegant fantasy-inspired gown with intricate gold and pearl embellishments, featuring a glowing central design and ethereal details. The dress has a transparent and flowing fabric with ornate patterns, creating a majestic and celestial appearance. Designed to reflect beauty, grace, and sophistication, worn by a regal and radiant figure in a grand setting.">
+          <img src="https://i.postimg.cc/nh3bXqp6/2-Qc1-E0-J-md.jpg" alt="prompt" class="slider-image" data-prompt="A young man sits on a large blue Facebook logo, wearing a black jacket with a blue hoodie, a white t-shirt and modern sneakers. The background clearly displays the Facebook profile page with visible details such as profile picture, name, icon, and layout. The artistic style is realistic about the man and his background, ensuring the Facebook profile page reads clearly and in detail."><img src="https://i.postimg.cc/8cQx2Hmr/2-Qcgg7p-md.jpg" alt="prompt" class="slider-image" data-prompt="A majestic eagle with detailed golden and bronze feathers, wings fully spread, and a fierce expression. Below the eagle is a luxurious ornamental banner with intricate swirls and floral designs in gold and teal tones. The background is a dark gradient, emphasizing the metallic and elegant details of the artwork. The style is highly detailed and realistic, with a royal and decorative theme."><img src="https://i.postimg.cc/VkL2P5n4/2QcQs19.jpg" alt="prompt" class="slider-image" data-prompt="A handsome Korean man with sharp facial features, styled black hair, and a confident expression, wearing a sleek black outfit. His back is adorned with a vibrant, highly detailed 3D dragon tattoo in shades of black and red, with lifelike textures and glowing accents. The tattoo appears to almost emerge from his skin, creating a dynamic effect. The background is brightly lit with a modern, urban ambiance, featuring warm, natural lighting and clear details of an evening street scene, ensuring a vibrant and balanced composition with all elements clearly visible.">
+          <img src="https://i.postimg.cc/RhBbs0v7/2-Qcn-L8-J-md.jpg" alt="prompt" class="slider-image" data-prompt="FotoRealistick, A regal and vibrant fantasy-style logo featuring two fierce white tigers with glowing orange eyes, positioned symmetrically around a circular centerpiece. The lions have detailed fur patterns and an intense expression, with golden decorative elements accentuating their elegance. Above the circle, add a golden crown with radiant wings and a central jewel. Surround the design with white floral decorations, vibrant red-and-white ribbons, and luminous pink lightning effects for a dynamic and powerful look. Use a polished gold-and-silver color scheme combined with bright accents to highlight the intricate details, set against a gray background to enhance the contrast.">
+          <img src="https://i.postimg.cc/VkVZygYL/2-LSXt3b-md.jpg" alt="prompt" class="slider-image" data-prompt="Photo-realistic, Portrait of a Korean woman, lying down on the cover photo of the facebook home page.">
+          <img src="https://i.postimg.cc/G20Mtp8W/2-Ljend-N-md-1.jpg" alt="prompt" class="slider-image" data-prompt="FotoRealistic, Wanita korea cantik wajah menghadap penonton, dengan tubuh mengenakan kostum switer hody bertopi, lengkap Punggungnya dihiasi cangkang siput besar yang, dengan tekstur kerang melingkar. Antena kecil tumbuh di atas topi hody, menambah elemen seperti siput. Karakter ini berjongkok di atas lanskap hutan alien yang dipenuhi lumut hijau, jamur bercahaya, dan tumbuhan eksotis. Latar belakangnya menampilkan pemandangan dengan yang terang serta formasi batuan yang menjulang, menciptakan suasana realistick hd."><img src="https://i.postimg.cc/dQjWQwqf/2-LX5vo-J-md.jpg" alt="prompt" class="slider-image" data-prompt="Seorang robot humanoid perempuan dengan wajah muda menyerupai wanita Korea, memiliki kulit halus, rambut hitam rapi, dan ekspresi tenang yang realistis. Tubuhnya sepenuhnya terlihat, dirancang dengan material perak futuristik, lengkap dengan aksen biru neon yang menyala. Tubuh robotik mencakup torso ramping, lengan mekanik berteknologi tinggi, dan kaki robotik yang dirancang untuk mobilitas canggih. Setiap detailnya, mulai dari panel bercahaya hingga engsel mekanik, mencerminkan perpaduan antara estetika manusia dan teknologi modern. Latar belakangnya berupa ruangan minimalis dengan elemen modern, memberikan suasana futuristik namun realistis.">
+          <img src="https://i.postimg.cc/JzGKQXbw/2-Lx26hl-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful owl with long colorful feathers, perched on a cherry tree, with a snow mountain as a background, a cool view with the light of the wind flowing beautiful neon colors"><img src="https://i.postimg.cc/Vvh0sJ5M/2-Lx3-En2-md.jpg" alt="prompt" class="slider-image" data-prompt="A hyper-realistic photo of a lush green forest with sunlight filtering through the trees, highly detailed textures, natural lighting, and sharp focus.
+          Chinese women's high-detail hair (Quality hair details: 1.1) Clear eyes, double eyelids look good, sharp eye makeup, Create the beauty of eyelash makeup, thin eyebrows, highly detailed eyes, sharp nose, beautiful red lips, rosy cheeks , With delicate makeup on her face, beautiful face, Perfectly proportional face shape, （Advanced facial details：1.1）A Chinese girl sits on a throne, the throne is inlaid with precious stones, surrounded by Chinese phoenix beasts, gold and color rubies, unique monster illustration, Dau al set, high resolution, bright realistic, super high resolution, complex, super detailed, (skin dent), cute, feminine, body details, ( Facial details: 1.1), (contoured iris), (perfect eyes), 4k, beautiful, (masterpiece: 1.2), (best quality: 1.2), beautiful closed long dress, dynamic pose, rich colors, light and shadow film, red and gold clothes, realism, my eyes are very bright, original picture. HD."><img src="https://i.postimg.cc/R0T36sNv/2r-UEPCg-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful Korean mermaid, underwater view filled with coral, seaweed, sand, colorful glass, Koi fish (Cyprinus carpio), Discus fish (Symphysodon spp.), Guppy fish (Poecilia reticulata) Betta fish (Betta splendens), lively comet fish (Carassius auratus), and gentle sea turtles"><img src="https://i.postimg.cc/pLby0bj2/2-Qn-Hqnj-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful woman, long dark hair, detailed facial features, delicate skin, elegant expression, sunlight, warm glow, flowery meadow, lush greenery, picturesque landscape, serene atmosphere, (best quality,4k,8k,highres,masterpiece:1.2),ultra-detailed,(realistic,photorealistic,photo-realistic:1.37),intricate details,cinematic lighting,vibrant colors,breathtaking scenery,ethereal,romantic,classical painting">
+          <img src="https://i.postimg.cc/6q450Y52/2-QCbd-KP-1.jpg" alt="prompt" class="slider-image" data-prompt="Gorgeus Girl, Beautiful, korean , 20 Years Old, White Skin, Large Colossal Breasts, Pose, (red-Gold Kebaya), Green Indonesian Kebaya, Brown Retina, Muscles, Bokeh, Indonesian Culture Background, Masterpiece, Portrait, Straight Dark Hair, Perfect Lighting, HDR, ((Green-Gold Coloured))"><img src="https://i.postimg.cc/kMLxdHSH/2-Qn9dh-J-md.jpg" alt="prompt" class="slider-image" data-prompt="beautiful girl ,Thailand Female , walking at (((Wat Arun))) in Bangkok, dynamic poses, chut thai dress, long hair,black eyes,abdominal muscles, plumpy body, rounded breast, (big breast:1.3), Morning sunshine, Eyes on the audience, (sexy poses), ((face details)), Double eyelids, reeds, realistic, masterpiece, highest quality, lens flare, shade, old temple, temple, [[chromatic aberration]], by Jeremy Lipking, by Antonio J. Manzanedo, digital painting, HDR, high contrast"><img src="https://i.postimg.cc/tgrxvvy2/2-Qlw4wb-md.jpg" alt="prompt" class="slider-image" data-prompt="A 3D-rendered Japanese anime-style female samurai removing her mask, pulling it down to reveal her beautiful face. The mask is a traditional samurai mask, primarily white with red and gold accents. She has long, flowing black hair and wears detailed samurai armor with intricate engravings. Her full body is visible as she confidently removes the mask with one hand while holding a katana in the other. The background features a misty traditional Japanese village with soft lighting. The scene has a cinematic feel with dramatic lighting and realistic textures"></div></div>
+        <h2 style="font-size: 15px; margin-top: 20px; padding: 0px; ">PETUNJUK :</h2><p style="font-size: 14px; background: #666; color: white; padding: 10px; border-radius: 5px;">Klik bagian tombol (H-150) Atur panjang gambar. <br>Scrool gambar ke samping kiri klik bagian gambar yang ingin di buat lalu tunggu proses otomatis membuat gambar tekan bagian gambar untuk download</p></section></div></div>
+          <div class="unique-controls">
+</div>
+         </div>
+
+      <div id="profil-header">
+                
+        </div>
+          <hr style="background-color: #ccc; height: 1px; border: none; margin: 0; width: 100%; display: flex; "></hr>
+      <style>
+        #scroll-buttons span {
+          color: #eee;
+          margin-left: 0px;
+          font-size: 8px;
+        }
+        #scroll-buttons button {
+          margin: 0px;
+          padding: 10px;
+      
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      </style>
+      
+        <div class="unique-controls"><h2 style="font-size: 17px; margin-top: 20px; padding: 0px;">INFO</h2><p style="font-size: 15px;">website ini masih dalam tahap pengembangan dan mungkin belum berfungsi secara normal. Beberapa fitur mungkin tidak konsisten atau mengalami gangguan. Kami sedang bekerja untuk meningkatkan pengalaman Anda. Terimakasih atas pengertiannya!</p>
+        <br>
+          <img src="https://i.postimg.cc/7Z6xNq8p/3zsxf-St-md.png" style="width: 100%; border: none;  border: solid 2px #777; border-radius: 8px; pointer-events: none; margin-bottom: px; border: 1px solid #eee;"></img>
+      <div><footer><div class="footer-container"><div class="quick-links"><a>Home<a>Features<a>Privacy Policy<a>Terms & Conditions</a></div><div class="social-media"><a href="https://www.facebook.com" target="_blank" class="social-icon facebook">Facebook</a><a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a><a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+      </div>
+<a href="#" title="Versi Aplikasi Tommy" style="text-decoration:none;">
+  <img 
+    src="https://img.shields.io/badge/Design_•_Tommy_App-v0.1.0_2022-blue?style=flat-square" 
+    alt="Tommy App Version"
+    style="border-radius: 4px;"
+  >
+</a>
 
 
-          <img src="https://iili.io/2Qc1E0J.png" alt="prompt" class="slider-image" data-prompt="A young man sits on a large blue Facebook logo, wearing a black jacket with a blue hoodie, a white t-shirt and modern sneakers. The background clearly displays the Facebook profile page with visible details such as profile picture, name, icon, and layout. The artistic style is realistic about the man and his background, ensuring the Facebook profile page reads clearly and in detail.">
-          <img src="https://iili.io/2Qcgg7p.png" alt="prompt" class="slider-image" data-prompt="A majestic eagle with detailed golden and bronze feathers, wings fully spread, and a fierce expression. Below the eagle is a luxurious ornamental banner with intricate swirls and floral designs in gold and teal tones. The background is a dark gradient, emphasizing the metallic and elegant details of the artwork. The style is highly detailed and realistic, with a royal and decorative theme.">
-          <img src="https://iili.io/2QcQs19.png" alt="prompt" class="slider-image" data-prompt="A handsome Korean man with sharp facial features, styled black hair, and a confident expression, wearing a sleek black outfit. His back is adorned with a vibrant, highly detailed 3D dragon tattoo in shades of black and red, with lifelike textures and glowing accents. The tattoo appears to almost emerge from his skin, creating a dynamic effect. The background is brightly lit with a modern, urban ambiance, featuring warm, natural lighting and clear details of an evening street scene, ensuring a vibrant and balanced composition with all elements clearly visible.">
-          <img src="https://iili.io/2QcnL8J.png" alt="prompt" class="slider-image" data-prompt="FotoRealistick, A regal and vibrant fantasy-style logo featuring two fierce white tigers with glowing orange eyes, positioned symmetrically around a circular centerpiece. The lions have detailed fur patterns and an intense expression, with golden decorative elements accentuating their elegance. Above the circle, add a golden crown with radiant wings and a central jewel. Surround the design with white floral decorations, vibrant red-and-white ribbons, and luminous pink lightning effects for a dynamic and powerful look. Use a polished gold-and-silver color scheme combined with bright accents to highlight the intricate details, set against a gray background to enhance the contrast.">
+</footer></div><script>function showTab(tab) { const tabs = document.querySelectorAll("#profil-tabs div"); const contents = document.querySelectorAll("#profil-content> div"); tabs.forEach(t => t.classList.remove("active")); contents.forEach(c => c.classList.remove("active")); document.querySelector(`#tab-${tab}`).classList.add("active"); document.querySelector(`#content-${tab}`).classList.add("active"); }</script><script>
+document.addEventListener("DOMContentLoaded", function () {
 
-          <img src="https://iili.io/2LjendN.png" alt="prompt" class="slider-image" data-prompt="FotoRealistic, Wanita korea cantik wajah menghadap penonton, dengan tubuh mengenakan kostum switer hody bertopi, lengkap Punggungnya dihiasi cangkang siput besar yang, dengan tekstur kerang melingkar. Antena kecil tumbuh di atas topi hody, menambah elemen seperti siput. Karakter ini berjongkok di atas lanskap hutan alien yang dipenuhi lumut hijau, jamur bercahaya, dan tumbuhan eksotis. Latar belakangnya menampilkan pemandangan dengan yang terang serta formasi batuan yang menjulang, menciptakan suasana realistick hd."><img src="https://iili.io/2rBfSKF.png" alt="spider-man" class="slider-image" data-prompt="Create a hyper-realistic image of Spider-Man wearing a futuristic, shiny white robot suit, designed with intricate metallic details and glowing blue accents. He stands confidently in the foreground. Behind him, a large, highly detailed Transformer-like robot sits in a defensive pose, with a reflective metallic coating. The scene is set in a futuristic city at dusk, with warm and cool lighting providing realistic shading of the characters. Make sure textures, proportions and lighting are photorealistic"><img src="https://iili.io/2LW454j.png" alt="prompt" class="slider-image" data-prompt="Foto-realistick, Gambarkan seorang hacker anonymous memegang (playing card joker), di lingkungan komputer teknologi mengalirkan cahaya ">
-          <img src="https://iili.io/2Lx26hl.png" alt="prompt" class="slider-image" data-prompt="beautiful owl with long colorful feathers, perched on a cherry tree, with a snow mountain as a background, a cool view with the light of the wind flowing beautiful neon colors">
-          </div>
-     </div>
-     <p></p>
-          <h style="color: #555; font-family:Questrial; font-size:18px;">Buat gambar dengan klik gambar Preset atau bisa juga ketikan prompt di teks area menurut imajinasimu sendiri</h>
-    <p style="color: white; font-family:Questrial; background:#555; padding:5px; border-radius:8px; font-size:12px;"> Sebagian alat belum berkeja dengan normal masih banyak mengalami error. untuk pembuatan gambar AI kami menggunakan alat dari pollinations AI untuk tahap uji coba dan banyak di gunakan oleh para Developer lain untuk tes uji coba web, namun untuk app rancang desain sendiri dan website masih dalam tahap pengembangan. <br></br> </p>
-<footer>
-  <div class="footer-links">
-    <a href="/privacy">Privasi</a> | 
-    <a href="/policy">Kebijakan Konten</a> | 
-    <a href="/terms">Ketentuan Penggunaan</a> | 
-    <a href="/settings">Pengaturan</a> | 
-    <a href="/feedback">Umpan Balik</a>
-  </div>
-  <p>Design: Tommy App v0.1.0 © 2023</p>
-</footer>
+    // Menangani Tab
+    function showTab(tab) {
+        const tabs = document.querySelectorAll("#profil-tabs div");
+        const contents = document.querySelectorAll("#profil-content > div");
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+        document.querySelector(`#tab-${tab}`).classList.add("active");
+        document.querySelector(`#content-${tab}`).classList.add("active");
+    }
 
-   
-   </div>
-   
-  <script>
-    const cards = document.querySelectorAll('.card');
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-img');
-    const modalPrompt = document.getElementById('modal-prompt');
-    const copyBtn = document.getElementById('copyBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const copySuccess = document.getElementById('copySuccess');
+    // Redirect URL
+    function redirect(url) {
+        window.location.href = url;
+    }
 
-    cards.forEach(card => {
-      card.addEventListener('click', () => {
-        const img = card.querySelector('img').src;
-        const prompt = card.getAttribute('data-prompt');
-        modalImg.src = img;
-        modalPrompt.textContent = prompt;
-        modal.style.display = 'flex';
-        copySuccess.style.display = 'none';
-      });
+    // Arahkan ke Halaman Berikutnya (Alert)
+    function nextPage() {
+        alert("Akan dialihkan ke halaman selanjutnya!");
+    }
+
+    // Tombol Scroll dan Redirect
+    document.querySelectorAll("#scroll-buttons button").forEach(button => {
+        button.addEventListener("click", function () {
+            const url = this.getAttribute("onclick").match(/'(.*?)'/)[1];
+            redirect(url);
+        });
     });
 
-    copyBtn.addEventListener('click', () => {
-      const text = modalPrompt.textContent;
-      navigator.clipboard.writeText(text).then(() => {
-        copySuccess.style.display = 'inline';
-      });
+    // Mode Gelap (Dark Mode) Toggle
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.body.classList.toggle("dark-mode");
     });
 
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+});
+</script>
+<script>document.getElementById("iconuniquecontainer").addEventListener("click", function () { this.classList.toggle("active"); });</script>
+        
+<script>
+  let isIframeOpen = false;
+  let currentOpenIframe = null;
 
-    modal.addEventListener('click', (e) => {
-      if(e.target === modal){
-        modal.style.display = 'none';
+  // Pemetaan URL sesuai nama iframe
+  function getUrlForTab(name) {
+    const urls = {
+      
+       'Microsoft2222': 'https://tommydev27.github.io/Blok-dua-catatan-koreksi-catatan-/',
+      'Microsoft222': 'https://tommydev27.github.io/generatorascii/',
+      'Microsoft22': 'https://tommydev27.github.io/Penghapus-duplikat-teks/',
+      'Microsoft14': 'https://image-generation.perchance.org',
+      'Microsoft4': 'https://tommydev27.github.io/Alat-Penghapus-Spasi/',
+      'Microsoft3': 'https://tommydev27.github.io/Pengganda-teks/',
+      'Microsoft2': 'https://tommydev27.github.io/Penghutung-karakter/',
+      'Microsoft': 'https://tommydev27.github.io/FakeID/',
+      'Unicode': 'https://tommydev27.github.io/Unicode.SymbolTool/',
+      'Glitch': 'https://tommydev27.github.io/glitch-text/',
+      'Glitch2': 'https://tommydev27.github.io/Unicode/',
+      'FontUnikers': 'https://tommydev27.github.io/font-unikrsfb/',
+      'DeepAi': 'https://tommydev27.github.io/tommy-website.oi/',
+      'Replit AI': 'https://tommydev27.github.io/tommy.website3/',
+      'DeepSeek': 'https://tommydev27.github.io/tommy.website-demo/',
+      'Music': 'https://tommydev27.github.io/MusicTM/',
+      'Music2': 'https://tommydev27.github.io/glitch-text/'
+    };
+    return urls[name] || '';
+  }
+
+  // Fungsi toggle iframe berdasarkan klik gambar
+  document.querySelectorAll('img.image').forEach(img => {
+    img.addEventListener('click', () => {
+      const targetId = img.getAttribute('data-target');
+      const iframe = document.getElementById(targetId);
+      if (!iframe) return;
+
+      const currentUrl = getUrlForTab(targetId);
+
+      if (iframe.style.display === 'block' && iframe.src === currentUrl) {
+        // Tutup iframe jika sudah terbuka dan url sama
+        iframe.style.display = 'none';
+        isIframeOpen = false;
+        currentOpenIframe = null;
+        history.pushState(null, null, location.href);
+        return;
       }
+
+      // Tutup semua iframe lain
+      document.querySelectorAll('iframe.imageContainer').forEach(fr => {
+        fr.style.display = 'none';
+      });
+
+      // Set src jika belum sesuai
+      if (iframe.src !== currentUrl) {
+        iframe.onload = () => resizeIframe(iframe);
+        iframe.src = currentUrl;
+      }
+
+      // Tampilkan iframe
+      iframe.style.display = 'block';
+      isIframeOpen = true;
+      currentOpenIframe = iframe;
+      history.pushState(null, null, location.href);
+
+      // Scroll ke iframe
+      setTimeout(() => {
+        iframe.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 100);
     });
-  </script>
+  });
+
+  // Handle tombol back browser
+  window.addEventListener("popstate", function () {
+    if (isIframeOpen) {
+      document.querySelectorAll("iframe.imageContainer").forEach(el => {
+        el.style.display = "none";
+      });
+      isIframeOpen = false;
+      currentOpenIframe = null;
+      history.pushState(null, null, location.href);
+    } else {
+      history.back();
+    }
+  });
+
+  // Push state awal supaya popstate berfungsi lancar
+  history.pushState(null, null, location.href);
+
+  // Resize iframe otomatis
+function resizeIframe(iframe) {
+  try {
+    const doc = iframe.contentWindow.document;
+    if (doc && doc.body) {
+      iframe.style.height = doc.body.scrollHeight + "px";
+    }
+  } catch {
+    iframe.style.height = window.innerHeight + "px";
+  }
+}
+
+</script>
 
 <script>
 const promptInput = document.getElementById("uniquePromptInput");
+const clearBtn = document.getElementById("clearPromptBtn"); // Tambahkan ini
 const sliderImages = document.querySelectorAll(".slider-image");
 const generatedImage = document.getElementById("uniqueGeneratedImage");
 const loader = document.getElementById("loader");
 const saveBtn = document.getElementById("uniqueSaveBtn");
 const heightInput = document.getElementById("uniqueHeightInput");
 const generateBtn = document.getElementById("uniqueGenerateBtn");
+
 
 function generateImage(description = null) {
   const prompt = description || promptInput.value.trim();
@@ -1391,11 +1975,17 @@ function generateImage(description = null) {
 
 
 
-  generatedImage.onload = () => {
-    loader.style.display = 'none';
-    saveBtn.disabled = false;
-    generatedImage.setAttribute("onclick", "saveImage()");
-    generatedImage.style.cursor = "pointer";
+generatedImage.onload = () => {
+  loader.style.display = 'none';
+
+  // Tampilkan tombol unduh
+  saveBtn.style.display = 'inline-block';
+  saveBtn.disabled = false;
+
+  // Optional: jadikan gambar juga bisa diklik untuk download
+  generatedImage.setAttribute("onclick", "saveImage()");
+  generatedImage.style.cursor = "pointer";
+
 
     let downloadText = document.getElementById("downloadText");
     if (!downloadText) {
@@ -1419,11 +2009,26 @@ function generateImage(description = null) {
 }
 
 function saveImage() {
-  const link = document.createElement('a');
-  link.href = generatedImage.src;
-  link.download = 'generated_image.png';
-  link.click();
+  const imageUrl = generatedImage.src;
+
+  fetch(imageUrl, { mode: 'cors' })
+    .then(response => response.blob())
+    .then(blob => {
+      const blobUrl = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = 'generated_image.png';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(blobUrl); // bersihkan memori
+    })
+    .catch(err => {
+      alert("Gagal mengunduh gambar. Silakan coba lagi.");
+      console.error(err);
+    });
 }
+
 
 sliderImages.forEach(image => {
   image.addEventListener("click", function () {
@@ -1436,104 +2041,99 @@ sliderImages.forEach(image => {
 
 generateBtn.addEventListener("click", () => generateImage());
 saveBtn.addEventListener("click", saveImage);
-</script>
 
-</div>
-</section>
-<section id="block-image" class="block" tabindex="0">
-  <div class="container">
-<style>
-#block-image iframe {
-  width: 100%;
-  height: 100vh;
-  border: none;
-}
-</style>
-
-    <iframe src="https://tommydev27.github.io/Menu-Apps/" loading="lazy"></iframe>
-  </div>
-</section>
-
-<!-- NAVIGASI -->
-<div class="nav-wrap">
-  <button class="nav-btn active" data-target="block-karakter">
-    <i class="fas fa-table"></i><small>Tools</small>
-  </button>
-  <button class="nav-btn" data-target="block-galeri">
-    <i class="fas fa-play"></i><small>Code Run</small>
-  </button>
-  <button class="nav-btn" data-target="block-keyboard">
-    <i class="fas fa-spider"></i><small>Icon</small>
-  </button>
-  <button class="nav-btn" data-target="block-glitch">
-    <i class="fas fa-keyboard"></i><small>Keyboard</small>
-  </button>
-  <button class="nav-btn" data-target="block-emoji">
-    <i class="fas fa-images"></i><small>Create Img</small>
-  </button>
-  <button class="nav-btn" data-target="block-image">
-    <i class="fas fa-home"></i><small>Home</small>
-  </button>
-</div>
-
-<!-- LOADING -->
-<div id="loading-overlay">
-  <div class="spinner"></div>
-</div>
-
-<style>
-#loading-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background:  #f9f9f9;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.spinner {
-  width: 17px;
-  height: 17px;
-  border: 3px solid rgb(207,207,207);
-  border-top-color: #6076f4;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-</style>
-
-<script>
-const buttons = document.querySelectorAll('.nav-btn');
-const sections = document.querySelectorAll('.block');
-const loadingOverlay = document.getElementById('loading-overlay');
-
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    buttons.forEach(b => b.classList.remove('active'));
-    sections.forEach(s => s.classList.remove('active'));
-
-    btn.classList.add('active');
-    const target = document.getElementById(btn.getAttribute('data-target'));
-
-    let showLoading = setTimeout(() => {
-      loadingOverlay.style.display = 'flex';
-    }, 300);
-
-    const waktuMuat = Math.random() * 1000; 
-
-    setTimeout(() => {
-      clearTimeout(showLoading);
-      loadingOverlay.style.display = 'none';
-      if (target) target.classList.add('active');
-    }, waktuMuat);
-  });
+clearBtn.addEventListener("click", () => {
+  promptInput.value = "";
+  promptInput.focus();
 });
+
 </script>
 
-</body>
+      <script>window.addEventListener("beforeunload", () => { sessionStorage.setItem("scrollY", window.scrollY); }); window.addEventListener("load", () => { let savedScrollY = sessionStorage.getItem("scrollY"); if (savedScrollY !== null) { window.scrollTo(0, parseInt(savedScrollY)); } }); let scrollContainer = document.getElementById("image-scroll-container"); window.addEventListener("beforeunload", () => { sessionStorage.setItem("scrollX", scrollContainer.scrollLeft); }); window.addEventListener("load", () => { let savedScrollX = sessionStorage.getItem("scrollX"); if (savedScrollX !== null) { scrollContainer.scrollLeft = parseInt(savedScrollX); } }); let timeout; scrollContainer.addEventListener("touchstart", () => { clearTimeout(timeout); }); scrollContainer.addEventListener("touchend", () => { timeout = setTimeout(() => { scrollContainer.scrollLeft += 1; }, 10000); }); 
+      </script>
+        <script>
+          window.addEventListener("load", function () {
+              const container = document.createElement("div");
+              container.id = "rootFbContainer"; // ID untuk mengatur tata letak
+          
+              const iframe = document.createElement("iframe");
+              iframe.id = "rootFbIframe"; 
+              iframe.src = "https://tommydev27.github.io/root-fb/";
+              iframe.style.width = "100%";
+              iframe.style.height = "245px";
+              iframe.style.border = "none";
+              iframe.style.display = "block";
+          
+              container.appendChild(iframe);
+              document.getElementById("iframeWrapper").appendChild(container);
+          });
+          </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('image-scroll-container');
+    const wrapper = document.getElementById('image-wrapper');
+    let scrollAmount = 0;
+    const step = 191;
+    const delay = 3000;
+    let autoScrollInterval;
+    let userScrolling = false;
+    let resumeTimeout;
+
+    function startAutoScroll() {
+      autoScrollInterval = setInterval(() => {
+        scrollAmount += step;
+        if (scrollAmount >= wrapper.scrollWidth - container.clientWidth) {
+          scrollAmount = 0;
+        }
+        container.scrollTo({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      }, delay);
+    }
+
+    function stopAutoScrollTemporarily() {
+      clearInterval(autoScrollInterval);
+      clearTimeout(resumeTimeout);
+      resumeTimeout = setTimeout(() => {
+        scrollAmount = container.scrollLeft;
+        startAutoScroll();
+      }, 3000);
+    }
+
+    container.addEventListener('touchstart', () => stopAutoScrollTemporarily());
+    container.addEventListener('scroll', () => stopAutoScrollTemporarily());
+
+    document.querySelectorAll('.img-container').forEach(container => {
+      container.addEventListener('click', () => {
+        container.classList.add('clicked-blink');
+        setTimeout(() => container.classList.remove('clicked-blink'), 3000);
+      });
+    });
+
+    startAutoScroll(); // mulai otomatis saat pertama
+  });
+</script>
+<script>
+  const preloader = document.getElementById("preloader");
+
+  if (sessionStorage.getItem("preloaderShown")) {
+    preloader.style.display = "none";
+    document.body.style.overflow = "auto";
+  } else {
+    document.body.style.overflow = "hidden";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      preloader.classList.add("blur-out");
+      setTimeout(() => {
+        preloader.style.display = "none";
+        document.body.style.overflow = "auto";
+        sessionStorage.setItem("preloaderShown", "true");
+      }, 300);
+    });
+  }
+</script>
+
+
+    </body>
 </html>
